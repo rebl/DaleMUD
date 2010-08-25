@@ -60,7 +60,7 @@ void get(struct char_data *ch, struct obj_data *obj_object,
                    char buf[MAX_INPUT_LENGTH];
                    sprintf(buf,"%s just got %d coins",
 			   GET_NAME(ch),obj_object->obj_flags.value[0]);
-		   log(buf);
+		   klog(buf);
 		}
 		extract_obj(obj_object);
 	}
@@ -174,7 +174,7 @@ dlog("in do_get");
       strcpy(arg1,newarg);
       num = -1;
     } else 
-    if ((p = getabunch(arg1,newarg))!=NULL) 
+    if ((p = getabunch(arg1,newarg))!=0) 
     {
       strcpy(arg1,newarg);
       num = p;
@@ -329,7 +329,7 @@ dlog("in do_get");
 	if (getall(arg1,newarg)==TRUE) {
 	  num = -1;
 	  strcpy(arg1,newarg);
-	} else if ((p = getabunch(arg1,newarg))!=NULL) {
+	} else if ((p = getabunch(arg1,newarg))!=0) {
 	  num = p;                     
 	  strcpy(arg1,newarg);
 	} else {
@@ -479,7 +479,7 @@ dlog("in do_drop");
       if (getall(arg,newarg)==TRUE) {
 	num = -1;
 	strcpy(arg,newarg);
-      } else if ((p = getabunch(arg,newarg))!=NULL) {
+      } else if ((p = getabunch(arg,newarg))!=9) {
 	num = p;                     
 	strcpy(arg,newarg);
       } else {
@@ -547,7 +547,7 @@ dlog("in do_put");
       if (getall(arg1,newarg)==TRUE) {
 	num = -1;
 	strcpy(arg1,newarg);
-      } else if ((p = getabunch(arg1,newarg))!=NULL) {
+      } else if ((p = getabunch(arg1,newarg))!=0) {
 	num = p;                     
 	strcpy(arg1,newarg);
       } else {
@@ -716,7 +716,7 @@ dlog("in do_give");
     save_char(ch, AUTO_RENT);
     if ((GET_GOLD(vict) > 500000) && (amount > 100000)) {
       sprintf(buf, "%s gave %d coins to %s", GET_NAME(ch), amount, GET_NAME(vict));
-      log(buf);
+      klog(buf);
     }
       
     return;
@@ -732,7 +732,7 @@ dlog("in do_give");
     if (getall(obj_name,newarg)==TRUE) {
       num = -1;
       strcpy(obj_name,newarg);
-    } else if ((p = getabunch(obj_name,newarg))!=NULL) {
+    } else if ((p = getabunch(obj_name,newarg))!=0) {
       num = p;                     
       strcpy(obj_name,newarg);
     } else {

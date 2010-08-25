@@ -4,6 +4,7 @@
   See license.doc for distribution terms.   DaleMUD is based on DIKUMUD
 */
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -84,13 +85,13 @@ dlog("in do_auth");
       d->character->generic = NEWBIE_START;
       sprintf(buf2,"%s has just accepted %s into the game.",
 	      ch->player.name,name);
-      log(buf2);
+      klog(buf2);
       SEND_TO_Q("You have been accepted.  Press enter\n\r", d);
     } else if (str_cmp(word,"no")==0){
       SEND_TO_Q("You have been denied.  Press enter\n\r", d);
       sprintf(buf2,"%s has just denied %s from the game.",
               ch->player.name,name);
-      log(buf2);
+      klog(buf2);
       d->character->generic = NEWBIE_AXE;
     } else {
       SEND_TO_Q(argument, d);
@@ -110,7 +111,7 @@ void do_imptest(struct char_data *ch, char *arg, int cmd)
 {
 char *tmp;
 dlog("in do_imptest");
-	tmp=malloc(10);
+	tmp=(char *) malloc(10);
 	strcpy(tmp,"AAAAAAAAAAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaHHHHHHHHHH!");
 	if (tmp)
 		free(tmp);
@@ -528,12 +529,12 @@ dlog("in do_silence");
     Silence = 1;
     send_to_char("You have now silenced polyed mobles.\n\r",ch);
     sprintf(buf,"%s has stopped Polymophed characters from shouting.",ch->player.name);
-    log(buf);
+    klog(buf);
   } else {
     Silence = 0;
     send_to_char("You have now unsilenced mobles.\n\r",ch);
     sprintf(buf,"%s has allowed Polymophed characters to shout.",ch->player.name);
-    log(buf);
+    klog(buf);
   }
 }
 void do_wizlock(struct char_data *ch, char *argument, int cmd)
@@ -582,7 +583,7 @@ dlog("in do_wizlock");
        send_to_char("Its already on!\n\r", ch);
      } else {
        send_to_char("WizLock is now on\n\r",ch);
-       log("WizLock is now on.");
+       klog("WizLock is now on.");
        WizLock = TRUE;
      }
 
@@ -592,7 +593,7 @@ dlog("in do_wizlock");
        send_to_char("Its already off!\n\r", ch);
      } else {
        send_to_char("WizLock is now off\n\r",ch);
-       log("WizLock is now off.");
+       klog("WizLock is now off.");
        WizLock = FALSE;
      }
 
@@ -617,7 +618,7 @@ dlog("in do_wizlock");
       strcpy(hostlist[numberhosts],buf);
       sprintf(buf,"%s has added host %s to the access denied list.",
 	      GET_NAME(ch),hostlist[numberhosts]);
-      log(buf);
+      klog(buf);
       numberhosts++;
       return;
 
@@ -654,7 +655,7 @@ dlog("in do_wizlock");
 	      strcpy(hostlist[b],hostlist[b+1]);
  	    sprintf(buf,"%s has removed host %s from the access denied list.",
 		    GET_NAME(ch),hostlist[numberhosts]);
-	    log(buf);
+	    klog(buf);
 	    numberhosts--;
 	    return;
 	 }
@@ -683,11 +684,11 @@ dlog("in do_wizlock");
 #else
   if (WizLock) {
     send_to_char("WizLock is now off\n\r",ch);
-    log("Wizlock is now off.");
+    klog("Wizlock is now off.");
     WizLock = FALSE;
   } else {
     send_to_char("WizLock is now on\n\r",ch);
-    log("WizLock is now on.");
+    klog("WizLock is now on.");
     WizLock = TRUE;
   }
 #endif
@@ -1040,7 +1041,7 @@ dlog("in do_goto");
   
   
   if (!real_roomp(location)) {
-    log("Massive error in do_goto. Everyone Off NOW.");
+    klog("Massive error in do_goto. Everyone Off NOW.");
     return;
   }
   
@@ -1526,7 +1527,7 @@ if (aff->type <=MAX_EXIST_SPELL) {
 	        /* max spl */
 	        sprintf(buf,"<%s> had a bogus aff->type act.wizard, do_stat",
 	        	GET_NAME(k));
-	        log(buf);
+	        klog(buf);
 		/* log bogus aff->type */
 	}
       } /* for aff */
@@ -1769,20 +1770,20 @@ if (!*item)
 
 if (!strcmp(item,"help"))
  {
-send_to_char("Help for Oedit. Command line Parameters OEDIT <NAME> <FIELD> <VALUE>\r
-List of Fields :\r
-ldesc  = Long Item description | sdesc  = Short description\r
-extra  = Extra descriptions*NI*| name   = Item name\r
-wflags = wear flags            | afflags= affect flags\r
-exflags= extra flags           | weight = item weight\r
-cost   = item cost to rent per day\r
-value  = Item value if sold    | timer  = item timer\r
-type   = item type\r
-v0     = value[0] of item      | v1     = value[1] of item\r
-v2     = value[2] of item      | v3     = value[3] of item\r
-aff1   = special affect 1 (requires another value, oedit aff1 <modifer> <type>)\r
-aff2   = special affect 2      | aff3   = special affect 3\r
-aff4   = special affect 4      | aff5   = special affect 5\r
+send_to_char("Help for Oedit. Command line Parameters OEDIT <NAME> <FIELD> <VALUE>\n\r\
+List of Fields :\n\r\
+ldesc  = Long Item description | sdesc  = Short description\n\r\
+extra  = Extra descriptions*NI*| name   = Item name\n\r\
+wflags = wear flags            | afflags= affect flags\n\r\
+exflags= extra flags           | weight = item weight\n\r\
+cost   = item cost to rent per day\n\r\
+value  = Item value if sold    | timer  = item timer\n\r\
+type   = item type\n\r\
+v0     = value[0] of item      | v1     = value[1] of item\n\r\
+v2     = value[2] of item      | v3     = value[3] of item\n\r\
+aff1   = special affect 1 (requires another value, oedit aff1 <modifer> <type>)\n\r\
+aff2   = special affect 2      | aff3   = special affect 3\n\r\
+aff4   = special affect 4      | aff5   = special affect 5\n\r\
 \rNote: NI = Not implemented.\n\r",ch);
   return;
  } /* End Help! */
@@ -2005,18 +2006,18 @@ dlog("in do_set");
 
     if ((mob = get_char_vis(ch, name)) == NULL) 
     { 
-send_to_char("
-@\n\r
-Usage :@ <field> <user name> <value>\r
-\r
-This is a Implementor command and should be used with care as it can\r
-change any ability/skill/attr of a character. Here is a list of fields,\r
-the value types will differ with each (i.e. number/alpha char)\r
-\r
-aling class exp lev sex race hunger thirst one hit mhit tohit todam\r
-ac bank gold age prac str add saves skills stadd int wis dex con chr\r
-pkill mana start murder stole known zone nodelete specflags racewar \r
-numatks objedit mobedit remaffect\r
+send_to_char("\
+@\n\r\
+Usage :@ <field> <user name> <value>\n\r\
+\n\r\
+This is a Implementor command and should be used with care as it can\n\r\
+change any ability/skill/attr of a character. Here is a list of fields,\n\r\
+the value types will differ with each (i.e. number/alpha char)\n\r\
+\n\r\
+aling class exp lev sex race hunger thirst one hit mhit tohit todam\n\r\
+ac bank gold age prac str add saves skills stadd int wis dex con chr\n\r\
+pkill mana start murder stole known zone nodelete specflags racewar\n\r\
+numatks objedit mobedit remaffect\n\r\
 Remember, be careful how you use this command!\n\r",ch);
       return;
     }
@@ -2319,7 +2320,7 @@ Remember, be careful how you use this command!\n\r",ch);
 	EasySummon = TRUE;
 	sprintf(buf, "Peaceful rooms and Easy Summon enabled by %s", GET_NAME(ch));
       }
-      log(buf);
+      klog(buf);
 
     } else if (!strcmp(field, "mana")) {
       sscanf(parmstr, "%d", &parm);
@@ -2361,12 +2362,12 @@ dlog("in do_shutdown");
   if (!*arg) {
     sprintf(buf, "Shutdown by %s.", GET_NAME(ch) );
     send_to_all(buf);
-    log(buf);
+    klog(buf);
     mudshutdown = 1;
   } else if (!str_cmp(arg, "reboot")) {
     sprintf(buf, "Reboot by %s.", GET_NAME(ch));
     send_to_all(buf);
-    log(buf);
+    klog(buf);
     mudshutdown = reboot = 1;
   } else
     send_to_char("Go shut down someone your own size.\n\r", ch);
@@ -2411,7 +2412,7 @@ dlog("in do_snoop");
 	char buf[MAX_STRING_LENGTH];
 	sprintf(buf, "caught %s snooping %s who didn't have a descriptor!",
 		ch->player.name, ch->desc->snoop.snooping->player.name);
-	log(buf);
+	klog(buf);
 /*
 logically.. this person has returned from being a creature? 
 */
@@ -2796,7 +2797,7 @@ dlog("in do_purge");
 	act("$n disintegrates $N.", FALSE, ch, 0, vict, TO_NOTVICT);
 
 	if (IS_NPC(ch) && IS_NPC(vict)) {
-	log("npc just purged a mob! COOL!");
+	klog("npc just purged a mob! COOL!");
 	}
 		
 	if (IS_NPC(vict)) {
@@ -3843,8 +3844,9 @@ dlog("in do_debug");
   if (i<0 || i>2) {
     send_to_char("Valid values are 0, 1 and 2\n\r", ch);
   } else {
-    malloc_debug(i); 
-    sprintf(arg, "Malloc debug level set to %d\n\r", i);
+    // malloc_debug(i); 
+    // sprintf(arg, "Malloc debug level set to %d\n\r", i);
+    sprintf(arg, "The command is not active\n\r");
     send_to_char(arg, ch);
   }
 }
@@ -4212,7 +4214,7 @@ if (IS_NPC(ch))
 	}
     }
 
-    log("Descriptor not found, do_disconnect");
+    klog("Descriptor not found, do_disconnect");
     send_to_char( "Descriptor not found!\n\r", ch );
     return;
 }
@@ -4318,10 +4320,10 @@ dlog("in do_drainlevel");
     	
      /* do it here! */
 
-send_to_char(
-"You are struck by a black beam from above, it hurts!\r
-The life force from your body fades and you feel yourself lose\r
-memories of old times and battles.\r
+send_to_char(\
+"You are struck by a black beam from above, it hurts!\n\r\
+The life force from your body fades and you feel yourself lose\n\r\
+memories of old times and battles.\n\r\
 The feeling fades and you shiver at a cold gust of wind.\n\r",victim);
 
    sprintf(buf,"You drain %d level(s) How Evil!\n\r",numtolose);
@@ -4367,14 +4369,14 @@ dlog("in do_god_interven");
         REMOVE_BIT(SystemFlags,SYS_ECLIPS);
          send_to_char("You part the planets and the sun shines through!\n",ch);
          send_to_outdoor("The planets return to thier normal orbit, slowly the light will return.\n");
-         log("The world is enlightend");
+         klog("The world is enlightend");
        } else {
          SET_BIT(SystemFlags,SYS_ECLIPS);
         weather_info.sunlight=SUN_DARK;
         switch_light(SUN_DARK);
         send_to_char("You summon the planets and force an eclipse!\n",ch);
         send_to_outdoor("The planets eclipse and hide the sun spreading darkness through out the land!\n");
-	log("World has been darkened");
+	klog("World has been darkened");
        }  
     }
 
@@ -4383,22 +4385,22 @@ dlog("in do_god_interven");
     if (!IS_SET(SystemFlags,SYS_REQAPPROVE)) {
 /*         SET_BIT(SystemFlags,SYS_REQAPPROVE); */
          send_to_char("Newbie character approval required.\n\r",ch);
-	 log("New character approval REQUIRED");
+	 klog("New character approval REQUIRED");
        } else {
          REMOVE_BIT(SystemFlags,SYS_REQAPPROVE);
          send_to_char("Newbie character approval REMOVED.\n\r",ch);
-         log("New character approval REMOVED");
+         klog("New character approval REMOVED");
        }
     } else
  if (!strcmp("color",arg)) {
     if (!IS_SET(SystemFlags,SYS_NOANSI)) {
          SET_BIT(SystemFlags,SYS_NOANSI);
          send_to_char("Color codes disabled world wide.\n\r",ch);
-	 log("Global colors disabled");
+	 klog("Global colors disabled");
        } else {
          REMOVE_BIT(SystemFlags,SYS_NOANSI);
          send_to_char("Color codes enabled for everyone that uses them.\n\r",ch);
-         log("Global colors enabled");
+         klog("Global colors enabled");
        }
     } else
    
@@ -4406,55 +4408,55 @@ dlog("in do_god_interven");
     if (IS_SET(SystemFlags,SYS_SKIPDNS)) {
         REMOVE_BIT(SystemFlags,SYS_SKIPDNS);
          send_to_char("Domain name searches enabled.\n\r",ch);
-	log("DNS Enabled");
+	klog("DNS Enabled");
        } else {
          SET_BIT(SystemFlags,SYS_SKIPDNS);
          send_to_char("Domain name searches Disabled.\n\r",ch);
-         log("DNS Disabled");
+         klog("DNS Disabled");
        }
     } else
  if (!strcmp("portal",arg)) {
     if (IS_SET(SystemFlags,SYS_NOPORTAL)) {
         REMOVE_BIT(SystemFlags,SYS_NOPORTAL);
          send_to_char("You sort out the planes and allow portaling.\n",ch);
-	log("Portaling enabled");
+	klog("Portaling enabled");
        } else {
          SET_BIT(SystemFlags,SYS_NOPORTAL);
          send_to_char("You scramble the planes to make portaling impossible.\n",ch);
-         log("Portaling disabled");
+         klog("Portaling disabled");
        }
     } else
  if (!strcmp("astral",arg)) {
     if (IS_SET(SystemFlags,SYS_NOASTRAL)) {
         REMOVE_BIT(SystemFlags,SYS_NOASTRAL);
         send_to_char("You shift the planes and allow astral travel.\n",ch);
-        log("Astral enabled");
+        klog("Astral enabled");
        } else {
          SET_BIT(SystemFlags,SYS_NOASTRAL);
          send_to_char("You shift the astral planes and make astral travel impossible.\n",ch);
-         log("Astral disabled");
+         klog("Astral disabled");
        }
     } else
  if (!strcmp("summon",arg)) {
     if (IS_SET(SystemFlags,SYS_NOSUMMON)) {
         REMOVE_BIT(SystemFlags,SYS_NOSUMMON);
         send_to_char("You clear the fog to enable summons.\n",ch);
-        log("Summons enabled");
+        klog("Summons enabled");
        } else {
          SET_BIT(SystemFlags,SYS_NOSUMMON);
          send_to_char("A magical fog spreads throughout the land making summons impossible.\n",ch);
-         log("Summons disabled");
+         klog("Summons disabled");
        }
     } else
  if (!strcmp("kill",arg)) {
     if (IS_SET(SystemFlags,SYS_NOKILL)) {
         REMOVE_BIT(SystemFlags,SYS_NOKILL);
         send_to_char("You let the anger lose inside you and the people of the land fight.\n",ch);
-        log("Killing enabled");
+        klog("Killing enabled");
        } else {
          SET_BIT(SystemFlags,SYS_NOKILL);
          send_to_char("You spread thoughts of peace throught the people of the land.\n",ch);
-         log("Killing disabled");
+         klog("Killing disabled");
        }
 
     } else 
@@ -4462,11 +4464,11 @@ dlog("in do_god_interven");
          if (IS_SET(SystemFlags,SYS_LOGALL)) {
             REMOVE_BIT(SystemFlags,SYS_LOGALL);
             send_to_char("You fire the scribe writting the history for poor workmanship.\n\r",ch);
-            log("Logging all disabled.");
+            klog("Logging all disabled.");
           } else {
              SET_BIT(SystemFlags,SYS_LOGALL);
              send_to_char("You hire a scribe to write the history of the world.\n\r",ch);
-             log("Logging all enabled");
+             klog("Logging all enabled");
            }
     } else
   send_to_char("Godly powers you have, but how do you wanna use them?\n",ch);    
@@ -4517,7 +4519,7 @@ if (IS_NPC(ch))
      return;
     } else  {
      sprintf(buf,"%s just nuked %s!",GET_NAME(ch),GET_NAME(victim));
-     log(buf);
+     klog(buf);
      act("$n calls forth the wrath of the gods and destroys $N!",FALSE,ch,0,victim,TO_NOTVICT);
      act("$n reaches into $N and pulls out a fighting soul!",FALSE,ch,0,victim,TO_NOTVICT);
      act("$N dies quickly without much a fight.",FALSE,ch,0,victim,TO_NOTVICT);
@@ -4594,7 +4596,7 @@ if (!strcmp(arg,"alldead")) {
       	  save_obj(victim, &cost,1);   
           } else {
             sprintf(buf,"%s had a failed recp_offer, they are losing EQ!",GET_NAME(victim));
-            log(buf);
+            klog(buf);
           }
 	 extract_char(victim); 
       } /* higher than presons level */
@@ -4636,7 +4638,7 @@ if (!strcmp(arg,"alldead")) {
       	  save_obj(victim, &cost,1);   
           } else {
             sprintf(buf,"%s had a failed recp_offer, they are losing EQ!",GET_NAME(victim));
-            log(buf);
+            klog(buf);
           }
 	 extract_char(victim); 
       return;
@@ -5015,7 +5017,7 @@ dlog("in do_osave");
   insert_object(obj,vnum);
   
   sprintf(buf, "Object %s saved as vnum %ld\n\r", obj->name, vnum);
-  log(buf);
+  klog(buf);
   send_to_char(buf,ch);
 }
 

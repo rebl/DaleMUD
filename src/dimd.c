@@ -1570,12 +1570,12 @@ void printhost(struct in_addr *addr, char *buf)
 if ((from = gethostbyaddr((char *)addr,sizeof(addr), AF_INET))) {
     strcpy(buf,from->h_name);  
     } else {
-    log("!from!");
+    klog("!from!");
     i = addr->s_addr;
     sprintf(buf, "%d.%d.%d.%d", (i&0xff), (i&0xff00)>>8, 
                              (i&0xff0000)>>16, (i&0xff000000)>>24);
         }
-	log(buf);
+	klog(buf);
 }
 
 void construct_who_list(char *buf, int cmd,
@@ -1591,7 +1591,7 @@ void construct_who_list(char *buf, int cmd,
 
 	if (godlevel<0) {
 	  godlevel=0;
-	  log("godlevel < 0 in construct_who list");
+	  klog("godlevel < 0 in construct_who list");
 	}
       sprintf(buffer,"                        Shadowdale Players\n\r");
       strcat(buffer,       "                           ------------\n\r");

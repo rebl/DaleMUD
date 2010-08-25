@@ -118,7 +118,7 @@ dlog("in do_kill");
       act("You chop $M to pieces! Ah! The blood!", FALSE, ch, 0, victim, TO_CHAR);
       act("$N chops you to pieces!", FALSE, victim, 0, ch, TO_CHAR);
       act("$n brutally slays $N", FALSE, ch, 0, victim, TO_NOTVICT);
-      raw_kill(victim,NULL);
+      raw_kill(victim,TYPE_SMITE);
     }
   }
 }
@@ -237,23 +237,23 @@ if (!ch->skills)
       if (AWAKE(victim))       {
 	sprintf(buff,"check 1 %s backstabed %s (hp=%d, in_room=%ld)",
 		GET_NAME(ch),GET_NAME(victim),GET_HIT(victim),victim->in_room);
-	log(buff);		
+	klog(buff);		
 	damage(ch, victim, 0, SKILL_BACKSTAB);
 	sprintf(buff,"check 2 %s backstabed %s (hp=%d, in_room=%ld)",
 		GET_NAME(ch),GET_NAME(victim),GET_HIT(victim),victim->in_room);
-	log(buff);		
+	klog(buff);		
 	AddHated(victim, ch);
       } else {             /* failed but vic is asleep */
 	base += 2;
 	GET_HITROLL(ch) += base;
 	sprintf(buff,"check 3 %s backstabed %s (hp=%d, in_room=%ld)",
 		GET_NAME(ch),GET_NAME(victim),GET_HIT(victim),victim->in_room);
-	log(buff);		
+	klog(buff);		
 	hit(ch,victim,SKILL_BACKSTAB);
 	GET_HITROLL(ch) -= base;
 	sprintf(buff,"check 4 %s backstabed %s (hp=%d, in_room=%ld)",
 		GET_NAME(ch),GET_NAME(victim),GET_HIT(victim),victim->in_room);
-	log(buff);		
+	klog(buff);		
 
 	AddHated(victim, ch);
       }
@@ -266,13 +266,13 @@ if (!ch->skills)
       GET_HITROLL(ch) += base;
 	sprintf(buff,"check 6a %s backstabed %s (hp=%d, in_room=%ld)",
 		GET_NAME(ch),GET_NAME(victim),GET_HIT(victim),victim->in_room);
-	log(buff);		
+	klog(buff);		
 
       hit(ch,victim,SKILL_BACKSTAB);
       GET_HITROLL(ch) -= base;
 	sprintf(buff,"check 6b %s backstabed %s (hp=%d, in_room=%ld)",
 		GET_NAME(ch),GET_NAME(victim),GET_HIT(victim),victim->in_room);
-	log(buff);		
+	klog(buff);		
 
       AddHated(victim, ch);
       if (IS_PC(ch) && IS_PC(victim))
@@ -283,11 +283,11 @@ if (!ch->skills)
 	char buff[256];
 	sprintf(buff,"check 6 %s backstabed %s (hp=%d, in_room=%ld)",
 		GET_NAME(ch),GET_NAME(victim),GET_HIT(victim),victim->in_room);
-	log(buff);		
+	klog(buff);		
     damage(ch, victim, 0, SKILL_BACKSTAB);
 	sprintf(buff,"check 6 %s backstabed %s (hp=%d, in_room=%ld)",
 		GET_NAME(ch),GET_NAME(victim),GET_HIT(victim),victim->in_room);
-	log(buff);		
+	klog(buff);		
     AddHated(victim, ch);
   }
   WAIT_STATE(ch, PULSE_VIOLENCE*2);
@@ -972,12 +972,12 @@ void (*bweapons[])() = {
   cast_fire_breath, cast_gas_breath, cast_frost_breath, cast_acid_breath,
   cast_lightning_breath};
 #else
-void cast_geyser();
-void cast_fire_breath();
-void cast_gas_breath();
-void cast_frost_breath();
-void cast_acid_breath();
-void cast_lightning_breath();
+// void cast_geyser();
+// void cast_fire_breath();
+// void cast_gas_breath();
+// void cast_frost_breath();
+// void cast_acid_breath();
+// void cast_lightning_breath();
 
 funcp bweapons[] = {
   cast_geyser,
@@ -1024,7 +1024,7 @@ dlog("in do_breath");
     if (count<1) {
       sprintf(buf, "monster %s has no breath weapons",
 	      ch->player.short_descr);
-      log(buf);
+      klog(buf);
       send_to_char("Hey, why don't you have any breath weapons!?\n\r",ch);
       return;
     }
@@ -1049,7 +1049,7 @@ dlog("in do_breath");
     }
   }
   
-  breath_weapon(ch, victim, manacost, weapon);
+  breath_weapon(ch, victim, manacost, (void *) weapon);
   
   WAIT_STATE(ch, PULSE_VIOLENCE*2);
 }
@@ -1772,7 +1772,7 @@ dlog("in do_weapon_load");
    if ((GET_STR(ch)+(GET_ADD(ch)/3))<fw->obj_flags.value[0]) {
      sprintf(arg1,"(%s) can't load (%s) because it requires (%d) strength to wield",
      GET_NAME(ch),fw->name,fw->obj_flags.value[0]);
-     log(arg1);
+     klog(arg1);
       send_to_char("You aren't strong enough to draw such a mighty weapon.\n\r",ch);
       return;
    }
@@ -1844,7 +1844,7 @@ dlog("in do_fire");
       send_to_char("The proper format for fire is: fire <target>\n\r",ch);
       return;
    }
-   (char *)targ = get_char_linear(ch, arg, &rng, &dr);
+   targ = get_char_linear(ch, arg, &rng, &dr);
         if (targ && targ == ch) {
           send_to_char("You can't fire that at yourself!\n\r",ch);
           return;
@@ -1910,7 +1910,7 @@ dlog("in do_throw");
         }
 	throw = get_obj_in_list_vis(ch, arg1, ch->carrying);
         /* Check if second argument is a character or direction */
-        (char *)targ = get_char_linear(ch, arg2, &rng, &dr);
+        targ = get_char_linear(ch, arg2, &rng, &dr);
         if (targ && targ == ch) {
           send_to_char("You can't throw that at yourself!\n\r",ch);
 	  return;

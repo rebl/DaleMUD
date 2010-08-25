@@ -3,6 +3,7 @@
   See license.doc for distribution terms.   DaleMUD is based on DIKUMUD
 */
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -86,10 +87,10 @@ dlog("in do_junk");
 
   only_argument(argument, arg);
   if (*arg) {
-    if (getall(arg,newarg)!=NULL) {
+    if (getall(arg,newarg)!=0) {
       num = -1;
       strcpy(arg,newarg);
-    } else if ((p = getabunch(arg,newarg))!=NULL) {
+    } else if ((p = getabunch(arg,newarg))!=0) {
       num = p;                     
       strcpy(arg,newarg);
     } else {
@@ -263,8 +264,8 @@ dlog("in do_quit");
   if (GET_POS(ch) < POSITION_STUNNED) {
     send_to_char("You die before your time!\n\r", ch);
     sprintf(buf, "%s dies via quit.", GET_NAME(ch));
-    log(buf);
-    die(ch,NULL);    
+    klog(buf);
+    die(ch,TYPE_BLAST);    
     return;
   }
   
@@ -517,7 +518,7 @@ dlog("in do_steal");
   if(IS_IMMORTAL(victim) && !IS_IMMORTAL(ch)) {
     send_to_char("Steal from a God?!?  Oh the thought!\n\r", ch);
     sprintf(buf, "NOTE: %s tried to steal from GOD %s", GET_NAME(ch), GET_NAME(victim));
-    log(buf);
+    klog(buf);
     return;
   }
 

@@ -6,7 +6,7 @@
 #define DIMD_CLOSED	3
 #define DIMD_CLOSING	4
 
-#define DIMDLOG(msg) log(msg)
+#define DIMDLOG(msg) klog(msg)
 
 
 #define UNDEFINED -1

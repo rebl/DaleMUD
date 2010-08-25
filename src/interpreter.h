@@ -17,9 +17,9 @@ Dwarves:   Shorter. Less Movement. Infravision. Higher con, Lower dex,\n\r\
            faster hit point gain.  less damage from poison, racial hatreds\n\r\
 Moon Elf:  More Movement. Faster Mana gain, Higher dex, Lower con\n\r\
 	   Detect secret doors, racial hatreds, Infra vision\n\r\
-Gold Elf:  Same as Moon, except more intellengent and less wisdom. 
-Wild Elf:  Same as Moon except stronger, less intellengent.
-Sea Elf:   Same as moon except healthier and stronger, less dexterious.
+Gold Elf:  Same as Moon, except more intellengent and less wisdom.\n\r\
+Wild Elf:  Same as Moon except stronger, less intellengent.\n\r\
+Sea Elf:   Same as moon except healthier and stronger, less dexterious.\n\r\
 Dark Elf:  Same as elves, but higher dex, infravision, class limits are\n\r\
 	   different. Minus to hit in lighted rooms.\n\r\
 Humans:    Average...Unlimited in all classes only race that is.\n\r\
@@ -79,7 +79,7 @@ memorization for his powers. Sorcerer's will sit and memorize a spell of thier\n
 choice and then after doing so can 'recall' this spell. Sorcerer's are said\n\r\
 to be weaker at lower levels than most classes, but after they attain higher\n\r\
 experince they can become one of the most powerful.\n\r\
-\n\r\n\r
+\n\r\n\r\
 Enter 'yes' if you want to be a Sorcerer type of mage, hit return if you\n\r\
 do not want to be a Sorcerer (yes/no) :"
 

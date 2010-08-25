@@ -3,6 +3,7 @@
   See license.doc for distribution terms.   DaleMUD is based on DIKUMUD
 */
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -58,7 +59,7 @@ char *fread_action(FILE *fl)
   for (;;)	{
     fgets(buf, MAX_STRING_LENGTH, fl);
     if (feof(fl))		{
-      log("Fread_action - unexpected EOF.");
+      klog("Fread_action - unexpected EOF.");
       exit(0);
     }
     

@@ -1,4 +1,5 @@
-
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include <assert.h>
 
@@ -16,7 +17,8 @@ extern long SystemFlags;
 
 /* Extern procedures */
 
-char *strdup(char *source);
+/* RBL */
+/* char *strdup(char *source); */
 
 /*
   druid spells
@@ -2343,7 +2345,7 @@ void spell_portal(byte level, struct char_data *ch,
   if (!(nrp = real_roomp(tmp_ch->in_room))) {
     char str[180];
     sprintf(str, "%s not in any room", GET_NAME(tmp_ch));
-    log(str);
+    klog(str);
     send_to_char("The magic cannot locate the target\n", ch);
     return;
   }

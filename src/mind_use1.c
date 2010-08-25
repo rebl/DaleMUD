@@ -1,10 +1,10 @@
-
 /*
 ***	 DaleMUD 
 ***	 PSI skills
 */
 
 #include <stdio.h>
+#include <string.h>
 #include "protos.h"
 
 extern char *dirs[]; 
@@ -21,7 +21,7 @@ void mind_use_burn( byte level, struct char_data *ch, char *arg, int type,
 			mind_burn(level, ch, 0, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_burn");
+                     klog("Serious screw-up in mind_burn");
                 break;
        }
 }
@@ -41,7 +41,7 @@ void mind_use_teleport( byte level, struct char_data *ch, char *arg, int type,
 		mind_teleport(level, ch, victim, 0);
 		break;
                 default : 
-                     log("Serious screw-up in mind_teleport");
+                     klog("Serious screw-up in mind_teleport");
                 break;
        }
 }
@@ -57,7 +57,7 @@ void mind_use_probability_travel( byte level, struct char_data *ch, char *arg, i
 			mind_probability_travel(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_probability_travel");
+                     klog("Serious screw-up in mind_probability_travel");
                 break;
        }
 }
@@ -73,7 +73,7 @@ void mind_use_danger_sense( byte level, struct char_data *ch, char *arg, int typ
 			mind_danger_sense(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_danger_sense");
+                     klog("Serious screw-up in mind_danger_sense");
                 break;
        }
 }
@@ -89,7 +89,7 @@ void mind_use_clairvoyance( byte level, struct char_data *ch, char *arg, int typ
 			mind_clairvoyance(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_clairvoyance");
+                     klog("Serious screw-up in mind_clairvoyance");
                 break;
        }
 }
@@ -105,7 +105,7 @@ void mind_use_disintergrate( byte level, struct char_data *ch, char *arg, int ty
 			mind_disintergrate(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_disintergrate");
+                     klog("Serious screw-up in mind_disintergrate");
                 break;
        }
 }
@@ -144,7 +144,7 @@ if (!ch->specials.fighting) {
 			mind_telekinesis(level, ch, victim, i);
 			break;
                 default : 
-                     log("Serious screw-up in mind_telekinesis");
+                     klog("Serious screw-up in mind_telekinesis");
                 break;
        }
 }
@@ -160,7 +160,7 @@ void mind_use_levitation( byte level, struct char_data *ch, char *arg, int type,
 			mind_levitation(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_levitation");
+                     klog("Serious screw-up in mind_levitation");
                 break;
        }
 }
@@ -176,7 +176,7 @@ void mind_use_cell_adjustment( byte level, struct char_data *ch, char *arg, int 
 			mind_cell_adjustment(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_cell_adjustment");
+                     klog("Serious screw-up in mind_cell_adjustment");
                 break;
        }
 }
@@ -192,7 +192,7 @@ void mind_use_chameleon( byte level, struct char_data *ch, char *arg, int type,
 			mind_chameleon(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_chameleon");
+                     klog("Serious screw-up in mind_chameleon");
                 break;
        }
 }
@@ -208,7 +208,7 @@ void mind_use_psi_strength( byte level, struct char_data *ch, char *arg, int typ
 			mind_psi_strength(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_psi_strength");
+                     klog("Serious screw-up in mind_psi_strength");
                 break;
        }
 }
@@ -224,7 +224,7 @@ void mind_use_mind_over_body( byte level, struct char_data *ch, char *arg, int t
 			mind_mind_over_body(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_mind_over_body");
+                     klog("Serious screw-up in mind_mind_over_body");
                 break;
        }
 }
@@ -240,7 +240,7 @@ void mind_use_domination( byte level, struct char_data *ch, char *arg, int type,
 			mind_domination(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_domination");
+                     klog("Serious screw-up in mind_domination");
                 break;
        }
 }
@@ -256,7 +256,7 @@ void mind_use_mind_wipe( byte level, struct char_data *ch, char *arg, int type,
 			mind_mind_wipe(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_wipe");
+                     klog("Serious screw-up in mind_wipe");
                 break;
        }
 }
@@ -272,7 +272,7 @@ void mind_use_psychic_crush( byte level, struct char_data *ch, char *arg, int ty
 			mind_psychic_crush(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_psyic_crush");
+                     klog("Serious screw-up in mind_psyic_crush");
                 break;
        }
 }
@@ -288,7 +288,7 @@ void mind_use_tower_iron_will( byte level, struct char_data *ch, char *arg, int 
 			mind_tower_iron_will(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_tower_iron_will");
+                     klog("Serious screw-up in mind_tower_iron_will");
                 break;
        }
 }
@@ -304,7 +304,7 @@ void mind_use_mindblank( byte level, struct char_data *ch, char *arg, int type,
 			mind_mindblank(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_mindblank");
+                     klog("Serious screw-up in mind_mindblank");
                 break;
        }
 }
@@ -320,7 +320,7 @@ void mind_use_psychic_impersonation( byte level, struct char_data *ch, char *arg
 			mind_psychic_impersonation(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_psychic_impersonation");
+                     klog("Serious screw-up in mind_psychic_impersonation");
                 break;
        }
 }
@@ -336,7 +336,7 @@ void mind_use_ultra_blast( byte level, struct char_data *ch, char *arg, int type
 			mind_ultra_blast(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_ultra_blast");
+                     klog("Serious screw-up in mind_ultra_blast");
                 break;
        }
 }
@@ -352,7 +352,7 @@ void mind_use_intensify( byte level, struct char_data *ch, char *arg, int type,
 			mind_intensify(level, ch, victim, 0);
 			break;
                 default : 
-                     log("Serious screw-up in mind_intensify");
+                     klog("Serious screw-up in mind_intensify");
                 break;
        }
 }

@@ -4,6 +4,7 @@
 */
 
 
+#include <stdlib.h>
 #include <errno.h>
 #include <stdio.h>
 #include <ctype.h>
@@ -156,12 +157,14 @@ void check_affected(char *msg,char *msg2)
 
   for(c=character_list;c;c=c->next)
     if(c && c->affected)
-      for(hjp=c->affected;hjp;old_af = hjp, hjp=hjp->next)
+      for(hjp=c->affected, old_af=NULL;hjp;old_af = hjp, hjp=hjp->next)
         if(hjp->type > MAX_EXIST_SPELL || hjp->type < 0) {
           sprintf(buf,"bogus hjp->type for (%s).\r\n", GET_NAME(c));
           writetofile(buf);
-          sprintf(buf,"string in old_af: %s\r\n", old_af);
-          writetofile(buf);
+	  if (old_af != NULL) {
+            sprintf(buf,"string in old_af: %s\r\n", old_af);
+            writetofile(buf);
+	  }
           sprintf(buf,"string in cur_af: %s\r\n", hjp);
           writetofile(buf);
           fflush(debugf);
@@ -264,7 +267,7 @@ int main (int argc, char **argv)
     switch (*(argv[pos] + 1))  {
     case 'l':
       lawful = 1;
-      log("Lawful mode selected.");
+      klog("Lawful mode selected.");
       break;
     case 'd':
       if (*(argv[pos] + 2))
@@ -272,36 +275,36 @@ int main (int argc, char **argv)
       else if (++pos < argc)
 	dir = argv[pos];
       else   	{
-	log("Directory arg expected after option -d.");
+	klog("Directory arg expected after option -d.");
 	assert(0);
       }
       break;
     case 's':
       no_specials = 1;
-      log("Suppressing assignment of special routines.");
+      klog("Suppressing assignment of special routines.");
       break;
 
 	case 'A':
 		SET_BIT(SystemFlags,SYS_NOANSI);
-		log("Disabling ALL color");
+		klog("Disabling ALL color");
 		break;
 	case 'N':
 		SET_BIT(SystemFlags,SYS_SKIPDNS);
-		log("Disabling DNS");
+		klog("Disabling DNS");
 		break;
 	case 'R':
 		SET_BIT(SystemFlags,SYS_REQAPPROVE);
-		log("Newbie authorizes enabled");
+		klog("Newbie authorizes enabled");
 		break;
 	case 'L':
 		SET_BIT(SystemFlags,SYS_LOGALL);
-		log("Logging all users");
+		klog("Logging all users");
 		break;
          
     default:
       sprintf(buf, "Unknown option -% in argument string.",
 	      *(argv[pos] + 1));
-      log(buf);
+      klog(buf);
       break;
     }
     pos++;
@@ -320,7 +323,7 @@ int main (int argc, char **argv)
   Uptime = time(0);
   
   sprintf(buf, "Running game on port %d.", mud_port);
-  log(buf);
+  klog(buf);
   
   if (chdir(dir) < 0)	{
     perror("chdir");
@@ -328,22 +331,22 @@ int main (int argc, char **argv)
   }
   
   sprintf(buf, "Using %s as data directory.", dir);
-  log(buf);
+  klog(buf);
   
   srandom(time(0));
   WizLock = FALSE;
 
 #if SITELOCK
-  log("Blanking denied hosts.");
+  klog("Blanking denied hosts.");
   for(a = 0 ; a<= MAX_BAN_HOSTS ; a++) 
     strcpy(hostlist[a]," \0\0\0\0");
   numberhosts = 0;
 
 #if LOCKGROVE
-  log("Locking out Host: oak.grove.iup.edu.");
+  klog("Locking out Host: oak.grove.iup.edu.");
   strcpy(hostlist[0],"oak.grove.iup.edu");
   numberhosts = 1; 
-  log("Locking out Host: everest.rutgers.edu.");
+  klog("Locking out Host: everest.rutgers.edu.");
   strcpy(hostlist[1],"everest.rutgers.edu");
   numberhosts = 2;
 #endif /* LOCKGROVE */
@@ -381,17 +384,17 @@ int run_the_game(int port)
     
     descriptor_list = NULL;
   
-  log("Signal trapping.");
+  klog("Signal trapping.");
   signal_setup();
   
-  log("Opening mother connection.");
+  klog("Opening mother connection.");
   s = init_socket(port);
   
 #ifdef USE_LAWFUL
 
 if (lawful && load() >= 6)
     {
-      log("System load too high at startup.");
+      klog("System load too high at startup.");
       coma(1);
     }
  
@@ -399,7 +402,7 @@ if (lawful && load() >= 6)
  
   boot_db();
   
-  log("Entering game loop.");
+  klog("Entering game loop.");
   
   game_loop(s);
   
@@ -408,11 +411,11 @@ if (lawful && load() >= 6)
   PROFILE(monitor(0);)
     
   if (reboot)  {
-    log("Rebooting.");
+    klog("Rebooting.");
     assert(52);           /* what's so great about HHGTTG, anyhow? */
   }
   
-  log("Normal termination of game.");
+  klog("Normal termination of game.");
 }
 
 
@@ -436,6 +439,7 @@ int game_loop(int s)
   struct descriptor_data *point, *next_point;
   int mask;
   struct room_data *rm;
+  sigset_t jmask, emask;
 
 /*  extern struct descriptor_data *descriptor_list; */
   extern int pulse;
@@ -459,9 +463,21 @@ int game_loop(int s)
   /* !! Change if more needed !! */
   avail_descs = getdtablesize() -2; /* never used, pointless? */
   
+#if 0
   mask = sigmask(SIGUSR1) | sigmask(SIGUSR2) | sigmask(SIGINT) |
     sigmask(SIGPIPE) | sigmask(SIGALRM) | sigmask(SIGTERM) |
       sigmask(SIGURG) | sigmask(SIGXCPU) | sigmask(SIGHUP);
+#endif
+  sigemptyset(&jmask);
+  sigemptyset(&emask);
+  sigaddset(&jmask, SIGUSR1);
+  sigaddset(&jmask, SIGUSR2);
+  sigaddset(&jmask, SIGINT);
+  sigaddset(&jmask, SIGPIPE);
+  sigaddset(&jmask, SIGALRM);
+  sigaddset(&jmask, SIGTERM);
+  sigaddset(&jmask, SIGXCPU);
+  sigaddset(&jmask, SIGHUP);
   
   /* Main loop */
   while (!mudshutdown)  {
@@ -525,7 +541,10 @@ int game_loop(int s)
       last_time.tv_sec++;
     }
     
+#if 0
     sigsetmask(mask);
+#endif
+    sigprocmask(SIG_SETMASK, &jmask, NULL);
 
     if (select(maxdesc + 1, &input_set, &output_set, &exc_set, &null_time) 
 	< 0)   	{
@@ -545,7 +564,10 @@ int game_loop(int s)
       /*assert(0);*/
     }
     
+#if 0
     sigsetmask(0);
+#endif
+    sigprocmask(SIG_SETMASK, &emask, NULL);
     
     /* Respond to whatever might be happening */
     
@@ -804,7 +826,7 @@ void write_to_q(char *txt, struct txt_q *queue)
 
 
   if (!queue) {
-    log("Output message to non-existant queue");
+    klog("Output message to non-existant queue");
     return;
   }
 
@@ -813,9 +835,9 @@ void write_to_q(char *txt, struct txt_q *queue)
 
 
   if (strl < 0 || strl > 35000) {
-    log("strlen returned bogus length in write_to_q, string was: ");
+    klog("strlen returned bogus length in write_to_q, string was: ");
     for(strl=0;strl<120;strl++) tbuf[strl]=txt[strl]; tbuf[strl]=0;
-    log(strl);
+    klog(strl);
 	if (new)
 	    free(new);
     return;
@@ -829,7 +851,7 @@ void write_to_q(char *txt, struct txt_q *queue)
 	memory_check("After strcpy write_to_q",txt);
 #else
 	 if (!(new->text = strdup(txt))){
-		log("strdup returned null");
+		klog("strdup returned null");
 		assert(0);
 	}
 #endif
@@ -852,7 +874,7 @@ void write_to_q(char *txt, struct txt_q *queue)
   int strl;
 
   if (!queue) {
-    log("Output message to non-existant queue");
+    klog("Output message to non-existant queue");
     return;
   }
 
@@ -861,9 +883,9 @@ void write_to_q(char *txt, struct txt_q *queue)
   CREATE(new, struct txt_block, 1);
   strl = strlen(txt);
   if (strl < 0 || strl > 45000) {
-    log("strlen returned bogus length in write_to_q, string was:");
+    klog("strlen returned bogus length in write_to_q, string was:");
     for(strl=0;strl<120;strl++) tbuf[strl]=txt[strl]; tbuf[strl]=0;
-    log(strl);
+    klog(strl);
 if (new)
     free(new);
     return;
@@ -890,7 +912,7 @@ void write_to_output(char *txt, struct descriptor_data *t)
 
    /* if we're in the overflow state already, ignore this */
    if (t->bufptr < 0) {
-      log("over flow stat in write_to_output, comm.c");
+      klog("over flow stat in write_to_output, comm.c");
       assert(0);
       return;
       }
@@ -1097,7 +1119,7 @@ int new_connection(int s)
 #ifdef sun
    struct sockaddr peer;
 #endif
-  int i;
+  unsigned int i;
   int t;
   char buf[100];
   
@@ -1118,7 +1140,7 @@ int new_connection(int s)
   if (!getpeername(t, &peer, &i))	{
     *(peer.sa_data + 49) = '\0';
     sprintf(buf, "New connection from addr %s.", peer.sa_data);
-    log(buf);
+    klog(buf);
   }
 
 #endif
@@ -1129,7 +1151,8 @@ int new_connection(int s)
 int new_descriptor(int s)
 {
 
-  int desc,size,i;
+  int desc,i;
+  unsigned int size;
   struct descriptor_data *newd;
   struct hostent *from;
   struct sockaddr_in sock;
@@ -1207,7 +1230,7 @@ int new_descriptor(int s)
    if (isbanned(newd->host) == BAN_ALL) {
       close(desc);
       sprintf(buf2, "Connection attempt denied from [%s]", newd->host);
-      log(buf2);
+      klog(buf2);
 if (newd)
       free(newd);
       return(0);
@@ -1215,7 +1238,7 @@ if (newd)
 #endif 
 
    sprintf(buf2, "New connection from addr %s: %d: %d", newd->host, desc, maxdesc);
-   log(buf2);
+   klog(buf2);
 
 #if 0
   identd_test(sock);	/* test stuff */
@@ -1303,7 +1326,7 @@ int process_output(struct descriptor_data *t)
       strcpy(i+2, t->output);
 
    if (t->bufptr < 0) {
-       log("***** OVER FLOW **** in process_output, comm.c");
+       klog("***** OVER FLOW **** in process_output, comm.c");
        strcat(i+2, "**OVERFLOW**");
       }
 
@@ -1387,7 +1410,7 @@ int write_to_descriptor( int desc, char *txt)
 	       break;
        sprintf(buf,"<#=%d> had a error (%d) in write to descriptor (Broken Pipe?)",
        desc, errno);
-       log(buf);
+       klog(buf);
              perror( "Write_to_descriptor" );
 	     /* close_socket_fd(desc); */
 	     return(-1); 
@@ -1431,7 +1454,7 @@ int process_input(struct descriptor_data *t)
 	  break;
 	}
       } else {
-	log("EOF encountered on socket read.");
+	klog("EOF encountered on socket read.");
 	return(-1);
       }
     }
@@ -1532,7 +1555,7 @@ int process_input(struct descriptor_data *t)
 	  break;
 	}
       } else {
-	log("EOF encountered on socket read.");
+	klog("EOF encountered on socket read.");
 	return(-1);
       }
     }
@@ -1613,7 +1636,7 @@ int process_input(struct descriptor_data *t)
 
 void close_sockets(int s)
 {
-  log("Closing all sockets.");
+  klog("Closing all sockets.");
   
   while (descriptor_list)
     close_socket(descriptor_list);
@@ -1632,7 +1655,7 @@ void close_socket(struct descriptor_data *d)
 
 
   if (!d) {
-	log("!d in close_socket");
+	klog("!d in close_socket");
 	  return;
   }
 
@@ -1659,7 +1682,7 @@ slog("begin close_socket");
        do_save(d->character, "", 0);
       act("$n has lost $s touch with reality.", TRUE, d->character, 0, 0, TO_ROOM);
       sprintf(buf, "Closing link to: %s.", GET_NAME(d->character));
-      log(buf);
+      klog(buf);
       if (IS_NPC(d->character)) { /* poly, or switched god */
 	if (d->character->desc)
 	  d->character->orig = d->character->desc->original;
@@ -1677,12 +1700,12 @@ slog("begin close_socket");
     } else {
       if (GET_NAME(d->character)) {
 	sprintf(buf, "Losing player: %s.", GET_NAME(d->character));
-	log(buf);
+	klog(buf);
       }
       free_char(d->character);
     }
   else
-    log("Losing descriptor without char.");
+    klog("Losing descriptor without char.");
   
   
   if (next_to_process == d)    	/* to avoid crashing the process loop */
@@ -1700,7 +1723,7 @@ slog("begin close_socket");
          if (tmp != NULL) 
              tmp->next = d->next;
           else   {
-	log(" ERROR< ERROR< ERROR< ERROR< corrupted list...");
+	klog(" ERROR< ERROR< ERROR< ERROR< corrupted list...");
   /* not sure where this gets fried, but it keeps poping up now and */
   /* then, let me know if you figure it out. msw 		    */
   
@@ -1763,7 +1786,7 @@ void coma(int s)
   int workhours(void);
   int load(void);
   
-  log("Entering comatose state.");
+  klog("Entering comatose state.");
   
   sigsetmask(sigmask(SIGUSR1) | sigmask(SIGUSR2) | sigmask(SIGINT) |
 	     sigmask(SIGPIPE) | sigmask(SIGALRM) | sigmask(SIGTERM) |
@@ -1782,7 +1805,7 @@ void coma(int s)
     }
     if (FD_ISSET(s, &input_set))	{
       if (load() < 6){
-	log("Leaving coma with visitor.");
+	klog("Leaving coma with visitor.");
 	sigsetmask(0);
 	return;
       }
@@ -1795,13 +1818,13 @@ void coma(int s)
     
     tics = 1;
     if (workhours())  {
-      log("Working hours collision during coma. Exit.");
+      klog("Working hours collision during coma. Exit.");
       assert(0);
     }
   }
   while (load() >= 6);
   
-  log("Leaving coma.");
+  klog("Leaving coma.");
   sigsetmask(0);
 #endif
 }
@@ -2088,7 +2111,7 @@ void str2ansi(char *p2, char *p1, int start, int stop)
 	}
 
 if (strlen(p2)+1 > 5)
-	log("DOH!");  /* remove this after test period */
+	klog("DOH!");  /* remove this after test period */
 }
 
 /* higher-level communication */
@@ -2190,8 +2213,8 @@ act_switch_c:
             i = "$"; 
 	    break;
 	  default:
-	    log("Illegal $-code to act():");
-	    log(str);
+	    klog("Illegal $-code to act():");
+	    klog(str);
 	    break;
 	  }
 	  
@@ -2422,7 +2445,7 @@ int construct_prompt(char *outbuf, struct char_data *ch)
                     default:
 /*
                         sprintf(tbuf,"Invalid Immmortal Prompt code '%c'",*pr_scan);
-                        log(tbuf);
+                        klog(tbuf);
 */
                         *tbuf=0;
                         break;
@@ -2431,7 +2454,7 @@ int construct_prompt(char *outbuf, struct char_data *ch)
                 default:
 /*  
                     sprintf(tbuf,"Invalid Prompt code '%c'",*pr_scan);
-                    log(tbuf);
+                    klog(tbuf);
 */
                     *tbuf=0;
                     break;
@@ -2607,7 +2630,8 @@ void InitScreen(struct char_data *ch)
 void identd_test(struct sockaddr_in in_addr)
 {
         struct sockaddr_in addr;
-        int fd, addrlen, lport, fport;
+        int fd, lport, fport;
+	unsigned int addrlen;
         FILE *fp_in, *fp_out;
         char buf[8192], reply_type[81], opsys[81], ident[1024];
         int i;
@@ -2624,7 +2648,7 @@ void identd_test(struct sockaddr_in in_addr)
 
   if (connect(fd, (struct sockaddr *)&addr, addrlen) == -1) {
     sprintf(buf,"identd server not responding, errno: %d\n", errno);
-    log(buf);
+    klog(buf);
     return;
   }
  
@@ -2653,13 +2677,13 @@ void identd_test(struct sockaddr_in in_addr)
   }
   if(strcmp(reply_type, "ERROR") == 0) {
     sprintf(buf, "Ident error: error code: %s\n", opsys);
-    log(buf);
+    klog(buf);
   } else if(strcmp(reply_type, "USERID") != 0) {
     sprintf(buf, "Ident error: illegal reply type: %s\n", reply_type);
-    log(buf);
+    klog(buf);
   } else {
     sprintf(buf, "ident data -- system:%s user:%s\n", opsys, ident);
-    log(buf);
+    klog(buf);
   }
  
   fclose(fp_out);

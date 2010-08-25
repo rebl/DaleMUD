@@ -1,11 +1,9 @@
-
-
-
-
 /*
 ***  DaleMUD
 */
 
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 
 #include "protos.h"
@@ -415,7 +413,7 @@ int find_path(int in_room, int (*predicate)(), void *c_data,
 
 #if 0
    if (top_of_world > MAX_ROOMS) {
-     log("TRACK Is disabled, too many rooms.\n\rContact Loki soon.\n\r");
+     klog("TRACK Is disabled, too many rooms.\n\rContact Loki soon.\n\r");
     return -1;
    }
 #endif
@@ -2112,12 +2110,12 @@ if (IS_SET(SystemFlags,SYS_NOPORTAL)) {
      for (f_list=leader->followers; f_list ; f_list = f_list->next)     
      {
        if (!f_list)       {
-         log ("logic error in portal follower loop");
+         klog ("logic error in portal follower loop");
          return;
        }
        follower = f_list->follower;
        if (!follower)       {
-         log ("pointer error in portal follower loop");
+         klog ("pointer error in portal follower loop");
          return;
        }
        

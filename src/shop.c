@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -141,7 +141,7 @@ void shopping_buy( char *arg, struct char_data *ch,
       return;
     };
   
-  if ((num = getabunch(argm,newarg))!=NULL) {
+  if ((num = getabunch(argm,newarg))!=0) {
     strcpy(argm,newarg);
   }
   if (num == 0) num = 1;
@@ -716,7 +716,7 @@ void assign_the_shopkeepers()
     if(shop_index[temp1].keeper==-1) {
       sprintf(buf,"Shop in room %d have NO shopkeeper\n",
              shop_index[temp1].in_room);
-      log(buf);
+      klog(buf);
     } else {
       mob_index[shop_index[temp1].keeper].func = shop_keeper;
     }

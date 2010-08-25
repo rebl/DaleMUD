@@ -823,7 +823,7 @@ virtual = (tmp->equipment[WIELD]->item_number >= 0) ? obj_index[tmp->equipment[W
               /* or the holy symbol, lets drain'em one level! */
       			
   if (GetMaxLevel(tmp) <=1) {
-  	 log("Strahd tried to drain char below level 1");
+  	 klog("Strahd tried to drain char below level 1");
      } else {
 /* fix this later... 						   */
 /*  act("$N bites you hard, OUCH!!!", FALSE, tmp, 0, ch, TO_CHAR); */
@@ -871,7 +871,7 @@ virtual = (tmp->equipment[WIELD]->item_number >= 0) ? obj_index[tmp->equipment[W
       	    	/* locations!                                                   */
       { 
 
-	log("Loading Ravenloft random location items.");
+	klog("Loading Ravenloft random location items.");
 	/* place sun sword ... */
 /*        if (obj_index[SUN_SWORD_RAVENLOFT].number < MAX_SUN_SWORDS) */
 
@@ -932,7 +932,7 @@ int banshee(struct char_data *ch, int cmd, char *arg, struct char_data *mob, int
       tmp=ch->specials.fighting;
       if (GetMaxLevel(tmp) <=1)
       {
-        log("Banshee tried to drain char below level 1");
+        klog("Banshee tried to drain char below level 1");
       } else /* if GetmaxLevel */ 
        {
         act("$n bites $N who looks drained!", FALSE, ch, 0, tmp, TO_ROOM);
@@ -2409,7 +2409,7 @@ int cleric_imp(struct char_data *ch, int cmd, char *arg, struct char_data *mob, 
     case 18:      
     case 19:      
     default:
-      act("$n utters the words 'Hurts, doesn't it??'.",1,ch,0,0,TO_ROOM);
+      act("$n utters the words 'Hurts, doesn't it?'.",1,ch,0,0,TO_ROOM);
       cast_harm(GetMaxLevel(ch), ch, "", SPELL_TYPE_SPELL, vict, 0);
       break;
     }
@@ -2709,7 +2709,7 @@ if (ch->specials.fighting && ch->specials.fighting != ch)       {
         vict = ch->specials.fighting;
 
         if (!vict) {
-             log("!vict in paladin");
+             klog("!vict in paladin");
              return(FALSE);
         }
 
@@ -2788,7 +2788,7 @@ if (ch->specials.fighting && ch->specials.fighting != ch)       {
 
   if (IS_SET(ch->specials.act, ACT_GREET)) {
      for (tch=real_roomp(ch->in_room)->people; tch; tch = tch->next_in_room) { 
-log("paladin trying greet someone..\n");
+klog("paladin trying greet someone..\n");
         if (!IS_NPC(tch) && !number(0,4) ) { 
            if (GetMaxLevel(tch) > 5 && CAN_SEE(ch,tch)) {
               if(GET_ALIGNMENT(tch) >= 900) {
@@ -3059,7 +3059,7 @@ int Psionist(struct char_data *ch, int cmd, char *arg, struct char_data *mob, in
       return(TRUE);
       }
     group = ((targ->followers || targ->master) ? TRUE : FALSE);
-    log(buf);
+    klog(buf);
     if (group && (dice(1,2)-1)) group = FALSE;
     if (!group)
        { /*not fighting a group, or has selected person fighting, for spec*/
@@ -3182,7 +3182,7 @@ if (ch->equipment[WIELD]!=obj)    	/* we are not wielded */
 	return(FALSE);
 
   if (!IS_SET(ch->specials.affected_by2,AFF2_BERSERK)) {
-log("trying to berserk because of item ");
+klog("trying to berserk because of item ");
   	/* not berserked go berserk! */
 	do_berserk(ch,"",0);
 	return(FALSE);

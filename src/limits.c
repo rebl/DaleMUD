@@ -1,4 +1,5 @@
-
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include <assert.h>
 
@@ -18,10 +19,12 @@ extern int RacialMax[][MAX_CLASS];
 
 
 
-char *ClassTitles(struct char_data *ch)
+char *ClassTitles(struct char_data *ch, char *buf)
 {
   unsigned char i, count=0;
+#if 0
   char buf[256];
+#endif
   
     for (i = MAGE_LEVEL_IND; i < MAX_CLASS; i++) {
       if (GET_LEVEL(ch, i)) {
@@ -467,14 +470,14 @@ void advance_level(struct char_data *ch, int class)
 
 
   if (class > MAX_CLASS) {
-    log("Bad advance class.. no such class");
+    klog("Bad advance class.. no such class");
     return;
   }
   
   if (GET_LEVEL(ch, class) > 0 && 
       GET_EXP(ch) < titles[class][GET_LEVEL(ch, class)+1].exp) {
     /*  they can't advance here */
-    log("Bad advance_level, can't advance in this class.");
+    klog("Bad advance_level, can't advance in this class.");
     return;
   }
 
@@ -776,10 +779,10 @@ if (ch->points.exp >
 void set_title(struct char_data *ch)
 {
   
-  char buf[256];
+  char buf[256], bufc[256];
   
   sprintf(buf, 
-     "the %s %s", RaceName[ch->race], ClassTitles(ch));
+     "the %s %s", RaceName[ch->race], ClassTitles(ch, bufc));
   
   if (GET_TITLE(ch)) {
     free(GET_TITLE(ch));
@@ -983,7 +986,7 @@ char buf[255];
 	save_obj(ch, &cost, 1);
        } else {
          sprintf(buf,"%s had a failed recp_offer, they are losing EQ!",GET_NAME(ch));
-         log(buf);
+         klog(buf);
          slog(buf);
         }
       
@@ -1017,7 +1020,7 @@ int ObjFromCorpse( struct obj_data *c)
        **  don't extract it.
        */
       c->contains = 0;
-      log("Memory lost in ObjFromCorpse.");
+      klog("Memory lost in ObjFromCorpse.");
       return(TRUE);
     }
   }

@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -6,7 +7,7 @@
 #include <dirent.h>
 
 #include "protos.h"
-#define RENT_INACTIVE 1         /* delete the users rent files after 1 month */
+#define RENT_INACTIVE 0         /* delete the users rent files after 1 month */
 
 #define OLD_ZONE_STUFF TRUE	/* for temp testing of reset_zon */
 
@@ -98,12 +99,12 @@ void boot_db()
         int i;
         extern int no_specials;
 
-        log("Boot db -- BEGIN.");
+        klog("Boot db -- BEGIN.");
 
-        log("Resetting the game time:");
+        klog("Resetting the game time:");
         reset_time();
 
-        log("Reading newsfile, credits, help-page, info and motd.");
+        klog("Reading newsfile, credits, help-page, info and motd.");
 
         file_to_string(NEWS_FILE, news);
         file_to_string(CREDITS_FILE, credits);
@@ -114,7 +115,7 @@ void boot_db()
         file_to_string(WIZLIST_FILE, wizlist);
         file_to_string("login", login);
 
-        log("Initializing Script Files.");
+        klog("Initializing Script Files.");
 
 #if 0
     /* some machines are pre-allocation specific when dealing with realloc */
@@ -123,7 +124,7 @@ void boot_db()
         InitScripts();
 #endif
 
-        log("Opening mobile, object and help files.");
+        klog("Opening mobile, object and help files.");
         if (!(mob_f = fopen(MOB_FILE, "r")))    {
                 perror("boot");
                 assert(0);
@@ -134,81 +135,81 @@ void boot_db()
                 assert(0);
         }
         if (!(help_fl = fopen(HELP_KWRD_FILE, "r")))
-          log("   Could not open help file.");
+          klog("   Could not open help file.");
         else
           help_index = build_help_index(help_fl, &top_of_helpt);
 
         if (!(wizhelp_fl = fopen(WIZ_HELP_FILE, "r")))
-          log("   Could not open wizhelp file.");
+          klog("   Could not open wizhelp file.");
         else
           wizhelp_index = build_help_index(wizhelp_fl, &top_of_wizhelpt);
 
 #if CLEAN_AT_BOOT
-        log("Clearing inactive players");
+        klog("Clearing inactive players");
         clean_playerfile();
 #endif
 
 #if 1
-        log("Booting mail system.");
+        klog("Booting mail system.");
         if (!scan_mail_file()) {
-           log("   Mail system error -- mail system disabled!");
+           klog("   Mail system error -- mail system disabled!");
            no_mail = 1;
         }
 #else
   no_mail=1;
 #endif
 
-        log("Loading zone table.");
+        klog("Loading zone table.");
         boot_zones();
 
-        log("Loading saved zone table.");
+        klog("Loading saved zone table.");
         boot_saved_zones();
 
-        log("Loading rooms.");
+        klog("Loading rooms.");
         boot_world();
 
-        log("Loading saved rooms.");
+        klog("Loading saved rooms.");
         boot_saved_rooms();
 
-        log("Generating index tables for mobile and object files.");
+        klog("Generating index tables for mobile and object files.");
 	mob_index = generate_indices(mob_f, &top_of_mobt, &top_of_sort_mobt, &top_of_alloc_mobt, MOB_DIR);
         obj_index = generate_indices(obj_f, &top_of_objt, &top_of_sort_objt, &top_of_alloc_objt, OBJ_DIR);
 
-        log("Renumbering zone table.");
+        klog("Renumbering zone table.");
         renum_zone_table(0);
 
-        log("Generating player index.");
+        klog("Generating player index.");
         build_player_index();
 
-        log("Loading fight messages.");
+        klog("Loading fight messages.");
         load_messages();
 
-        log("Loading social messages.");
+        klog("Loading social messages.");
         boot_social_messages();
 
-  log("Loading pose messages.");
+  klog("Loading pose messages.");
         boot_pose_messages();
 
-        log("Assigning function pointers:");
+        klog("Assigning function pointers:");
         if (!no_specials)       {
-                log("   Mobiles.");
+                klog("   Mobiles.");
                 assign_mobiles();
-                log("   Objects.");
+                klog("   Objects.");
                 assign_objects();
-                log("   Room.");
+                klog("   Room.");
                 assign_rooms();
         }
 
-        log("   Commands.");
+        klog("   Commands.");
         assign_command_pointers();
-        log("   Spells.");
+        klog("   Spells.");
         assign_spell_pointers();
 
-        log("Updating characters with saved items:");
+        klog("Updating characters with saved items:");
         update_obj_file();
 
 #ifdef SAVEWORLD
-        log("Loading saved rooms.");
+        klog("Loading saved rooms.");
         ReloadRooms();
 #endif
 
@@ -242,7 +243,7 @@ void boot_db()
 
         reset_q.head = reset_q.tail = 0;
 
-        log("Boot db -- DONE.");
+        klog("Boot db -- DONE.");
 }
 
 
@@ -316,7 +317,7 @@ void reset_time()
         sprintf(buf,"   Current Gametime: %dH %dD %dM %dY.",
                 time_info.hours, time_info.day,
                 time_info.month, time_info.year);
-        log(buf);
+        klog(buf);
 
         weather_info.pressure = 960;
         if ((time_info.month>=7)&&(time_info.month<=12))
@@ -421,7 +422,7 @@ void build_player_index()
         sprintf(buf,"GOD: %s, Levels [%d][%d][%d][%d][%d][%d][%d][%d]",dummy.name,
                 dummy.level[0],dummy.level[1],dummy.level[2],dummy.level[3],
                 dummy.level[4],dummy.level[5],dummy.level[6],dummy.level[7]);
-        log(buf);
+        klog(buf);
 
         max = 0;
 
@@ -452,14 +453,14 @@ void build_player_index()
 
   top_of_p_file = top_of_p_table;
 
-  log("Began Wizlist Generation.");
+  klog("Began Wizlist Generation.");
 
   sprintf(wizlist, "\033[2J\033[0;0H\n\r\n\r");
   sprintf(buf, "-* Creator and Supreme Being [%d/1] *-\n\r",list_wiz.number[9]);
 
 
   center = (38 - (int) (str_len(buf)/2));
-  log("center computed.");
+  klog("center computed.");
   for(i = 0; i <= center; i++)
      strcat(wizlist, " ");
 
@@ -477,7 +478,7 @@ void build_player_index()
   }
 
   strcat(wizlist, "\n\r\n\r");
-  log("Creator Generated.");
+  klog("Creator Generated.");
 
   sprintf(buf, "-* Implementors [%d/4] *-\n\r", list_wiz.number[8]);
   center = 38 - (int) (str_len(buf)/2);
@@ -496,7 +497,7 @@ void build_player_index()
   }
 
   strcat(wizlist, "\n\r\n\r");
-  log("Implementors Generated.");
+  klog("Implementors Generated.");
 
   sprintf(buf, "-* Gods of Final Judgement [%d/6] *-\n\r", list_wiz.number[7]);
   center = 38 - (int) (str_len(buf)/2);
@@ -515,7 +516,7 @@ void build_player_index()
   }
 
   strcat(wizlist, "\n\r\n\r");
-  log("Gods of Final Judgement Generated.");
+  klog("Gods of Final Judgement Generated.");
 
   sprintf(buf, "-* Gods of Judgement [%d/8] *-\n\r", list_wiz.number[6]);
   center = 38 - (int) (str_len(buf)/2);
@@ -758,7 +759,7 @@ struct index_data *generate_indices(FILE *fl, int *top, int *sort_top, int *allo
 /* scan for directory entrys */
   if((dir=opendir(dirname))==NULL) {
     sprintf(tbuf,"unable to open index directory %s",dirname);
-    log(tbuf);
+    klog(tbuf);
     return(index);
   }
   while((ent=readdir(dir)) != NULL) {
@@ -774,7 +775,7 @@ struct index_data *generate_indices(FILE *fl, int *top, int *sort_top, int *allo
     sprintf(buf,"%s/%s",dirname, ent->d_name);
     if((f=fopen(buf,"rt")) == NULL) {
       sprintf(tbuf, "Can't open file %s for reading\n",buf);
-      log(tbuf);
+      klog(tbuf);
       continue;
     }
     if (!i)
@@ -1002,7 +1003,7 @@ void load_one_room(FILE *fl, struct room_data *rp)
     default:
       sprintf(buf,"unknown auxiliary code `%s' in room load of #%d",
               chk, rp->number);
-      log(buf);
+      klog(buf);
       break;
     }
   }
@@ -1028,7 +1029,7 @@ void boot_world()
 
   if (!(fl = fopen(WORLD_FILE, "r")))   {
     perror("fopen");
-    log("boot_world: could not open world file.");
+    klog("boot_world: could not open world file.");
     assert(0);
   }
 
@@ -1122,7 +1123,7 @@ void boot_saved_zones()
         long     zone;
 
   if ((dir = opendir("zones")) == NULL) {
-    log("Unable to open zones directory.\n");
+    klog("Unable to open zones directory.\n");
     return;
   }
 
@@ -1135,11 +1136,11 @@ void boot_saved_zones()
     sprintf(buf,"zones/%s",ent->d_name);
     if((fp=fopen(buf,"rt")) == NULL) {
       sprintf(buf, "Can't open file %s for reading\n",buf);
-      log(buf);
+      klog(buf);
       continue;
     }
     sprintf(buf,"Loading saved zone %d:%s",zone,zone_table[zone].name);
-    log(buf);
+    klog(buf);
     LoadZoneFile(fp,zone);
     fclose(fp);
   }
@@ -1155,7 +1156,7 @@ void boot_saved_rooms()
         long     rooms=0,vnum;
 
   if ((dir = opendir("rooms")) == NULL) {
-    log("Unable to open rooms directory.\n");
+    klog("Unable to open rooms directory.\n");
     return;
   }
 
@@ -1168,7 +1169,7 @@ void boot_saved_rooms()
     sprintf(buf,"rooms/%s",ent->d_name);
     if((fp=fopen(buf,"rt")) == NULL) {
       sprintf(buf, "Can't open file %s for reading\n",buf);
-      log(buf);
+      klog(buf);
       continue;
     }
     while (!feof(fp)) {
@@ -1197,7 +1198,7 @@ void boot_saved_rooms()
   }
   if(rooms) {
     sprintf(buf, "Loaded %d rooms",rooms);
-    log(buf);
+    klog(buf);
   }
 
 }
@@ -1206,7 +1207,7 @@ void boot_saved_rooms()
 #define LOG_ZONE_ERROR(ch, type, zone, cmd) {\
         sprintf(buf, "error in zone %s cmd %d (%c) resolving %s number", \
                 zone_table[zone].name, cmd, ch, type); \
-                  log(buf); \
+                  klog(buf); \
                   }
 
 void renum_zone_table(int spec_zone)
@@ -1421,7 +1422,7 @@ struct char_data *read_mobile(int nr, int type)
   CREATE(mob, struct char_data, 1);
 
   if (!mob){
-   log("Cannot create mob?! db.c read_mobile");
+   klog("Cannot create mob?! db.c read_mobile");
    return(FALSE);
   }
 
@@ -1847,7 +1848,7 @@ struct char_data *read_mobile(int nr, int type)
     char buf[200];
     sprintf(buf, "%s has gold > level * 1500 (%d)", mob->player.short_descr,
             mob->points.gold);
-    log(buf);
+    klog(buf);
   }
 
   /* set up things that all members of the race have */
@@ -1881,6 +1882,15 @@ struct char_data *read_mobile(int nr, int type)
 
   total_mbc += bc;
   mob_count++;
+
+  if (mob && mob->specials.default_pos == POSITION_DEAD || mob->specials.default_pos == POSITION_MORTALLYW || mob->specials.default_pos == POSITION_FIGHTING) {
+      mob->specials.default_pos = POSITION_STANDING;
+  }
+
+  if (mob && mob->specials.position == POSITION_DEAD || mob->specials.position == POSITION_MORTALLYW || mob->specials.position == POSITION_FIGHTING) {
+      mob->specials.position = mob->specials.default_pos;
+  }
+
   return(mob);
 }
 
@@ -2077,7 +2087,7 @@ struct obj_data *read_object(int nr, int type)
       sprintf(buf,"%s/%ld",OBJ_DIR,obj_index[nr].virtual);
       if((f = fopen(buf,"rt"))==NULL) {
         sprintf(buf,"can't open object file for object %ld", obj_index[nr].virtual);
-	log(buf);
+	klog(buf);
 	free_obj(obj);
 	return(0);
       }
@@ -2221,7 +2231,7 @@ void reset_zone(int zone)
       fl = fopen(buf, "r");
       if(!fl) 
       {
-        log("Unable to load scratch zone file for update.");
+        klog("Unable to load scratch zone file for update.");
         return;
       }
       ReadTextZone(fl);
@@ -2240,7 +2250,7 @@ void reset_zone(int zone)
     e = zone_table[zone].top;
     sprintf(buf, "Run time initialization of zone %s, rooms (%d-%d)",
             s, d, e);
-    log(buf);
+    klog(buf);
   }
 
   if (!zone_table[zone].cmd) {
@@ -2328,7 +2338,7 @@ void reset_zone(int zone)
             }
           } else if (obj = read_object(ZCMD.arg1, REAL)) {
             sprintf(buf, "Error finding room #%d", ZCMD.arg3);
-            log(buf);
+            klog(buf);
             last_cmd = 1;
           }  else {
             last_cmd = 0;
@@ -2417,7 +2427,7 @@ void reset_zone(int zone)
       default:
         sprintf(buf, "Undefd cmd in reset table; zone %d cmd# %d\n\r",
                 zone, cmd_no);
-        log(buf);
+        klog(buf);
         break;
       }
     else
@@ -2443,7 +2453,7 @@ void reset_zone(int zone)
       sprintf(buf, "world/mobs.%d", i);
       fl = fopen(buf, "r");
       if(!fl) {
-	log("Unable to load scratch zone file for update.");
+	klog("Unable to load scratch zone file for update.");
 	return;
       }
       ReadTextZone(fl);
@@ -2463,7 +2473,7 @@ void reset_zone(int zone)
     e = zone_table[zone].top;
     sprintf(buf, "Run time initialization of zone %s, rooms (%d-%d)",
 	    s, d, e);
-    log(buf);
+    klog(buf);
 
   }
 
@@ -2550,7 +2560,7 @@ void reset_zone(int zone)
 	    }
 	  } else if (obj = read_object(ZCMD.arg1, REAL)) {
 	    sprintf(buf, "Error finding room #%d", ZCMD.arg3);
-	    log(buf);
+	    klog(buf);
 	    last_cmd = 1;
 	  }  else {
 	    last_cmd = 0;
@@ -2642,7 +2652,7 @@ void reset_zone(int zone)
       default:
 	sprintf(buf, "Undefd cmd [%c] in reset table; zone %d cmd %d.",
 		ZCMD.command,zone, cmd_no);
-	log(buf);
+	klog(buf);
 	break;
       }
     else
@@ -2861,7 +2871,7 @@ void store_to_char(struct char_file_u *st, struct char_data *ch)
     if (ch->pc) {
             bzero(ch->pc,sizeof(struct pc_data));
        } else {
-        log("malloc for ch->pc failed, db.c store_to_char");
+        klog("malloc for ch->pc failed, db.c store_to_char");
      }
              ch->pc->plr=0;  /* should = st->act eventually */
              ch->pc->dimd_credits=0;
@@ -2912,7 +2922,7 @@ void char_to_store(struct char_data *ch, struct char_file_u *st)
   }
 
   if ((i >= MAX_AFFECT) && af && af->next)
-    log("WARNING: OUT OF STORE ROOM FOR AFFECTED TYPES!!!");
+    klog("WARNING: OUT OF STORE ROOM FOR AFFECTED TYPES!!!");
 
 
 
@@ -3051,7 +3061,7 @@ void save_char(struct char_data *ch, sh_int load_room)
 	char buf[256];
 	sprintf(buf,"%s has a negative weight carried of (%d) please fix me",
 		GET_NAME(ch),IS_CARRYING_W(ch));
-	log(buf);
+	klog(buf);
 	}
 	
   if (IS_NPC(ch)) {
@@ -3149,7 +3159,7 @@ char *fread_string(FILE *f1)
 
  if(i == MAX_STRING_LENGTH - 3) { /* We filled the buffer */
     buf[i] = '\0';
-    log("File too long (fread_string).");
+    klog("File too long (fread_string).");
     while(tmp = fgetc(f1))
         if(tmp == '~')
            break;
@@ -3214,7 +3224,7 @@ void free_obj(struct obj_data *obj)
         struct extra_descr_data *this, *next_one;
 
 if (!obj) {                             /* bug fix, msw */
-  log("!obj in free_obj, db.c");
+  klog("!obj in free_obj, db.c");
   return;
  }
         if (obj->name && *obj->name)    /* msw, bug fix */
@@ -3265,7 +3275,7 @@ int file_to_string(char *name, char *buf)
                 {
                         if (strlen(buf) + strlen(tmp) + 2 > MAX_STRING_LENGTH)
                         {
-                                log("fl->strng: string too big (db.c, file_to_string)");
+                                klog("fl->strng: string too big (db.c, file_to_string)");
                                 *buf = '\0';
                                 fclose(fl);
                                 return(-1);
@@ -3389,11 +3399,11 @@ void reset_char(struct char_data *ch)
 
   if (GET_BANK(ch) > GetMaxLevel(ch)*100000) {
     sprintf(buf, "%s has %d coins in bank.", GET_NAME(ch), GET_BANK(ch));
-    log(buf);
+    klog(buf);
   }
   if (GET_GOLD(ch) > GetMaxLevel(ch)*100000) {
     sprintf(buf, "%s has %d coins.", GET_NAME(ch), GET_GOLD(ch));
-    log(buf);
+    klog(buf);
   }
 
   /*
@@ -3858,13 +3868,13 @@ void reboot_text(struct char_data *ch, char *arg, int cmd)
  if(IS_NPC(ch))
     return;
 
- log("Rebooting Essential Text Files.");
+ klog("Rebooting Essential Text Files.");
 
  file_to_string(NEWS_FILE, news);
  file_to_string(CREDITS_FILE, credits);
  file_to_string(MOTD_FILE, motd);
  file_to_string("wizmotd", wmotd);
- log("Initializing Scripts.");
+ klog("Initializing Scripts.");
  InitScripts();
 
 /* jdb -- you don't appear to re-install the scripts after you
@@ -3876,7 +3886,7 @@ void reboot_text(struct char_data *ch, char *arg, int cmd)
       if(script_data[i].virtual == mob_index[p->nr].virtual) {
         SET_BIT(p->specials.act, ACT_SCRIPT);
         sprintf(buffer, "Setting SCRIPT bit for mobile %s, file %s.", GET_NAME(p), script_data[i].filename);
-        log(buffer);
+        klog(buffer);
         p->script = i;
         break;
       }
@@ -3909,7 +3919,7 @@ return;
      }
 
  if(!(f1 = fopen("scripts.dat", "r"))) {
-    log("Unable to open file \"scripts.dat\".");
+    klog("Unable to open file \"scripts.dat\".");
     return;
   }
 
@@ -3942,7 +3952,7 @@ if (script_data)
     sprintf(buf, "scripts/%s", buf2);
     if(!(f2 = fopen(buf, "r"))) {
        sprintf(buf, "Unable to open script \"%s\" for reading.", buf2);
-       log(buf);
+       klog(buf);
      }
 
      else {
@@ -3957,7 +3967,10 @@ if (script_data)
 /* you really don't want to do a lot of reallocs all at once
 */
            if (count==0) {
+	     /* RBL -- malloc -> realloc/malloc? 
              script_data[top_of_scripts].script = (struct foo_data *) malloc(script_data[top_of_scripts].script, sizeof(struct foo_data));
+	     */
+             script_data[top_of_scripts].script = (struct foo_data *) realloc(script_data[top_of_scripts].script, sizeof(struct foo_data));
            } else  {
              script_data[top_of_scripts].script = (struct foo_data *) realloc(script_data[top_of_scripts].script, sizeof(struct foo_data) * (count + 1));
            }
@@ -3972,7 +3985,7 @@ if (script_data)
        script_data[top_of_scripts].filename = (char *) malloc((strlen(buf2) + 1) * sizeof(char));
        strcpy(script_data[top_of_scripts].filename, buf2);
        sprintf(buf, "Script %s assigned to mobile %d.", buf2, i);
-       log(buf);
+       klog(buf);
        top_of_scripts++;
        fclose(f2);
      }
@@ -3982,7 +3995,7 @@ if (script_data)
      sprintf(buf, "%d scripts assigned.", top_of_scripts);
   else
      sprintf(buf, "No scripts found to assign.");
-  log(buf);
+  klog(buf);
 
   fclose(f1);
 }
@@ -3994,7 +4007,7 @@ int CheckKillFile(long virtual)
  int i;
 
  if(!(f1 = fopen(killfile, "r"))) {
-    log("Unable to find killfile.");
+    klog("Unable to find killfile.");
     exit(0);
   }
 
@@ -4038,7 +4051,7 @@ void SaveTheWorld()
 
   if (!fp)
   {
-    log("Unable to open zone writing file.");
+    klog("Unable to open zone writing file.");
     return;
   }
 
@@ -4217,7 +4230,7 @@ int ReadTextZone( FILE *fl)
             }
           } else if (obj = read_object(i, VIRTUAL)) {
             sprintf(buf, "Error finding room #%d", k);
-            log(buf);
+            klog(buf);
             last_cmd = 1;
           }  else {
             last_cmd = 0;
@@ -4352,7 +4365,7 @@ void clean_playerfile()
        if(!str_cmp(grunt.dummy.name,"111111")) {
          sprintf(buf,"%s was deleted (111111 name hopefully).",
                  grunt.dummy.name);
-         log(buf);
+         klog(buf);
          ones++;
          num_deleted++;
          grunt.AXE = TRUE;
@@ -4384,7 +4397,7 @@ void clean_playerfile()
 
                 sprintf(buf,"Purging rent file for %s, inactive for %d month.",
                 uname,RENT_INACTIVE);
-                log(buf);
+                klog(buf);
                 sprintf(buf,"rm rent/%s",uname);
                 system(buf);
                 sprintf(buf,"rm rent/%s.aux",grunt.dummy.name);
@@ -4402,7 +4415,7 @@ void clean_playerfile()
              grunt.AXE = TRUE;
              sprintf(buf,"%s deleted after %d months of inactivity.",
                      grunt.dummy.name,j);
-             log(buf);
+             klog(buf);
        }        /* even the no_deletes get deleted after a time */
 
         if (IS_SET(grunt.dummy.user_flags,NO_DELETE))   {
@@ -4411,7 +4424,7 @@ void clean_playerfile()
              grunt.AXE = TRUE;
              sprintf(buf,"%s deleted after %d months of inactivity.(NO_DELETE)",
                      grunt.dummy.name,j);
-             log(buf);
+             klog(buf);
             }
           }
 
@@ -4425,14 +4438,14 @@ void clean_playerfile()
              grunt.AXE = TRUE;
              sprintf(buf,"%s deleted after %d months of inactivity.(TOHIGHLEVEL)",
                      grunt.dummy.name,j);
-             log(buf);
+             klog(buf);
                } else
 
            if(timeH-grunt.dummy.last_logon > (long) SECS_PER_REAL_DAY*30) {
              num_demoted++;
              sprintf(buf,"%s demoted from %d to %d due to inactivity.",
                      grunt.dummy.name,max,max-1);
-             log(buf);
+             klog(buf);
              grunt.dummy.last_logon = timeH; /* so it doesn't happen twice */
              max--;
              max = MAX(51,max); /* should not be necessary */
@@ -4453,7 +4466,7 @@ void clean_playerfile()
 for(i=0;i<strlen(grunt.dummy.name);i++)
  if(!(toupper(grunt.dummy.name[i])>='A'&&toupper(grunt.dummy.name[i])<='Z')){
    sprintf(buf,"%s was deleted (strange name).",grunt.dummy.name);
-   log(buf);
+   klog(buf);
    grunt.AXE=1;
    break;
  }
@@ -4463,7 +4476,7 @@ if(!grunt.AXE)
  for(i=0;i<MAX_CLASS;i++)
   if(grunt.dummy.level[i]<0) {
    sprintf(buf,"%s was deleted (strange levels).",grunt.dummy.name);
-   log(buf);
+   klog(buf);
    grunt.AXE=1;
    break;
   }
@@ -4480,17 +4493,17 @@ if(!grunt.AXE)
 #endif
 
   sprintf(buf,"-- %d characters were processed.", num_processed);
-  log(buf);
+  klog(buf);
   sprintf(buf,"-- %d characters were deleted.  ", num_deleted);
-  log(buf);
+  klog(buf);
   sprintf(buf,"-- %d of these were allread deleted. (11111s)", ones);
-  log(buf);
+  klog(buf);
   sprintf(buf,"-- %d gods were demoted due to inactivity.", num_demoted);
-  log(buf);
+  klog(buf);
   sprintf(buf,"mv %s %s.bak", PLAYER_FILE, PLAYER_FILE);
   system(buf);
   sprintf(buf,"mv temp %s", PLAYER_FILE);
   system(buf);
-  log("Cleaning done.");
+  klog("Cleaning done.");
 
 }

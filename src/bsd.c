@@ -41,7 +41,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#define	NULL 0
+// #define	NULL 0
 
 #ifdef KLUDGE_MEM
 static void morecore();

@@ -1,4 +1,3 @@
-
 /*
  *
  *
@@ -11,6 +10,8 @@
 */
 
 
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include <sys/time.h>
 
@@ -135,7 +136,7 @@ if (!receptionist && forcerent) {
         if (CountLims(ch->carrying)) {
         sprintf(buf,"Removing carryed items from %s in force rent.",
                 GET_NAME(ch));
-        log(buf);               
+        klog(buf);               
             for (tmp = ch->carrying;tmp;tmp = tmp_next_obj)
             {
                  tmp_next_obj = tmp->next_content;
@@ -154,7 +155,7 @@ if (!receptionist && forcerent) {
          {
         sprintf(buf,"Removing equiped items from %s in force rent.",
                 GET_NAME(ch));
-        log(buf);
+        klog(buf);
          for(ii = 0; ii<MAX_WEAR; ii++) 
           {
           if (CountLims(ch->equipment[ii]) && (i>0)) 
@@ -170,7 +171,7 @@ if (!receptionist && forcerent) {
         sprintf(buf,
          "%s force rented and still had more limited items than suppose to.",
              GET_NAME(ch));
-         log(buf);        
+         klog(buf);        
         } 
      } /* end remove limited on force rent */
 
@@ -348,18 +349,18 @@ char buf[128];
 
 /* item restoring */
       if(st->objects[i].depth>60) {
-         log("weird! object have depth >60.\r\n");
+         klog("weird! object have depth >60.\r\n");
          st->objects[i].depth=0;
       }
       if(st->objects[i].depth&&st->objects[i].wearpos) {
          sprintf(buf,"weird! object (%s) weared and in cointainer.\r\n",obj->name);
-         log(buf);
+         klog(buf);
          st->objects[i].depth=st->objects[i].wearpos=0;
       }
       if(st->objects[i].depth>tmp_cur_depth) {
          if(st->objects[i].depth!=tmp_cur_depth+1) {
             sprintf(buf,"weird! object depth changed from %d to %d",tmp_cur_depth,st->objects[i].depth);
-            log(buf);
+            klog(buf);
          }
          in_obj[tmp_cur_depth++]=last_obj;
       }
@@ -399,20 +400,20 @@ void load_char_objs(struct char_data *ch)
   
   /* r+b is for Binary Reading/Writing */
   if (!(fl = fopen(tbuf, "r+b")))  {
-    log("Char has no equipment");
+    klog("Char has no equipment");
     return;
   }
 
   rewind(fl);
 
   if (!ReadObjs(fl, &st)) {
-    log("No objects found");
+    klog("No objects found");
     fclose(fl);
     return;
   }
 
   if (str_cmp(st.owner, GET_NAME(ch)) != 0) {
-    log("Hmm.. bad item-file write. someone is losing thier objects");
+    klog("Hmm.. bad item-file write. someone is losing thier objects");
     fclose(fl);
     return;
   }
@@ -433,12 +434,12 @@ void load_char_objs(struct char_data *ch)
         st.last_update + 1*SECS_PER_REAL_HOUR > time(0)) 
     {
         /* you made it back from the crash in time, 1 hour grace period. */
-      log("Character reconnecting.");
+      klog("Character reconnecting.");
       found = TRUE;
     } else {
       char      buf[MAX_STRING_LENGTH];
       if (ch->in_room == NOWHERE)
-     log("Char reconnecting after autorent");
+     klog("Char reconnecting after autorent");
 
 #if NEW_RENT     
       timegold = (int) ((100*((float)time(0) - st.last_update)) / 
@@ -449,13 +450,13 @@ void load_char_objs(struct char_data *ch)
 #endif                  
 
       sprintf(buf, "Char ran up charges of %g gold in rent", timegold);
-      log(buf);
+      klog(buf);
       sprintf(buf, "You ran up charges of %g gold in rent.\n\r", timegold);
       send_to_char(buf, ch);
       GET_GOLD(ch) -= timegold;
       found = TRUE;    
       if (GET_GOLD(ch) < 0) {
-        log("** Char ran out of money in rent **");
+        klog("** Char ran out of money in rent **");
         send_to_char("You ran out of money, you deadbeat.\n\r", ch);
         GET_GOLD(ch) = 0;
         found = FALSE;
@@ -510,7 +511,7 @@ void put_obj_in_store(struct obj_data *obj, struct obj_file_u *st)
          strcpy(oe->name, obj->name);
       else {
         sprintf(buf, "object %d has no name!", obj_index[obj->item_number].virtual);
-        log(buf);
+        klog(buf);
         
       }
 
@@ -746,11 +747,11 @@ void update_obj_file()
       if (ReadObjs(fl, &st)) {
         if (str_cmp(st.owner, player_table[i].name) != 0) {
        sprintf(buf, "Ack!  Wrong person written into object file! (%s/%s)", st.owner, player_table[i].name);
-          log(buf);
+          klog(buf);
           abort();
         } else {
           sprintf(buf, "   Processing %s[%d].", st.owner, i);
-          log(buf);
+          klog(buf);
           days_passed = ((time(0) - st.last_update) / SECS_PER_REAL_DAY);
           secs_lost = ((time(0) - st.last_update) % SECS_PER_REAL_DAY);
           
@@ -763,7 +764,7 @@ void update_obj_file()
             st.last_update = time(0)+3600;  /* one hour grace period */
 
             sprintf(buf, "   Deautorenting %s", st.owner);
-            log(buf);
+            klog(buf);
 
 #if LIMITED_ITEMS
             CountLimitedItems(&st);
@@ -783,7 +784,7 @@ void update_obj_file()
               if ((st.total_cost*days_passed) > st.gold_left) {
                 
                 sprintf(buf, "   Dumping %s from object file.", ch_st.name);
-                log(buf);
+                klog(buf);
                 
                 ch_st.points.gold = 0;
                 ch_st.load_room = NOWHERE;
@@ -797,7 +798,7 @@ void update_obj_file()
               } else {
                 
                 sprintf(buf, "   Updating %s", st.owner);
-                log(buf);
+                klog(buf);
                 st.gold_left  -= (st.total_cost*days_passed);
                 st.last_update = time(0)-secs_lost;
                 rewind(fl);
@@ -814,7 +815,7 @@ void update_obj_file()
               CountLimitedItems(&st);
 #endif
               sprintf(buf, "  same day update on %s", st.owner);
-              log(buf);
+              klog(buf);
               rewind(fl);
               WriteObjs(fl, &st);
               fclose(fl);
@@ -876,7 +877,7 @@ void PrintLimitedItems()
   for (i=0;i<=top_of_objt;i++) {
     if (obj_index[i].number > 0) {
       sprintf(buf, "item> %d [%d]", obj_index[i].virtual, obj_index[i].number);
-      log(buf);
+      klog(buf);
     }
   }
 }
@@ -919,7 +920,7 @@ int receptionist(struct char_data *ch, int cmd, char *arg, struct char_data *mob
         recep = temp_char;
   
   if (!recep) {
-    log("No_receptionist.\n\r");
+    klog("No_receptionist.\n\r");
     assert(0);
   }
   
@@ -1261,14 +1262,14 @@ void load_room_objs(int room)
   
   /* r+b is for Binary Reading/Writing */
   if (!(fl = fopen(buf, "r+b")))  {
-    log("Room has no equipment");
+    klog("Room has no equipment");
     return;
   }
 
   rewind(fl);
 
   if (!ReadObjs(fl, &st)) {
-    log("No objects found");
+    klog("No objects found");
     fclose(fl);
     return;
   }

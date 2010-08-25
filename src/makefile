@@ -1,7 +1,7 @@
 ##  these are compile time constructs, that affect the running of the ga
 ## See farther down for explaination of these and more! msw
 ##
-CPPFLAGS = -DPREP_SPELLS -DSUN_MALLOC -DLOG_ALL
+CPPFLAGS = -DPREP_SPELLS -DLOG_ALL -DNODUPLICATES -DNEWGAIN -DSAVEWORLD -DQUEST_GAIN -DLAG_MOBILES -DNEW_RENT
 #
 ## -DPREP_SPELLS -DDEBUG_LOG
 ## -DDEBUG -DMALLOC_DEBUG -DDEBUG_LOG
@@ -13,11 +13,13 @@ CPPFLAGS = -DPREP_SPELLS -DSUN_MALLOC -DLOG_ALL
 ##
 CC=gcc
 ##
-LD=$(CC)
+LD=$(CC) -lcrypt
 ##
 ##  these are architecture dependent flags
 TITANFLAGS = -g -43 -vector_c -safe=ptrs -DTITAN
-MYFLAGS = -ggdb3 -m486 -mno-fp-ret-in-387 -DNETBSD
+# MYFLAGS = -ggdb3 -m486 -mno-fp-ret-in-387 -DNETBSD
+# MYFLAGS = -march=i686 -DNETBSD -ggdb
+MYFLAGS = -march=i686 -DNETBSD
 ##
 CFLAGS = $(MYFLAGS) $(CPPFLAGS)
 ##
@@ -148,6 +150,11 @@ SRCS = comm.c act.comm.c act.info.c act.move.c act.obj1.c act.obj2.c \
 
 all : dmserver
 	chmod g+rw *.o
+	cp -p dmserver ..
+	strip ../dmserver
+
+clean :
+	rm -f dmserver *.o
 
 dmserver : ${OBJS}
 

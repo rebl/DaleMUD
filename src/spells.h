@@ -344,7 +344,10 @@
 #define SKILL_INTENSIFY 	287	/* increase con/int or wis +1, -3 for attribs not chosen */
 #define SKILL_SPOT		288	/* spot, for ranged weapons, archery */
 
+#if 0
 #define MAX_EXIST_SPELL         288   /* max number of skills/spells */
+#endif
+#define MAX_EXIST_SPELL         310   /* max number of skills/spells */
 
 #define FIRST_BREATH_WEAPON	     306 /*	201 */
 #define SPELL_FIRE_BREATH            306 /*	201 */

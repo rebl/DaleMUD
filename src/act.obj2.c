@@ -3,6 +3,7 @@
   See license.doc for distribution terms.   DaleMUD is based on DIKUMUD
 */
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
@@ -29,10 +30,10 @@ void weight_change_object(struct obj_data *obj, int weight)
       weight = 0 - (GET_OBJ_WEIGHT(obj) -1);
       if (obj->carried_by) {
         sprintf(buf,"Bad weight change on %s, carried by %s.",obj->name,obj->carried_by->player.name);
-        log(buf);
+        klog(buf);
       } else {
         sprintf(buf,"Bad weight change on %s.",obj->name);
-        log(buf);
+        klog(buf);
       }
   }
   
@@ -47,7 +48,7 @@ void weight_change_object(struct obj_data *obj, int weight)
     GET_OBJ_WEIGHT(obj) += weight;
     obj_to_obj(obj, tmp_obj);
   } else {
-    log("Unknown attempt to subtract weight from an object.");
+    klog("Unknown attempt to subtract weight from an object.");
   }
 }
 
@@ -650,8 +651,7 @@ if (IS_SET(obj_object->obj_flags.extra_flags,ITEM_ONLY_CLASS)) {
       send_to_char("You are already holding a light source.\n\r", ch);
     } else if (ch->equipment[WIELD] && ch->equipment[WIELD]->obj_flags.weight> 
           str_app[STRENGTH_APPLY_INDEX(ch)].wield_w) {
-        send_to_char("You cannot wield a two handed weapon, and hold a 
-light source.\n\r", ch);
+        send_to_char("You cannot wield a two handed weapon, and hold a light source.\n\r", ch);
     } else if ((ch->equipment[WIELD] && ch->equipment[HOLD])) {
         send_to_char("Sorry, you only have two hands.\n\r", ch);
     } else if (rp->sector_type == SECT_UNDERWATER &&
@@ -1032,7 +1032,7 @@ light source.\n\r", ch);
     send_to_char(buffer, ch);
   } break;
   default: {
-    log("Unknown type called in wear.");
+    klog("Unknown type called in wear.");
   } break;
   }
 }

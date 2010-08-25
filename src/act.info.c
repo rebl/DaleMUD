@@ -477,7 +477,7 @@ void show_char_to_char(struct char_data *i, struct char_data *ch, int mode)
   struct affected_type *aff;
   
 if (!ch || !i) {
-   log("!ch || !i in act.info.c show_char_to_char");  
+   klog("!ch || !i in act.info.c show_char_to_char");  
    return;
   }
 	
@@ -2535,7 +2535,7 @@ dlog("in do_command_list");
 #define OK_NAME(name,mask)      (mask[0]=='\0' || \
                                 strncmp(strcpy(tmpname1,lower(GET_NAME(name))),\
                                         strcpy(tmpname2,lower(mask)),\
-                                        strlen(mask))==NULL)
+                                        strlen(mask))==0)
 /*
 int OK_NAME(struct char_data *name, char *mask) 
 {
@@ -3445,7 +3445,7 @@ dlog("in do_spells");
 	spell_info[i].min_level_cleric < ABS_MAX_LVL) {
 if (!spells[spl]) {
 	sprintf(tbuf,"!spells[spl] on %d, do_spells in act.info.c",i);
- 	log(tbuf); 
+ 	klog(tbuf); 
 } else
       sprintf(buf + strlen(buf),
 "[%2d] %-20s  <%3d> %2d %3d %3d %3d %3d %3d %3d\n\r",

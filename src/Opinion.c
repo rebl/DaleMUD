@@ -3,7 +3,7 @@
   See license.doc for distribution terms.   DaleMUD is based on DIKUMUD
 */
 
-
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -131,7 +131,7 @@ if (GET_HIT(pud) <=0 || GET_POS(pud) <=POSITION_DEAD)
 
 if (pud->in_room != ch->in_room) { 
 
-/* log("setting hunt because mob was not in same as attacker");	 */
+/* klog("setting hunt because mob was not in same as attacker");	 */
 
     SetHunting(ch,pud);
    }

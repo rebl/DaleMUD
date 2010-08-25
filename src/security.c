@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void log(char *);
+void klog(char *);
 
 int SecCheck(char *arg, char *site)
 {
@@ -13,7 +13,7 @@ int SecCheck(char *arg, char *site)
 
  if(!(f1 = fopen(buf, "rt"))) {
     sprintf(buf, "Unable to open security file for %s.", arg);
-    log(buf);
+    klog(buf);
     return(-1);
   }
 
@@ -22,7 +22,7 @@ int SecCheck(char *arg, char *site)
 
  if(!*buf2) {
     sprintf(buf, "Security file for %s empty.", arg);
-    log(buf);
+    klog(buf);
     return(-1);
   }
 
@@ -33,7 +33,7 @@ int SecCheck(char *arg, char *site)
     return(1);
   }
     sprintf(buf, "Site %s and %s don't match for %s. Booting.", site, buf2, arg);
-     log(buf);
+     klog(buf);
 
  return(0);
 }

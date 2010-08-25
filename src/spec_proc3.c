@@ -824,7 +824,7 @@ virtual = (tmp->equipment[WIELD]->item_number >= 0) ? obj_index[tmp->equipment[W
               /* or the holy symbol, lets drain'em one level! */
                         
   if (GetMaxLevel(tmp) <=1) {
-         log("Strahd tried to drain char below level 1");
+         klog("Strahd tried to drain char below level 1");
      } else {
 /* fix this later...                                               */
 /*  act("$N bites you hard, OUCH!!!", FALSE, tmp, 0, ch, TO_CHAR); */
@@ -872,7 +872,7 @@ virtual = (tmp->equipment[WIELD]->item_number >= 0) ? obj_index[tmp->equipment[W
                 /* locations!                                                   */
       { 
 
-        log("Loading Ravenloft random location items.");
+        klog("Loading Ravenloft random location items.");
         /* place sun sword ... */
 /*        if (obj_index[SUN_SWORD_RAVENLOFT].number < MAX_SUN_SWORDS) */
 
@@ -933,7 +933,7 @@ int banshee(struct char_data *ch, int cmd, char *arg, struct char_data *mob, int
       tmp=ch->specials.fighting;
       if (GetMaxLevel(tmp) <=1)
       {
-        log("Banshee tried to drain char below level 1");
+        klog("Banshee tried to drain char below level 1");
       } else /* if GetmaxLevel */ 
        {
         act("$n bites $N who looks drained!", FALSE, ch, 0, tmp, TO_ROOM);
@@ -2693,7 +2693,7 @@ if (ch->specials.fighting && ch->specials.fighting != ch)       {
         vict = ch->specials.fighting;
 
         if (!vict) {
-             log("!vict in paladin");
+             klog("!vict in paladin");
              return(FALSE);
         }
 
@@ -3010,7 +3010,7 @@ int Psionist(struct char_data *ch, int cmd, char *arg, struct char_data *mob, in
       return(TRUE);
       }
     group = ((targ->followers || targ->master) ? TRUE : FALSE);
-    log(buf);
+    klog(buf);
     if (group && (dice(1,2)-1)) group = FALSE;
     if (!group)
        { /*not fighting a group, or has selected person fighting, for spec*/

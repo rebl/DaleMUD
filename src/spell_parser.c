@@ -1,11 +1,9 @@
-
-
 /*
 *** DaleMUD, 
 */
 
-
-
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include <assert.h>
 
@@ -43,7 +41,8 @@ void check_decharm( struct char_data *ch);
 
 /* Extern procedures */
 
-char *strdup(char *str);
+/* RBL */
+/* char *strdup(char *str); */
 
 void NailThisSucker( struct char_data *ch);
 void do_look( struct char_data *ch, char *arg, int cmd);
@@ -1399,7 +1398,7 @@ if (ch->master) {
  act("$n cannot follow you for some reason.",TRUE,ch,0,leader,TO_CHAR);
  act("You cannot follow $N for some reason.",TRUE,ch,0,leader,TO_CHAR);
  sprintf(buf,"%s cannot follow %s for some reason",GET_NAME(ch),GET_NAME(leader));
- log(buf);
+ klog(buf);
  return;
 }
 #endif
@@ -1622,7 +1621,7 @@ void do_cast(struct char_data *ch, char *argument, int cmd)
   if (*argument != '\'') {
 
     sprintf(buf,argument);
-    log(buf);
+    klog(buf);
     
     send_to_char("Magic must always be enclosed by the holy magic symbols : '\n\r",ch);
     return;
@@ -1739,7 +1738,7 @@ if ((cmd == 84 || cmd == 370) && HasClass(ch,CLASS_SORCERER) &&
    
 if (IS_IMMORTAL(ch) && IS_PC(ch) && GetMaxLevel(ch)<59) {
      sprintf(buf,"%s cast %s",GET_NAME(ch),ori_argument);  /* changed argument */
-     log(buf);
+     klog(buf);
   }
 
       if (!IS_SET(spell_info[spl].targets, TAR_IGNORE)) {
@@ -3220,10 +3219,10 @@ if (GET_POS(ch) <= POSITION_DEAD)
 	if (!IS_IMMORTAL(ch)) {
 	  GET_HIT(ch) = 0;
 	  sprintf(buf, "%s has fallen to death", GET_NAME(ch));
-	  log(buf);
+	  klog(buf);
 	if (!ch->desc)
 	  GET_GOLD(ch) = 0;
-	  die(ch,NULL); /* change to the smashed type */
+	  die(ch,TYPE_SMASH); /* change to the smashed type */
 	}
 	return(TRUE);
 	
@@ -3289,10 +3288,10 @@ if (GET_POS(ch) <= POSITION_DEAD)
 	if (!IS_IMMORTAL(ch)) {
 	  GET_HIT(ch) = 0;
 	  sprintf(buf, "%s has fallen to death", GET_NAME(ch));
-	  log(buf);
+	  klog(buf);
 	if (!ch->desc)
 	  GET_GOLD(ch) = 0;
-	  die(ch,NULL);
+	  die(ch,TYPE_SMASH);
 	}
 	return(TRUE);
 
@@ -3319,7 +3318,7 @@ if (GET_POS(ch) <= POSITION_DEAD)
   }  
 
   if (count >= 100) {
-    log("Someone fucked up an air room.");
+    klog("Someone fucked up an air room.");
     char_from_room(ch);
     char_to_room(ch, 2);
     do_look(ch, "", 0);
@@ -3346,10 +3345,10 @@ void check_drowning( struct char_data *ch)
       update_pos(ch);
       if (GET_HIT(ch) < -10) {
 	sprintf(buf, "%s killed by drowning", GET_NAME(ch));
-	log(buf);
+	klog(buf);
 	if (!ch->desc)
 	  GET_GOLD(ch) = 0;
-	die(ch,NULL);
+	die(ch,TYPE_CRUSH);
       }
    }
 }
@@ -3361,7 +3360,7 @@ void check_falling_obj( struct obj_data *obj, int room)
   int done, count;
 
   if (obj->in_room != room) {
-    log("unusual object information in check_falling_obj");
+    klog("unusual object information in check_falling_obj");
     return;
   }
 
@@ -3451,7 +3450,7 @@ void check_falling_obj( struct obj_data *obj, int room)
   }  
 
   if (count >= 100) {
-    log("Someone screwed up an air room.");
+    klog("Someone screwed up an air room.");
     obj_from_room(obj);
     obj_to_room(obj, 4);
     return;

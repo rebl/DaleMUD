@@ -171,8 +171,8 @@ int BestFightingClass(struct char_data *ch)
  if (GET_LEVEL(ch, SORCERER_LEVEL_IND)) 
    return(SORCERER_LEVEL_IND);
  
-  log("Massive error.. character has no recognized class.");
-  log(GET_NAME(ch));
+  klog("Massive error.. character has no recognized class.");
+  klog(GET_NAME(ch));
   assert(0);
 
   return(1);
@@ -207,8 +207,8 @@ int BestThiefClass(struct char_data *ch)
  if (GET_LEVEL(ch, CLERIC_LEVEL_IND)) 
    return(CLERIC_LEVEL_IND);
  
-  log("Massive error.. character has no recognized class.");
-  log(GET_NAME(ch));
+  klog("Massive error.. character has no recognized class.");
+  klog(GET_NAME(ch));
   assert(0);
 
   return(1);
@@ -244,8 +244,8 @@ int BestMagicClass(struct char_data *ch)
  if (GET_LEVEL(ch, MONK_LEVEL_IND)) 
    return(MONK_LEVEL_IND);
  
-  log("Massive error.. character has no recognized class.");
-  log(GET_NAME(ch));
+  klog("Massive error.. character has no recognized class.");
+  klog(GET_NAME(ch));
   ch->player.class = 4;
 
   return(1);
@@ -398,7 +398,7 @@ int BestClassBIT(struct char_data *ch)
    case    PSI_LEVEL_IND: return(1024); break;
    
    default : { 
-              log("Error in BestClassBIT"); 
+              klog("Error in BestClassBIT"); 
               break; }
  } /* switch */
  

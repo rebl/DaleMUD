@@ -1,4 +1,5 @@
-
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include <assert.h>
 
@@ -2705,7 +2706,7 @@ void spell_lightning_breath(byte level, struct char_data *ch,
 	int hpch;
 
 if (!victim || !ch) { /* 	assert(victim && ch); */
-	log("!ch || !victim in breath_lightning, magic.c");
+	klog("!ch || !victim in breath_lightning, magic.c");
 	return;
 }
 
@@ -2759,12 +2760,12 @@ int i,damage, found=FALSE;
 struct obj_data *x;
 
 if (!ch) {
-    log("!ch in spell_disintergrate");
+    klog("!ch in spell_disintergrate");
     return;
    }
    
 if (!victim) {
-   log("!victim in spell_disintergrate");
+   klog("!victim in spell_disintergrate");
    return;
   }
 

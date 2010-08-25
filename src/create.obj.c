@@ -1,4 +1,5 @@
-
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include "protos.h"
  
@@ -354,7 +355,7 @@ void ObjEdit(struct char_data *ch, char *arg)
  case OBJ_HIT_RETURN:
          ObjHitReturn(ch, arg, 0);
          return;
- default: log("Got to bad spot in ObjEdit");
+ default: klog("Got to bad spot in ObjEdit");
           return;
  }
 }

@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -1348,7 +1349,7 @@ if (GetMaxLevel(ch) >24)	{
     case 18:      
     case 19:      
     default:
-      act("$n utters the words 'Hurts, doesn't it??'.",1,ch,0,0,TO_ROOM);
+      act("$n utters the words 'Hurts, doesn't it?'.",1,ch,0,0,TO_ROOM);
       cast_harm(GetMaxLevel(ch), ch, "", SPELL_TYPE_SPELL, vict, 0);
       break;
     }
@@ -1545,7 +1546,7 @@ int ninja_master(struct char_data *ch, int cmd, char *arg, struct char_data *mob
         break;
       default:
 	sprintf(buf, "Strangeness in ninjamaster (%d)", number);
-	log(buf);
+	klog(buf);
 	send_to_char("'Ack!  I feel faint!'\n\r", ch);
 	return(TRUE);
       }
@@ -2450,7 +2451,7 @@ act("$n glares at $N and says 'You are free to roam the world again, murderer.'"
           REMOVE_BIT(t->player.user_flags,MURDER_1); 
           REMOVE_BIT(t->player.user_flags,STOLE_1);
           sprintf(buf,"Removing MURDER and STOLE bit from %s.",GET_NAME(t));
-          log(buf);
+          klog(buf);
           char_from_room(t);
           char_to_room(t,PRISON_LET_OUT_ROOM);
           do_look(t,"",0);
@@ -2473,7 +2474,7 @@ act("$n glares at $N and says 'You are free to roam the world again, thief.'",
            REMOVE_BIT(t->player.user_flags,STOLE_1);
            REMOVE_BIT(t->player.user_flags,MURDER_1);
            sprintf(buf,"Removing STOLE and MURDER bit from %s.",GET_NAME(t));
-          log(buf);
+          klog(buf);
 
            char_from_room(t);
            char_to_room(t,PRISON_LET_OUT_ROOM);
@@ -2895,7 +2896,7 @@ if (GetMaxLevel(ch) < 15)
 #if 0 		 /* always true, find out why! */
 	   rp = real_roomp(HOLDING_TANK);
 	  if (MobCountInRoom(rp->people) >= HOLDING_MAX) {
-	      log("Catcher room was full");	
+	      klog("Catcher room was full");	
               return(FALSE);
 	     }
 #endif	     
@@ -3121,12 +3122,12 @@ static void (*breaths[])() = {
   cast_acid_breath, cast_fire_breath, cast_lightning_breath, 0
 };
 #else
-void cast_geyser();
-void cast_fire_breath();
-void cast_gas_breath();
-void cast_frost_breath();
-void cast_acid_breath();
-void cast_lightning_breath();
+// void cast_geyser();
+// void cast_fire_breath();
+// void cast_gas_breath();
+// void cast_frost_breath();
+// void cast_acid_breath();
+// void cast_lightning_breath();
 
 static funcp breaths[] = {
   cast_acid_breath, 0, cast_frost_breath, 0, cast_lightning_breath, 0,
@@ -3198,7 +3199,7 @@ int BreathWeapon(struct char_data *ch, int cmd, char *arg, struct char_data *mob
     if (scan->vnum < 0) {
       sprintf(buf, "monster %s tries to breath, but isn't listed.",
 	      ch->player.short_descr);
-      log(buf);
+      klog(buf);
       return FALSE;
     }
     
@@ -3208,12 +3209,12 @@ int BreathWeapon(struct char_data *ch, int cmd, char *arg, struct char_data *mob
     if (count<1) {
       sprintf(buf, "monster %s has no breath weapons",
 	      ch->player.short_descr);
-      log(buf);
+      klog(buf);
       return FALSE;
     }
     
     use_breath_weapon(ch, ch->specials.fighting, scan->cost,
-		      scan->breaths[dice(1,count)-1]);
+		      (void *) scan->breaths[dice(1,count)-1]);
   }
   
   return (FALSE);
@@ -3268,7 +3269,7 @@ int sailor(struct char_data *ch, int cmd, char *arg, struct char_data *mob, int 
 	break;
       default:
 	sprintf(buf, "Strangeness in sailor (%d)", number);
-	log(buf);
+	klog(buf);
 	send_to_char("'Ack!  I feel faint!'\n\r", ch);
 	return;
       }
@@ -3469,7 +3470,7 @@ int loremaster(struct char_data *ch, int cmd, char *arg, struct char_data *mob, 
 	
       default:
 	sprintf(buf, "Strangeness in loremaster (%d)", number);
-	log(buf);
+	klog(buf);
 	send_to_char("'Ack!  I feel faint!'\n\r", ch);
 	return(TRUE);
       }
@@ -3589,7 +3590,7 @@ int hunter(struct char_data *ch, int cmd, char *arg, struct char_data *mob, int 
 	break;	
       default:
 	sprintf(buf, "Strangeness in hunter (%d)", number);
-	log(buf);
+	klog(buf);
 	send_to_char("'Ack!  I feel faint!'\n\r", ch);
 	return(FALSE);
       }
@@ -3701,7 +3702,7 @@ int archer_instructor(struct char_data *ch, int cmd, char *arg, struct char_data
 	break;
       default:
 	sprintf(buf, "Strangeness in hunter (%d)", number);
-	log(buf);
+	klog(buf);
 	send_to_char("'Ack!  I feel faint!'\n\r", ch);
 	return(FALSE);
       }
@@ -3938,7 +3939,7 @@ int monk_master(struct char_data *ch, int cmd, char *arg, struct char_data *mob,
 
       default:
 	sprintf(buf, "Strangeness in monk master (%d)", number);
-	log(buf);
+	klog(buf);
 	send_to_char("'Ack!  I feel faint!'\n\r", ch);
 	return(TRUE);
       }
@@ -5587,7 +5588,7 @@ int barbarian_guildmaster(struct char_data *ch, int cmd, char *arg, struct char_
         break;        
       default:
 	sprintf(buf, "Strangeness in Barbarian (%d)", number);
-	log(buf);
+	klog(buf);
 	send_to_char("'Ack!  I feel sick!'\n\r", ch);
 	return(TRUE);
       }

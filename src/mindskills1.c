@@ -227,12 +227,12 @@ void mind_telekinesis(byte level, struct char_data *ch,
 {
 
  if (!ch) {
-  log("!ch in telekenisis");
+  klog("!ch in telekenisis");
   return;
   }
 
   if (!victim)  {
- 	log("!victim in telekenisis");
+ 	klog("!victim in telekenisis");
  	return;
  	}
  
@@ -318,7 +318,7 @@ void mind_cell_adjustment(byte level, struct char_data *ch,
 {
 
 if (!ch) {
-	log("!ch in cell_adjustment");
+	klog("!ch in cell_adjustment");
 	return;
     }
 

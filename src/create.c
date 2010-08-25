@@ -1,4 +1,5 @@
-
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
  
 #include "protos.h"
@@ -218,7 +219,7 @@ void RoomEdit(struct char_data *ch, char *arg)
  case CHANGE_NUMBER_UP:
  case CHANGE_NUMBER_DOWN: ChangeExitNumber(real_roomp(ch->in_room), ch, arg, 0);
                           return;
- default: log("Got to bad spot in RoomEdit");
+ default: klog("Got to bad spot in RoomEdit");
           return;
  }
 }

@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 #include <stdio.h>
 #include <malloc.h>
 #include <string.h>
@@ -17,7 +17,7 @@ int SetDefaultLang(struct char_data *ch);
 
 
 void log_sev(char *s, int i);
-void log (char *s) { log_sev(s, 1); }
+void klog (char *s) { log_sev(s, 1); }
 extern long SystemFlags;
 extern struct time_data time_info;
 extern struct descriptor_data *descriptor_list;
@@ -965,7 +965,7 @@ char buf[200];
 
    if (exp_flags > 100) { 
      sprintf(buf, "Exp flags on %s are > 100 (%d)", GET_NAME(mob), exp_flags);
-     log(buf);
+     klog(buf);
    }
 
 /* 
@@ -2125,7 +2125,7 @@ return;
 #endif
 
 if (!ch || !tch) {
-	log("!ch || !tch in SetHunting");
+	klog("!ch || !tch in SetHunting");
 	return;
 }
 
@@ -2251,7 +2251,7 @@ void MakeNiftyAttack( struct char_data *ch)
 
 if (!ch || !ch->skills)
 	{
-		log("!or !ch-skills in MakeNiftyAttack() in utility.c");
+		klog("!or !ch-skills in MakeNiftyAttack() in utility.c");
 		return;
 	}
   if (!ch->specials.fighting) 
@@ -2574,7 +2574,7 @@ void TeleportPulseStuff(int pulse)
 	
 	dest = real_roomp(rp->tele_targ);
 	if (!dest) {
-	  log("invalid tele_targ");
+	  klog("invalid tele_targ");
 	  continue;
 	}
 	
@@ -3718,7 +3718,7 @@ int CheckEgo(struct char_data *ch, struct obj_data *obj)
 return(TRUE);
 #else
 if (!obj || !ch) {
-	log("!obj || !ch in CheckEgo, utility.c");
+	klog("!obj || !ch in CheckEgo, utility.c");
 	return(FALSE);
 	}
 	
@@ -4008,7 +4008,7 @@ int IS_MURDER(struct char_data *ch)
 char buf[256];
  if (IS_PC(ch) && IS_SET(ch->player.user_flags,MURDER_1) && !IS_IMMORTAL(ch)) {
  sprintf(buf,"%s has the MURDER set.",GET_NAME(ch));
- log(buf); 
+ klog(buf); 
  return (TRUE); 
 } 
 #endif
@@ -4022,7 +4022,7 @@ char buf[256];
 
  if (IS_PC(ch) && IS_SET(ch->player.user_flags,STOLE_1) && !IS_IMMORTAL(ch)) {
  sprintf(buf,"%s has STOLE set.",GET_NAME(ch));
- log(buf); 
+ klog(buf); 
  return(TRUE); 
 }
 #endif

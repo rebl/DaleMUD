@@ -566,7 +566,7 @@ int ThiefGuildMaster(struct char_data *ch, int cmd, char *arg, struct char_data 
 
       default:
         sprintf(buf, "Strangeness in Thief Guildmaster (%d)", number);
-        log(buf);
+        klog(buf);
         send_to_char("'Ack!  I feel sick!'\n\r", ch);
         return(TRUE);
       } /* end switch */
@@ -841,7 +841,7 @@ int WarriorGuildMaster(struct char_data *ch, int cmd, char *arg, struct char_dat
 
       default:
         sprintf(buf, "Strangeness in Warrior Guildmaster (%d)", number);
-        log(buf);
+        klog(buf);
         send_to_char("'Ack!  I feel sick!'\n\r", ch);
         return(TRUE);
       } /* end switch */
@@ -3397,7 +3397,7 @@ int Ringwraith( struct char_data *ch, int cmd, char *arg, struct char_data *mob,
     obj_to_char(ring, ch);
     act("$n gets the Ring.", FALSE, ch, NULL, 0, TO_ROOM);    
   } else {
-    log("a One Ring was completely disconnected!?");
+    klog("a One Ring was completely disconnected!?");
     wh->ringnumber = 0;
   }
   return TRUE;
@@ -5311,7 +5311,7 @@ int Tyrannosaurus_swallower(struct char_data *ch, int cmd, char *arg, struct cha
           */
         GET_HIT(targ) = 0;
         sprintf(buf, "%s killed by being swallowed whole", GET_NAME(targ));
-        log(buf);
+        klog(buf);
         die(targ,NULL);
         /*
           all stuff to monster:  this one is tricky.  assume that corpse is
@@ -6028,7 +6028,7 @@ int trapper(struct char_data *ch, int cmd, char *arg, struct char_data *mob, int
       act("$n is dead!", FALSE, ch->specials.fighting, 0, ch, TO_ROOM);
       sprintf(buf, "%s has suffocated to death.", 
               GET_NAME(ch->specials.fighting));
-      log(buf);
+      klog(buf);
       die(ch->specials.fighting,NULL);
       ch->specials.fighting = 0x0;
       return(TRUE);
@@ -6626,7 +6626,7 @@ int Valik( struct char_data *ch, int cmd, char *arg, struct char_data *mob, int 
     return(TRUE);
     break;
     default:
-    log("Ack! Foo! Heimdall screws up!");
+    klog("Ack! Foo! Heimdall screws up!");
     return(FALSE);
   }
 }
@@ -6658,7 +6658,7 @@ int guardian(struct char_data *ch, int cmd, char *arg, struct char_data *mob, in
 
     /* Open the file, read the names into an array in the act pointer */
     if(!(pass = fopen(RHYODIN_FILE, "r"))) {
-      log("Rhyodin access file unreadable or non-existant");
+      klog("Rhyodin access file unreadable or non-existant");
       ch->generic = -1;
       return(FALSE);
     }
@@ -6729,7 +6729,7 @@ int guardian(struct char_data *ch, int cmd, char *arg, struct char_data *mob, in
         
         if(!IS_NPC(ch)) {
           if(!(pass = fopen(RHYODIN_FILE, "a"))) {
-            log("Couldn't open file for writing permanent Rhyodin passlist.");
+            klog("Couldn't open file for writing permanent Rhyodin passlist.");
             return(FALSE);
           }
           /* Go to the end of the file and write the character's name */

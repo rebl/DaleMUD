@@ -1,4 +1,5 @@
-
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
  
 #include "protos.h"
@@ -372,7 +373,7 @@ void MobEdit(struct char_data *ch, char *arg)
          return;
  case MOB_HIT_RETURN: MobHitReturn(ch, arg, 0);
          return;
- default: log("Got to bad spot in MobEdit");
+ default: klog("Got to bad spot in MobEdit");
           return;
  }
 }
