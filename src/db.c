@@ -2362,7 +2362,7 @@ void reset_zone(int zone)
         break;
 
       case 'G': /* obj_to_char */
-        if (obj_index[ZCMD.arg1].number < ZCMD.arg2 &&
+        if (ZCMD.arg1 >= 0 && obj_index[ZCMD.arg1].number < ZCMD.arg2 &&
             (obj = read_object(ZCMD.arg1, REAL)) && mob) {
           obj_to_char(obj, mob);
           last_cmd = 1;
