@@ -13,13 +13,13 @@ CPPFLAGS = -DPREP_SPELLS -DLOG_ALL -DNODUPLICATES -DNEWGAIN -DSAVEWORLD -DQUEST_
 ##
 CC=gcc
 ##
-LD=$(CC) -lcrypt -m32
+LD=$(CC) -lcrypt
 ##
 ##  these are architecture dependent flags
 TITANFLAGS = -g -43 -vector_c -safe=ptrs -DTITAN
 # MYFLAGS = -ggdb3 -m486 -mno-fp-ret-in-387 -DNETBSD
 # MYFLAGS = -march=i686 -DNETBSD -ggdb
-MYFLAGS = -march=core2 -m32 -DNETBSD -ggdb
+MYFLAGS = -Wall -O2 -march=core2 -ggdb -D_XOPEN_SOURCE -D_GNU_SOURCE
 ##
 CFLAGS = $(MYFLAGS) $(CPPFLAGS)
 ##
@@ -151,6 +151,7 @@ SRCS = comm.c act.comm.c act.info.c act.move.c act.obj1.c act.obj2.c \
 all : dmserver
 	chmod g+rw *.o
 	cp -p dmserver ..
+	ctags *.c
 	# strip ../dmserver
 
 clean :

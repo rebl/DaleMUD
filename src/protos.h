@@ -2008,3 +2008,7 @@ void ObjEdit(struct char_data *ch, char *arg);
 
 void memory_check(char *p);
 void dlog(char *s);
+
+/* rbl */
+void klog(char *s);
+void AddCommand(char *name, void (*func), int number, int min_pos, int min_lev);

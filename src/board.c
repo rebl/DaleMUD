@@ -393,7 +393,7 @@ void board_load_board() {
     the_file = fopen(save_file[bnum], "r");
     if (!the_file) {
       sprintf(buf,"Can't open message file for board %d.\n\r",bnum);
-      klog(buf,0);
+      klog(buf);
       continue;
     }
 

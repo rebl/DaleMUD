@@ -3,6 +3,7 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <arpa/telnet.h>
+#include <unistd.h>
 
 #include "protos.h"
 
@@ -509,16 +510,16 @@ if (ch->player.name)
 		/* to log all pc's */
 	if (IS_SET(SystemFlags,SYS_LOGALL)) {
            if (IS_PC(ch) || IS_SET(ch->specials.act,ACT_POLYSELF)) {
-              sprintf(buf,"[%d] %s:%s", ch->in_room,ch->player.name, argument);
+              sprintf(buf,"[%ld] %s:%s", ch->in_room,ch->player.name, argument);
               slog(buf);
             } 
           } else	/* user flagged as log person */
            if(IS_AFFECTED2(ch, AFF2_LOG_ME)) {
-              sprintf(buf,"[%d] %s:%s", ch->in_room,ch->player.name, argument);
+              sprintf(buf,"[%ld] %s:%s", ch->in_room,ch->player.name, argument);
              slog(buf);
 	   } else		/* we log ALL immortals */
 	  if ((GetMaxLevel(ch)>=LOW_IMMORTAL)&&(GetMaxLevel(ch)<60)) {
-              sprintf(buf,"[%d] %s:%s", ch->in_room,ch->player.name, argument);
+              sprintf(buf,"[%ld] %s:%s", ch->in_room,ch->player.name, argument);
 	    slog(buf);
 	  }
 
@@ -699,7 +700,7 @@ void half_chop(char *string, char *arg1, char *arg2)
   
   for (; isspace(*string); string++);
   
-  for (; *arg2 = *string; string++, arg2++);
+  for (; (*arg2 = *string); string++, arg2++);
 }
 
 
@@ -713,7 +714,7 @@ int special(struct char_data *ch, int cmd, char *arg)
   
   if (ch->in_room == NOWHERE) {
     char_to_room(ch, 3001);
-    return;
+    return(0);
   }
   
   /* special in room? */
@@ -1310,7 +1311,7 @@ int _parse_name(char *arg, char *name)
   
   /* skip whitespaces */
   for (; isspace(*arg); arg++);
-  for (i = 0; *name = *arg; arg++, i++, name++) {
+  for (i = 0; (*name = *arg); arg++, i++, name++) {
     if ((*arg <0) || !isalpha(*arg) || i > 15)
       return(1); 
    }      
@@ -1804,7 +1805,7 @@ if (IS_SET(SystemFlags,SYS_REQAPPROVE)) {
     
   case CON_QCLASS : 
 {
-  int total_class=0;
+  // int total_class=0;
   int ii=0;
     /* skip whitespaces */
 
@@ -2758,6 +2759,8 @@ sprintf(buf,"%-4s %-15s %-3s %-3s %-3s %-3s %-3s %-3s %-3s %-3s %-3s %-3s %-3s\n
 
 SEND_TO_Q("  ma=magic user, cl=cleric,  wa=warrior,th=thief, dr=druid,  mk=monk\n\r",d);
 SEND_TO_Q("  ba=barbarian,  so=sorcerer,pa=paladin,ra=ranger,ps=psionist\n\r\n\r",d);
+
+    return 0;
 }
 
 

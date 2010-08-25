@@ -21,6 +21,7 @@
 
 #include "protos.h"
 
+#define FNDELAY    O_NDELAY
 
 void str2ansi(char *p2, char *p1, int start, int stop);
 char *ParseAnsiColors(int UsingAnsi, char *txt);
