@@ -1,0 +1,25 @@
+#6307
+Hallway~
+You are in a well kept hallway that shows wealth and power, but it's not as
+grandiose as the entrance to the castle.  This is where the nobles spend time
+away from the court and serve as their sleeping quarters.  Chambers lie to the
+north and south, and the hallway continues east.
+~
+38 0 0
+D0
+~
+door~
+1 0 6306 -1
+D1
+~
+door~
+0 0 6310 -1
+D2
+~
+door~
+1 0 6308 -1
+D3
+~
+door~
+0 0 6304 -1
+S

@@ -1,0 +1,20 @@
+#6251
+Passage~
+This is a cramped passage that is used to trap invaders and sent various 
+missles at them from above. There are gates to the north and south and a small
+door to the east.
+~
+38 0 0
+D0
+~
+door~
+1 0 6252 -1
+D1
+~
+door~
+1 0 6280 -1
+D2
+~
+door~
+1 0 6250 -1
+S

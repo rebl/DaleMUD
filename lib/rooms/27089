@@ -1,0 +1,19 @@
+#27089
+Debris in the Tower~
+	It appears that the floor above you has almost completely collapsed
+leaving this floor nothing more that a huge pile of rubble.  The crumbling
+stairs exit down as well as continue further up.  Above you a large bell
+begins to toll.
+~
+97 1 0
+D4
+There is not much left of the floor above you.
+~
+stairs~
+0 0 27090 -1
+D5
+The entry floor is just below you.
+~
+stairs~
+0 0 27088 -1
+S

@@ -1,0 +1,20 @@
+#6333
+Entrance to the Chambers~
+You have finally reached the entrance to the prince's chambers. There is a 
+small staircase leading up to the top of the tower, and a doorway lies to the
+east.
+~
+38 0 0
+D1
+~
+door~
+1 0 6335 -1
+D4
+~
+door~
+0 0 6334 -1
+D5
+~
+door~
+0 0 6332 -1
+S

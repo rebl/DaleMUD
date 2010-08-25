@@ -1,0 +1,20 @@
+#6351
+Secret Bedroom~
+You have found the secret bedroom where the king and queen meet to share the
+night together. The room is plainly furnished, and the most of it's space is
+occupied by a large bed with a canopy.
+~
+38 0 0
+D2
+~
+door~
+11 0 6352 -1
+D3
+~
+door~
+11 0 6350 -1
+E
+waterbed~
+There is a large waterbed here inviting you to make full use of it...;)
+~
+S

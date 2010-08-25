@@ -1,0 +1,20 @@
+#6291
+Long Hallway~
+This part of the passage looks more used than the parts that lie to the south
+somehow. It looks as if there is traffic that comes through here be means other
+than the soutern passage. There is a large stairwell to the north.
+~
+38 0 0
+D0
+~
+door~
+0 0 6292 -1
+D1
+~
+door~
+9 0 6296 -1
+D2
+~
+door~
+0 0 6290 -1
+S

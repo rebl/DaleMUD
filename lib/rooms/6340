@@ -1,0 +1,17 @@
+#6340
+King's Tower~
+You are not entirely sure you should be standing here. You are at the base of
+the tower belonging to Greylin, King of Rhyiana. The walls here hum with the
+power of the king. A long spiral staircase is the only option for those 
+desiring to continue upwards.
+~
+38 0 0
+D0
+~
+door~
+1 0 6312 -1
+D4
+~
+door~
+0 0 6341 -1
+S

@@ -1,0 +1,32 @@
+#27034
+North Meadow~
+	You are at the north end of a lush green meadow.  The forest rises above
+you on all sides.  A steep hill rises to the north and a small foot path is
+just south of here.  Further south of you a simple little cottage stands with
+smoke curling out of it's chimney.  A vegetable garden grows by a small well
+just north of the cottage.
+~
+97 0 2
+D0
+The top of the hill is lush and green.  A small path enters the forest from
+there.
+~
+hill~
+0 0 27033 -1
+D2
+The garden lies just to the south.
+~
+path garden~
+0 0 27035 -1
+E
+well~
+It lies just to the south, next to a vegetable garden.
+~
+E
+cottage~
+It is quaint and looks well cared for.
+~
+E
+garden~
+It looks recently tilled.~
+S

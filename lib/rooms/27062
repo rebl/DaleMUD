@@ -1,0 +1,28 @@
+#27062
+Thorn Bush~
+   A huge blackberry bush grows to the north of you.  It stands about
+15 feet tall.  It's numerous thorns convince you that trying to go further
+north would be quite painful!  The brush is full of spider webs and multitudes
+of small spiders are scurrying out from under the bush.  To the south a 
+large patch of brush grows.  And to the west you can see a mystic-looking
+circle of monoliths standing tall in this cursed grove.
+~
+97 0 3
+D0
+It appears that there is a opening inside the thorn bush.  Maybe you could
+crawl in!
+~
+bush thorn blackberries~
+35 -1 27069 -1
+D1
+The stones look old and sad.  They almost seem to be waiting for something.
+~
+stone stones~
+0 0 27064 -1
+D2
+The brush is rather thick and you see the fragments some old wood scattered
+about.
+~
+brush~
+0 0 27060 -1
+S

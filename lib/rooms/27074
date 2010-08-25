@@ -1,0 +1,20 @@
+#27074
+Dark Shore~
+    You are on the south edge of a small lake.  The waters are as black
+as night and a thick mist hangs over the water.  From all around you, you
+can hear the croaking of frogs lifting into the sky like an inhuman chorus.
+For a moment the fog clears and you can make out a small island out in the
+mist.  Then as quickly as it happened the fog swallows up the island again.
+~
+97 4 3
+D0
+The dark waters await you.
+~
+lake~
+0 0 27075 -1
+D2
+A twisted path runs south.
+~
+path~
+0 0 27072 -1
+S

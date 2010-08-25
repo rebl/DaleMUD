@@ -1,0 +1,25 @@
+#27002
+Gloomy Clearing~
+      This is a small opening in the woods.  The spongy ground smells of
+decay.  Ferns grow thickly on the edge of the clearing.  The trail splits 
+and disappears into the woods to the south, south, and east.  Dozens
+of bones lie scattered at your feet.  Erie howls echo out of the forest.
+~
+97 0 3
+D0
+The trail seems to grow muddy and dark further north.  You can here a 
+chorus of frogs rising from that direction/
+~
+trail~
+0 0 27072 -1
+D2
+The trail vanishes into thick brush to the south.
+~
+trail~
+0 0 27003 -1
+D3
+The trail disappears into darkness to the west.
+~
+trail~
+0 0 27001 -1
+S

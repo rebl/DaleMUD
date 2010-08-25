@@ -1,0 +1,19 @@
+#6406
+Secret Escape Tunnel~
+A golden light filters down from above, and you think you may be able to exit
+that way. The tunnel continues to the west.
+~
+38 256 0 2 
+D1
+~
+door~
+0 0 6405 -1
+D3
+~
+door~
+0 0 6407 -1
+D4
+~
+door~
+0 0 6302 -1
+S

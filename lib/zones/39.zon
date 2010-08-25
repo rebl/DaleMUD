@@ -1,0 +1,124 @@
+*Zone 39, rooms 6500-6599, last modified by Alun
+M 0 6501 7 6505   ; a dwarven worker
+M 0 6500 6 6505   ; a dwarven guard
+E 1 6505 13 5   ; dwarven plate mail
+E 1 6504 8 16   ; a hammer
+M 0 6500 6 6505   ; a dwarven guard
+E 1 6505 13 5   ; dwarven plate mail
+E 1 6504 8 16   ; a hammer
+O 0 6507 2 6505   ; long, black stick
+D 0 6505 3 2   ; Entrance to Mountain
+M 0 6501 7 6507   ; a dwarven worker
+M 0 6501 7 6508   ; a dwarven worker
+M 0 6501 7 6509   ; a dwarven worker
+M 0 6500 6 6509   ; a dwarven guard
+E 1 6505 13 5   ; dwarven plate mail
+E 1 6510 8 6   ; A dwarven helmet
+E 1 6512 9 9   ; Dwarven gloves
+E 1 6509 11 16   ; a two-handed dwarven axe
+M 0 6500 6 6509   ; a dwarven guard
+E 1 6511 18 2   ; A golden dwarven ring
+E 1 6505 13 5   ; dwarven plate mail
+E 1 6510 8 6   ; A dwarven helmet
+E 1 6509 11 16   ; a two-handed dwarven axe
+D 0 6509 0 2   ; Door to Kingdom
+D 0 6510 2 2   ; Path to the Castle
+D 0 6512 1 2   ; Door to Castle
+D 0 6513 1 2   ; Inside the entrance
+M 0 6503 1 6516   ; the Hide & Tooth storekeeper
+E 1 6504 8 16   ; a hammer
+E 1 7909 2 17   ; a huge treasure
+G 1 6511 18 0   ; A golden dwarven ring
+G 1 6504 8 0   ; a hammer
+G 1 6505 13 0   ; dwarven plate mail
+M 0 6501 7 6517   ; a dwarven worker
+M 0 6501 7 6519   ; a dwarven worker
+M 0 6505 1 6521   ; The giant lizard
+M 0 6514 4 6521   ; the barracks's guard
+M 0 6514 4 6521   ; the barracks's guard
+E 1 6509 11 16   ; a two-handed dwarven axe
+M 0 6514 4 6521   ; the barracks's guard
+E 1 6509 11 16   ; a two-handed dwarven axe
+M 0 6514 4 6521   ; the barracks's guard
+E 1 6509 11 16   ; a two-handed dwarven axe
+D 0 6521 2 0   ; Entrance to barracks
+M 0 6501 7 6522   ; a dwarven worker
+M 0 6511 8 6523   ; the dwarf
+E 1 7211 26 16   ; a short sword
+M 0 6511 8 6523   ; the dwarf
+E 1 7211 26 16   ; a short sword
+M 0 6511 8 6523   ; the dwarf
+E 1 7211 26 16   ; a short sword
+M 0 6511 8 6523   ; the dwarf
+E 1 7211 26 16   ; a short sword
+M 0 6511 8 6523   ; the dwarf
+E 1 7211 26 16   ; a short sword
+D 0 6523 0 0   ; First Barrack room
+M 0 6511 8 6524   ; the dwarf
+E 1 6504 8 16   ; a hammer
+E 1 6514 1 17   ; a castle key
+M 0 6511 8 6524   ; the dwarf
+E 1 7211 26 16   ; a short sword
+M 0 6511 8 6524   ; the dwarf
+E 1 7211 26 16   ; a short sword
+D 0 6525 3 2   ; Inside of Castle Strangelove
+D 0 6526 5 0   ; A store room
+M 0 6502 1 6527   ; a Night Wraith
+E 1 6503 1 17   ; a bright golden key
+M 0 6513 3 6528   ; the unwanted daughter
+M 0 6512 3 6529   ; the unwanted son
+M 0 6513 3 6531   ; the unwanted daughter
+M 0 6515 4 6531   ; the dwarf in waiting
+M 0 6515 4 6531   ; the dwarf in waiting
+M 0 6515 4 6531   ; the dwarf in waiting
+M 0 6515 4 6531   ; the dwarf in waiting
+D 0 6531 0 0   ; Queen's waiting room
+M 0 6512 3 6532   ; the unwanted son
+O 0 6516 1 6532   ; a mine key
+D 0 6532 2 0   ; Bedroom
+M 0 6513 3 6533   ; the unwanted daughter
+M 0 6512 3 6533   ; the unwanted son
+M 0 6510 4 6534   ; the dwarven peon
+E 1 7211 26 16   ; a short sword
+M 0 6510 4 6534   ; the dwarven peon
+E 1 7211 26 16   ; a short sword
+M 0 6509 1 6534   ; the dwarven doctor
+E 1 6506 2 17   ; long, black stick
+M 0 6510 4 6534   ; the dwarven peon
+E 1 7211 26 16   ; a short sword
+M 0 6510 4 6534   ; the dwarven peon
+E 1 7211 26 16   ; a short sword
+O 0 6506 2 6534   ; long, black stick
+M 0 6504 1 6535   ; Granite Head the baker
+E 1 6504 8 16   ; a hammer
+E 1 7909 2 17   ; a huge treasure
+G 1 3011 2 0   ; a danish pastry
+M 0 6500 6 6540   ; a dwarven guard
+E 1 6505 13 5   ; dwarven plate mail
+E 1 6504 8 16   ; a hammer
+E 1 6502 1 17   ; a key
+M 0 6500 6 6540   ; a dwarven guard
+E 1 6505 13 5   ; dwarven plate mail
+E 1 6504 8 16   ; a hammer
+D 0 6540 1 2   ; Dark path
+D 0 6541 3 2   ; Mine entrance
+M 0 6507 4 6542   ; A dwarven mineworker
+E 1 6508 4 16   ; dwarven club
+M 0 6507 4 6543   ; A dwarven mineworker
+E 1 6508 4 16   ; dwarven club
+M 0 6507 4 6543   ; A dwarven mineworker
+E 1 6508 4 16   ; dwarven club
+M 0 6508 3 6543   ; A dwarven mine leader
+M 0 6507 4 6543   ; A dwarven mineworker
+E 1 6508 4 16   ; dwarven club
+M 0 6508 3 6543   ; A dwarven mine leader
+M 0 6508 3 6543   ; A dwarven mine leader
+D 0 6544 0 2   ; Mine crossroad
+O 0 6517 1 6545   ; a chunk of coal
+D 0 6546 2 2   ; Mine Maze
+M 0 6517 2 6548   ; the giant snake
+M 0 6517 2 6549   ; the giant snake
+O 0 6518 1 6551   ; a mining pick
+M 0 6516 1 6553   ; the mazekeeper
+E 1 6524 1 8   ; A pair of boots
+S

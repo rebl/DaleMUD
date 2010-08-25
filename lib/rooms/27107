@@ -1,0 +1,29 @@
+#27107
+South End of the Great Hall~
+	You stand aghast at the size of this hall.  The walls are expertly
+carved into the images of giant gods and goddesses.  Large pillars line the
+east and west walls.  Two huge bronze doors stand to the south.  A large
+hall exits to the east and west.
+~
+97 9 0
+D0
+You see the north end of the hall.
+~
+hall~
+0 0 27102 -1
+D1
+You see a hallway.
+~
+hall~
+0 0 27108 -1
+D2
+Through the doors lies a guard post.
+~
+bronze doors~
+0 0 27112 -1
+D3
+You see a hallway.
+~
+hallway~
+0 0 27110 -1
+S

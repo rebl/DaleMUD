@@ -1,0 +1,21 @@
+#27055
+Overgrown Trail~
+   This trail looks as if it was once well used.  Now it is overgrown
+and choked with weeds.  The branches overhead are choked with spider webs.
+You have to hack and push your way to get through the thick brush.  For a
+moment you think you have lost the trail altogether and are trailblazing
+only to find some hint of cobbles on the ground.  North of here you see a
+small clearing, and to the west is a far clearer path.
+~
+97 4 3
+D0
+The clearing to the north is shadowy and domed with dark twisted trees.
+~
+clearing~
+0 0 27057 -1
+D3
+The path runs north south.
+~
+path~
+0 0 27051 -1
+S

@@ -1,0 +1,15 @@
+#27011
+Meat Locker~
+	This is a small room carved into a limestone wall.  A overpowering 
+stench hits you as you enter.  The floor is littered with refuse and garbage.
+The flies here are so thick that you can hardly see into the depth of the room.
+Rats scurry in all directions.  Many a bone lies on the floor.
+~
+97 9 0
+D3
+A thick, wooden door lies to the west.  It has a large lock and a barred
+window.  Beyond the door you see large room full of refuse.
+~
+door~
+7 27029 27010 -1
+S

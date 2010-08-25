@@ -1,0 +1,40 @@
+#27035
+Path Through a Garden~
+
+   You stand on a path in the center of a vegetable garden.  It looks recently
+planted as nothing is yet growing.  Just east of here is a well and to the
+south sits a small cottage with a wisp of smoke rising from the chimney.  North
+of here rises a green hill toward the dark forest.
+~
+97 0 2
+D0
+The base of the hill is not to far away.
+~
+hill~
+0 0 27034 -1
+D1
+The well stands quietly just to the west.
+~
+well~
+0 0 27036 -1
+D2
+The cottage sits quietly by some old oaks.  The sound of metal being struck
+rises from within.
+~
+cottage~
+0 0 27037 -1
+E
+cottage~
+It has a thick, thatched roof and white plastered walls.  Smoke rises from a 
+red brick chimney.  The sound of metal being pounded rises from within.
+~
+E
+garden~
+It looks well cared for.  The soil has recently been tilled.
+~
+E
+well~
+It is made of granite blocks and has a small thatched roof over it.  A winch
+dangles a rope into the well.
+~
+S

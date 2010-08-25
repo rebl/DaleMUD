@@ -1,0 +1,13 @@
+#27109
+Smithy of the Giants~
+	You stand in the mist of a huge smithy.  A large furnace burns on the
+east wall.  In the center of the room is a large anvil.  Hanging on the walls
+are crude, poorly-made arms and armor.  The only exit is to the west.
+~
+97 8 0
+D3
+The hallway leads to a huge room.
+~
+archway~
+0 0 27108 -1
+S

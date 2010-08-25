@@ -1,0 +1,16 @@
+#6331
+Stairwell~
+The walls here are decorated with the skins of numerous rare animals. These
+trophies are all of very vicious and evil foes slain by the prince. The
+stairwell traces the walls of the tower up and down.
+~
+38 0 0
+D4
+~
+door~
+0 0 6332 -1
+D5
+~
+door~
+0 0 6330 -1
+S

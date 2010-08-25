@@ -1,0 +1,18 @@
+#27007
+Inside Thorn Bush~
+    You are treading in a small tunnel under the briar.  Large insects
+scurry about underfoot.  Sap drips on you from above.  The little used trail
+runs east and west.  To the east a horrible stench rises.
+~
+97 1 3
+D1
+It looks as if there might be a cave to the east.
+~
+trail~
+0 0 27008 -1
+D3
+The trail opens up into a glade to the west.
+~
+trail~
+0 0 27006 -1
+S

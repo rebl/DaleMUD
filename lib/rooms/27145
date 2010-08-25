@@ -1,0 +1,21 @@
+#27145
+Road of Skulls~
+You stand on a road paved with skulls.  It runs east and west.  To the
+south is a dense forest.  To the north is a high mountain range.
+Far to the west you see a fortress made of iron.  Dark clouds loom
+above you.
+~
+97 68 1
+D1
+~
+~
+0 0 27145 -1
+D2
+~
+~
+0 0 27143 -1
+D3
+~
+~
+0 0 27146 -1
+S

@@ -1,0 +1,25 @@
+#6255
+Fountain~
+You are standing at the center of the surrounding courtyards. There is a
+beautiful fountain here. The fountain is of an elven child, and the water
+spouting from it's outstreched hand is golden. Ocassionally the nobles come
+and fill golden flasks with the water.
+~
+38 0 0
+D0
+~
+door~
+0 0 6256 -1
+D1
+~
+door~
+0 0 6258 -1
+D2
+~
+door~
+0 0 6254 -1
+D3
+~
+door~
+0 0 6259 -1
+S

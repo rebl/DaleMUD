@@ -1,0 +1,17 @@
+#27103
+Stone Hall~
+	This hall runs east-west.  The ceiling is about 20 feet tall and
+carved smooth.  To the east is an archway and to the west is a huge cavern.
+~
+97 9 0
+D1
+You see a large sleeping chamber.
+~
+archway~
+0 0 27104 -1
+D3
+You can see the north end of the great hall.
+~
+hall~
+0 0 27102 -1
+S

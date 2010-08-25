@@ -1,0 +1,20 @@
+#27116
+Devastated Throne Room~
+	This once might have been a throne room.  But now it is in ruin.  The
+walls have tumbled down and now it is clogged with rubble.  A makeshift
+throne has been made from stones, skulls and pelts, but it looks more like a
+pile of stones, skulls and pelts than a throne.  An archway leads north and
+some rubble has been cleared opening a passage to the west.
+~
+97 9 0
+D0
+You see the guard room.
+~
+archway~
+0 0 27112 -1
+D3
+The smell of death rises from the passage.
+~
+passage~
+0 0 27117 -1
+S

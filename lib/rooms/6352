@@ -1,0 +1,16 @@
+#6352
+King's Bedroom~
+This room seems to be as clean and orderly as the King himself.  There is a
+well kept desk on the southern wall, and a king-sized bed on the eastern.
+Hanging on the north wall is a klarge tapestry telling the history of Rhyiana.
+~
+38 0 0
+D0
+~
+door~
+11 0 6351 -1
+D3
+~
+door~
+0 0 6349 -1
+S

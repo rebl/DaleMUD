@@ -1,0 +1,26 @@
+#6400
+Dungeon Entrance~
+The air here of pain and death lets you know that you have entered the king'
+dungeon. The more you look at the room around you the more you are VERY glad
+to be here of your own accord and not under the escort of the king's guards.
+Surprisingly there is a warm glow to the north, while the screams of pain to
+the west indicate that the torturer chambers lie in that direction.
+~
+38 0 0
+D0
+~
+door~
+0 0 6401 -1
+D1
+~
+door~
+11 0 6402 -1
+D3
+~
+door~
+0 0 6414 -1
+D4
+~
+door~
+0 0 6295 -1
+S

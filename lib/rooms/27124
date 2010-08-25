@@ -1,0 +1,19 @@
+#27124
+East Side of the Chasm~
+    You stand on the east side of the huge chasm.  The wind howls from
+deep within it.  Spanning it is a small, dangerous looking rope brigde.  The
+bottom of the chasm can't be seen and your stomach churns as you look down
+into it.  A tunnel vanishes into darkness to the east.
+~
+97 9 0
+D1
+You see a very long tunnel winding into darkness.
+~
+tunnel~
+0 0 27125 -1
+D3
+The bridge swings dangerously in the wind.
+~
+bridge~
+0 0 27123 -1
+S

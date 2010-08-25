@@ -1,0 +1,25 @@
+#27152
+Chamber of Shadows~
+This dark chamber has smooth walls that curve southward to both
+the east and west.  There is a deafening silence here that makes your
+blood run cold.
+~
+97 1097 0
+D1
+~
+~
+0 0 27151 -1
+D2
+~
+door~
+8 0 27156 0
+D3
+~
+~
+0 0 27154 -1
+E
+runes rune wall~
+
+[Stone]  Rock is a liar!  He would tell you that safety is up and death is down
+~
+S

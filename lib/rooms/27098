@@ -1,0 +1,40 @@
+#27098
+High Domed Room~
+   The ceiling here is almost 40 feet above you.  Flickering torchlight
+dances on the stone walls.  Carved in relief on the stone wall is the icon of
+a huge man wrestling with a mighty dragon.  The carving is old and worn with
+age.  An high archway exits to the east and a rough stone tunnel leads east.
+To the south is a large stone door.  The stone here is old and worn.  These
+halls must be hundreds of years old.
+~
+97 9 0
+D1
+You can see a large room littered with bones and animal parts.
+~
+archway~
+0 0 27099 -1
+D2
+Through the door is a long hallway.
+~
+stone door~
+0 0 27102 -1
+D3
+The passage seems to head to the surface.
+~
+passage~
+0 0 27097 -1
+E
+relief~
+The carving shows a huge man, most likely a giant, wrestling a dragon to the
+ground with it's head in a lock.
+~
+E
+man giant~
+In one of his hands is a hammer being struck from lightning from above.
+~
+E
+dragon~
+The beast looks as if it is loosing badly.  One of it's teeth have been
+broken off.
+~
+S

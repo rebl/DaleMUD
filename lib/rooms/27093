@@ -1,0 +1,27 @@
+#27093
+Garbage Dump~
+	Someone, or something, has been using this clearing as a refuse heap.
+Bones litter the ground and the a cloud of flies dance around the rotting meat
+left on them.  Most of the bones appear to have been smashed for their
+marrow.  Most appear to be from large animals like cows or horses but there
+are many human and elf bones here as well.  A small trail leads further north
+into the woods and a huge cave looms to the east.  There also appears to be a
+small path that goes south.
+~
+97 0 2
+D0
+You see a fork in the trail further north.
+~
+trail~
+0 0 27050 -1
+D1
+The cave dealing seems to be about 20 feet tall!
+~
+cave~
+0 0 27097 -1
+D2
+The trail vanishes into a dense grove of trees.
+~
+~
+0 0 27094 -1
+S

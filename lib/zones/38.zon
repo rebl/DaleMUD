@@ -1,0 +1,157 @@
+*Zone 38, rooms 6222-6499, last modified by Alun
+M 0 6241 1 6224   ; The Sentinel Tree
+M 0 6225 6 6226   ; A Noble Elf
+M 0 6235 6 6229   ; A maid
+M 0 6225 6 6229   ; A Noble Elf
+M 0 6224 6 6232   ; The Field Worker Elf
+M 0 6226 4 6233   ; An Elven Archer
+E 1 22618 10 5   ; An Elven Shirt
+E 1 22621 5 6   ; An Elven Archer's hat
+M 0 6230 1 6234   ; The mother wolf
+M 0 6231 4 6234   ; A wolf cub
+M 0 6231 4 6234   ; A wolf cub
+M 0 6231 4 6234   ; A wolf cub
+M 0 6231 4 6234   ; A wolf cub
+M 0 6224 6 6235   ; The Field Worker Elf
+M 0 6224 6 6235   ; The Field Worker Elf
+M 0 6226 4 6236   ; An Elven Archer
+E 1 22618 10 5   ; An Elven Shirt
+M 0 6224 6 6237   ; The Field Worker Elf
+M 0 6224 6 6237   ; The Field Worker Elf
+M 0 6229 9 6237   ; The peasant
+M 0 6232 1 6238   ; A pile of vines
+M 0 6229 9 6238   ; The peasant
+M 0 6243 2 6239   ; Queen Katriana of Rhyiana
+E 1 7504 3 0   ; a beautiful red rose
+G 1 6231 1 0   ; a lapis lazuli
+M 0 6225 6 6240   ; A Noble Elf
+D 0 6241 1 0   ; Peasant Gate
+D 0 6242 0 0   ; Pebble Lane
+D 0 6242 2 0   ; Pebble Lane
+D 0 6242 3 0   ; Pebble Lane
+D 0 6243 0 0   ; Shack
+D 0 6244 2 0   ; Shantee
+M 0 6235 6 6246   ; A maid
+D 0 6246 2 0   ; Shantee
+D 0 6247 0 0   ; Pebble Lane
+D 0 6247 2 0   ; Pebble Lane
+D 0 6248 0 0   ; Shack
+D 0 6250 0 0   ; The Stronghold Gates
+D 0 6251 0 0   ; Passage
+D 0 6251 1 0   ; Passage
+D 0 6251 2 0   ; Passage
+M 0 6233 6 6252   ; The Elven Guard
+E 1 21351 5 5   ; a suit of elven chain-mail
+E 1 22623 12 7   ; Some Elven leather pants
+M 0 6229 9 6252   ; The peasant
+M 0 6235 6 6252   ; A maid
+D 0 6252 2 0   ; Inner Gate
+M 0 6233 6 6253   ; The Elven Guard
+E 1 21351 5 5   ; a suit of elven chain-mail
+E 1 22623 12 7   ; Some Elven leather pants
+M 0 6229 9 6254   ; The peasant
+M 0 6233 6 6255   ; The Elven Guard
+E 1 21351 5 5   ; a suit of elven chain-mail
+O 0 1500 2 6255   ; A fountain
+M 0 6234 1 6257   ; The King's Secretary
+M 0 6229 9 6262   ; The peasant
+M 0 6242 1 6263   ; Moe the Bartender
+M 0 6226 4 6270   ; An Elven Archer
+E 1 22618 10 5   ; An Elven Shirt
+M 0 6235 6 6271   ; A maid
+M 0 6224 6 6271   ; The Field Worker Elf
+M 0 6226 4 6272   ; An Elven Archer
+E 1 22618 10 5   ; An Elven Shirt
+M 0 6229 9 6272   ; The peasant
+G 1 3662 2 0   ; a side of beef
+M 0 6225 6 6273   ; A Noble Elf
+D 0 6280 3 0   ; Small Stairwell
+M 0 6225 6 6281   ; A Noble Elf
+M 0 6233 6 6285   ; The Elven Guard
+E 1 21351 5 5   ; a suit of elven chain-mail
+M 0 6233 6 6285   ; The Elven Guard
+M 0 6229 9 6287   ; The peasant
+M 0 6229 9 6288   ; The peasant
+D 0 6291 1 0   ; Long Hallway
+M 0 6229 9 6292   ; The peasant
+D 0 6296 3 0   ; Secret Passage
+D 0 6297 1 0   ; Secret Passage
+D 0 6298 2 1   ; Treasure Room
+M 0 6223 2 6299   ; King Greylin
+E 1 6227 1 5   ; the Regal Cloak of Rhyiana
+E 1 6229 2 16   ; the King's Sword of Rhyiana
+D 0 6299 0 1   ; Throne Room
+D 0 6299 3 0   ; Throne Room
+M 0 6236 2 6300   ; A servant
+M 0 6233 6 6300   ; The Elven Guard
+E 1 21351 5 5   ; a suit of elven chain-mail
+M 0 6237 1 6305   ; The butler
+D 0 6305 2 0   ; Butler's Chambers
+D 0 6306 2 0   ; Guest Quarters
+D 0 6307 0 0   ; Hallway
+D 0 6307 2 0   ; Hallway
+D 0 6308 0 0   ; Guest Chambers
+D 0 6309 2 0   ; Guest Chambers
+D 0 6310 0 0   ; Hallway
+D 0 6310 2 0   ; Hallway
+M 0 6225 6 6311   ; A Noble Elf
+D 0 6311 0 0   ; Guest Quarters
+D 0 6312 0 0   ; End of Hallway
+D 0 6312 1 0   ; End of Hallway
+D 0 6312 2 0   ; End of Hallway
+D 0 6313 0 0   ; Secret Passage
+M 0 6235 6 6316   ; A maid
+D 0 6320 2 0   ; Chancellor's Tower
+D 0 6322 1 0   ; Chamber Doorway
+M 0 6228 1 6323   ; Lord Drolchan
+E 1 6230 1 3   ; the Chain of Office of Rhyiana
+E 1 6226 1 17   ; the Lord Chancellor's Staff of Power
+D 0 6323 3 0   ; Foyer
+D 0 6330 3 0   ; Prince's Tower
+D 0 6333 1 0   ; Entrance to the Chambers
+D 0 6335 1 0   ; Greeting Area
+D 0 6335 3 0   ; Greeting Area
+D 0 6336 3 0   ; Private Chamber
+O 0 6224 2 6337   ; the Ranger Claw
+M 0 6227 1 6338   ; Prince Mardren
+E 1 6225 1 5   ; a forest green shirt
+E 1 6223 2 16   ; the Ranger's Sword
+E 1 6224 2 17   ; the Ranger Claw
+G 1 6228 1 0   ; a forest green potion
+D 0 6340 0 0   ; King's Tower
+D 0 6345 0 0   ; Threshold
+M 0 6223 2 6348   ; King Greylin
+M 0 6243 2 6348   ; Queen Katriana of Rhyiana
+M 0 6235 6 6349   ; A maid
+D 0 6349 2 0   ; Private Chambers
+D 0 6350 1 1   ; Queen's Bedroom
+O 0 7502 1 6351   ; a large waterbed
+D 0 6351 2 1   ; Secret Bedroom
+D 0 6351 3 1   ; Secret Bedroom
+M 0 6236 2 6352   ; A servant
+D 0 6352 0 1   ; King's Bedroom
+D 0 6400 1 1   ; Dungeon Entrance
+M 0 6239 1 6401   ; The Jailor
+D 0 6402 3 1   ; Secret Escape Tunnel
+M 0 6240 1 6414   ; The Hooded Torturer
+E 1 24985 2 6   ; a dark hood
+D 0 6416 0 0   ; Damp Passage
+D 0 6416 2 0   ; Damp Passage
+D 0 6417 0 1   ; Damp Passage
+D 0 6417 2 0   ; Damp Passage
+D 0 6417 3 1   ; Damp Passage
+D 0 6418 2 0   ; Prison Cell
+M 0 6238 3 6419   ; A prisoner
+D 0 6419 0 0   ; Prison Cell
+M 0 17010 2 6420   ; The green slime
+D 0 6420 2 1   ; Prison Cell
+M 0 6238 3 6421   ; A prisoner
+M 0 6238 3 6421   ; A prisoner
+D 0 6421 0 0   ; Prison Cell
+D 0 6499 0 0   ; Alun's Getaway
+D 0 6499 1 0   ; Alun's Getaway
+D 0 6499 2 0   ; Alun's Getaway
+D 0 6499 3 0   ; Alun's Getaway
+D 0 6499 4 0   ; Alun's Getaway
+D 0 6499 5 0   ; Alun's Getaway
+S

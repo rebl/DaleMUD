@@ -1,0 +1,31 @@
+#27102
+North End of the Great Hall~
+    The size of this hall makes you gasp.  Your light cannot even reach
+the ceiling and the echo of your speech and breathing only increases the
+mystery.  Large stone columns support the arched walls and carvings of great
+giant gods and goddesses are scattered about.  A tunnel leads east and west
+and far to the south you can make out a huge archway.  A large stone door
+rests to the north.
+~
+97 9 0
+D0
+A large domed chamber lies through the doorway.
+~
+stone door~
+1 -1 27098 -1
+D1
+The passage leads into darkness.
+~
+passage~
+0 0 27103 -1
+D2
+You see the south end of the hall.
+~
+hall~
+0 0 27107 -1
+D3
+You see a long passage with the end obscured in darkness.
+~
+passage~
+0 0 27105 -1
+S

@@ -1,0 +1,16 @@
+#6296
+Secret Passage~
+To the west there is a large tapestry that hides this passage way. By looking
+through a slit in the tapestry you see a long hallway. The passage continues
+to the east.
+~
+38 0 0
+D1
+~
+door~
+0 0 6297 -1
+D3
+~
+door~
+9 0 6291 -1
+S

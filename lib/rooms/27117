@@ -1,0 +1,19 @@
+#27117
+Long Hall~
+     The smell of death is strong here, rising up from the west.  This
+long stone hallway recently underwent a collapse.  Much of the rubble has
+been cleared out, but it is still difficult climbing over some of the remaining
+trash.  What is left of the passage runs weast and west.
+~
+97 9 5
+D1
+You can make out the devastated throne room.
+~
+passage~
+0 0 27116 -1
+D3
+You can't see it but your nose tells you that you're near many dead bodies.
+~
+passage~
+0 0 27118 -1
+S

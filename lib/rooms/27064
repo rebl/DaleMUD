@@ -1,0 +1,32 @@
+#27064
+The Circle of Standing Stones~
+	You are standing in the circle of stones.  Each one is roughly 
+rectangular and standing about 20 feet tall.  At the edge of your hearing 
+you can make out an almost inaudible humming.  A deep sadness seem to
+emanate from all around.  A small unadorned stone alter rests in the center
+of the circle.  To the north a huge wall of thorns stands running east and
+west.  A small foot path wanders into just to the north and another runs
+south toward a distant gate.
+~
+97 0 -1 2260 27065 3 3 3
+D0
+The path seems to lead to a clearing on the far side of the brush.
+~
+path foot~
+0 0 27066 -1
+D1
+A small clearing lies just to the east.
+~
+~
+0 0 27063 -1
+D2
+The gate looks rather ominous and foreboding.
+~
+gate foot path~
+0 0 27059 -1
+D3
+The thorn bush is especially thick to the east.
+~
+thorn bush wall thorns~
+0 0 27062 -1
+S

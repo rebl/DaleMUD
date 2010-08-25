@@ -1,0 +1,29 @@
+#27020
+Gritha's Ceremonial Fire~
+ A huge fire roars away here almost burning you.  Wood and bones
+line the coals of this massive fire.  The air is filled with insane cries
+and calls.  A path leaves to the north.  To the east is a tunnel carved into
+the rock and to the west a natural cave lies.  Looming over the fire, just
+to the south is a huge throne carved into the living rock of the canyon face.
+~
+97 0 4
+D0
+The path escapes to the forest to the north.
+~
+path~
+0 0 27018 -1
+D1
+~
+~
+0 0 27023 -1
+D2
+A huge throne lies carved into the living rock just to the north.  Carved above
+the throne is the image of Malar, god of bloodlust.
+~
+throne~
+0 0 27021 -1
+D3
+~
+~
+0 0 27022 -1
+S

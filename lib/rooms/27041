@@ -1,0 +1,34 @@
+#27041
+Plagued Trail~
+   The mist is not so thick here.  Small forest animals lay scattered
+about you.  All dead from some vile disease.  The flies here are thick as they
+feast on the dead and dying.  The tree trunks around you all drip with a
+thick slime.  A path leaves south and another trail escapes this place of
+death to the east.
+~
+97 0 3
+D1
+You can barely make out an intersection through the mist.
+~
+path~
+0 0 27042 -1
+D2
+The mist gets very thick to the south.
+~
+path~
+0 0 27040 -1
+E
+animals~
+Squirrels, birds, opossums, and even a wolf all lay dead here.  Flies swarm
+about their bodies.
+~
+E
+tree trees~
+Their twisted trunks drip with a yellow slime.  I would not suggest touching
+it!
+~
+E
+slime~
+It seem to me a living parasite of some sort, eating the trees.
+~
+S

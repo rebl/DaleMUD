@@ -1,0 +1,20 @@
+#27069
+Inside the Thorn Bush~
+	You have to duck low to avoid being caught in the masses of thorns
+and webbing all around you.  Small spiders swarm out of a large hole in the
+ground.  They are everywhere!  Crawling on you and getting inside your armor!
+There small bites are harmless but painful.
+~
+97 1 3
+D2
+The exit to this hellish place lies just to the south.
+~
+bush~
+0 0 27062 -1
+D5
+Only darkness can bee seen down the dark hole but you are sure there are a 
+multitude of spiders waiting for you down there.
+~
+hole~
+0 0 27070 -1
+S

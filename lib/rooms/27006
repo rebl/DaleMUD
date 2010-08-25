@@ -1,0 +1,23 @@
+#27006
+South End of the Glade~
+	A thick briar patch grows here at the edge of the trees.  Deeper in the
+forest screams can be heard.  On the ground is a pile of cracked bones, drained
+of all their marrow.  The trail runs north to west.  Large set of footprints
+disappear into the brush to the east.
+~
+97 0 2
+D0
+The glade opens up to the north.
+~
+trail~
+0 0 27005 -1
+D1
+~
+~
+0 0 27007 -1
+D3
+The trail leads to a small intersection.
+~
+trail~
+0 0 27016 -1
+S

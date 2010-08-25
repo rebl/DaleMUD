@@ -1,0 +1,15 @@
+#27054
+Pine Grove~
+	You stand in the midst of a clear pine grove.  Most of the trees that
+grow around you are rather young.  A thick mat of grass grows at your feet
+and several huge rocks litter the ground here covered with a thick coat of
+emerald green moss.  A patch of grass has been stained red with blood.  A
+small trail leaves north.
+~
+97 0 3
+D2
+A small trail snakes its way up a steep hill to the north.
+~
+trail small~
+0 0 27053 -1
+S

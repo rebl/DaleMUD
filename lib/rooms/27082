@@ -1,0 +1,16 @@
+#27082
+Inside the Hovel~
+	You have to watch your step as you walk into this small cabin as the
+floorboards are rotting and already sport many holes to the dark waters
+below you.  A small wooden table rests here with a dented plate and other
+filthy eating utensils.  A large piece of drift wood hanging on the wall
+reads 'Home Sweet Home.'  A lantern hanging from the ceiling illuminates the
+building.
+~
+97 4 1
+D3
+Outside is the dark lake.
+~
+door~
+0 0 27081 -1
+S

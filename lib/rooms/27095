@@ -1,0 +1,18 @@
+#27095
+Under a Log~
+   You had to crawl under a fallen log to squeeze this far into the 
+dense forest.  The warm smell of earth is all around.  To the north is a
+dense forest path and to the south you can see a lush opening in the woods.
+~
+97 0 3
+D0
+The path gets very overgrown.
+~
+path~
+0 0 27094 -1
+D2
+The clearing is strikingly beautiful.  Fireflies dance about.
+~
+clearing~
+0 0 27096 -1
+S

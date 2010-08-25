@@ -1,0 +1,26 @@
+#27018
+Canyon~
+    The walls rise steeply above you almost 100 feet.  The stone all about is
+made of deep reds and orange.  No plants grow here at all.  Just to the south
+you see a huge fire raging.  A small archway leads steeply down to the west
+from which a fierce smell rises.  The path leads north, out of the canyon, and
+south, to the fire.
+~
+97 0 4
+D0
+The path leads toward the dark forest.
+~
+path~
+0 0 27017 -1
+D2
+A huge fire blazes just to the south.  Beyond that is a massive throne carved
+from the canyon wall.
+~
+path~
+0 0 27020 -1
+D3
+Down the steep hill appears to be a refuse heap.  Stay away!
+~
+arch archway~
+0 0 27019 -1
+S

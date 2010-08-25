@@ -1,0 +1,21 @@
+#27061
+Cluster of Oaks~
+	You stand in a cluster of tall oaks.  These proud trees have been
+encased in the misty webbing of these spiders.  The trunks are sticky with
+web resin and small baby spiders falling out of the branches keep landing on
+you.  A high stone wall runs to the south and east of you as it seems you are
+in the corner of an old... garden?  To the west is the gate.  To the north
+west you can make out a circle of stones and a small field is to the west.
+~
+97 0 3
+D0
+A single dead tree grows to the north in the center of a field.
+~
+field~
+0 0 27063 -1
+D3
+The gate lies just to your west.
+~
+gate~
+0 0 27059 -1
+S

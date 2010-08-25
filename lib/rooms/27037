@@ -1,0 +1,27 @@
+#27037
+A Porch~
+	You stand on a porch in front of the cottage.  The walls are a plastered
+white.  The roof is made of thick thatch.  The unceasing sound of someone
+hammering metal rises from within the cottage.  The doorway opens just to the
+east.  North of here is a small vegetable garden.  To the south is a clearing.
+~
+97 0 0
+D0
+The garden sits to the north.~
+garden~
+0 0 27035 -1
+D1
+The door is made of oak and has strong, iron hinges.~
+door~
+3 0 27039 -1
+D2
+A small clearing lies to the south.
+~
+clearing~
+0 0 27038 -1
+E
+cottage~
+It was hand crafted many years ago.  Its design is simple and effective.
+Through the window you can see a fire.
+~
+S

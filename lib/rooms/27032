@@ -1,0 +1,21 @@
+#27032
+Wet Forest Trail~
+    This open trail is crowned my lush, green vegetation.  Small pines
+grow all around you and the hard, red branches of mansineata trees dangle over
+you like loving arms.  The air is clear and fresh but an evil mist can be seen
+down the western trail.  The forest opens into a lush green field just to the
+south.
+~
+97 0 3
+D2
+A steep, green field rolls down to the south into a small valley.  At the edge
+of your vision you think you see a cottage nestled in the trees.
+~
+clearing~
+0 0 27033 -1
+D3
+The trail vanishes into an evil mist.
+~
+trail~
+0 0 27031 -1
+S

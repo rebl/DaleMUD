@@ -1,0 +1,19 @@
+#27053
+Sloping Trail~
+	The path slopes rather steep here going down into a pine grove to
+the south.  The trees that grow around you seem to be a bit greener and 
+healthier.  The pine grove lies just to the south and to the north is a
+bloody battlefield.  A trail of blood leads south.
+~
+97 0 3
+D0
+A small pine grove grows at the base of the hill just to the north.
+~
+pine grove~
+0 0 27054 -1
+D2
+A thick pine grove grows north of here.
+~
+grove path~
+0 0 27056 -1
+S

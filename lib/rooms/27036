@@ -1,0 +1,18 @@
+#27036
+The Well~
+   You stand in a lush field.  A hill rises to the north and a garden
+is just to your west.  Through some trees to the south you can make out the
+cottage.  A shiver passes through your spine as you see the dark forest to
+the north.
+~
+97 0 2
+D0
+The hill lies to the north.~
+hill~
+0 0 27034 -1
+D3
+The garden is just to the west.
+~
+garden~
+0 0 27035 -1
+S

@@ -1,0 +1,26 @@
+#27154
+Chamber of Shadows~
+You are in a chamber with smooth black walls.  For some reason
+you fear to speak a word lest death take you.  The chamber curves 
+eastward to both the north and south.  Some runes have been carved into
+the wall here.
+~
+97 1097 0
+D0
+~
+~
+0 0 27152 -1
+D2
+~
+~
+0 0 27153 -1
+D3
+~
+door~
+8 0 27155 0
+E
+runes wall~
+
+It reads: These walls hold many, many secrets.
+~
+S

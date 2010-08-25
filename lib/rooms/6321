@@ -1,0 +1,15 @@
+#6321
+Staircase~
+This is a simple staircase. Above is a landing and the base of the tower lies
+below.
+~
+38 0 0
+D4
+~
+door~
+0 0 6322 -1
+D5
+~
+door~
+0 0 6320 -1
+S

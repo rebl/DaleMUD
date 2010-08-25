@@ -1,0 +1,29 @@
+#27076
+On the Dark Lake~
+	You are startled my the cries of marsh birds as they take from the
+branches of a half submerged tree growing out of the lake.  The black waters
+lap below you, hiding many unseen horrors.  The mist will not relent and you
+are still without a view of the sky.
+~
+97 1 7 7 7
+D0
+The mist obscures all sight.
+~
+lake~
+0 0 27080 -1
+D1
+The mist obscures all sight.
+~
+lake~
+0 0 27078 -1
+D2
+The mist obscures all sight.
+~
+lake~
+0 0 27075 -1
+D3
+The mist obscures all sight.
+~
+lake~
+0 0 27077 -1
+S

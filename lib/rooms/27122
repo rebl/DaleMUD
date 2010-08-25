@@ -1,0 +1,19 @@
+#27122
+West Side Of a Great Chasm~
+	You are in a huge cavern with no sign of a ceiling.  Before you is a
+huge chasm spanning the length of this cave.  A powerful wind blows from its
+depths whistling by you.  A small, rickety, rope bridge spans the chasm,
+swinging back and forth in the strong wind.
+~
+97 9 0
+D1
+Hovering above the rope bridge you can see a dark figure waiting for you.
+~
+bridge~
+0 0 27123 -1
+D3
+A small tunnel winds off to the east.
+~
+tunnel~
+0 0 27121 -1
+S

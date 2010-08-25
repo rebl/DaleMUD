@@ -1,0 +1,17 @@
+#27108
+Hallway~
+	This is an east-west hallway.  You can hear a ring of a hammer on
+metal just to the east.  A huge hall lies just to the west.
+~
+97 9 0
+D1
+You see a smithy.
+~
+archway~
+0 0 27109 -1
+D3
+You see the great hall.
+~
+hall~
+0 0 27107 -1
+S

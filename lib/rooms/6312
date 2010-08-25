@@ -1,0 +1,24 @@
+#6312
+End of Hallway~
+The hallway ends in three large doors at the base of three large towers.
+To the north lies the Lord Chancellor's Tower, the Prince's Tower lies to
+the east, and the King's to the south.
+~
+38 0 0
+D0
+~
+door~
+1 0 6320 -1
+D1
+~
+door~
+1 0 6330 -1
+D2
+~
+door~
+1 0 6340 -1
+D3
+~
+door~
+0 0 6310 -1
+S

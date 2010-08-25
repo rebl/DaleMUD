@@ -1,0 +1,736 @@
+# 
+EMPTY SLOT
+#
+"ROOM TELEPORT"
+ 
+some new things for teleport rooms:
+ 
+ 
+edit tele <time> <room> <flags> [<countdown>]
+ 
+flags = 
+1     LOOK    (do a look when you get teleported
+2     COUNT   (this is a countdown room)
+4     RANDOM  (after the first teleport, this room will teleport in random
+		time)
+8     SPIN    (Not implemented yet)
+ 
+ 
+Some things to note:
+ 
+ if you are going to set the COUNT flag, then leave the <time> = 0
+ 
+ COUNT, RANDOM and SPIN are more or less mutually exclusive.
+ 
+ 
+examples
+ 
+   edit tele 30 1000 1       ;  teleport fires every 30 ticks, goes to room
+			        1000, does a look
+ 
+   edit tele  0 1000 3 30    ; 30 ticks after a player enters this room,
+				they will be teleported to room 1000, and
+				they will do a look.
+ 
+   edit tele  0 1000 2 30    ; 30 ticks after a player enters this room,
+				they will be teleported to room 1000, and they
+				will NOT do a look
+ 
+Any questions, post them on the board
+ 
+The random time will be between 10 and 100 ticks
+ 
+(so roughly between 7.5 seconds and 75 seconds)
+ 
+Note, this is a god command, mortals can't do it.
+ 
+
+#
+"SECTOR TYPES"
+0 = indoors
+1 = city
+2 = fields
+3 = forest
+4 = hills
+5 = mountains
+6 = water (swimmable)
+7 = river (non-swimmable)
+8 = air
+9 = water
+10  desert
+
+#
+EDIT
+   Edit allows you to edit rooms.  The room you are currently in is
+the one that is edited.  You can edit any room, but the changes will
+not be permanent.  However, using the rsave, and rload commands, you
+can save your changes into a file, and reload them later into the
+game, (if it crashes, for example).
+ 
+The fields work as follows:
+ 
+ edit <field> <attributes>
+ 
+   field is one of the following:
+ 
+	name     :  changes the name of the room.
+	desc     :  changes the room description.
+	exit     :  adds, deletes or modifies a room's exits
+	fs       :  changes the Flags, and Sector type.
+	exdsc    :  adds, changes or deletes an exit description
+	extra    :  adds an extra description to a room.
+	riv      :  adds special parameters for rivers.
+	tele     :  makes the room a teleport room.
+        tunn     :  makes the room a tunnel room.
+ 
+   attributes:
+ 
+	name  <name of room>
+	desc  <enter>  (it will prompt you for text)
+	exit  <dir> <door flags> <key> <to_room> [<open command>]
+	fs    <flags> <sector_type>
+	exdsc <dir> <enter>  (prompts you for text)
+	extra <keywords> <enter>  (prompts you for text)
+	riv   <speed> <dir>
+        tele  <time> <to_room> <look-flag>
+        tunn  <mob_lim>
+ 
+<dir>  0 = n, 1 = e, 2 = s, 3 = w, 4 = u, 5= d.
+<door flags> 
+        'S' - secret flag
+        'C' - climb
+        'P' - pickproof
+        'D' - is_door
+        "edit exit 0 2s 23 blah-blah"
+        and SECRET|IS_DOOR|PICKPROOF exit will be created
+ 
+<key> item # that opens door, (if no door, use -1)
+<to_room>  The room # that the exit goes to.
+		* Optional command
+[<open command>] Command to open this exit 
+		(pull=224, twist=371, turn=372 lift=373, push=374)
+		 You will be prompted for the open to be
+		 twisted/pulled/turned.
+<flags>   type help roomflags.
+<sector_type>  Type help sector_type
+<time> The time interval between teleports.  Must be a multiple of 10
+       10 is very fast.  60 is much slower.  
+<look-flag> whether to do a look when the characters are teleported.
+            if this number is 0, they won't know they've been teleported
+            unless they look on their own.  if the number is not 0, each 
+            time they are teleported, they are forced to look.
+ 
+<keywords> which things will trigger info.. for example if the keyword is
+	case
+	then if you type look at case, the text will be displayed.
+ 
+<speed>  must be a multiple of 15. if you do not want the river to flow, 
+	speed should be 0.  
+ 
+<mob_lim>  A number, indicating the number of mobiles that can be in the
+           room at one time.  The TUNNEL roomflag must be set, although
+           use of edit tunn X  automatically sets the flag.           
+ 
+#
+ROOMFLAGS
+   DARK           1
+   DEATH          2
+   NO_MOB         4
+   INDOORS        8
+   PEACEFUL      16  /* No fighting */
+   NOSTEAL       32  /* No Thieving */ Does not work (yet)
+   NO_SUM        64  /* No summoning of creatures in these rooms */
+   NO_MAGIC     128  Does not work yet
+   TUNNEL       256 /* only X people in room (X set by edit tunn) */
+   PRIVATE      512 no teleport to this room, no goto when more than 2 people
+#
+SETSEV
+
+	Setting the number higher means you will see less and less of the
+system message "/* Celestian has left the game */. The range is from 0 (the
+most messages) to 5, if you want to see NONE of the messages SETSEV 9.
+
+#
+STRING
+For changing the text-strings associated with objects and characters. The
+format is:
+ 
+string <type> <name> <field> [<string> | <keyword>]
+ 
+Type is either 'obj' or 'char'.
+Field is one of the following(the names may be abbreviated):
+Name                  (the call-name of an obj/char - kill giant)
+Short                 (for inventory lists (objs) and actions (chars))
+Long                  (for when obj/character is seen in room)
+Title                 (for players)
+Description           (For look at. For objs, must be followed by a keyword)
+Delete-description    (only for objs. Must be followed by keyword)
+ 
+Where a string is expected as the last argument, a new line will make
+you enter a string mode, and the game will prompt you for new lines to
+the string until you exceed the maximum length for the string or you
+end a line with a '@'.
+#
+LOAD
+For loading new objects or characters from the database. The format is:
+  load <type> <number>
+Where <type> is either 'obj' or 'char', and number is the number of the object
+or character you wish to create.
+#
+THINK
+What people are supposed to do before they do something.  Gods also have
+the uncanny ability to let other gods know what they are thinking via
+this command.
+#
+NOHASSLE
+
+A god may (is supposed to) set this upon themselves to prevent mobiles
+from attacking them.
+#
+BAMFIN
+Bamfin <bamf definition>
+
+ Additional arguments can include ~N for where you  Want your name (if you 
+ want your name).  If you use ~H, it puts in either his or her depending 
+ on your sex.  If you use the keyword 'def' for your bamf, it turns on 
+ the default bamf.
+
+#
+BAMFOUT
+Bamfout <bamf definition>
+  Additional arguments can include ~N for where you  Want your name (if 
+  you want your name). If you use  ~H, it puts in either his or her 
+  depending on your  sex.  If you use the keyword 'def' for your bamf,
+  it turns on the default bamf.
+#
+QUI SHUTDOW
+
+ Just to prevent accidental quittings and/or shutdowns.
+ This command does not DO anything, it simply is.
+#
+PURGE
+A way to make the world a little cleaner.
+Usage:
+  purge                         To empty a room of monsters and objects.
+  purge <character>             To remove a living thing. Kicks out a player.
+  purge <object>                Figure this one out yourself.
+#
+STAT
+  If you are interested in a person and want to find out about
+his/her/its skills, strength, mana, hitpoints etc. In addition, 'stat
+room' will give you useful information about the room you are in. You can
+also stat objects
+
+#
+USERS
+Tells you who is logged on to the game, and where they are playing from.
+#
+AT
+
+	This commands allows you to execute commands in rooms your not
+actually in. Such as look in a room, say something in a room, use a social
+in a room or even read messages on boards in a room.
+
+Examples:
+	at 3054 look board
+	at 3005 say Welcome to the Meeting Square.
+	at Celestian poke celestian
+#
+ADVANCE
+
+	advance NAME CLASS LEVEL
+
+	Name = Username
+	Class=	W)arrior,C)leric,T)hief,M)age,S)orcerer,P)aladin,Ps(I)onist,
+		R)anger. (Use only the single letter)
+	Level= Level to advance them to, 1-60.
+
+	This old backwards command allows you to advance players up in
+levels and is suppose to give experince points and other things to match as
+if they gained the levels themselves. However, it has problems with racial
+maxes, and other things. It is not very dependable... maybe someone should
+actually fix it? (:-)
+
+Example:
+	advance celestian w 60
+#
+BEEP
+	Beep <name>	 will send the 'BEEP' noise to name.
+	Beep		 Will toggle BEEP on and off.
+
+#
+CHPWD
+	Chpwd name password
+	
+	Name = Persons name you wish to change the password on.
+	Password = New password for name.
+
+	Chpwd is used to change passwords on persons.
+
+	
+#
+CREATE
+	Create (start> (end)
+
+	Creates rooms ranging from START to END. Useful for person using
+redit since it does NOT make rooms. Create about 20 rooms, edit them, save
+them and your ready for 20 more!
+
+#
+CLONE
+
+	Clone mob|obj <name> <count>
+
+	With clone you can make several objects or mobiles with the same
+settings and equipment, even the position of the equipment on the mob will
+be saved. You must pass MOB OR OBJ in the command line to tell it to search
+for a MOB or OBJECT to clone. Use the NAME of the object or mob, then the
+number of mob/objs to clone. You can only clone up to a maximum of 20
+obj/mobs.
+
+#
+DEBUG
+	Not implemented.
+
+#
+DISCON
+	discon <name>
+
+	Discon will disconnect a user from the game. This is useful for
+users that have somehow lost control of their terminal (locked up...
+whatever). Most users will shout 'Will you please disconnect Tarl?'. Just
+discon TARL and they will be able to log back it.
+
+Gods also use this command to annoy each other.
+
+#
+DRAIN
+
+	Drain <name> <number>
+
+	Drain will allow a immortal to remove levels almost as if s/he was a
+super vampire. To use simply use the name of the person you wanna drain and
+the NUMBER of levels you wanna drain. 
+
+Note: If a user is 50/45 and you say drain Tarl 5, his levels would be 
+reduced to 45/45.
+#
+EVENT
+
+	Event <mobnum>
+
+	This command forces a mob to execute it's special procedure.
+#
+FORCE
+
+	Force <name> <command>
+	Force all <command>
+
+	Force allows a immortal to force a user to execute a command as if
+they typed it themselves. Such as 'force tarl wear all' would force Tarl to
+wear everything he has in his inventory. You can also do things like 'force
+all save', and force all players below your level to save.
+
+Do not use this to annoy people!
+
+#
+FREEZE
+
+	Freeze <name>
+
+	Freeze stops a player from using ANY commands. If someone logs in
+and starts shouting curses, or tries to pkill, this command comes in very
+handy. It will not be removed util a immortal uses the freeze command to
+toggle it on the same person.
+
+#
+FORCERENT
+
+	Forcerent <name>
+	Forcerent alldead
+
+	This command allows an immortal to rent all users that are 'dead
+link'. It does not speed up the game, but clears up the dead links. Be sure
+to not forcerent a person the is polied, the game has two copies of a polied
+user and one 'seems' to be dead link to the game. If you do they will return
+and have double EQ.
+
+#
+GHOST
+
+	Ghost <name>
+
+	Ghost will allow you to summon up a user from rent, this command is
+good to look a users EQ or stats, be sure to forcerent the person when your
+done.
+
+#
+INVISIBLE
+
+	Invisible <invis level>
+
+	Invisible allows a immortal to hide from users below the invis level
+set. Invisible with no commands sets your invis level to 51, or toggles it
+completely off, depending on if it is on or not.
+
+#
+IMPTEST
+
+	This command is used by the implementors to test new commands.
+Generally it is not good to use it unless you know what your doing.
+#
+INTERVEN
+
+	Interven <portal|astral|summon|kill|logall|eclipse|dns|req>
+
+	Interven allows you to set (or toggle off) global mud settings.
+
+	portal	= disable portal spell/skills.
+	astral	= disable astral spell/skills.
+	summon	= disable summoning spell/skills.
+	kill  	= disable racial killing.
+	logall	= set global logging on ALL users. (Good for debugging bugs)
+	eclipse	= Make the world dark ALL over.
+	dns	= turn Domain name checking off.
+	req	= Requires all new users to be AUTHORIZED
+
+See also :AUTH
+#
+LOG
+	log <name>
+
+	This command sets the log bit ON|OFF on a user. To remove the bit
+simply log the person again.
+
+#
+MFORCE
+	Mforce <name|all> <command>
+
+	Mforce allows you to force a MOB to do something, like Force. Mforce
+ALL forces all mobs in the ROOM your in currently.
+
+See Also :FORCE
+
+#
+MOBEDIT
+
+	Mobedit <name>
+
+	Mobedit allows you to enter a VT100 editor to edit a mobile.
+
+#
+NOSHOUT
+
+	noshout <name>
+
+	This command allows you to toggle on or off the noshout bit on a
+user. A user with this flag cannot shout/gossip/auction.
+
+#
+NOHASSLE
+
+	Nohassle
+
+	Nohassle is suppose to make mobs ignore you.
+
+#
+NUKE
+
+	Nuke <name>
+
+	Nuke removes a character form the player file, totaly removing them
+completely and utterly. Use this with care and only on users that deserve to
+die completely.
+
+#
+OEDIT
+
+	Oedit <name>
+
+	Oedit sends you into a VT100 editor to edit objects.
+
+See also OOEDIT,OSAVE
+#
+OOEDIT
+
+	OOedit <name>
+
+	OOedit allows you to edit objects via a command line editor.
+
+See Also OEDIT,OSAVE
+#
+OSAVE
+
+	OSAVE <object name> <VNUM>
+
+	
+#
+PLAYER
+
+	Does absolutly nothing.
+
+#
+REROLL
+
+	No longer used.
+#
+RESTORE
+
+	Restore <name>
+
+	Restore allows you to restore mana/hps and movement to the maximum.
+Using this command on someone that is level 51 will set all classes and
+levels to 51, also setting all skills to good.
+
+#
+RSAVE
+	
+	Rsave <start> [<end>]
+
+	Rsave allows you to save a room you just edited. You can save one
+room at a time, or a group of rooms at a time using start and end as the
+range of rooms. To sae one at a time simply use Rsave ROOMNUMBER.
+
+See Also :RLOAD
+#
+RLOAD
+
+	Rload <start> [<end>]
+
+	Rload allows you to load up a saved room, or rooms.
+
+See Also :RSAVE
+#
+RELOAD
+
+	Reload
+
+	Reload allows you to reload the motd/wizmotd and script files on the
+fly. Should you edit them while the mud is up you can use this command.
+
+#
+REDIT
+
+	Redit
+
+	Redit will put you in a VT100 editor to edit the current room your
+standing in.
+
+See Also : RSAVE,RLOAD
+
+#
+SHUTDOWN
+
+	Shutdown
+
+	Shutdown will bring the mud down completely.
+
+#
+SNOOP
+
+	Snoop <name>
+
+	Snoop allows you to see just what a user sees as he plays. To stop
+snooping snoop yourself.
+
+
+#
+SNOWBALL
+
+	Snowball <name>
+
+	Just an annoying social.
+
+#
+SWITCH
+
+	Switch <name>
+
+	Switch allows you to 'switch into' a mob and play them as if they
+where you. If the mob is killed you will NOT be killed. simply type RETURN
+to return to your normal self.
+
+#
+SLAY
+
+	Slay <name>
+
+	Slay allows you to kill any mob/character with a single command.
+
+#
+SYSTEM
+
+	System <message>
+
+	System allows you to broadcast a message to ALL users online at this
+time regardless of noshout settings.
+
+#
+STEALTH
+
+	Stealth
+
+	Stealth turns on and off your BAMFIN and BAMOUT messages.
+
+See Also : BAMFIN, BAMFOUT
+#
+SHOW
+
+	Show zones
+	Show <mob|obj> <zone#|name>
+	Show rooms <zone#|death|private>
+
+	Show will show you a varity of information of this. show zones will
+list all the zones and thier start and end rooms. Show mob|obj using name
+will list all mob|obj with that name. Show mob|obj zone will list all
+mob|objs in that zone#. Show rooms zone# will list all rooms in that zone,
+the others will show all death and private rooms in the mud.
+
+
+	
+#
+SILENCE
+
+	Silence
+
+	Silence will toggle polies from being able to shout.
+
+
+#
+TRANSFER
+
+	Transfer <name>
+
+	Transfer will allow you to transport ANY mob or CHARACTER to the
+location you currently stand in. 
+
+DO NOT use this to annoy players.
+
+#
+THINK
+
+	Think <message>
+
+	Think is the gossip channel of the gods. It is only seen by gods.
+
+#
+VIEW
+
+	View <bug|typo|idea|motd|wizmotd>
+
+	View will allow a immortal to view the file entered.
+
+#
+WIZHELP
+
+	Wizhelp [<keyword>]
+
+	Wizhelp with no commands will list all wizard commands you have
+access to. Wizhelp <keyword> will list the help for that peticular wizard
+command.
+
+#
+WIZLOCK
+
+	Wizlock add <site>
+	Wizlock rem <site>
+	Wizlock all
+	Wizlock list
+
+	Wizlock add will add the site to the denied list. In other words the
+site will NOT be able to play as long as it is in the list. To remove a site
+from he list use rem <site>. To see the list of banned sites use list. 
+Wizlock ALL will not allow any immortal to login.
+
+Note : The wizlock stats are only until the mud reboots, after that the
+banned sites are removed.
+
+#
+WREBUILD
+
+	Wrebuild
+
+	Wrebuild will rebuild the world file completely adding all the newly
+edited rooms, it will create tinyworld.wld.new.
+
+#
+ZLOAD
+
+	Zload <zone number>
+
+	Zload allows you to load up a zone with a zone file you are
+currently editing, or have edited.
+
+See Also :ZSAVE,ZCLEAN
+
+#
+ZSAVE
+
+	Zsave <zone_number> [<start> <end>]
+
+	Zsave will allow you save a zone file for a zone you are editing.
+Using the room numbers you will save the zone ranging from the start and end
+rooms. Zsave with only the zone number will save the entire zone file. 
+
+Note: Remember when you save the zone file your current zone file WILL be
+over-written!
+
+See also :ZLOAD, ZCLEAN
+
+#
+ZCLEAN
+
+	Zclean <zone_number>
+
+	Zclean will clean a entire zone of objects and mobiles.
+
+#
+@
+
+	@<option> <name> [<field>]
+
+	This command is a very powerful command that allows you to change
+player stats or abilities. to get a more indepth help simply type @ with no
+commands.
+#
+GOTO
+
+	Goto <name|Room#>
+
+	Goto allows you to goto a mob or pc, or a specific room number.
+#
+"AUTHORIZE AUTH"
+ 
+ 
+  auth Newbie yes        (lets them into the game)
+  auth Newbie no         (denies them from the game)
+ 
+  auth Newbie anything else  (a message to the Newbie)
+#
+#
+HOME
+
+	No command line options, just type 'home' and you will return to the
+same point you entered the game in. This 'point' can be altered by setting
+you hometown, at this time it requires a immortal 58+.
+
+See Also WIZSET
+#
+WIZSET
+
+	wizset <flag> <field>
+
+	Wizset allows you to set temporary flags on yourself or other
+persons depending on the flag. There are several types of flags that can be
+set.
+
+	wizset home <room#>
+	wizset fast
+
+	The home setting will set your login room to room#, this is good for
+editing rooms and placing your login to the last room you edited.
+	The Fast setting will allow you to walk in a direction where there
+is no current exit and create one going in that direction, also making a
+return exit in the new room to the previous room.
+
+#~

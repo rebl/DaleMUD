@@ -1,0 +1,29 @@
+#27046
+Misty Path~
+	The mist is rather thin here.  It hugs the branches of the limbs
+high above you.  The east west path is rather wet here.  To the east you hear
+the sounds of battle.. sword against sword.  Just to the north is the form
+a huge tree just barely viable through the mist.
+~
+97 0 3
+D0
+A huge tree grows just to the north beyond some brush.
+~
+brush~
+1 0 27047 -1
+D1
+The distant sounds of battle rise up from the east.  The trail's end
+is not viable.
+~
+path~
+0 0 27049 -1
+D3
+A rocky intersection is just to the west.
+~
+path~
+0 0 27042 -1
+E
+tree~
+You would have to push your way through the brush to get a better look.
+~
+S

@@ -1,0 +1,22 @@
+#6257
+King's Reception Area~
+As you enter the room, the King's Secretary looks you over and asks, 'Do you
+have an appointment?' She seems rather disgruntled and confused by keeping
+track of all the people trying to see the king. To the east is the room
+where visitors wait for their audience with the king, and to the west is the
+throne room.
+~
+38 0 0
+D1
+~
+door~
+0 0 6303 -1
+D2
+~
+door~
+0 0 6256 -1
+D3
+~
+door~
+0 0 6299 -1
+S

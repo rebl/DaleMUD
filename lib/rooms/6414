@@ -1,0 +1,22 @@
+#6414
+Torturer Chamber~
+The insturments of pain that lie here let you know beyond a doubt that this is
+the torturer chamber. There is a black hooded figure with glowing red eyes here
+that definately makes you think that it is not a good idea to stay in this room
+too long. To the north is an ancient torturer device, and the prison cells lie
+to the west.
+~
+38 0 0
+D0
+~
+door~
+0 0 6415 -1
+D1
+~
+door~
+0 0 6400 -1
+D3
+~
+door~
+0 0 6416 -1
+S

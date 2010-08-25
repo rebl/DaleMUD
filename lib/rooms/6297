@@ -1,0 +1,16 @@
+#6297
+Secret Passage~
+You are in a dark passage way that is used by the king to go to his quarters
+more quickly. The wall to the eat is a very large canvas. The passage
+continues to the west.
+~
+38 0 0
+D1
+~
+door~
+9 0 6299 -1
+D3
+~
+door~
+0 0 6296 -1
+S

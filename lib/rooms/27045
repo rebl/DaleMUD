@@ -1,0 +1,24 @@
+#27045
+East End of the Cemetery~
+   The mist is unusually thick here.  You can hardly see.  An old picket
+fence blocks off this part of the graveyard but it has long since fallen to
+pieces. A few dozen graves sit all about.  Many small holes have been dug
+in the ground here.  To the east is the gate out.
+   After a moment it occurs to you that the mist is indeed rising
+from the ground.
+~
+97 0 4
+D3
+The swings on one hinge and a field is beyond.
+~
+gate~
+0 0 27044 -1
+E
+mist~
+The evil mist swirls and rises as it gleefully escapes the soil.
+~
+E
+graves stone stones grave~
+The newer ones seem to be here.  All of them are from the McGreer family.
+~
+S

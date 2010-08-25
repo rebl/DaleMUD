@@ -1,0 +1,337 @@
+#27140
+sliver shadow~
+a sliver of shadow~
+A shadow is being cast on the floor here.~
+~
+5 307776 8193
+0 2 3 1
+1 1000 1000
+A
+32 10
+A
+40 3
+#27141
+vine thorn~
+a thorn-covered vine~
+A thorn-covered vine is here~
+~
+5 16 8192
+0 2 9 2
+5 100 -1
+A
+18 4
+A
+30 146
+#27142
+sword holy avenger~
+the Holy Avenger~
+A powerful sword is here sticking in the ground.~
+~
+5 294215 8193
+0 1 8 3
+20 10000 30000
+A
+18 5
+A
+19 4
+A
+49 -1
+#27143
+iron falchion~
+A heavy, iron falchion~
+An iron falchion is here.~
+~
+5 24640 8193
+0 2 6 0
+18 2000 5000
+A
+1 1
+A
+40 3
+#27144
+shield iron~
+an iron shield~
+A large iron shield is here.~
+~
+9 24644 513
+10 10 0 0
+10 1000 1000
+A
+1 2
+#27145
+sandals pair~
+a pair of old sandals~
+An old pair of sandals are here.~
+~
+11 131072 65
+0 0 0 0
+1 1000 1000
+A
+29 262144
+A
+52 5
+#27146
+heart pulsating~
+A Pulsating Heart~
+A beating heart is here.~
+~
+12 262208 16385
+0 0 0 0
+1 1000 40000
+A
+29 33554432
+A
+50 10
+A
+51 10
+A
+52 -30
+#27147
+tablet clay~
+a clay tablet~
+A clay tablet is here.~
+~
+16 8 1
+0 0 0 0
+1 1 1
+E
+tablet~
+The Tablet is in an old tongue.  It reads:
+Ixzuul awaits you, FOOLS!~
+#27148
+coffin iron~
+The Iron Coffin~
+A large iron coffin is here, bolted shut.~
+~
+15 0 0
+300 15 27150 0
+300 1 1
+#27149
+shyra twisted tree~
+the twisted tree~
+A single, twisted tree grows at the center of the clearing.~
+~
+12 0 0
+0 0 0 0
+1000 0 0
+#27150
+key black~
+a black key~
+A black key is here~
+~
+18 262144 1
+27150 0 0 0
+1 1 1
+#27151
+corpse rotted~
+an old, rotted corpse~
+An old rotted corpse is here.~
+~
+15 0 1
+200 0 -1 0
+20 0 0
+#27152
+shield silver~
+a silver shield~
+A silver shield is here.~
+~
+9 290117 513
+10 10 0 0
+8 10000 20000
+A
+51 5
+A
+13 15
+A
+40 1
+#27153
+paper scrap~
+an old scrap of paper~
+An old scrap of paper is here.~
+~
+16 0 1
+0 0 0 0
+1 0 0
+E
+paper scrap~
+It Reads:
+'Good for one restring'
+~
+#27154
+beef hunk~
+a hunk of beef~
+A hunk of beef is here~
+~
+19 0 1
+2 0 0 0
+2 1000 1000
+A
+31 86
+#27155
+cheese ball~
+a ball of cheese~
+A ball of cheese is here.~
+~
+19 0 1
+2 0 0 0
+1 0 0
+A
+31 28
+#27156
+onion red~
+a red onion~
+A red onion is here.~
+~
+19 0 1
+2 0 0 0
+1 1000 1000
+A
+31 100
+#27157
+garlic clove~
+a clove of garlic~
+A clove of garlic is here.~
+~
+19 0 1
+1 0 0 0
+1 1000 1000
+A
+31 36
+#27158
+folio page one~
+a page from an ancient folio~
+A page from an ancient folio is here~
+~
+16 262144 1
+0 0 0 0
+2 2 2
+E
+page folio one 1~
+It reads:
+[1]
+Here is the story of great evil and great power.
+
+An powerful sorcerer feared death and decided to cheat it.
+On the foundations of the world he forged a great artifact...
+(the next page is missing)
+~
+#27159
+folio page two~
+a page from an ancient folio~
+A page from an ancient folio is here~
+~
+16 262144 1
+0 0 0 0
+2 2 2
+E
+page folio two 2~
+[2]
+His name was Ixzuul.  After many years this evil man
+forged a great magic and held it in his own beating heart.
+~
+#27160
+folio page three~
+a page from an ancient folio~
+A page from an ancient folio is here~
+~
+16 262144 1
+0 0 0 0
+2 2 2
+E
+page folio three 3~
+[3]
+The all powerful god, Creto, decided that he was becoming dangerous
+as he threatened the station of the immortals.  He knew that Ixzuul
+planned to overthrow the know gods.
+Thus did Creto call upon his hero to stop him.
+~
+#27161
+folio page four~
+a page from an ancient folio~
+A page from an ancient folio is here~
+~
+16 262144 1
+0 0 0 0
+2 2 2
+E
+page folio four 4~
+[4]
+The hero's name was Sir Valkrus, knight protector of Shadowdale.  To
+battle this evil force Creto gave him a blade of great power
+~
+#27162
+folio page five~
+a page from an ancient folio~
+A page from an ancient folio is here~
+~
+16 262144 1
+0 0 0 0
+2 2 2
+E
+page folio five 5~
+[5]
+Sir Valkrus fought for five days and five nights against the
+sorcerer king.  At last the evil mage was forced to flee from the
+noble Paladin's valor.
+~
+#27163
+folio page six~
+a page from an ancient folio~
+A page from an ancient folio is here~
+~
+16 262144 1
+0 0 0 0
+2 2 2
+E
+page folio six 6~
+[6]
+Creto knew that Ixzuul would try again once his power had been
+restored.  Taking advatage of his weakened state, Creto exiled the
+evil godling to a distent land.
+Ixzuul wanted revenge against Sir Valkrus and knew how to get it.
+~
+#27164
+folio page seven~
+a page from an ancient folio~
+A page from an ancient folio is here~
+~
+16 262144 1
+0 0 0 0
+2 2 2
+E
+page folio seven 7~
+[7]
+Ixzuul kidnapped Valkrus' true love, Lady Shyra, and carried her
+with him to his plane of exile.  There he cursed her so she would be
+no bother and she became a tree.
+Valkrus searched long and hard to follow but no know magic would
+take him to his old enemy.
+~
+#27165
+folio page eight~
+a page from an ancient folio~
+A page from an ancient folio is here~
+~
+16 262144 1
+0 0 0 0
+2 2 2
+E
+page folio eight 8~
+[8]
+At last Valkrus found an old man who knew a secret magic that would
+take them to this land.  There Valkrus and Ixzuul battled again but
+so disrought was Valkrus over the loss of his love he hesitated and
+was slain.  Now he rests with his love in Ixzuul's kingdom.
+~
+#27166
+sliver shadow~
+a sliver of shadow~
+A shadow is being cast on the floor here.~
+~
+5 307776 8193
+0 2 3 1
+1 1000 1000
+A
+32 10
+A
+40 3

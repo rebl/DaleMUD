@@ -1,0 +1,23 @@
+#6417
+Damp Passage~
+This is the end of the damp passage. Cells lie in every direction except
+west, which leads back out of the dungeon.
+~
+38 0 0
+D0
+~
+door~
+3 0 6420 -1
+D1
+~
+door~
+0 0 6416 -1
+D2
+~
+door~
+3 0 6421 -1
+D3
+~
+door~
+3 0 6422 -1
+S

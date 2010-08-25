@@ -1,0 +1,25 @@
+#27153
+Chamber of Shadows~
+You are in a dark chamber with smooth black walls.  Your ears ring
+with the deadly silence.  The chamber curves northward to both the east
+and west.  Some runes have been carved into the wall here.
+~
+97 1097 0
+D0
+~
+door~
+8 0 27156 0
+D1
+~
+~
+0 0 27151 -1
+D3
+~
+~
+0 0 27154 -1
+E
+runes rune wall~
+
+[Rock] Stone is a liar!  He would tell you that safety is up and death is down.
+~
+S

@@ -1,0 +1,20 @@
+#27030
+Bend in the Trail~
+    The mud in the trail is several inches deep, slowing you progress
+greatly.  There is the constant patter of water falling from the unseen
+branches far overhead.  To the north the path seems to open into a field.
+The path continues to the east.
+~
+97 5 3
+D0
+The path opens into a large clearing.  You see the remains of a white, picket
+fence through the mist.
+~
+trail~
+0 0 27026 -1
+D1
+The path, although it seems to be unused, gets greener to the east.
+~
+trail~
+0 0 27031 -1
+S

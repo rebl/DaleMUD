@@ -1,0 +1,23 @@
+#6416
+Damp Passage~
+This is a small earthen passage that has small cell doors to the north and 
+south. The passage continues west, and the torturer chambers lie east.
+~
+38 0 0
+D0
+~
+door~
+3 0 6418 -1
+D1
+~
+door~
+0 0 6414 -1
+D2
+~
+door~
+3 0 6419 -1
+D3
+~
+door~
+0 0 6417 -1
+S

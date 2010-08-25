@@ -1,0 +1,31 @@
+#27059
+South End of the Oak Grove~
+   You stand in a dark, overgrown grove.  Spiders seem to be everywhere!
+Their webs fill the branches of the trees.  Small bones and pieces of chitin
+lay scattered in the grass.  A large, rusted gate stands just to the south of
+you.  Oak trees and thick brush grow wild all around.  An old stone path
+leads you north to a circle of standing stones.
+~
+97 0 2
+D0
+A circle of huge stones rest just to the north.  Each stone is rough and
+rectangular standing about 18 feet tall.
+~
+path old stone circle~
+0 0 27064 -1
+D1
+Some oaks grow to the west.
+~
+oaks~
+0 0 27061 -1
+D2
+Outside the gate some torches flicker in the wind.
+~
+gate~
+1 27045 27058 -1
+D3
+To the east is some brush and old trellising.
+~
+brush~
+0 0 27060 -1
+S

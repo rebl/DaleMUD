@@ -1,0 +1,23 @@
+#27058
+Spider Gate~
+   A thick stone wall rises to the north of you.  Looming at its center
+stands a huge iron gate.  The gate looks tortured and rusted with age.  Atop
+it are large barbed spikes.  The center of the gate is adorned with a thick,
+heavy lock in the shape of a black widow.  Thick mats of webbing cover the
+gate and obscures your view into what lays beyond.  Just to the west is a 
+small clearing.
+~
+97 4 3
+D0
+You hack away the thick webbing and see an overgrown oak grove filled with
+spider webs.
+~
+gate~
+7 27045 27059 -1
+D3
+The clearing is obscured by a thick dome of dead branches that encircle the
+ring of stones.
+~
+clearing small~
+0 0 27057 -1
+S

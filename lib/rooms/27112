@@ -1,0 +1,32 @@
+#27112
+Guard Room~
+    This is a circular, stone room.  The floor is a shiny black tile but
+is old and has many cracks running through it.  A pair of large bronze doors
+loom to the north.  An archway leads to a large room to the south of here.  The
+doorway to the west seems empty and a foreboding feeling arises from it.
+To the east is an ornately carved wooden door.
+~
+97 9 0
+D0
+You can see the great hall.
+~
+hall~
+1 27050 27107 -1
+D1
+You see a short hall ending in a dark room... in the darkness you see a 
+glinting light dancing about.
+~
+door wooden~
+1 -1 27119 -1
+D2
+You see a room littered with rubble.  It is crowded with guards and a make-
+shift throne stands on the southern edge.
+~
+archway~
+0 0 27116 -1
+D3
+A vast darkness swells from inside the room.
+~
+arch~
+0 0 27113 -1
+S

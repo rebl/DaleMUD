@@ -1,0 +1,25 @@
+#6225
+An intersection~
+The path forks to three directions here. To the west you can see the
+fields that provide food for the kingdom. The northern path continues
+towards the King's Stronghold. To the east you can make out the
+peasant's dwellings
+~
+38 0 3
+D0
+~
+door~
+0 0 6226 -1
+D1
+~
+door~
+0 0 6240 -1
+D2
+~
+door~
+0 0 6224 -1
+D3
+~
+door~
+0 0 6230 -1
+S

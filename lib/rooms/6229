@@ -1,0 +1,21 @@
+#6229
+The drawbridge~
+You are on the bridge that leads over the moat. You hear thrashing noises
+coming from under the drawbridge. From here the fortress looks even larger
+than you thought possible. The fortress is vaguely treelike in appearance
+and texture. Three towers jut out of the northwest corner.
+~
+38 0 0
+D0
+~
+door~
+0 0 6250 -1
+D2
+~
+door~
+0 0 6228 -1
+D5
+~
+door~
+0 0 6498 -1
+S

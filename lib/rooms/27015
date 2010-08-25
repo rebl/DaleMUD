@@ -1,0 +1,18 @@
+#27015
+Gloomy Trail~
+	This dark, forest trail is littered with tracks.  The smell of smoke
+is close.  In the distance you hear some wild calls and chants.  The trail
+runs north south into the darkness.
+~
+97 1 3
+D0
+You see an intersection to the north.
+~
+trail~
+0 0 27013 -1
+D2
+You see an intersection to the south.
+~
+trail~
+0 0 27016 -1
+S

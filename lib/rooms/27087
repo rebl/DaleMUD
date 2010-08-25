@@ -1,0 +1,18 @@
+#27087
+Tower Gates~
+	You stand at the rotting gate of the once-proud tower of Azaran.  
+The gate is a huge rotting wooden gate with rusted iron reinforcements.  A   
+small set of four crumbling steps lead up to the archway.
+~
+97 1 4
+D0
+The crumbling first level of the tower lies before you.
+~
+gate~
+1 -1 27088 -1
+D2
+The shore lies south.
+~
+path~
+0 0 27086 -1
+S

@@ -1,0 +1,36 @@
+#27026
+Misty Yard~
+	You stand in an open field filled with thick clumps of dead grass.
+Just to the east is an aged, white picket fence.  The paint is peeling and
+many of the wooden planks have been broken.  The cobblestone path runs into
+the fence and beyond as well is disappearing to the west.  A smaller, muddy
+path runs north and south.  The sky above you is blocked out by the thick
+mist that fills the air.
+~
+97 0 2
+D0
+North of here you see the gate to a small grave yard.
+~
+path muddy~
+0 0 27043 -1
+D1
+The image of an old cottage can barely be seen through the mist.
+~
+path stone cobblestone~
+0 0 27027 -1
+D2
+The southern path looks very muddy and wet but rather unused.
+~
+path~
+0 0 27030 -1
+D3
+The cobblestone path disappears into the mist to the west.
+~
+path stone cobblestone~
+0 0 27025 -1
+E
+fence white picket~
+The fence must have been bright and beautiful at some time but now has fallen
+into deep decay.  It leans dangerously and is choked with weeds.
+~
+S

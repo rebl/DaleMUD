@@ -1,0 +1,69 @@
+
+
+			TRAPS.DOC
+
+		Short documentation for traps
+			under DaleMUD.
+
+
+
+# Number
+blade trap~			* obj name for get/put/look
+A blade trap~			 	
+A blade trap lies here waiting to be sprung~
+~
+14 0 1
+^  ^ ^
+|  | |
+|  | |--- TAKE type
+|  Empty leave at 0.
+ITEM_TRAP
+
+5 209 20 1
+^  ^  ^  ^
+|  |  |  |--Charges of trap
+Eff|  Level of Trap (1-50)
+type\-Attack Type  
+10 500 500
+^   ^   ^----Rent Cost
+|   |-Cost
+Weight
+
+TRAP_EFF, Eff Types:
+
+MOVE   1	Trigger on move (+north or +south or +east etc... )
+OBJECT 2	Trigger on get or put
+ROOM   4	When  triggered effect everyone in room (except when item
+		is INSIDE a item, like a chest or coffin)
+
+		/* use these with MOVE */
+NORTH  8	Trigger on move north
+EAST   16	Trigger on Move east
+SOUTH  32	Trigger on move south
+WEST   64	                'west'
+UP     128	  		'up'
+DOWN   256	  		'down'
+
+ATTACK TYPE:
+-3  Sleep
+-2  Teleporter
+10  Energy Trap
+26  Fire Trap
+67  Acid Trap
+203 Frost Trap
+312 Bludgeon Trap/Blunt Trap
+313 Pierce Trap
+314 Slash Trap
+
+
+Sample Trap :
+
+#1
+blade trap~
+a blade trap~
+A blade trap lies here~
+~
+14 0 1
+5 209 20 1
+10 500 500
+

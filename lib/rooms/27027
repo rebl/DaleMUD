@@ -1,0 +1,25 @@
+#27027
+Cottage in the Mist~
+	You stand in front of an old cottage that has fallen into decay.  The
+walls sag and many of the planks have broken free and dangle from the outside
+of the building.  The ancient thatched roof is filled with holes and above
+that, almost lost in the mist is the rusted shape of a widows walk.  The path
+leaves the yard to the west.  To the east the peeling door hangs by one hinge.
+~
+97 0 2
+D1
+The inside of the cottage seems to be quite a mess!
+~
+door~
+0 0 27028 -1
+D3
+A small field in front of the house opens up beyond the peeling fence.
+~
+path~
+0 0 27026 -1
+E
+cottage~
+Once a place of joy, this cottage has fallen into despair and misery.  No
+longer a place for the living but a place for the dead.
+~
+S

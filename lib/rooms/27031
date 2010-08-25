@@ -1,0 +1,19 @@
+#27031
+Misty Forest Trail~
+    The trail here is choked with mist.  All of the green plants' leaves
+drop volleys of large water droplets on you as you brush past them.  The
+foliage here grows thick and full.  The trail runs a rather straight east
+to west.
+~
+97 4 3
+D1
+The path curves south just to the east.
+~
+trail~
+0 0 27032 -1
+D3
+The path curves to the north just west of here.
+~
+trail~
+0 0 27030 -1
+S

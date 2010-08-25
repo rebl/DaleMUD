@@ -1,0 +1,24 @@
+#1503
+The Shadow Grove~
+  You are inside the shadow grove. Giant trees seem the glare at you
+from all sides. The shadowy mist obscures most of your vision. Strange
+sounds of moaning and growling come from all directions.
+  All exits lead into shadows, you are very confused.
+~
+12 1 3
+D1
+The shadows obscure your vision.
+~
+~
+0 -1 1504 -1
+D2
+The shadows obscure your vision.
+~
+~
+0 -1 1501 -1
+D3
+The shadows obscure your vision.
+~
+~
+0 -1 1502 -1
+S

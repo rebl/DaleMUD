@@ -1,0 +1,44 @@
+goto 3005
+noop 4
+ponder
+noop
+tap
+east
+up
+' Keep those pets outside!
+noop 3
+yawn
+down
+west
+yawn
+rest
+noop 4
+stand
+sneer
+south
+east
+east
+east
+west
+cackle
+west
+west
+north
+south
+west
+giggle
+west
+west
+cackle
+east
+east
+glare
+east
+bounce
+south
+shrug
+north
+north
+' cleared 'em out i did!
+noop 4
+end

@@ -1,0 +1,16 @@
+#6341
+Spiral Staircase~
+As you look at the considerable length of the staircase above you, you realize
+that it isn't too late to turn back now.  The upper staircase seems to go on
+forever, while it is only a short trip back down.
+~
+38 0 0
+D4
+~
+door~
+0 0 6342 -1
+D5
+~
+door~
+0 0 6340 -1
+S

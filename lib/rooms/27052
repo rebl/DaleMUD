@@ -1,0 +1,21 @@
+#27052
+Battlefield~
+    Corpses litter the ground.  It seems that a band of knights made
+their last stand here.  The grass is sticky with blood and a multitude of
+vultures soar above waiting to land and pick the corpses clean.  The dark,
+twisted trees loom over the bloody scene like quiet spectators.  A path
+wanders deep into the forest to the south and another small trail goes
+north into a pine grove.
+~
+97 0 3
+D0
+A comparatively pleasant pine grove grows to the north.
+~
+trail pine~
+0 0 27056 -1
+D2
+The path forks to the south.
+~
+path~
+0 0 27051 -1
+S

@@ -1,0 +1,14 @@
+#27022
+Large Cave~
+    This high ceiling cave has smooth stone walls washed out by running
+water ages ago.  Now it serves as the living quarters for the gritha tribe.
+Comparatively speaking this room is rather clean and barren.  Fresh air is
+blowing in from the archway to the east.
+~
+97 8 0
+D1
+A huge fire is ablaze outside.
+~
+arch archway~
+0 0 27020 -1
+S

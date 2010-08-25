@@ -1,0 +1,16 @@
+#6228
+At the edge of the moat~
+You are at the edge of the large moat that surrounds the fortress. To the
+north there is a drawbridge spanning the moat. The road leading to the
+fortress lies south.
+~
+38 0 0
+D0
+~
+door~
+0 0 6229 -1
+D2
+~
+door~
+0 0 6227 -1
+S

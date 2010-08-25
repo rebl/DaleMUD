@@ -1,0 +1,25 @@
+#27013
+Pig Poles~
+	Here at an intersection someone has staked half a dozen pig poles, each
+over 12 feet tall, all topped with the heads of some hapless traveler.  A
+spot of sky can be seen over head where these evil trees' branches thin.  The
+trail itself runs to the east and south.  It looks as if someone has recently
+broken through the brush to the west.
+~
+97 0 3
+D1
+The trail winds on.
+~
+trail~
+0 0 27012 -1
+D2
+The trail continues far to the south.
+~
+trail~
+0 0 27015 -1
+D3
+You cannot see far into the brush.
+~
+brush~
+0 0 27014 -1
+S

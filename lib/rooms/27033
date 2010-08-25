@@ -1,0 +1,28 @@
+#27033
+Edge of the Forest~
+	You stand at the top of a lush hill with forest on three sides.  A
+trail disappears into the dark forest to the north and to the south the field
+opens into a beautiful meadow.  The great, open sky shines above you filling 
+you with relief.  South of here you see a well and a cottage.
+~
+97 4 2
+D0
+The dark forest lies just beyond.
+~
+forest~
+0 0 27032 -1
+D2
+At the bottom of the hill a well can be seen.  Beyond that is a cottage.
+~
+meadow~
+0 0 27034 -1
+E
+well~
+It is rather far away!
+~
+E
+cottage~
+It is made of plastered walls and a thatch roof.  From here this is all you can
+see.
+~
+S

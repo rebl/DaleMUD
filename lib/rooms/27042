@@ -1,0 +1,25 @@
+#27042
+Misty Intersection~
+	Several paths meet here.  One wanders into the trees to the south
+while the other two vanish to the east and west.  Large rocks jut out
+of the ground here making walking difficult.  The trees in this part of the
+forest seem to be much older than the rest.  Long stands of lichen hang
+from the moss covered trunks.
+~
+97 0 3
+D1
+You see a large tree growing not far from here.
+~
+path~
+0 0 27046 -1
+D2
+You can make out a old, rickety cottage south of here.
+~
+path~
+0 0 27043 -1
+D3
+You can see a bend in the path west of here.  There seem to be a lot of flies!
+~
+~
+0 0 27041 -1
+S

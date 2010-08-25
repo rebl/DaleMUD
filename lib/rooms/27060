@@ -1,0 +1,28 @@
+#27060
+Old Vineyard~
+	Long since overgrown with brush, the wild vines and the broken 
+remains of the trellising indicate that this once was a small vineyard. The
+stone wall runs to the south of you and makes a sharp turn northward just to
+the west. To the east you can see the outlines of a gate on the southern wall
+and to the north east some standing stones are visible.  To the north is a
+large path of brambles.
+~
+97 0 3
+D0
+If you follow the wall further north you will come to a thick hedge of wild
+blackberries.~
+patch brambles~
+0 0 27062 -1
+D1
+The spider gate is just to the east.  A small north south path runs through
+it.
+~
+gate~
+0 0 27059 -1
+E
+wall~
+The wall is made from large granite blocks.  It stands about 17 feet tall.
+At even spacings accost the top of the wall are rusty iron spikes to dissuade
+thieves from climbing it.
+~
+S

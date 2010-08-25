@@ -1,0 +1,19 @@
+#27067
+Bramble Path~
+   You stand on a small stone path leading from the great tree to the
+north to the circle of standing stones to the south.  A shiver passes through
+your body as you look back north.  Small birds take to the sky as you path
+them.
+~
+97 0 3
+D0
+The path ends at the base of a great oak tree.
+~
+tree path stone~
+0 0 27068 -1
+D2
+The circle of standing stones is just to the south.
+~
+stones circle path~
+0 0 27064 -1
+S

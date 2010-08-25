@@ -1,0 +1,16 @@
+#6281
+Top of Stairwell~
+Whew, you weren't quite sure that the stairs were gonna support you. The
+stairs going down creak louder every second. To the west lies the hole where
+the fortress guards drop various items on assailants trapped in the passage.
+~
+38 0 0
+D3
+~
+door~
+0 0 6282 -1
+D5
+~
+door~
+0 0 6280 -1
+S

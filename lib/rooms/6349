@@ -1,0 +1,19 @@
+#6349
+Private Chambers~
+This is a small room connecting the queen's bedroom, which lies to the north,
+with the kings, which lies to the east.
+~
+38 0 0
+D0
+~
+door~
+0 0 6350 -1
+D1
+~
+door~
+0 0 6352 -1
+D2
+~
+door~
+1 0 6345 -1
+S

@@ -1,0 +1,93 @@
+[GENERAL NEWS]
+
++ No MULTI-PLAYING allowed. Get caught, get introuble, very simple!
++ ANSI is in, read HELP SET for more information.
++ Limited items now have egos.. If you're too wimpy, you can't use the
+  powerful items. 
++ Some skills have impact on your alignment. Rescuing will make you good,
+  stealing will make you bad. Career thieves who steal often will soon 
+  become evil and killable by other evils and good aligned pcs.
+  Healing people makes you good.
+
++ The Druid guild can be found in the forest west of Shadowdale, near and
+  about Johns cabin (south-east of it).
++ The Monk guild can be found north of the Elven wizard in the shire, he 
+  is near Took Hill.
++ The Ranger guild is located right out of Shadowdale on the west gate.
++ The Barbarian guildmaster is located outside the east gate to the north.
++ The Psionist guildmaster is located near the boat docs in Shadowdale.
++ Shadowdale will train you to 10th level. New thalos to 20th. High level 
+  masters may be found:
+	Warrior - Rhyodin			Mage   - Mages Tower
+	Thief   - Moria				Cleric - Prydain 
+
++ Other teachers are throughout the land, seek the Loremaster to learn
+  languages, the archer to learn to spot your quarry, the hunter to learn
+  his skills and the fabled ninja master.
+
++ ANY PC killing will be dealt with harshly. I do NOT like the thought of
+  people just killing to kill so I have removed PKILL, period. You do it
+  you get drained, if you are level one, you get froze. No excuses.
+
+[NEW CHANGES]
+
++   New group commands, check HELP SET and HELP GWHO.
+
+[ITEM NEWS]
+
++   When renting items stay where you left them (in bags, on body etc..)
++   Dark-Elf EQ does not survive in sunlight.
++   Bows/CrossBows work differently now, BE SURE to read help NOTCH/LOAD and
+    FIRE.
+
+[MONSTER NEWS]
++   Charmed monsters act more independantly. They will NOT attack anything
+    close to thier alignment. They will also consider fleeing if they are
+    being hit by a mob more than 6 levels higher than them.
++   Magic User Mobs are getting smarter, be prepaired to meet magic users
+    that prep for battles.
++   Cleric mobs now prep for battle.
++   Mobs now get a save against summon, you cannot summon a mob while in
+    mid-air or underwater.
+ 
+[COMMAND NEWS]
++   LOOK ROOM	-- For those of you in brief mode, who want to see what is
+	           in the room.
++   WORLD	-- gives info about the world.
++   ATTRIBUTE	-- gives info about yourself
++   ASSIST	-- Help out a friend who is fighting.
++   WHOZONE     -- Who is in your zone, and where.
++   BREATH      -- in conjunction with certain potions, will make you breath
+                   like a dragon.
++   MOUNT	-- Some animals, such as horses may be ridden.
+    RIDE
+    DISMOUNT
++   TELEPATHY   -- Psionist skill to speak telepathicly to anyone in the
+		   world.
++   GWHO	-- List all groups and thier names.
++   RUN		-- run a specified direction. See Help RUN
++   AFK		-- Allows you to notify users that you are AWAY FROM
+		   KEYBOARD.
+
+[SPELL/SKILL NEWS]
++	New way for PSI's to use skills, MIND (like mage CAST), see help.
+
+[COMBAT NEWS]
++   Warriors now have multiple attacks at higher levels 
+	7+  3 attacks/ 2 rounds
+       13+  2 attacks/ round.
+       25+  5 attacks/ 2 rounds 
++   Potions take 1 combat round to work..  They fill your stomach, and they
+	have a tendency to break when being quaffed in the midst of battle.
++   Combat will damage weapons and armor, especially if one is using
+    blunt weapons, or having blunt weapons used upon oneself.
+
+[CLASS NEWS]
++	Spell specializations are in! Chech out HELP SPECIALIZATION for more
+	information on this. Basically once specialized you NEVER fail that
+	peticular spell.
++       Single classed mages/sorcerers are now more potent, they are less
+        likely to be attacked when they fail casting charm/poison/sleep 
+	and paralyzation.
+
+-------------------------------------------------------------------------------

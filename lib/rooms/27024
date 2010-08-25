@@ -1,0 +1,28 @@
+#27024
+Old Path~
+	The path is very dark and a thick mist constricts your vision.  A mat
+of moss below your feet seems to cover an old cobblestone path.  Now, after
+years of misuse little remains but broken stones most buried just below the
+thick mat of moss and leaves at your feet.  Many ferns grow here, some taller
+than a full grown man.  The path runs east and west.
+~
+97 4 3
+D1
+The trail winds through the mist.
+~
+trail~
+0 0 27025 -1
+D3
+The path opens into a clearing just to the west.
+~
+trail~
+0 0 27003 -1
+E
+ferns~
+They seem quite healthy and strong.
+~
+E
+stones stone cobblestone~
+It appears that a small, man-made path ran through here maybe ten years ago.
+~
+S

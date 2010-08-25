@@ -1,0 +1,18 @@
+#27132
+Cave Entrance~
+    You stand in a small cave.  The outside is just a few feet north.  Beyond,
+you can see a misty, overgrown grove of trees.  A dark chant can be heard from
+deep within.  A long passage descends into the darkness to the south.
+~
+97 8 0
+D0
+You can see the tick, dark forest.
+~
+path~
+0 0 27133 -1
+D2
+The passage is very long and gently slopes downward.
+~
+passage~
+0 0 27130 -1
+S

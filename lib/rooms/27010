@@ -1,0 +1,25 @@
+#27010
+Guard Room~
+	This is a filthy, hand dug room.  Garbage lies all about.  A stone
+table rests against the east wall.  Bones and skulls have been scattered
+about the room, most crushed from being carelessly stepped on.  A thick door
+blocks the east exit and an archway leads north.
+~
+97 9 0
+D0
+A pile of refuse lies to the north.
+~
+archway~
+0 0 27009 -1
+D1
+A thick, wooden door blocks your was east.  There is a barred window near
+the top of the door and a food slot near the bottom.
+~
+door~
+7 27029 27011 -1
+E
+table~
+The table is no more than a thick slab of stone.  Bones and rotten food clutter
+its top.
+~
+S

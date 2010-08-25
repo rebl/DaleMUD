@@ -1,0 +1,23 @@
+#6252
+Inner Gate~
+This gate is much more reinforced than the previous one. If attackers make it 
+this far, they mean business. The castle proper lies to the north.
+~
+38 0 0
+D0
+~
+door~
+0 0 6253 -1
+D1
+~
+door~
+0 0 6284 -1
+D2
+~
+door~
+1 0 6251 -1
+D3
+~
+door~
+0 0 6285 -1
+S

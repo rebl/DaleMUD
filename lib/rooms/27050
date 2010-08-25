@@ -1,0 +1,29 @@
+#27050
+Fork in the Path~
+	The path coming in from the west forks here.  One trail runs north
+and the other south.  Planted in the center of the intersection is a stake
+topped with a helmeted human skull.  No words accompany the marker but its 
+meaning is painfully obvious.  The sounds of battle rise from the north.
+~
+97 0 3
+D0
+The path winds farther to the north.
+~
+path~
+0 0 27051 -1
+D2
+There is a small clearing to the south littered with bones.
+~
+path~
+0 0 27093 -1
+D3
+The path disappears out of sight to the west.
+~
+path~
+0 0 27049 -1
+E
+stake skull~
+It is the skull of a human warrior and appears to be several months old.
+Someone just pierced the skull with a sharp stick and left it here. 
+~
+S

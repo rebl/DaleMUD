@@ -1,0 +1,26 @@
+#6336
+Private Chamber~
+This is a well sized chamber where the prince works on affairs of state and
+seeks increased knowledge. The walls are oak lined, and have the heads of
+some of the princes trophies. There is a large oak desk here.
+~
+38 0 0
+D0
+~
+door~
+0 0 6337 -1
+D1
+~
+door~
+0 0 6338 -1
+D3
+~
+door~
+1 0 6335 -1
+E
+desk~
+The desk looks to be in good condidtion. Lying on the desk are a few books,
+some of which look unused. The more time worn of the books seem to be related
+to hunting and nature studies.
+~
+S

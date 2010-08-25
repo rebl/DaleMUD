@@ -1,0 +1,18 @@
+#27123
+On the Rope Bridge~
+	You clutch the bridge tightly to keep from being flung into the chasm
+below.  The fall would be at least a thousand feet and no bottom can be seen.
+Hurry, it is very dangerous to stay on this bridge.
+~
+97 329 0 2 
+D1
+You see safety on the east side of the bridge!
+~
+bridge~
+0 0 27124 -1
+D3
+You see safety on the west side of the bridge!
+~
+bridge~
+0 0 27122 -1
+S

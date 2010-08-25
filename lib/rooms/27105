@@ -1,0 +1,17 @@
+#27105
+Hallway~
+	This stone hallway runs east-west.  The floor here is unusually clean.
+The great hall is to the east and some torches burn to the west.
+~
+97 9 0
+D1
+You see the great hall.
+~
+hall~
+0 0 27102 -1
+D3
+You see a large bedroom.
+~
+archway~
+0 0 27106 -1
+S

@@ -1,0 +1,21 @@
+#27091
+Summoning Chamber~
+	This room is almost completely intact.  Old, warped book cases lean
+against the walls.  Scattered on the floor are numerous books with their 
+pages spilling out.  A pentagram has been drawn on the floor with an
+extinguished candle at each point.  A small stairway leads up and another
+crumbing one leads down.
+~
+97 1 0
+D4
+Above you is the open platform on the top of this crumbling tower, from it
+you hear a bell ringing loudly. 
+~
+stairs~
+0 0 27092 -1
+D5
+The floor below you is falling to pieces.
+~
+stairs~
+0 0 27090 -1
+S

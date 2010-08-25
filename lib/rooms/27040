@@ -1,0 +1,23 @@
+#27040
+Misty Forest Path~
+   Dark trees crowd around you and the evil mist chokes this unholy
+area so completely that you cannot see more than a few feet.  Eyes peer
+out at you from all directions.  What little of the trail you can make out
+seems to continue north and south.  The smell of death is thick here.
+~
+97 0 3
+D0
+All you can see is mist.
+~
+path trail~
+0 0 27041 -1
+D2
+The mist is too tick here.
+~
+~
+0 0 27025 -1
+E
+eyes~
+They scurry away as you peer at them.
+~
+S

@@ -1,0 +1,25 @@
+#27016
+Dark Intersection~
+	Here two paths meet.  A large one going north and south a smaller trail
+vanishing to the east.  The air here is thick with smoke. Howls and cries fill
+the air.  Just to the south you hear a vast collection of shouts and cries.
+Through the darkness of the woods you see some light shining from the south...
+possibly a fire.
+~
+97 1 3
+D0
+The path continues north as far as you can see.
+~
+path~
+0 0 27015 -1
+D1
+You see a small field through the trees.
+~
+trail~
+0 0 27006 -1
+D2
+The trail seems to go into a rocky canyon.
+~
+path~
+0 0 27017 -1
+S

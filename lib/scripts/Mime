@@ -1,0 +1,29 @@
+emote mimes being stuck in a glass box.
+noop 3
+emote pat you on your head.
+noop 2
+emote starts to juggle.
+drop ball\
+frown
+shrug
+emote looks at you.
+emote flips you off.
+stare
+emote mimes climbing up a wall.
+noop 3
+yawn
+goto $fido
+pat fido
+emote mimes juggling. (he dropped his ball, remember?)
+noop 2
+scream
+' damnit, what am I doing on a MUD anyways?
+smirk
+emote slaps himself.
+emote mutters something about mimes not talking.
+noop 2
+goto $loki
+lick loki\
+goto 3006
+noop 2
+end

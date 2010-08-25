@@ -1,0 +1,14 @@
+#6404
+Secret Escape Tunnel~
+The tunnel bends to the west.
+~
+38 256 0 2 
+D0
+~
+door~
+0 0 6403 -1
+D3
+~
+door~
+0 0 6405 -1
+S

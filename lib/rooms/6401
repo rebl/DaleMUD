@@ -1,0 +1,17 @@
+#6401
+Jailor's Cell~
+You have entered a room that has an almost homey feel to it. The jailor is here
+snoring loudly. Hanging from his belt is what you assume is the keys to the
+prison cells. To the north is a small room where the jailor keeps various odds
+and ends.
+~
+38 0 0
+D0
+~
+door~
+0 0 6413 -1
+D2
+~
+door~
+0 0 6400 -1
+S

@@ -1,0 +1,19 @@
+#27001
+Dark Path~
+	The path continues to the east and west.  The twisted branches of
+old oaks loom over you.  The branches are filled with small spider webs.
+The stink of death is as strong as ever.  In the distance you hear an inhuman
+cry.  There is a pool of blood here.  Darkenwood awaits you.
+~
+97 5 3
+D1
+To the east you see a shady clearing.
+~
+path~
+0 27002 27002 -1
+D3
+The path winds on to the west.
+~
+path~
+0 0 27000 -1
+S

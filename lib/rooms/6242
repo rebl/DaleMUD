@@ -1,0 +1,25 @@
+#6242
+Pebble Lane~
+The path to the village has turned into a rough road, with many colored
+pebbles strewn about it. To the north is a shantee whose inhabitant often
+comes out to argue with the owner of the shack that lies to the south.
+The lane continues west to the village square and east to the village gate.
+~
+38 0 0
+D0
+~
+door~
+1 0 6244 -1
+D1
+~
+door~
+0 0 6245 -1
+D2
+~
+door~
+1 0 6243 -1
+D3
+~
+door~
+1 0 6241 -1
+S

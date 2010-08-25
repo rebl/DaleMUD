@@ -1,0 +1,20 @@
+#27088
+Base of the Tower~
+   You are at the bottom of the crumbling tower of Azaran.  From the
+rotting tapestries and furniture crushed by fallen rocks from the upper tower,
+this must have once been a comfortable living area.  Large holes in the stone
+walls have not kept the elements out and furniture has rotted heavily.  A
+stone staircase leads to the second level of the tower.
+~
+97 1 0
+D2
+Through the gates you can see the lake.
+~
+gate~
+1 -1 27087 -1
+D4
+You can't make out much of the next level of the tower.
+~
+stairs~
+0 0 27089 -1
+S

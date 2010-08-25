@@ -1,0 +1,29 @@
+#27081
+Near A Hovel~
+	Jutting out of the water on stilts is a small building that is nearly
+over.  There is a large hole in the roof and light streams out of the window.
+A small, rotting dingy floats out front.  Clashing with the eerie howls in the
+dark a jovial chorus of banjo playing rises from within.
+~
+97 1 7 7 7
+D0
+The mist obscures all sight.
+~
+lake~
+0 0 27081 -1
+D1
+The mist obscures all sight.
+~
+lake~
+0 0 27082 -1
+D2
+You can only hear the jovial music inside the cottage.
+~
+hovel~
+0 0 27079 -1
+D3
+The mist obscures all sight.
+~
+lake~
+0 0 27077 -1
+S

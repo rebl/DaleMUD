@@ -1,0 +1,25 @@
+#27051
+Bloody Path~
+	The ground of this dark, forest path is pooled with blood.  Some
+new and some old.  Clouds of insects have come to feast here.  Some large
+mushrooms grow at your feet.  There is an over grown trail that looks little
+used to the east but the large path runs from south to north into small field 
+from which the sounds of a fray can be heard. 
+~
+97 0 3
+D0
+A battlefield lies to the north.
+~
+field path~
+0 0 27052 -1
+D1
+The trail gets rather overgrown further east.
+~
+trail~
+0 0 27055 -1
+D2
+To the south you see a trail marker of some sort.
+~
+path~
+0 0 27050 -1
+S

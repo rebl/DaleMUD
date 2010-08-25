@@ -1,0 +1,24 @@
+#27043
+North of the Cottage~
+	You stand just north of an old cottage cloaked in the mist.  It is
+falling apart and is in bad repair.  The walls buckle under the weight and
+many of the windows are broken.  A path wanders north of here into the mist.
+Just to the east you see a private cemetery.
+~
+97 0 3
+D0
+The path forks not too far away.
+~
+path~
+0 0 27042 -1
+D1
+A cluster of old grave stones sit just north of the cottage.
+~
+cemetery~
+0 0 27044 -1
+D2
+The yard in front of the cottage is choked with dead grass.
+~
+cottage~
+0 0 27026 -1
+S

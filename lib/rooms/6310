@@ -1,0 +1,23 @@
+#6310
+Hallway~
+There are more guest chambers to the north and south, and the hallway ends to
+the east.
+~
+38 0 0
+D0
+~
+door~
+1 0 6309 -1
+D1
+~
+door~
+0 0 6312 -1
+D2
+~
+door~
+1 0 6311 -1
+D3
+~
+door~
+0 0 6307 -1
+S

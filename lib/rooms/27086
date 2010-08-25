@@ -1,0 +1,18 @@
+#27086
+Path to Tower~
+	A small footpath runs north and south.  The lake lies south of you
+and the tower just north of here.  The thick mist hugs this small island, the
+waters endlessly lapping on the shore.
+~
+97 5 4
+D0
+Ahead lies the tower gate.
+~
+footpath~
+0 0 27087 -1
+D2
+Ahead lies the dark lake.
+~
+footpath~
+0 0 27085 -1
+S

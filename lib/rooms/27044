@@ -1,0 +1,26 @@
+#27044
+West End of Cemetery~
+   A few dozen grave stones lay scattered about.  The grass here is
+very tall but has been trampled on a lot recently.  The mist seems to rise
+from the ground here.  The feeling of evil is so overpowering that you are
+having to fight hard to keep from vomiting.  The one tree that grew here
+is sickly twisted and very, very dead.  More stones lie to the east and
+the gate out is just to the west.
+~
+97 0 2
+D1
+It looks as if someone has been digging up the graves.
+~
+stones~
+0 0 27045 -1
+D3
+The field is choked with fog.
+~
+gate~
+0 0 27043 -1
+E
+graves grave stone~
+They seem quite old.  It appears that every McGreer who died in the past
+hundred years is buried here.
+~
+S

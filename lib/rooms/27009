@@ -1,0 +1,19 @@
+#27009
+Cave Mouth~
+	This chamber has a high, domed ceiling covered with soot.  A large 
+pile of refuse rests here.  It is made up of dung, offal, and chewed up pieces
+of meat.  An archway opens another room to the south a path leads into darkness
+to the west.
+~
+97 9 0
+D2
+A filthy guard room lies to the south.
+~
+south~
+0 0 27010 -1
+D3
+A dark passage through some brambles can be seen to the waste.
+~
+path~
+0 0 27008 -1
+S

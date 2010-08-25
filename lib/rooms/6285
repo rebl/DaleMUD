@@ -1,0 +1,12 @@
+#6285
+Guard Room~
+This serves as a command center for the castle guards. It is a small and
+comfortable looking room, with various messages between guards. There is a
+weapons rack on the wall.
+~
+38 0 0
+D1
+~
+door~
+0 0 6252 -1
+S

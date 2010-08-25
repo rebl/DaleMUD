@@ -1,0 +1,25 @@
+#6345
+Threshold~
+You are on the threshold of the king's chambers. The room is plain and it is
+fairly obvious that the king does not recieve visitors here. This is his
+escape from the castle below, and rumor is that he does not like being 
+disturbed here.
+~
+38 0 0
+D0
+~
+door~
+1 0 6349 -1
+D1
+~
+door~
+0 0 6344 -1
+D2
+~
+door~
+0 0 6347 -1
+D3
+~
+door~
+0 0 6348 -1
+S

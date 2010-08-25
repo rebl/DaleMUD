@@ -1,0 +1,19 @@
+#27049
+Dark Forest Path~
+	The path is rather wide here, enough for two people to walk abreast.
+The dark trees loom above you blotting out the sky.  Large fungi grow on  
+the trees all about.  Thick mosses and lichens hang from the branches.  The 
+sounds of battle echo through the forest from the north east.
+~
+97 0 3
+D1
+There is a fork in the path just ahead.
+~
+path~
+0 0 27050 -1
+D3
+The path continues far to the west... a thick mist hangs in the air.
+~
+path~
+0 0 27046 -1
+S

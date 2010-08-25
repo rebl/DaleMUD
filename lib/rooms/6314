@@ -1,0 +1,15 @@
+#6314
+Secret Passage~
+This is a continuation of the passage. It continues south and returns the way
+you came to the north.
+~
+38 0 0
+D0
+~
+door~
+0 0 6313 -1
+D2
+~
+door~
+0 0 6315 -1
+S

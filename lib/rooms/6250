@@ -1,0 +1,17 @@
+#6250
+The Stronghold Gates~
+You feel as though you are about to walk into the gaping jaws of an enormous
+tree.  A sense of awe comes over you as you contemplate the magnificene of
+this structure.  The thought of any enemy trying to besiege this fortress
+makes you fear for the assailants.
+~
+38 16 0
+D0
+~
+door~
+1 0 6251 -1
+D2
+~
+door~
+0 0 6229 -1
+S

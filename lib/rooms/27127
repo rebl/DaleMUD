@@ -1,0 +1,18 @@
+#27127
+Long, Dark Passage~
+	This passage is very long.  It seems to stretch on forever.  Water
+drips from the ceiling above.  Sand crunches under your feet.  Dark shadows
+on the walls play tricks with your mind.
+~
+97 9 0
+D1
+The tunnel goes on forever!
+~
+tunnel~
+0 0 27125 -1
+D3
+It is a long hike back...
+~
+tunnel~
+0 0 27124 -1
+S

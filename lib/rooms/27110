@@ -1,0 +1,17 @@
+#27110
+Hallway~
+	This is an east-west hallway.  To the east you see the great hall.
+To the west you can hear some chanting.
+~
+97 9 0
+D1
+You see the south end of the great hall.
+~
+hall~
+0 0 27107 -1
+D3
+You see a shrine of sorts with a huge beat-like statue.
+~
+archway~
+0 0 27111 -1
+S

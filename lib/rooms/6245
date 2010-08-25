@@ -1,0 +1,16 @@
+#6245
+Village Square~
+Here is where the peasants meet after a long day of tending to the fields to
+discuss politics, world news, and local events. And to gossip about each
+other. Both east and west exits lead to Pebble Lane.
+~
+38 0 0
+D1
+~
+door~
+0 0 6247 -1
+D3
+~
+door~
+0 0 6242 -1
+S

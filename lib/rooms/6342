@@ -1,0 +1,15 @@
+#6342
+Spiral Staircase~
+The upper end of the staircase is so high above you that it is too dark to see.
+The steps of the staircase continue to spiral up and down.
+~
+38 0 0
+D4
+~
+door~
+0 0 6343 -1
+D5
+~
+door~
+0 0 6341 -1
+S

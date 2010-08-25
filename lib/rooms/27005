@@ -1,0 +1,24 @@
+#27005
+The Glade~
+  This glade is wide open to the sky above.  The waist high grass around you
+and the fallen logs have a dull gray tint to them.  Even they sky above seems to
+be gray.  Darkenwood looms around you at the edge of the field hiding unknown
+horrors.  The forest to the north and east is choked with a thick fog.
+Further east a large stone mountain looms covered with dense forest.  Southeast
+of here you see a thin column of smoke rising from the foothills.  The path
+you are on continues north and south.
+~
+97 0 2
+D0
+The path runs to the north edge of the glade and then dissapears into the
+dense forest.
+~
+path~
+0 0 27004 -1
+D2
+The trail stops at a small bald spot south of here.  There seems to be a 
+pile of bones there.
+~
+path~
+0 0 27006 -1
+S

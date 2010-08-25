@@ -1,0 +1,29 @@
+#27085
+By the Dark Island~
+   Just to your north you see a small island juts out of the water.  It is
+rocky and without vegetation.  Farther north a crumbing black tower stands.
+It may have once been an impressive sight but now is desolate and ruined.
+From the top of the tower a bell begins to toll.
+~
+97 1 7 7 7
+D0
+The form of ar crooked tower looms in the mist.
+~
+shore~
+0 0 27086 -1
+D1
+The mist obscures all sight.
+~
+lake~
+0 0 27079 -1
+D2
+The mist obscures all sight.
+~
+lake~
+0 0 27076 -1
+D3
+The mist obscures all sight.
+~
+lake~
+0 0 27081 -1
+S

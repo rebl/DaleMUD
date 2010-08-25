@@ -1,0 +1,24 @@
+#27047
+Base of a Huge Tree~
+	A feeling of peace fill you as you see this beautiful tree.  It
+stands a hundred feet tall.  Its huge trunk is covered by a thick mat of
+bright green moss.  Its highest branches disappear into a bright fog.
+Tall ferns and thick brush surround you on all sides.  You hear a bird song
+above you.
+~
+97 0 3
+D2
+A path can bee seen through the brush just south of you.
+~
+brush~
+1 0 27046 -1
+D4
+The branches don't look like easy climbing.
+~
+tree~
+64 0 27048 -1
+E
+tree~
+It must be one of the oldest trees in the forest.  It is beautiful!
+~
+S

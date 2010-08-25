@@ -1,0 +1,18 @@
+#27119
+Short Hall~
+	This is a short hall that runs east west.  A large ornate door lies to
+the east.
+~
+97 9 0
+D1
+Beyond the archway you see the sleeping chambers of the chief... something is 
+glowing in there...
+~
+archway~
+1 27051 27120 -1
+D3
+You see the guard room.
+~
+door wooden~
+1 -1 27112 -1
+S

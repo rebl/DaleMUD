@@ -1,0 +1,18 @@
+#27130
+Long Hall~
+    You stride down the long hall.  It is steeply inclined to the north.
+At the end you can see a cave mouth and... daylight!  The fresh air flows over
+you as you stride on.
+~
+97 9 0
+D0
+The hall continues on...
+~
+hall~
+0 0 27131 -1
+D2
+A dark chamber looms to the south.
+~
+chamber~
+0 0 27129 -1
+S

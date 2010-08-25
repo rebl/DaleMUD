@@ -1,0 +1,19 @@
+#27121
+Dark Cavern~
+	You walk into a large, seemingly natural cavern.  The floor is sandy
+and the walls are rough stone.  To the east you can see a huge cavern and hear
+the howling of the wind.  The western wall is off-colored and made of smooth
+stone.
+~
+97 9 0
+D1
+You can see a huge cavern with a chasm running the middle of it.
+~
+tunnel~
+0 0 27122 -1
+D3
+The beyond the stone you can hear grunts and snorts.
+~
+stone~
+7 27051 27120 -1
+S

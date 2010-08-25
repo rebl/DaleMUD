@@ -1,0 +1,23 @@
+#27003
+Fork in the Trail~
+    Here the dark trail forks.  The main trail runs north-south and a
+small branch goes east.  The underbrush here is made up of old, dead thorn
+bushes stopping any ideas of trailblazing.  The sky is blocked out by the
+twisted branches above.  You feel as though you are being watched.
+~
+97 1 3
+D0
+To the north you think you see light.
+~
+trail~
+0 0 27002 -1
+D1
+~
+~
+0 0 27024 -1
+D2
+There appears to be a an open glade to the south.
+~
+trail~
+0 0 27004 -1
+S

@@ -1,0 +1,23 @@
+#27039
+Inside Able's Cottage~
+	This is the cottage of Able the Smith.  Here he works day in and day
+out forging the finest of goods.  A large furnace burns sending wisps of
+smoke rising up the chimney.  A simple cot is in the corner.  The stone floor
+is littered with scraps of metal and pieces of coal.  The only exit is a door
+on the west wall.
+~
+97 0 2
+D3
+The door is made of strong oak.
+~
+door~
+3 0 27037 -1
+E
+furnace~
+It burns hot to temper Able's iron.
+~
+E
+cot~
+A simple cot for a simple man.
+~
+S

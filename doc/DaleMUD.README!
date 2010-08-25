@@ -1,0 +1,56 @@
+
+
+	DaleMUD is actually modified SillyMUD which was modified 
+	Diku code.
+
+
+Now that that is all cleared up.... Just a few notes
+
+	If you do not like AD&D then I would stop reading here and rm all
+the Dale files, because I tried to base all the features I added (as well
+did John in SillyMUD) to use the AD&D rules. I personally enjoy they game so
+that is my choice.
+
+	I make no claims that I am a good programmer so if things look bad
+either I didn't do it or I was sleepy that day ;-). Most of the coding was
+already there for me to use. Further I do not want any claims to copyrights
+nor anything near it... simply, I want you to have what I had when I started
+mudding... good code. I try and catch all bugs but that does not mean there
+might not be one or two. If you DO find a bug and fix it please let me know
+about it so I can correct the code I will distribute.
+
+
+Few things that need to be added are paladin/psi/ranger special procedures
+(like the magic_user and druid() functions).
+
+Hope you enjoy this code, John did a wonderful job as well as the original
+Diku coders, hope I can keep it looking as good.
+
+Special thanks go to jcy, the guy that helped me find some of the hardest
+bugs!
+
+	Thanks,
+		Mike Wilson
+		wilsonm@dale.hsc.unt.edu
+		Shadowdale MUD dale.hsc.unt.edu, 129.120.104.40 port 7777
+		Shadowdale BBS (817)220-2000
+
+
+Version 3.0
+
+	Addtional coder that helped alot this edition is Denis Julitov, r
+better know as Aarcerak.
+
+	Major contributors to the world addtions and fixes in no peticular
+order are (mud names) Alun, Mason and Euphrates. There are several others
+that also made addtions to the world but as of this typing I cannot remember
+them all :)
+
+
+Version 4.0
+
+	Is not released as I plan to be one version ahead of the rest of the
+world... Version 3.0 was released when we began running 4.0. Let it be noted
+that the mud docs need severe RE-WRITTING but I simply do not have time.
+Someday it might get done. I suggest using 'wizhelp' to figure out the
+immortal commands as I think we have added all of them there. 

@@ -1,0 +1,16 @@
+#6332
+Stairwell~
+Above you the end of the stairs is in sight. You look over the banister and
+realize that it has been quite a climb so far. You can either begin the descent
+down now or continue upwards to the prince's chambers.
+~
+38 0 0
+D4
+~
+door~
+0 0 6333 -1
+D5
+~
+door~
+0 0 6331 -1
+S

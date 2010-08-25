@@ -1,0 +1,18 @@
+#27129
+Stone Chamber~
+	This room has rough broken walls and thick sand on the floor.  Rust
+colored stains cover the walls.  A light breeze can be felt from the hallway
+leading north.  Another hall leads west.
+~
+97 9 0
+D0
+You can see a steep passage with sunlight at the end.
+~
+hallway~
+0 0 27130 -1
+D3
+A long dark tunnel can be seen.
+~
+hall~
+0 0 27127 -1
+S

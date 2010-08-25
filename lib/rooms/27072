@@ -1,0 +1,25 @@
+#27072
+Muddy Path~
+	You are slogging through almost a foot of mud making progress very
+very slow.  You stand in a cluster of dead trees with their twisted branches 
+breaking as you push your way through the dark trail.  A trail runs south and
+north in the gloom.  Further north a thundering chorus of frogs fills the 
+air.  Nearby, you think you hear laughing...
+~
+97 1 3
+D0
+You can see the edge of a misty lake just to the north.
+~
+trail~
+0 0 27074 -1
+D1
+It looks like might be a small clearing just through the brush.
+~
+brush~
+1 -1 27073 -1
+D2
+A clearing opens up to the south.
+~
+trail~
+0 0 27002 -1
+S

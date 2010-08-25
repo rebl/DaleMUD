@@ -1,0 +1,29 @@
+#27075
+On the Dark Lake~
+   All you can see is a thick mist that fills the air.  The sky is dark and
+seems to offer no light to guide you.  The water calmly laps around you.
+You fear that with no markers to guide you and this hellish mist you may soon
+become lost.
+~
+97 1 7 7 7
+D0
+The mist obscures all sight.
+~
+lake~
+0 0 27077 -1
+D1
+The mist obscures all sight.
+~
+lake~
+0 0 27075 -1
+D2
+The mist obscures all sight.
+~
+lake~
+0 0 27074 -1
+D3
+The mist obscures all sight.
+~
+lake~
+0 0 27076 -1
+S

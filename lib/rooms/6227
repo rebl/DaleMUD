@@ -1,0 +1,16 @@
+#6227
+Road to the Stronghold~
+The road here is well paved and well kept. It continues to the north and south.
+The northern road brings you closer to the fortress which is beginning to fill
+the horizon. To the south the road dwindles back down to a trail.
+~
+38 0 3
+D0
+~
+door~
+0 0 6228 -1
+D2
+~
+door~
+0 0 6226 -1
+S

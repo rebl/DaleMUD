@@ -1,0 +1,20 @@
+#27017
+Canyon Path~
+  The path here cuts through a stony canyon.  Dung and bits of fur are
+scattered about, showing signs of much activity.  To the north is only silence
+but the south is filled with hoots and animalistic cries.  A fire burns brightly
+to the south.
+~
+97 0 4
+D0
+The path vanishes to the south.
+~
+path~
+0 0 27016 -1
+D2
+You see a box canyon riddled with caves to the south.  A bon-fire burns
+brightly at the end of the canyon.
+~
+path~
+0 0 27018 -1
+S

@@ -1,0 +1,15 @@
+handle 13 nostop
+run 7777
+where
+print c->player.name
+print ch->player.name
+print ch->affected
+print ch->*affected
+print hjp
+print *hjp
+print hjp->next
+print *old_af
+kill
+y
+quit
+

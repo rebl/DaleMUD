@@ -1,0 +1,18 @@
+#27014
+Campsite~
+    The remains of a small campfire sit here, hidden in the brush.  There
+appears to have been a large number men camped here recently.  Although the
+campsite is now overrun it appears that they went to great lengths to hide
+it.
+~
+97 0 3
+D1
+You see an intersection through the brush.
+~
+brush~
+0 0 27013 -1
+E
+camp campsite fire~
+The coals are cool.  It has been a while since this site was used.
+~
+S

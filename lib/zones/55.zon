@@ -1,0 +1,202 @@
+*Zone 55, rooms 9700-10899, last modified by Celestian
+M 0 9722 5 9711   ; A gnoll sentry
+E 1 3041 16 5   ; a chain mail shirt
+E 1 3078 15 6   ; a chain helm
+E 1 3083 16 7   ; a pair of chain leggings
+E 1 3628 7 8   ; a pair of padded leather boots
+E 1 3072 14 9   ; a pair of chain gauntlets
+E 1 3022 57 16   ; a long sword
+M 0 9722 5 9711   ; A gnoll sentry
+E 1 3041 16 5   ; a chain mail shirt
+E 1 3078 15 6   ; a chain helm
+E 1 3083 16 7   ; a pair of chain leggings
+E 1 3628 7 8   ; a pair of padded leather boots
+E 1 3072 14 9   ; a pair of chain gauntlets
+E 1 3022 57 16   ; a long sword
+M 0 9722 5 9711   ; A gnoll sentry
+E 1 3041 16 5   ; a chain mail shirt
+E 1 3078 15 6   ; a chain helm
+E 1 3083 16 7   ; a pair of chain leggings
+E 1 3628 7 8   ; a pair of padded leather boots
+E 1 3072 14 9   ; a pair of chain gauntlets
+E 1 3022 57 16   ; a long sword
+M 0 9722 5 9711   ; A gnoll sentry
+E 1 3041 16 5   ; a chain mail shirt
+E 1 3078 15 6   ; a chain helm
+E 1 3083 16 7   ; a pair of chain leggings
+E 1 3628 7 8   ; a pair of padded leather boots
+E 1 3072 14 9   ; a pair of chain gauntlets
+E 1 3022 57 16   ; a long sword
+M 0 9722 5 9711   ; A gnoll sentry
+E 1 3041 16 5   ; a chain mail shirt
+E 1 3078 15 6   ; a chain helm
+E 1 3083 16 7   ; a pair of chain leggings
+E 1 3628 7 8   ; a pair of padded leather boots
+E 1 3072 14 9   ; a pair of chain gauntlets
+E 1 3022 57 16   ; a long sword
+M 0 9719 12 9713   ; A gnoll
+D 0 9713 2 1   ; Common Cavern
+M 0 9721 1 9715   ; A gnoll chieftain
+E 1 3040 40 5   ; a breast plate
+E 1 3083 16 7   ; a pair of chain leggings
+E 1 24 1 8   ; a pair of vicious looking steel toed combat boots
+E 1 25510 1 16   ; A Great Axe
+M 0 9719 12 9715   ; A gnoll
+M 0 9719 12 9715   ; A gnoll
+M 0 9719 12 9716   ; A gnoll
+M 0 9719 12 9717   ; A gnoll
+M 0 9719 12 9717   ; A gnoll
+M 0 9720 1 9717   ; A gnoll
+E 1 3041 16 5   ; a chain mail shirt
+E 1 3081 41 7   ; a pair of leather pants
+E 1 9606 1 9   ; a pair of rusty chain gauntlets
+E 1 9410 1 16   ; A battle axe
+M 0 9719 12 9717   ; A gnoll
+D 0 9717 0 0   ; Well Used Passageway
+D 0 9717 2 0   ; Well Used Passageway
+D 0 9717 3 0   ; Well Used Passageway
+M 0 9719 12 9718   ; A gnoll
+M 0 9719 12 9718   ; A gnoll
+D 0 9718 2 0   ; Large Common Sleeping Cavern
+M 0 9719 12 9719   ; A gnoll
+D 0 9719 0 0   ; Decorated Room
+M 0 9719 12 9720   ; A gnoll
+M 0 9719 12 9720   ; A gnoll
+D 0 9720 1 0   ; Simple Sleeping Quarters
+D 0 9720 2 1   ; Simple Sleeping Quarters
+D 0 9721 0 1   ; Secret Stash
+D 0 9722 0 1   ; Storage Room
+M 0 9717 8 9731   ; A grimlock
+E 1 1946 18 8   ; a pair of leather sandals
+E 1 1944 19 13   ; a loin cloth
+E 1 9601 13 16   ; a short sword
+E 1 1564 15 17   ; a leather pouch
+P 1 60 8 1564   ; A small stone
+M 0 9716 1 9731   ; A hook horror
+M 0 9717 8 9731   ; A grimlock
+E 1 1946 18 8   ; a pair of leather sandals
+E 1 1944 19 13   ; a loin cloth
+E 1 9601 13 16   ; a short sword
+E 1 1564 15 17   ; a leather pouch
+P 1 60 8 1564   ; A small stone
+M 0 9718 4 9734   ; A small gremlin
+M 0 9718 4 9734   ; A small gremlin
+M 0 9718 4 9737   ; A small gremlin
+M 0 9717 8 9740   ; A grimlock
+E 1 1946 18 8   ; a pair of leather sandals
+E 1 1944 19 13   ; a loin cloth
+E 1 9601 13 16   ; a short sword
+E 1 1564 15 17   ; a leather pouch
+P 1 60 8 1564   ; A small stone
+D 0 9742 5 0   ; Dry Cavern
+D 0 9743 4 0   ; Underground Tunnel
+M 0 9717 8 9748   ; A grimlock
+E 1 1946 18 8   ; a pair of leather sandals
+E 1 1944 19 13   ; a loin cloth
+E 1 9601 13 16   ; a short sword
+E 1 1564 15 17   ; a leather pouch
+P 1 60 8 1564   ; A small stone
+M 0 9717 8 9748   ; A grimlock
+E 1 1946 18 8   ; a pair of leather sandals
+E 1 1944 19 13   ; a loin cloth
+E 1 9601 13 16   ; a short sword
+E 1 1564 15 17   ; a leather pouch
+P 1 60 8 1564   ; A small stone
+M 0 9717 8 9748   ; A grimlock
+E 1 1946 18 8   ; a pair of leather sandals
+E 1 1944 19 13   ; a loin cloth
+E 1 9601 13 16   ; a short sword
+E 1 1564 15 17   ; a leather pouch
+P 1 60 8 1564   ; A small stone
+M 0 9717 8 9751   ; A grimlock
+E 1 1946 18 8   ; a pair of leather sandals
+E 1 1944 19 13   ; a loin cloth
+E 1 9601 13 16   ; a short sword
+E 1 1564 15 17   ; a leather pouch
+P 1 60 8 1564   ; A small stone
+M 0 9718 4 9751   ; A small gremlin
+M 0 9717 8 9756   ; A grimlock
+E 1 9713 1 6   ; a mining helmet
+E 1 1946 18 8   ; a pair of leather sandals
+E 1 1944 19 13   ; a loin cloth
+E 1 9601 13 16   ; a short sword
+E 1 1564 15 17   ; a leather pouch
+P 1 60 8 1564   ; A small stone
+G 1 9712 3 0   ; a shovel
+G 1 5000 2 0   ; A small mining pick
+O 0 9711 3 9756   ; a thick pick
+O 0 9712 3 9756   ; a shovel
+O 0 9721 1 9757   ; A boobie trap
+O 0 9720 1 9759   ; A boobie trap
+O 0 9719 1 9759   ; A boobie trap
+M 0 9700 5 9760   ; A dark elf guard
+E 1 9704 5 8   ; a pair of black boots
+E 1 9703 5 12   ; a black mesh shirt
+E 1 9705 5 13   ; a black leather sword belt
+E 1 9736 5 16   ; a small crossbow
+E 1 9735 24 22   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9601 13 0   ; a short sword
+M 0 9700 5 9760   ; A dark elf guard
+E 1 9704 5 8   ; a pair of black boots
+E 1 9703 5 12   ; a black mesh shirt
+E 1 9705 5 13   ; a black leather sword belt
+E 1 9736 5 16   ; a small crossbow
+E 1 9735 24 22   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9601 13 0   ; a short sword
+M 0 9700 5 9760   ; A dark elf guard
+E 1 9704 5 8   ; a pair of black boots
+E 1 9703 5 12   ; a black mesh shirt
+E 1 9705 5 13   ; a black leather sword belt
+E 1 9736 5 16   ; a small crossbow
+E 1 9735 24 22   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9601 13 0   ; a short sword
+M 0 9700 5 9760   ; A dark elf guard
+E 1 9704 5 8   ; a pair of black boots
+E 1 9703 5 12   ; a black mesh shirt
+E 1 9705 5 13   ; a black leather sword belt
+E 1 9736 5 16   ; a small crossbow
+E 1 9735 24 22   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9601 13 0   ; a short sword
+M 0 9700 5 9760   ; A dark elf guard
+E 1 9704 5 8   ; a pair of black boots
+E 1 9703 5 12   ; a black mesh shirt
+E 1 9705 5 13   ; a black leather sword belt
+E 1 9736 5 16   ; a small crossbow
+E 1 9735 24 22   ; a poison tipped arrow
+G 1 9601 13 0   ; a short sword
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+G 1 9735 24 0   ; a poison tipped arrow
+D 0 9761 1 1   ; Large Stone Door
+O 0 9711 3 9762   ; a thick pick
+O 0 9711 3 9762   ; a thick pick
+O 0 9712 3 9762   ; a shovel
+D 0 9762 3 1   ; Guard Station
+D 0 9765 3 1   ; Short Tunnel
+O 0 9716 4 9769   ; a silvery chunk of metal
+O 0 9716 4 9769   ; a silvery chunk of metal
+O 0 9716 4 9769   ; a silvery chunk of metal
+O 0 9716 4 9769   ; a silvery chunk of metal
+D 0 9769 1 1   ; Precious Metals
+D 0 9771 3 1   ; Meeting Hall
+O 0 9708 1 9772   ; a backpack
+D 0 9772 1 1   ; Secret Stash!
+D 0 9850 2 0   ; Huge Gate
+D 0 9851 0 0   ; Doorway
+D 0 9851 2 0   ; Doorway
+D 0 9852 0 0   ; Guard Post
+D 0 9869 2 0   ; Matron's Bedroom
+D 0 9870 0 0   ; JACKPOT!  The Treasure Room
+S

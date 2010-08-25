@@ -1,0 +1,18 @@
+#27133
+Edge of A Dark Path~
+	You stand in a thick forest.  Large leafy plants grow all around you.
+A thick mist rolls past whispering warnings to you.  A small footpath runs
+north.  A small cave huddles in the rocks to the south.
+~
+97 0 3
+D0
+The trail winds on.
+~
+footpath~
+0 0 27134 -1
+D2
+The cave is dark and wet.
+~
+cave~
+0 0 27132 -1
+S

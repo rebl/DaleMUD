@@ -1,0 +1,16 @@
+#6226
+Path to the Stronghold~
+The path is beginning to widen to the north...in the distance you see a
+massive structure that looks treelike, yet larger than any tree you've seen
+before.
+~
+38 0 3
+D0
+~
+door~
+0 0 6227 -1
+D2
+~
+door~
+0 0 6225 -1
+S

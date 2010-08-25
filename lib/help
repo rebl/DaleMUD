@@ -1,0 +1,29 @@
+Generic Help
+-------------------------------------------------------------------------
+Communication:                 | Movement:
+    say ('), shout, tell,      |    north, south, east, west, up, down,
+    emote (:), ask, whisper,   |    enter, exits, follow, mount, ride,
+    deafen, gossip, auction,   |    dismount, stand, rest, sit, sleep
+    nogossip, noauction, sign, |    wake, unlock, lock, open, close,
+    gtell, report, notell      |    run
+-------------------------------------------------------------------------
+Objects:                       | Combat:
+    get, put, drop, wear,      |    kill, hit, backstab, kick, bash,
+    wield, hold, grab, give,   |    flee, cast, wimp, assist, 
+    look, examine, eat, drink, |    recall (sorcer cast),berserk,
+    sip, taste, remove, pour,  |    bellow,warcry,blast,shoot,mind,
+    quaff,notch,load           |    fire
+-------------------------------------------------------------------------
+Info:                          | Utility:
+    score, attribute, world,   |    save, quit, !, brief, compact,
+    news, info, inv, read,     |    typo, bug, idea, allspells, skill,
+    time, wizlist, display     |    prac,commands, set
+    who,gwho, eq               |
+-------------------------------------------------------------------------
+ 
+Also, to get help on any specific topic, just type HELP <keyword>,
+where <keyword> could be one of the following examples:
+ 
+SOCIAL   SHOPS   INNS   
+MAGIC CLERIC WARRIOR THIEF PSIONIST SORCERER PALADIN RANGER BARBARIAN
+ 

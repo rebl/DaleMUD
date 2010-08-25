@@ -1,0 +1,184 @@
+*Zone 78, rooms 19000-19199, last modified by Alun
+D 0 19000 2 0   ; Monolith.
+M 0 19004 9 19003   ; A bloody corpse.
+M 0 19005 7 19003   ; A bloody guard.
+M 0 19005 7 19003   ; A bloody guard.
+D 0 19003 1 0   ; Watchtower.
+D 0 19004 1 0   ; Inside the tower.
+D 0 19004 3 0   ; Inside the tower.
+D 0 19004 4 0   ; Inside the tower.
+D 0 19006 5 0   ; Look out.
+D 0 19007 3 0   ; Guard Room.
+D 0 19010 1 0   ; Watchtower
+M 0 19004 9 19011   ; A bloody corpse.
+D 0 19011 1 0   ; Inside Tower.
+D 0 19011 3 0   ; Inside Tower.
+D 0 19011 4 0   ; Inside Tower.
+M 0 19004 9 19017   ; A bloody corpse.
+D 0 19017 3 0   ; Watchtower.
+M 0 19005 7 19019   ; A bloody guard.
+M 0 19005 7 19019   ; A bloody guard.
+M 0 19005 7 19019   ; A bloody guard.
+D 0 19019 1 0   ; Inside the Tower.
+D 0 19019 3 0   ; Inside the Tower.
+D 0 19019 4 0   ; Inside the Tower.
+M 0 19004 9 19020   ; A bloody corpse.
+D 0 19020 1 0   ; Guard Room.
+M 0 19004 9 19021   ; A bloody corpse.
+D 0 19021 5 0   ; Atop the Tower.
+D 0 19022 0 0   ; Skull Road.
+M 0 19004 9 19025   ; A bloody corpse.
+D 0 19025 0 0   ; Dim Green Light.
+D 0 19025 2 0   ; Dim Green Light.
+D 0 19026 2 0   ; North-South Wall.
+M 0 19005 7 19027   ; A bloody guard.
+M 0 19005 7 19027   ; A bloody guard.
+D 0 19028 0 0   ; North-South Wall.
+D 0 19031 0 2   ; Monolith
+D 0 19032 2 0   ; Resin coated hallway.
+M 0 19017 1 19036   ; A large guard
+G 1 9202 2 0   ; A large bone shaped into a strange key
+D 0 19036 2 0   ; West Yard.
+M 0 19018 2 19037   ; A glowing green guard
+G 1 5301 1 0   ; A glowing key
+M 0 19018 2 19037   ; A glowing green guard
+D 0 19037 1 2   ; South East Yard.
+D 0 19037 2 2   ; South East Yard.
+M 0 19025 1 19038   ; A large glowing guard
+G 1 9202 2 0   ; A large bone shaped into a strange key
+D 0 19038 0 2   ; North-East Yard.
+D 0 19039 3 0   ; North-West Yard.
+M 0 9420 4 19041   ; A stone giant
+M 0 9420 4 19041   ; A stone giant
+D 0 19041 5 0   ; Work Yard.
+M 0 9420 4 19042   ; A stone giant
+M 0 9420 4 19042   ; A stone giant
+D 0 19042 4 0   ; First work platform.
+D 0 19042 5 0   ; First work platform.
+D 0 19043 4 0   ; Quarry Floor work yard.
+D 0 19043 5 0   ; Quarry Floor work yard.
+D 0 19044 4 0   ; Black Stone Pit.
+D 0 19046 3 0   ; Psychology Ward.
+D 0 19047 0 2   ; Hall
+D 0 19048 2 0   ; Electro-Shock treatment.
+D 0 19048 3 2   ; Electro-Shock treatment.
+M 0 19000 1 19049   ; A glowing green Orb
+G 1 19013 1 0   ; a broken femur
+D 0 19049 1 2   ; Shock Treatment.
+M 0 19006 1 19050   ; A huge guard.
+G 1 19014 1 0   ; an incisor 
+D 0 19050 2 2   ; Guard Room.
+D 0 19052 0 0   ; Mirrored room
+M 0 19022 1 19055   ; A mercenary stands here
+D 0 19056 1 0   ; Prison cell.
+M 0 19026 1 19057   ; A thief dressed in green
+E 1 16747 1 16   ; a ceremonial dagger
+D 0 19057 3 0   ; Prison cell.
+M 0 19027 1 19058   ; A gaunt man
+E 1 16708 1 16   ; shadow knife
+G 1 19016 1 0   ; a fractured mandible
+D 0 19058 3 0   ; Prison cell.
+D 0 19059 1 0   ; Prison cell.
+D 0 19060 4 2   ; White Room.
+M 0 19021 1 19061   ; An infirmary guard
+D 0 19061 0 1   ; Prison Infirmary.
+D 0 19061 5 2   ; Prison Infirmary.
+D 0 19062 0 1   ; Main Ward.
+D 0 19062 2 1   ; Main Ward.
+M 0 19024 1 19063   ; A bloody nurse
+E 1 19030 3 2   ; an eyeball
+E 1 19031 2 5   ; a nurses uniform
+E 1 19034 1 6   ; a operating mask
+E 1 19032 1 8   ; a pair of white shoes
+E 1 19033 1 17   ; a pair of clamps
+G 1 19015 1 0   ; a medical badge
+D 0 19063 0 2   ; Scrub Room.
+D 0 19063 2 1   ; Scrub Room.
+M 0 19011 1 19064   ; A doctor
+E 1 19011 1 3   ; a finger bone necklace
+E 1 19007 1 6   ; a human skin mask
+E 1 19010 2 7   ; a rotting pile of flesh
+E 1 19008 1 16   ; a bloody scalpal
+G 1 19017 1 0   ; a kidney
+G 1 16726 1 0   ; human flesh
+D 0 19064 2 2   ; Operating Room.
+D 0 19071 5 2   ; Green light.
+M 0 19001 1 19072   ; Inhep the Huge Giant
+E 1 19039 2 1   ; a band of green energy
+E 1 19039 2 2   ; a band of green energy
+E 1 19020 1 5   ; a green light glows here.
+E 1 19019 1 16   ; a bloody arm
+D 0 19072 4 2   ; Inhep's Lair.
+M 0 19004 9 19081   ; A bloody corpse.
+M 0 19004 9 19082   ; A bloody corpse.
+E 1 27005 11 3   ; an eye medallion
+E 1 27012 3 16   ; a short spear
+D 0 19095 1 0   ; Debtors prison.
+D 0 19095 2 2   ; Debtors prison.
+D 0 19096 1 0   ; Debtor's prison.
+D 0 19096 3 0   ; Debtor's prison.
+D 0 19097 3 0   ; Prison cell.
+D 0 19099 1 0   ; Hallway.
+D 0 19099 3 0   ; Hallway.
+D 0 19100 3 2   ; Damp Hallway.
+D 0 19101 0 2   ; Damp Hallway.
+D 0 19102 1 0   ; Damp Hallway.
+M 0 19020 4 19103   ; A dirty prisoner
+D 0 19103 3 0   ; Prison Cell.
+M 0 19020 4 19104   ; A dirty prisoner
+D 0 19105 2 0   ; Bend in the Damp Hallway
+D 0 19106 0 0   ; Prison Cell.
+D 0 19107 2 0   ; Damp Hallway
+D 0 19108 3 0   ; Prison cell.
+M 0 19020 4 19109   ; A dirty prisoner
+D 0 19109 0 0   ; Prison Cell.
+D 0 19109 1 0   ; Prison Cell.
+M 0 19019 1 19110   ; A man covered in spores
+E 1 19037 2 6   ; a mushroom cap
+E 1 19036 2 7   ; a bunch of roots
+E 1 1545 3 12   ; a leather backpack
+P 1 19006 1 1545   ; a large mushroom
+P 1 19001 2 1545   ; a large mushroom
+P 1 19003 1 1545   ; a large mushroom
+P 1 19002 1 1545   ; a large mushroom
+P 1 19001 2 1545   ; a large mushroom
+E 1 19035 1 17   ; a spore covered wand
+M 0 19020 4 19111   ; A dirty prisoner
+D 0 19111 3 0   ; Prison cell.
+D 0 19112 1 0   ; Damp hallway.
+D 0 19160 0 0   ; Staff ward.
+D 0 19160 1 0   ; Staff ward.
+D 0 19160 3 0   ; Staff ward.
+D 0 19161 2 0   ; Staff Room.
+D 0 19162 1 0   ; Wardens office.
+M 0 19004 9 19180   ; A bloody corpse.
+D 0 19180 2 0   ; Tower stairs.
+D 0 19182 0 0   ; Atop the tower.
+D 0 19185 0 0   ; Death Row.
+M 0 19016 1 19186   ; A death row inmate
+E 1 19026 1 3   ; a necklace
+G 1 19018 1 0   ; a brain
+M 0 19010 1 19190   ; A Grotesque guardian
+G 1 19029 2 0   ; a pair of insectiod hands
+G 1 19030 3 0   ; an eyeball
+G 1 19028 2 0   ; a strange insect shell 
+G 1 19027 2 0   ; a grotesque claw
+M 0 19009 1 19190   ; An Insectoid Guardian
+G 1 19030 3 0   ; an eyeball
+G 1 19028 2 0   ; a strange insect shell 
+G 1 19029 2 0   ; a pair of insectiod hands
+G 1 19027 2 0   ; a grotesque claw
+D 0 19190 0 0   ; Resin coated hallway.
+D 0 19190 2 2   ; Resin coated hallway.
+D 0 19194 0 2   ; Base of the Tower.
+M 0 19023 1 19195   ; An evil man
+E 1 19022 2 6   ; a set of horns
+E 1 19024 1 9   ; a flesh covered claw
+E 1 19025 1 15   ; a band of green energy
+E 1 19021 2 16   ; a black tongue
+G 1 19023 1 0   ; a forked tail
+G 1 19012 1 0   ; a bloody finger
+D 0 19195 2 2   ; Baal's Chamber.
+D 0 19195 3 0   ; Baal's Chamber.
+D 0 19196 1 0   ; Storage.
+S

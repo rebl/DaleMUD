@@ -1,0 +1,15 @@
+#6402
+Secret Escape Tunnel~
+You are in a small, cramped tunnel dug by one of the few people to escape the
+king's dungeons. The tunnel continues to the south.
+~
+38 256 0 3 
+D2
+~
+door~
+0 0 6403 -1
+D3
+~
+door~
+9 0 6400 -1
+S

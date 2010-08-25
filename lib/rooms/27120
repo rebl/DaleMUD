@@ -1,0 +1,20 @@
+#27120
+Sleeping Chambers of the Giant Chief~
+	You are in a large room carved out of stone.  A huge pile of sheep
+skins lie here making a good bed.  A lion's skin hangs on the north wall.
+The west wall is the hallway out.  Several human and animal heads have been
+mounted on the south wall.  The east wall is barren.  On a table is a small
+cage with the door swinging open.
+~
+97 4 0
+D1
+A gust of air blows at you.
+~
+wall~
+7 27051 27121 -1
+D3
+A small hall leads out.
+~
+archway~
+0 0 27119 -1
+S

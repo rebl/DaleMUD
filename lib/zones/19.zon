@@ -1,0 +1,447 @@
+*Zone 19, rooms 2300-2700, last modified by Stic
+M 0 2300 5 2304   ; A large farm dog
+M 0 2301 2 2307   ; Farmer
+M 0 2300 5 2309   ; A large farm dog
+M 0 1009 8 2309   ; a horse
+M 0 1009 8 2309   ; a horse
+M 0 1009 8 2309   ; a horse
+M 0 1005 5 2309   ; a cow
+M 0 1005 5 2309   ; a cow
+M 0 1007 12 2309   ; a chicken
+M 0 1007 12 2309   ; a chicken
+M 0 1007 12 2309   ; a chicken
+M 0 1007 12 2309   ; a chicken
+M 0 1007 12 2309   ; a chicken
+M 0 1007 12 2309   ; a chicken
+M 0 2301 2 2310   ; Farmer
+M 0 2302 2 2310   ; The farmer's son
+M 0 2334 5 2314   ; A patron
+M 0 2334 5 2314   ; A patron
+M 0 2334 5 2314   ; A patron
+M 0 2334 5 2314   ; A patron
+M 0 2334 5 2314   ; A patron
+M 0 2320 3 2314   ; A serving wench
+M 0 2320 3 2314   ; A serving wench
+M 0 2303 1 2315   ; Elmo
+D 0 2316 3 0   ; Bar Room
+D 0 2317 1 0   ; Kitchen
+D 0 2317 2 0   ; Kitchen
+M 0 2300 5 2318   ; A large farm dog
+D 0 2318 0 0   ; Storage Room
+D 0 2319 0 0   ; Upper story of Inn
+D 0 2319 2 0   ; Upper story of Inn
+M 0 2320 3 2320   ; A serving wench
+D 0 2320 2 0   ; Occupied room
+D 0 2321 0 0   ; Unoccupied room
+M 0 2300 5 2322   ; A large farm dog
+D 0 2322 0 0   ; End of hallway on the second story of Inn.
+D 0 2322 2 0   ; End of hallway on the second story of Inn.
+D 0 2323 0 0   ; Room of a Drunken Patron
+D 0 2324 2 0   ; Occupied room
+M 0 2305 1 2326   ; John the leather worker
+M 0 2313 1 2328   ; Jaroo Ashstaff
+D 0 2329 2 0   ; Druid's Way Road
+M 0 2311 2 2330   ; The large war dog
+M 0 2311 2 2330   ; The large war dog
+M 0 2310 6 2330   ; The man-at-arms
+M 0 2310 6 2330   ; The man-at-arms
+M 0 2310 6 2330   ; The man-at-arms
+M 0 2310 6 2330   ; The man-at-arms
+M 0 2312 1 2330   ; Melubb the moneychanger
+M 0 2315 1 2331   ; Burne the magic-user
+E 1 2316 2 5   ; a hand woven tunic
+E 1 2315 2 6   ; a pair of breeches
+E 1 2317 2 8   ; a pair of worn shoes
+M 0 2316 1 2331   ; Rufus the warrior
+M 0 2308 8 2331   ; A guard
+M 0 2308 8 2331   ; A guard
+D 0 2331 0 0   ; High Tower
+D 0 2331 1 0   ; High Tower
+M 0 2317 1 2332   ; A foreman
+M 0 2318 6 2332   ; A worker
+M 0 2318 6 2332   ; A worker
+M 0 2318 6 2332   ; A worker
+M 0 2318 6 2332   ; A worker
+M 0 2318 6 2332   ; A worker
+M 0 2318 6 2332   ; A worker
+M 0 2307 1 2335   ; Greemag grins evilly and
+M 0 2310 6 2335   ; The man-at-arms
+M 0 2310 6 2335   ; The man-at-arms
+M 0 2306 1 2335   ; Rannos Davl
+M 0 2302 2 2336   ; The farmer's son
+D 0 2336 3 0   ; Small Path
+M 0 2322 6 2348   ; The brigand
+M 0 2322 6 2348   ; The brigand
+M 0 2322 6 2348   ; The brigand
+M 0 2322 6 2348   ; The brigand
+M 0 2322 6 2348   ; The brigand
+M 0 2322 6 2348   ; The brigand
+M 0 2335 20 2350   ; The patron
+M 0 2335 20 2350   ; The patron
+M 0 2335 20 2350   ; The patron
+M 0 2335 20 2350   ; The patron
+M 0 2335 20 2350   ; The patron
+M 0 2335 20 2350   ; The patron
+M 0 2335 20 2350   ; The patron
+M 0 2335 20 2350   ; The patron
+M 0 2333 1 2350   ; Dala the wench
+M 0 2335 20 2351   ; The patron
+M 0 2335 20 2351   ; The patron
+M 0 2331 1 2351   ; Dick Rentsch
+M 0 2332 1 2351   ; Wag the barman
+D 0 2352 0 0   ; Hallway
+D 0 2352 2 0   ; Hallway
+D 0 2353 2 0   ; Trashed room
+M 0 2319 1 2354   ; Zert the fighter
+E 1 2316 2 5   ; a hand woven tunic
+E 1 2315 2 6   ; a pair of breeches
+E 1 2317 2 8   ; a pair of worn shoes
+D 0 2355 0 0   ; Hallway
+D 0 2355 2 0   ; Hallway
+M 0 2335 20 2356   ; The patron
+M 0 2335 20 2358   ; The patron
+M 0 2335 20 2358   ; The patron
+M 0 2335 20 2358   ; The patron
+M 0 2335 20 2358   ; The patron
+M 0 2335 20 2358   ; The patron
+M 0 2337 1 2360   ; Otis the smithy
+G 1 24910 1 0   ; a horseshoe
+M 0 2336 1 2360   ; Chon, the smith's son
+M 0 1009 8 2362   ; a horse
+M 0 1009 8 2362   ; a horse
+M 0 1009 8 2362   ; a horse
+M 0 2339 1 2364   ; Hruda
+M 0 2338 1 2364   ; Mother Screng
+M 0 2335 20 2366   ; The patron
+M 0 2340 1 2366   ; Skole the proprieter
+M 0 2335 20 2366   ; The patron
+M 0 2335 20 2366   ; The patron
+M 0 2335 20 2366   ; The patron
+D 0 2367 2 0   ; Side Tunnel
+D 0 2370 0 0   ; Stairway Arch
+D 0 2370 3 0   ; Stairway Arch
+D 0 2371 1 0   ; Storeroom
+M 0 2326 1 2372   ; Large ogre
+D 0 2372 1 0   ; Large Room
+D 0 2372 2 0   ; Large Room
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+M 0 2325 12 2373   ; The zombie
+D 0 2375 1 0   ; Tunnel
+D 0 2375 2 0   ; Tunnel
+D 0 2375 3 0   ; Tunnel
+D 0 2376 3 0   ; Large Chamber
+M 0 2327 7 2377   ; A bugbear
+M 0 2327 7 2377   ; A bugbear
+M 0 2327 7 2377   ; A bugbear
+M 0 2327 7 2377   ; A bugbear
+M 0 2327 7 2377   ; A bugbear
+M 0 2327 7 2377   ; A bugbear
+M 0 2327 7 2377   ; A bugbear
+D 0 2378 0 0   ; Tunnel
+D 0 2378 2 0   ; Tunnel
+M 0 2328 8 2379   ; A gnoll
+M 0 2328 8 2379   ; A gnoll
+M 0 2328 8 2379   ; A gnoll
+M 0 2328 8 2379   ; A gnoll
+M 0 2328 8 2379   ; A gnoll
+M 0 2328 8 2379   ; A gnoll
+M 0 2328 8 2379   ; A gnoll
+M 0 2328 8 2379   ; A gnoll
+D 0 2380 0 0   ; Tunnel
+M 0 2300 5 2382   ; A large farm dog
+D 0 2384 1 0   ; Tunnel
+D 0 2385 3 0   ; Tunnel
+D 0 2386 0 0   ; Tunnel
+M 0 2308 8 2387   ; A guard
+M 0 2308 8 2387   ; A guard
+M 0 2308 8 2387   ; A guard
+M 0 2308 8 2387   ; A guard
+M 0 2308 8 2387   ; A guard
+M 0 2308 8 2387   ; A guard
+D 0 2387 1 0   ; Barracks
+D 0 2387 2 0   ; Barracks
+M 0 2330 1 2388   ; Laret
+D 0 2388 3 0   ; Chamber
+M 0 2329 1 2391   ; The giant crayfish
+D 0 2395 1 0   ; Gate
+D 0 2396 3 0   ; Grand Entrance
+D 0 2398 5 0   ; Central Altar
+D 0 2399 3 0   ; West Altar
+D 0 2400 1 0   ; West Vestry
+D 0 2401 3 0   ; East Altar
+D 0 2402 1 0   ; East Vestry
+D 0 2403 2 0   ; High Altar
+D 0 2404 0 0   ; Large Vestry
+D 0 2411 3 0   ; Stone Corridor
+D 0 2412 0 0   ; Room with a Broken Altar
+D 0 2412 1 0   ; Room with a Broken Altar
+D 0 2412 3 0   ; Room with a Broken Altar
+D 0 2413 1 0   ; Banquet Hall
+D 0 2414 0 0   ; Old Servants Dining Hall
+D 0 2414 2 0   ; Old Servants Dining Hall
+D 0 2415 0 0   ; Alcove
+D 0 2415 2 0   ; Alcove
+D 0 2416 1 0   ; Trophy Room
+D 0 2416 2 0   ; Trophy Room
+D 0 2418 3 0   ; Stone Corridor
+D 0 2419 1 0   ; Stone Corridor
+D 0 2419 3 0   ; Stone Corridor
+D 0 2420 0 0   ; Stone Corridor
+D 0 2420 1 0   ; Stone Corridor
+D 0 2420 3 0   ; Stone Corridor
+D 0 2421 1 0   ; Kitchen
+D 0 2422 0 0   ; Guard Room
+D 0 2422 2 0   ; Guard Room
+D 0 2422 3 0   ; Guard Room
+D 0 2423 1 0   ; Stone Corridor
+D 0 2423 2 0   ; Stone Corridor
+D 0 2424 5 0   ; Stone Corridor
+D 0 2425 4 0   ; Torture Chamber
+D 0 2427 2 0   ; Hall of Triangles
+D 0 2428 0 0   ; Small Dining Room
+M 0 2348 4 2430   ; The Earth Elemental
+M 0 2348 4 2430   ; The Earth Elemental
+M 0 2348 4 2430   ; The Earth Elemental
+M 0 2348 4 2430   ; The Earth Elemental
+D 0 2430 4 0   ; Earth Temple
+D 0 2430 5 0   ; Earth Temple
+D 0 2431 2 0   ; Hall of Triangles
+D 0 2432 0 0   ; Sleeping Apartment
+D 0 2432 2 0   ; Sleeping Apartment
+D 0 2433 0 0   ; Inner Chamber
+D 0 2433 2 0   ; Inner Chamber
+D 0 2434 0 0   ; Inner Chamber
+D 0 2434 2 0   ; Inner Chamber
+D 0 2435 0 0   ; Anteroom
+D 0 2435 2 0   ; Anteroom
+D 0 2436 0 0   ; Stone Corridor
+D 0 2436 1 0   ; Stone Corridor
+M 0 2343 6 2437   ; A gnoll skeleton
+M 0 2343 6 2437   ; A gnoll skeleton
+M 0 2343 6 2437   ; A gnoll skeleton
+M 0 2343 6 2437   ; A gnoll skeleton
+M 0 2343 6 2437   ; A gnoll skeleton
+M 0 2343 6 2437   ; A gnoll skeleton
+D 0 2438 3 0   ; Room with Trapezoidal Annex
+D 0 2439 3 0   ; Guardroom
+D 0 2440 1 0   ; Stone Corridor
+D 0 2440 3 0   ; Stone Corridor
+D 0 2441 1 0   ; Wrecked Reception Room
+D 0 2442 0 0   ; L-Shaped Room
+D 0 2442 3 0   ; L-Shaped Room
+D 0 2443 1 0   ; Old Visitor's Chamber
+D 0 2443 3 0   ; Old Visitor's Chamber
+D 0 2444 1 0   ; Large Chamber
+D 0 2444 3 0   ; Large Chamber
+D 0 2445 1 0   ; Sentry Room
+D 0 2445 2 0   ; Sentry Room
+D 0 2449 2 0   ; Pillared Room
+D 0 2451 0 0   ; Gnoll Sleeping Chamber
+D 0 2451 3 0   ; Gnoll Sleeping Chamber
+D 0 2452 1 0   ; Room With Alcove
+D 0 2452 2 0   ; Room With Alcove
+D 0 2453 1 0   ; Trashed Plush Guest Chamber
+D 0 2453 3 0   ; Trashed Plush Guest Chamber
+D 0 2454 0 0   ; Stone Corridor
+D 0 2458 0 0   ; Hexagonal Room
+D 0 2459 2 0   ; Augury Chamber
+D 0 2461 0 0   ; Stone Corridor
+D 0 2461 1 0   ; Stone Corridor
+M 0 3404 1 2462   ; A wight
+D 0 2462 3 0   ; Crypt
+D 0 2463 2 0   ; Stone Corridor
+M 0 2324 2 2466   ; Green slime
+M 0 2324 2 2466   ; Green slime
+D 0 2467 1 0   ; Octagonal Chamber
+D 0 2467 2 0   ; Octagonal Chamber
+D 0 2467 3 0   ; Octagonal Chamber
+D 0 2467 4 0   ; Octagonal Chamber
+D 0 2467 5 0   ; Octagonal Chamber
+D 0 2468 1 0   ; Processional Corridor
+D 0 2468 2 0   ; Processional Corridor
+D 0 2468 3 0   ; Processional Corridor
+D 0 2469 5 0   ; Hall of Triumphal Evil
+D 0 2470 3 0   ; Hall of Triumphal Evil
+D 0 2470 5 0   ; Hall of Triumphal Evil
+D 0 2471 1 0   ; Lounge
+D 0 2471 2 0   ; Lounge
+D 0 2472 0 0   ; Bandit Room
+D 0 2472 3 0   ; Bandit Room
+D 0 2473 1 0   ; Crooked Corridor
+D 0 2473 2 0   ; Crooked Corridor
+D 0 2473 3 0   ; Crooked Corridor
+D 0 2474 1 0   ; Reception Hall
+D 0 2474 2 0   ; Reception Hall
+D 0 2476 0 0   ; Stone Corridor
+D 0 2476 2 0   ; Stone Corridor
+D 0 2478 1 0   ; Processional Corridor
+D 0 2478 2 0   ; Processional Corridor
+D 0 2479 0 0   ; Hall of Verdigris
+D 0 2479 1 0   ; Hall of Verdigris
+D 0 2479 2 0   ; Hall of Verdigris
+D 0 2479 3 0   ; Hall of Verdigris
+D 0 2480 0 0   ; Small Room Behind Curtain
+D 0 2481 0 0   ; Corridor of the Elements
+D 0 2481 1 0   ; Corridor of the Elements
+D 0 2481 2 0   ; Corridor of the Elements
+D 0 2481 3 0   ; Corridor of the Elements
+D 0 2485 0 0   ; Side Room
+D 0 2485 1 0   ; Side Room
+D 0 2485 3 0   ; Side Room
+D 0 2486 2 0   ; Inner Chamber
+D 0 2487 1 0   ; Water Temple Forces
+D 0 2487 3 0   ; Water Temple Forces
+D 0 2488 3 0   ; Jumbled Room
+D 0 2489 0 0   ; Stone Corridor
+D 0 2489 1 0   ; Stone Corridor
+D 0 2489 2 0   ; Stone Corridor
+D 0 2490 0 0   ; Stone Corridor
+D 0 2490 1 0   ; Stone Corridor
+D 0 2491 5 0   ; Stone Corridor with Staircase
+D 0 2492 0 0   ; The Temple of Fire
+D 0 2492 1 0   ; The Temple of Fire
+D 0 2492 3 0   ; The Temple of Fire
+D 0 2493 0 0   ; Audience Chamber
+D 0 2493 3 0   ; Audience Chamber
+D 0 2494 1 0   ; Main Chamber
+D 0 2494 2 0   ; Main Chamber
+D 0 2495 3 0   ; Bugbear Room
+D 0 2501 3 0   ; Old Storeroom
+D 0 2502 1 0   ; Room of Bones
+D 0 2502 3 0   ; Room of Bones
+D 0 2503 1 0   ; Abandoned Storeroom
+D 0 2504 1 0   ; Pearlescent Room
+D 0 2504 3 0   ; Pearlescent Room
+D 0 2505 3 0   ; Secret Room
+D 0 2506 1 0   ; Side Chamber
+D 0 2506 2 0   ; Side Chamber
+D 0 2507 0 0   ; Salon
+D 0 2507 2 0   ; Salon
+D 0 2507 3 0   ; Salon
+D 0 2508 2 0   ; Room of the Elements
+D 0 2509 0 0   ; Garbage Room
+D 0 2512 2 0   ; Stone Corridor
+D 0 2512 5 0   ; Stone Corridor
+D 0 2514 0 0   ; Prison Room
+D 0 2515 0 0   ; Junk Room
+D 0 2515 2 0   ; Junk Room
+D 0 2516 0 0   ; Side Corridor
+D 0 2516 3 0   ; Side Corridor
+D 0 2519 1 0   ; Stone Corridor
+D 0 2520 3 0   ; Storage Room
+D 0 2522 2 0   ; The Hall of Dread
+D 0 2522 3 0   ; The Hall of Dread
+D 0 2522 4 0   ; The Hall of Dread
+D 0 2524 3 0   ; The Hall of Dread
+D 0 2528 1 0   ; Pleasure Chamber
+D 0 2528 3 0   ; Pleasure Chamber
+D 0 2529 1 0   ; Hall of Sculpture
+D 0 2530 3 0   ; Earth-Floored Room
+D 0 2531 0 0   ; Corridor Behind Curtain
+D 0 2531 2 0   ; Corridor Behind Curtain
+D 0 2532 1 0   ; Disused Room
+D 0 2532 3 0   ; Disused Room
+D 0 2533 1 0   ; Lavish Chamber
+D 0 2533 3 0   ; Lavish Chamber
+D 0 2534 1 0   ; Purple Hall
+D 0 2534 3 0   ; Purple Hall
+D 0 2536 0 0   ; Room of Demons
+D 0 2538 1 0   ; Earth-Floored Area
+D 0 2538 4 0   ; Earth-Floored Area
+D 0 2539 3 0   ; Stairwell
+D 0 2541 0 0   ; Stone Corridor
+D 0 2542 0 0   ; Circular Shaft
+D 0 2543 0 0   ; Chamber of Eyes
+D 0 2543 1 0   ; Chamber of Eyes
+D 0 2543 2 0   ; Chamber of Eyes
+D 0 2543 3 0   ; Chamber of Eyes
+D 0 2544 2 0   ; Pleasure Chamber
+D 0 2545 1 0   ; Pleasure Chamber
+D 0 2545 2 0   ; Pleasure Chamber
+D 0 2546 0 0   ; Hexagonal Chamber
+M 0 17014 12 2550   ; The ghoul
+M 0 17014 12 2550   ; The ghoul
+M 0 17014 12 2550   ; The ghoul
+M 0 17014 12 2550   ; The ghoul
+M 0 17014 12 2550   ; The ghoul
+M 0 17014 12 2550   ; The ghoul
+D 0 2550 0 0   ; Room of Ghouls
+D 0 2551 1 0   ; Hall
+D 0 2561 0 0   ; Grotto
+D 0 2562 0 0   ; Small Jail
+D 0 2562 2 0   ; Small Jail
+D 0 2563 1 0   ; Stone Corridor
+D 0 2563 2 0   ; Stone Corridor
+D 0 2563 3 0   ; Stone Corridor
+D 0 2564 0 0   ; Small Prison
+D 0 2566 3 0   ; Hall of Armored Skeletons
+D 0 2569 1 0   ; Storage Room
+D 0 2569 4 0   ; Storage Room
+D 0 2572 0 0   ; Stone Corridor
+D 0 2572 2 0   ; Stone Corridor
+D 0 2573 2 0   ; Laboratory
+D 0 2574 0 0   ; Square Chamber
+D 0 2574 1 0   ; Square Chamber
+D 0 2574 2 0   ; Square Chamber
+D 0 2574 3 0   ; Square Chamber
+D 0 2577 1 0   ; Fountain
+D 0 2579 3 0   ; Opulent Bedchamber
+D 0 2580 0 0   ; Domed Hexagonal Chamber
+D 0 2580 1 0   ; Domed Hexagonal Chamber
+D 0 2580 2 0   ; Domed Hexagonal Chamber
+D 0 2580 3 0   ; Domed Hexagonal Chamber
+D 0 2581 2 0   ; Jail Cell
+D 0 2582 0 0   ; Jail Cell
+D 0 2583 1 0   ; Jail Cell
+D 0 2583 3 0   ; Jail Cell
+D 0 2584 1 0   ; Hexagonal Chamber
+D 0 2584 3 0   ; Hexagonal Chamber
+D 0 2585 0 0   ; Secret Passage
+D 0 2585 1 0   ; Secret Passage
+D 0 2585 2 0   ; Secret Passage
+D 0 2586 2 0   ; North Room
+D 0 2587 1 0   ; South Room
+D 0 2587 3 0   ; South Room
+D 0 2588 3 0   ; Hidden Room
+D 0 2589 2 0   ; Stone Corridor
+D 0 2592 0 0   ; Chapel
+D 0 2592 3 0   ; Chapel
+D 0 2593 1 0   ; Inky Chamber
+D 0 2598 3 0   ; West Wing
+D 0 2599 1 0   ; Planning Room
+D 0 2599 2 0   ; Planning Room
+D 0 2599 3 0   ; Planning Room
+D 0 2600 1 0   ; Private Room
+D 0 2601 0 0   ; Stone Corridor
+D 0 2603 1 0   ; Common Room
+D 0 2603 2 0   ; Common Room
+D 0 2604 0 0   ; South Storeroom
+D 0 2604 3 0   ; South Storeroom
+D 0 2605 2 0   ; North Storeroom
+D 0 2605 3 0   ; North Storeroom
+D 0 2606 1 0   ; East Wing
+D 0 2607 1 0   ; Study
+D 0 2607 3 0   ; Study
+D 0 2608 0 0   ; Secret Passage
+D 0 2608 2 0   ; Secret Passage
+D 0 2608 3 0   ; Secret Passage
+D 0 2609 2 0   ; Well Furnished Bedroom and Laboratory
+D 0 2610 0 0   ; Ogre Chieftan's Room
+D 0 2628 0 0   ; Lounge
+D 0 2628 2 0   ; Lounge
+D 0 2661 3 0   ; Plane of Earth
+D 0 2661 5 0   ; Plane of Earth
+D 0 2675 2 0   ; Plane of Fire
+D 0 2688 2 0   ; Plane of Water
+D 0 2699 0 0   ; Plane of Air
+S

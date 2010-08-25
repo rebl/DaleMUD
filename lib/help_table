@@ -1,0 +1,4870 @@
+# 
+EMPTY SLOT
+#
+MAP
+The following is a general sketch of area locations:
+ 
+                            [Giants]
+                                |
+                                +------[*Ch'tar]
+                                |                               [Prydain]
+                                |    [Dwarves]                      |
+    [frost]                     |        |                          |[Mage t.]
+   [gt. rift]                   |      [Mines]                      |   |
+       |           [Jungle]  [Moria]    +---------+       [Sauria]--+---|
+   [artica] [monks][Pyramid]  |         |         |  [gypsy]        |
+      |       |      | [mist] |         |         |    |            |
+      |       |   -[Jungle]|  |         |         |    |            |
+      |     [shire]        |  |         |         +----+----+-+-[New Thalos]
+[graecia][elf] |           +--+--+------+[goblins]       ~~~~~~~~~~~~~|
+      |      | |[Doom]     |  |                      ~ [Drow]    [Thalos]
+      |      +-+  |[pen]   |  +--+---+               ~~~~~             |
+[wht] +-----+---+[Shadow- ]+--+  |   |                 ~             [rhoydin]
+[plm] |   [quik]|[ dale   ]      |   [python]         ~
+     \|     |   |   |  [Arachnos]+                   ~
+   ~~~~~~~~~~~~~|~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ~ ~          |   |            |
+  ~~~~        [roo] |-[Keep]     |
+ |  /|[Spider Haunt]-            |
+ | / [Mordilnia]                 |
+ |[Hoeur]    |               [Lycanthropia]
+ |          [Arena]
+ [Skexie/Gelfling]
+ |
+[Enfan]
+ 
+                     +[Labrynth]
+               [Temple]
+                    [Temple Entrance]
+                           |
+                --------+--+--+---------------  <<-- CLOSE UP OF Shadowdale
+                        |  |
+               [iv. tow]+  \
+                           |[sewers]
+                           |
+                          [spider haunt]
+ 
+ 
+#
+DISPLAY
+Usage : DISPLAY [0..1]
+ 
+Display allows you to change your term setup on the mud, allowing you to
+have an info-bar on the bottom of your screen.  The info-bar contains
+your hit points, your mana, your movement points, your gold, and your
+experience points.
+ 
+   Currently, display uses VT100 term setups.  To turn display onto
+VT100, use the "1" option.  To turn off the VT100 display, use the "0"
+option.
+ 
+See Also: RESIZE
+#
+RESIZE
+Usage : RESIZE [size]
+ 
+Resize allows you to change your screen size.  The default is a 25 line
+screen, but not everyone uses 25 lines.  Resize allows you to change
+your setup to your own screen size (allow for a total line count).
+RESIZE 25 would reset you to a normal display size.
+ 
+See Also: DISPLAY
+#
+DISGUISE
+ 
+Disguise is a skill that allows thieves to disguise themselves.  What
+does this mean, I hear you cry.  Well.  This won't do squat against pcs.
+BUT, those pesky mobs that hate you and fear you will forget who you are
+if you disguise yourself well.   This is a learnable skill.
+#
+"GROUP GROUPING"
+Usage : GROUP [player]
+ 
+Some new changes to encourage grouping.   
+1) leader of a group gets 5% exp bonus per kill per pc in group
+2) followers get 3% bonus (per pc)
+ 
+If you are a group member, then you will share experience points for
+killing monsters equally among the group. Experience points will only
+be shared among group members that are in the same location, at the
+time of the killing blow. Sharing is regardless of whether the group
+members have been participating in the fight.
+ 
+ABOUT EXP CAPS AND GROUPS
+ 
+	There is a experience cap on people NOT grouped with anyone else,
+this cap is 150k per mob MAX. If you group with someone the cap is then
+moved to 250k, 3 people and it is 350k and so on. If there is 8 people
+grouped then the cap is 800k, anything over 8 the cap is 1million.
+ 
+In other words, you get more experience if the mob is worth a lot of experience
+if you group.
+ 
+ 
+Group with no argument show a list of people with whom you are grouped.
+ 
+To make a group, a "leader" must be selected. All members of the group
+must then "follow" the leader using the follow command. The leader
+should NOT follow anyone at all! The leader can now toggle group
+membership for each player in the group, by using "group
+<player_name>". The leader should remember to include himself in the
+group.
+ 
+Example:
+ 
+Quifael and Redferne wishes to group with Dragon.
+ 
+Quifael : "follow dragon"
+Redferne: "follow dragon"
+(Dragon should be following no one but himself)
+Dragon  : "group dragon"
+Dragon  : "group redferne"
+Dragon  : "group quifael"
+ 
+Later when Dragon get upset at Quifael (because he is sleeping all the
+time) he types : "Group Quifael" to kick Quifael out of the group.
+ 
+See Also: XP EXPERIENCE
+#
+"HOLY WORD"
+This spell is currently under repair.
+#
+"UNHOLY WORD"
+This spell is currently under repair.
+#
+"NEWBIE"
+These are a few things that should help you get past your first few levels.
+ 
+Most important:
+ -People of the same race will assist each other in battles.
+  This means that attacking a creature when others of it's kind
+  are around is not very wise unless you can take them all on.
+ -Be PATIENT, levels do not necessarily come overnight.  Fast gains
+  are usually risky and lead to death too often.
+ -If in doubt about something, ask someone.
+ 
+Others:
+  -Cityguards and Royal Guards do jump into battles.  They will jump
+   in on the side of the person with the higher alignment.  All
+   newbies have an alignment of zero.
+  -There are rules concerning Player Killing.  Read them, they are
+   located above the Temple Altar.
+  -Some skills you only need to invest one practice into, and then you can
+   improve them with use.  This especially applies to Monks and Thieves.
+ 
+Mages:
+  -Learn Magic Missile, it helps.
+ 
+Clerics:
+  -Avoid getting lower level version of spells if you think that you can
+   get to a high enough level to use a more powerful version. For example
+   practice cure serious instead of cure light if you can get by without
+   cure light.
+ 
+Druids:
+  -Learn Tree Travel at 10th, or else you won't be able to advance past
+   that.
+  -Learn Flame Blade, or else getting past 10th will be a real pain.
+ 
+Areas that you can go to at low levels:
+ 
+Chessboard   (pawns are easy, rest are easier at a bit higher levels)
+	 from the western gate, go south a couple of times, and west
+Shadowdale (Vampire bats are good exp, may need to be 2nd, though)
+	unless you are a halfling, this is the city you start in.
+Spider Haunt South of Shadowdale
+Elven Forest (Good area for groups of level 1-9 players)
+        from the western gate head west 5 or so times, then north.
+White Plume  (At least a 5th level group.)
+             White Plume Mountain is westwards down the river from the Levee.
+Hallways     (Varying levels)
+	located inside the temple of Shadowdale 
+Moria        (North From Crossroads, at least 5th level group, hostile area.)
+Deadhame     (In Graveyard, ask someone where that is :)
+Shire        (Youths are good for 2-3+ levels, it is northwest from
+Shadowdale)
+Beneath the
+ Monks Guild (There is an area here, has useful potions, good for groups
+              of 2-3+)
+        the monks guild is west and north from the shire.
+ 
+If you have any comments about things you think you should see here, post
+them on the board, and we will see what we can do about adding them.
+#
+"MONK DAMAGE"
+This is a list of the bare hand damage a monk does at various levels.  A monk
+must not be wielding a weapon.
+ 
+Level  Damage     Level  Damage     Level  Damage     Level  Damage
+ 1- 3   1d3       15-19   2d4       30-34   4d4       42-44   6d4
+ 4- 5   1d4       20-21   3d3       35-36   4d5       45-49   6d5
+ 6-11   1d6       22-26   3d4       37-41   5d4        50     8d4
+12-14   2d3       27-29   4d3
+ 
+See also: MONK ATTACKS
+#
+"ARMOR CLASS"
+Armor Class is based on the AD&D idea that the lower ones AC is, the
+less often they get hit.  Armor classes range from "barely armored"
+to "armored like a tank".  In numeric terms, this is a range from 100
+to -100.  If you are acquainted with AD&D, a 100 corresponds to a 10 AC,
+and a -100 corresponds to a -10 AC.  Dexterity also affects how often
+you get hit, the higher your dexterity (up to 18) the lower your natural
+AC (your AC without any armor or spells on).  For every point of
+dexterity above 15 (16+) your natural (100) AC is reduced by 10.  This
+does not apply to monks.
+#
+"IDENTIFY"
+Purchasing a scroll of identify from Zifnab, or finding a scroll
+similarly empowered will enable you to see some of the more important
+statistics of an item.  The scrolls may also be used on a monster or
+player (sometimes there is little difference) with much less of an
+effect. 
+#
+"MONK ATTACKS"
+The formula used for the number of attacks that an unarmed monk will get per
+round will be: (level-1)/16 +1   --The fractional portion will provide the
+probability of getting an extra attack each round. (i.e. if you were VERY
+lucky, a 2nd level monk could get 2 attacks every round, but probably won't)
+ 
+[a few samples: Level--#Att]
+ 1--1.00    5--1.25    9--1.50   13--1.75   17--2.00   21--2.25   25--2.50
+29--2.75   33--3.00   37--3.25   41--3.50   45--3.75   49--4.00
+ 
+See also: MONK DAMAGE
+#
+"ICE STORM"
+ 
+Usage       : cast 'ice storm'
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 11 mage.
+Save        : vs. spells for half.
+ 
+This spell causes the caster to summon an intense blast of cold which
+affects all non-grouped things in the room. This frigid blast does level d4
+points of damage, unless a saving throw was made or the victim is immune
+to cold.
+ 
+See also:
+#
+"SPELL FIND TRAPS"
+ 
+Usage       : cast 'find traps'
+Accumulative: Yes
+Duration    : (level of caster) hours
+Level       : Level 13 ranger, 15 druid, 16 cleric.
+Save        : None
+ 
+This spells improves a person's ability to find traps based on the caster's
+level.
+ 
+See also: FIND TRAPS
+#
+"SLEEP"
+Usage       : cast 'sleep' <person>
+Accumulative: No
+Duration    : 4 hours + one hour per level
+Level       : Level 3 mage.
+Save        : vs. spells to negate; 2 attempts to save if resistant
+ 
+If failing saving throw versus spell, the person will fall asleep.  A
+person who is affected by sleep can only be awakened if attacked.
+ 
+See Also: -
+#
+"PARALYZE"
+ 
+Usage       : cast 'paralyze' <victim>
+Accumulative: No
+Duration    : 4 + caster's level in hours.
+Level       : Level 20 mage.
+Save        : vs. paralysis to negate; 2 attempts to save if resistant
+ 
+Upon a successful casting of this spell, the caster robs the victim of
+the ability to move.  This essentially stuns the victim, making them 
+unable to flee, cast etc.  It also increases the amount of damage done
+to the victim when the victim is hit, and increases the chances of
+hitting said victim.
+ 
+See also: SNARE
+#
+"ENTANGLE"
+ 
+Usage       : cast 'entangle' <victim>
+Accumulative: -
+Duration    : Until the next hour
+Level       : Level 16 druid.
+Save        : Save vs spells for negation
+ 
+By means of this spell, the druid calls upon the forces of nature to
+cause trees, shrubs, vines, weeds and the like to surround the victim.
+This effectively paralyzes the victim (if the saving throw was failed).
+This spell lasts until the hour is out.  This spell must be cast
+outdoors in a forest.
+ 
+See also: SNARE
+#
+"BARKSKIN"
+ 
+Usage       : cast 'barkskin' <victim>
+Accumulative: No
+Duration    : 24 hours
+Level       : Level 3 druid.
+Save        : None
+ 
+When this spell is cast upon a victim who is not already affected by this
+spell, the victim's skin turns hard and bark like.  This effectively reduces
+their armor class by 10 points.  It also improves their saving throw by 1,
+except for saving throws vs. spells.  A druid may cast this spell anywhere.
+ 
+See also: -
+#
+"HEROES FEAST"
+ 
+Usage       : cast 'heroes feast'
+Accumulative: See below.
+Duration    : See below.
+Level       : Level 24 cleric.
+Save        : None
+ 
+By means of this spell, the caster calls into being a magnificent feast
+which the caster's group is able to partake in.  This feast slacks the
+thirst of those who eat it, as well as satiating them.  It also
+restores one hitpoint returns movement to max.
+ 
+See also: -
+#
+"WEAKNESS"
+Usage       : cast 'weakness' <victim>
+Accumulative: No
+Duration    : Caster's Level in Hours / 2.
+Level       : Level 6 Mage.
+Save        : vs. spells for negation
+ 
+This spell makes the victim weaker.  It is weighted by the caster's
+level and the strength of the victim.  The strength is reduced by a
+percentage related to half of the caster's level.  Casting this spell
+generally irritates the victim.
+ 
+See also: CHILL TOUCH
+#
+"AC"
+See Armor Class.
+#
+SPOT
+ 
+	Spot allows an archer to spot targets. using the command spot <dir>
+or just spot (for all directions) you can get the target you want to fire
+upon.
+ 
+See Also FIRE SHOOT, NOTCH, THROW
+#
+THROW
+	This command will allow an object such as a throwing dagger to be
+thrown at a target. This is similar to the fire/shoot command and should be
+used in conjunction with SPOT.
+ 
+See Also: FIRE SHOOT, NOTCH, SPOT
+#
+FIRE
+ 
+	The command parameters for FIRE are 'fire <mobname>' where mobname
+is the mob you wish to shoot the weapon at. Most items require a load/notch
+before you can do this.
+ 
+See Also :NOTCH,LOAD
+#
+"FAERIE FIRE"
+ 
+Usage       : cast 'faerie fire' <victim>
+Accumulative: No
+Duration    : Caster's level (in hours)
+Level       : Level 4 Cleric, 5 Mage, 1 Druid
+Save        : None
+ 
+When this spell is cast, the caster outlines the victim in a pale
+glowing light.  While the faerie fire does not itself inflict harm
+upon the victim, it increases the victim's armor class by 20 points,
+making the victim easier to hit.
+ 
+See also:
+#
+"WEB"
+ 
+Usage       : cast 'web' <victim>
+Accumulative: Yes
+Duration    : Caster's Level in Hours
+Level       : Level 11 mage.
+Save        : vs. paralysis for negation
+ 
+When this spell is cast, the caster encases the victim in a sticky
+webbing which effectively reduces a mobile's moves, sometimes to the
+point of exhaustion.  This spell might make the victim mad, depending
+upon the size of the victim, if the spell was cast indoors or outdoors,
+etc.  Some mobiles manage to attack you through their webs too.
+ 
+See also:
+#
+"CURE SERIOUS"
+Usage       : cast 'cure serious' <victim>
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 7 Cleric, 8 Druid, 45 Mage, 50 paladin.
+Save        : None.
+ 
+This spell cures the victim of 2d8 +2 hitpoints.
+ 
+See also:
+#
+"CAUSE SERIOUS"
+Usage       : cast 'cure serious' <victim>
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 7 Cleric, 8 Druid, 45 Mage.
+Save        : Need to "hit"
+ 
+This spell (if a successful hit is made) does 2d8 +2 points of damage to
+the victim.  If you do not hit the victim, no damage is done.  Either
+way, this spell generally annoys the victim.
+ 
+See also:
+#
+"MINOR CREATION"
+ 
+Usage       : cast 'minor creation' <item>
+Accumulative: Yes.. make as much as your mana allows
+Duration    : Instantaneous
+Level       : Level 8 mage.
+Save        : None
+ 
+By means of this spell the caster focuses his magical energies into the
+creation of a mundane object.  This object can either be a sword,
+shield, raft, bag, barrel, or a loaf of bread.  
+ 
+See also:
+#
+"MANA"
+This is the stuff that spells are powered by.
+#
+"ASTRAL WALK"
+ 
+Usage       : cast 'astral walk' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 30 Cleric.
+Save        : None
+ 
+By means of this spell, the caster is able to transport a victim to the
+astral plane.  The victim may be the caster, or someone in the caster's
+group.  If followers are present when the spell is cast on the group
+leader, anyone in the room that is grouped is transported.
+ 
+See also: -
+#
+"CREATE LIGHT"
+ 
+Usage       : cast 'create light'
+Accumulative: Yes
+Duration    : (24 + level of caster) hours
+Level       : Level 1 Mage, 2 Cleric, 3 Druid.
+Save        : None
+ 
+Using this spell focuses the caster's mana into a bright ball of light.
+This light works as you would expect any light to work.
+ 
+See also: CONTINUAL LIGHT
+#
+"CONTINUAL LIGHT"
+ 
+Usage       : cast 'continual light'
+Accumulative: Sure.. make as many balls as you want :)
+Duration    : Forever.
+Level       : Level 16 Druid, Cleric 26, Mage 10, 9 Paladin.
+Save        : None.
+ 
+This spell creates a ball of light.  Unlike the spell, 'create light', this
+ball lasts forever.
+ 
+See also: CREATE LIGHT
+#
+"KNOW ALIGNMENT"
+ 
+Usage       : cast 'know alignment' <victim>
+Accumulative: Yes.. Try as often as you like
+Duration    : Instantaneous
+Level       : Level 2 Druid, Cleric 4, 5 Paladin, Mage 7. 
+Save        : None.
+ 
+By means of this spell, the caster is roughly able to determine the
+alignment of the victim.
+ 
+See also: DETECT EVIL
+#
+"WATER BREATH"
+ 
+Usage       : cast 'water breath' <victim>
+Accumulative: Yes
+Duration    : (caster's highest casting level +3) hours.
+Level       : Level 6 Druid, Mage 9.
+Save        : None.
+ 
+This spell enables the recipient to enter underwater rooms.
+#
+"FAERIE FOG"
+ 
+Usage       : cast 'faerie fog'
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 10 Druid, Cleric 11, Mage 16
+Save        : vs. spells to avoid affect
+ 
+The caster of this spell creates a large volume of purple smoke to spew forth
+from his or her fingertips.  This smoke will reveal the presence of any 
+invisible people in the room, provided they fail a saving throw vs. spells.
+It does not reveal hidden people.
+ 
+See also:
+#
+"CAUSE CRITICAL"
+ 
+Usage       : cast 'cause critical' <victim>
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 13 Druid, Cleric 10.
+Save        : Must "hit" the victim
+ 
+Upon casting this spell, the caster sends wracking pain through the body
+of the victim.  If the caster successfully touches (hits) the victim,
+the spell does 3d8+3 points of damage.
+ 
+ 
+See also: CAUSE SERIOUS and other spells like that :P
+#
+"DISPEL MAGIC"
+ 
+Usage       : cast 'dispel magic' <victim>
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 9 Druid, Cleric 10, Mage 9.
+Save        : See below.
+ 
+This spell attempts to remove all spell affects from the victim.  If the
+victim is lower level than the caster, the dispelling will always work.
+If the victim's level is equal or higher than the caster's level, then
+the victim gets a save vs. spells for each spell affect the victim has.
+If the victim fails the saving throw, the spell affect is removed. This
+spell is not hostile when cast on other Player Characters, but monsters
+will generally take offense at it.
+ 
+See also: 
+#
+ 
+"PORTAL"
+ 
+Usage       : cast 'portal' <target>
+Accumulative: Sure.. make as many portals as your mana allows
+Duration    : (Level of caster) / 5 Hours
+Level       : Level 43 mage.
+Save        : None
+ 
+The caster of this spell calls into being a gate that can instantly transport
+those who enter it elsewhere.  The target is a creature that exists in the
+game already.  The portal will deposit those who enter it, through the "enter"
+command, to the room where the target is located.
+ 
+See also: 
+#
+"FLY"
+ 
+Usage       : cast 'fly' <victim>
+Accumulative: Yes
+Duration    : Highest casting level +3 hours
+Level       : Level 11 mage, level 14 druid, level 22 cleric.
+Save        : None
+ 
+This spell enables the victim to fly.  This will prevent drifting on rivers
+and lessens movement loss through certain terrain types.  (Note, ceilings 
+and doorways are hard to maneuver around, so movement loss indoors is 
+actually MORE if you are flying). It will also prevent you from falling to
+death in flying rooms.
+ 
+See also: GROUP FLY
+#
+"GROUP FLY"
+ 
+Usage       : cast 'group fly'
+Accumulative: Yes
+Duration    : Highest casting level +3 hours
+Level       : Level 24 mage, level 22 druid.
+Save        : None
+ 
+This spell operates the same as "FLY", except that is affects the caster's 
+entire group.  Especially good for lazy people :P
+ 
+See also: FLY
+#
+"MINOR TRACK"
+ 
+Usage       : cast 'minor track' <victim>
+Accumulative: Yes
+Duration    : Caster's level in hours.
+Level       : Level 12 mage, level 7 druid.
+Save        : None
+ 
+This spell enables the victim to track.  Elves track better than most,
+devils, demons and immortals track the best of all.  Minor track enables
+you to hunt a target (via the track command) up to (50* your max level)
+rooms away.  You cannot track in the dark.   Major track will extend this 
+range.
+ 
+See also: MAJOR TRACK
+#
+"MAJOR TRACK"
+ 
+Usage       : cast 'major track' <victim>
+Accumulative: Yes
+Duration    : Caster's level *2 in hours.
+Level       : Level 20 mage, level 17 druid.
+Save        : None
+ 
+This spell does the same thing as minor track.  It just costs you more mana.
+ 
+See also: MINOR TRACK
+#
+"KNOCK"
+ 
+Usage       : cast 'knock' <target>
+Accumulative: Why would you want to unlock something once it's unlocked??
+Duration    : Instantaneous
+Level       : Level 3 mage.
+Save        : None
+ 
+This spell will open a locked container/door.  For some reason, however, some
+things are not affected by the spell.
+ 
+See also: PICK
+#
+"FEAR"
+ 
+Usage       : cast 'fear' <victim>
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 8 mage.
+Save        : vs. spells to negate.
+ 
+With this spell the caster can instill fear in the victim, provided the
+victim is at least 2 levels lower than the caster.  This fear, if
+successful, will cause the victim to flee.
+ 
+See also: FLEE
+#
+"METEOR SWARM"
+Usage       : cast 'meteor swarm' <victim>
+Accumulative: Yes...  Pound 'em often, pound em hard!
+Duration    : Instantaneous
+Level       : Level 36 mage.
+Save        : vs. spells for half damage
+ 
+This spell creates a swarm of meteors which the caster can direct at a victim.
+The meteors do (d12 * Level of caster) damage to the victim if the save is
+failed.
+ 
+#
+"SPELL COMMAND"
+ 
+Usage       : cast 'command' <victim> <command>
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 1 cleric.
+Save        : vs. paralysis for negation.
+ 
+The caster of this spell can attempt to order a victim to do a one word
+command (i.e.: sleep).  The spell will fail if the victim saves successfully.
+The victim must be less than level 6,  and have an intelligence less than 13.
+ 
+#
+"SPELL MOUNT"
+ 
+Usage       : cast 'mount'
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 15 druid, 47 mage
+Save        : None
+ 
+This spell creates a mount for the caster.  The kind of mount is dependent
+on the level of the caster and, after 30th level, it is dependent on the
+alignment of the caster as well.
+ 
+See also: MOUNT
+#
+"GUST OF WIND"
+ 
+Usage       : cast 'gust of wind'
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 10 mage.
+Save        : vs. spells for negation.
+ 
+Upon casting this spell, the caster sends a gust of wind at all the non-grouped
+people in the room.  If the things in the room fail their save, they are
+put into sitting position, as if they had been bashed.
+ 
+See also: -
+#
+"SILENCE"
+ 
+Usage       : cast 'silence' <victim>
+Accumulative: No
+Duration    : (level of caster) hours
+Level       : Level 21 mage, level 23 cleric, level 25 druid.
+Save        : vs spells for negation
+ 
+This spell, if it works, shuts the victim up.  It prevents speech (sign
+language is still usable) and spell casting.  Very nasty thing to do to a
+spell caster.
+ 
+See also: -
+#
+"SUNRAY"
+ 
+Usage       : cast 'sunray' <victim>
+Accumulative: -
+Duration    : Instantaneous (kinda)
+Level       : Level 27 druid.
+Save        : Save vs spell for negating blindness (read below)
+ 
+By means of this spell, the caster causes an intense beam of light to hit the
+victim.  The intensity of the light is such that it might blind (as per spell)
+all the people in the room that are not grouped with the caster.  If the
+victim is of the races VEGMAN or UNDEAD, the victim will be damaged.  If the
+victim is UNDEAD, they take 6d8 points of damage, NO save.  If the original
+victim is of type VEGMAN, they take 6d8 points of damage with a successful
+save vs. spells cutting that in half.  The ray is so intense that it also
+does damage to others in the room that are not immortal or part of the
+caster's group.  For UNDEAD, this is 3d6, no save.  For VEGMAN, it is 3d6,
+save for no damage.
+ 
+See also: BLINDNESS
+#
+"KNOW MONSTER"
+ 
+Usage       : cast 'know monster' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 9 mage.
+Save        : none
+ 
+If the victim is not a Player Character, this spell will give the caster
+information about the statistics of the mobile.  What statistics are based
+on the level of the caster.
+ 
+    Levels ->  Information
+ 
+     1-5   ->  Race of Victim
+     6-10  ->  Approximate Level of Victim
+    11-15  ->  Approximate Experience Worth of Victim
+    16-20  ->  Races or Classes the Victim Hates
+    21-25  ->  Approximate Hit Points of Victim
+    26-30  ->  Susceptibilities of Victim
+    31-35  ->  Resistance's of Victim
+    36-40  ->  Immunities of Victim
+    41-45  ->  Approximate Number of Attacks of Victim
+    46-50  ->  Approximate Amount of Damage per Attack of Victim
+    51+    ->  Where the monster last ate lunch!
+ 
+The information gathered is cumulative.
+ 
+See also: -
+#
+"ANIMAL GROWTH"
+                                                      
+Usage       : cast 'animal growth' <victim>
+Accumulative: -
+Duration    : 2 * (level of caster)
+Level       : Level 35 druid.
+Save        : None
+ 
+This spell causes the victim, an animal, to grow to twice it's original size,
+effectively doing more damage, lowering the victim's saves, and giving it
+more hit points.  This spell may not be cast on Player Characters, regardless
+of if you think they are an animal.  It is also impossible to make a victim
+more powerful than you, so this spell will only work on those victims that
+are no more than half your level.
+ 
+See also: INSECT GROWTH
+#
+"INSECT GROWTH"
+ 
+Usage       : cast 'insect growth' <victim>
+Accumulative: -
+Duration    : 2 * (level of caster)
+Level       : Level 33 druid.
+Save        : None
+ 
+This spell causes the victim, an insect, to grow to twice it's original size.
+This enables the victim to do more damage, have better saving throws, more
+hit points etc.  This spell may not be cast on Player Characters, nor on some-
+thing that is more than half your level.
+ 
+See also: ANIMAL GROWTH
+#
+"CREEPING DEATH"
+ 
+Usage       : cast 'creeping doom' <direction>
+Accumulative: -
+Duration    : Very Short
+Level       : Level 45 druid.
+Save        : None
+ 
+This spell causes swarms of angry insects to issue forth from the caster's
+mouth.  These insect coalesce into a solid mass which advances in the dire-
+ction specified.  This mass of insects then attacks whatever is in the room.
+It dissipates right after it attacks.  This spell can only be cast outdoors,
+and it incapacitates the caster for a brief period after the casting. 
+ 
+NOTE: This spell is very dangerous and can KILL the caster if s/he is NOT
+careful!
+ 
+See also: -
+#
+"COMMUNE"
+ 
+Usage       : cast 'commune' 
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 20 druid, 20 ranger.
+Save        : None
+ 
+Upon casting this spell, the caster becomes closer to his surroundings and 
+is able to determine what creatures are near him.  Specifically, it lists
+their name and location.  This spell will not work indoors.
+ 
+See also: -
+#
+"ANIMAL SUMMON ONE"
+ 
+Usage       : cast 'animal summon one'
+Accumulative: Can be cast only once every 48 hours
+Duration    : 48 hours
+Level       : Level 15 druid, 20 ranger.
+Save        : None
+ 
+When casting this spell, the caster undergoes a ritual that enables him/her
+to summon animals to their aid.  You can summon 6 animals, and they are of
+varying types and abilities.  The animals will aid you for 48 hours, upon
+which time your control over them is broken.  Normally hostile animals will
+not be so while under your control.
+ 
+See also: ANIMAL SUMMON TWO, ANIMAL SUMMON THREE
+#
+"ANIMAL SUMMON TWO"
+ 
+Usage       : cast 'animal summon two'
+Accumulative: Can be cast only once every 48 hours
+Duration    : 48 hours
+Level       : Level 20 druid, 25 ranger.
+Save        : None
+ 
+When casting this spell, the caster undergoes a ritual that enables him/her
+to summon animals to their aid.  You can summon 6 animals, and they are of
+varying types and abilities.  The animals will aid you for 48 hours, upon
+which time your control over them is broken.  Normally hostile animals will
+not be so while under your control.
+ 
+ 
+See also: ANIMAL SUMMON ONE, ANIMAL SUMMON THREE
+#
+"ANIMAL SUMMON THREE"
+ 
+Usage       : cast 'animal summon three'
+Accumulative: Can be cast only once every 48 hours
+Duration    : 48 hours
+Level       : Level 25 druid, 30 ranger.
+Save        : None
+ 
+When casting this spell, the caster undergoes a ritual that enables him/her
+to summon animals to their aid.  You can summon 6 animals, and they are of
+varying types and abilities.  The animals will aid you for 48 hours, upon
+which time your control over them is broken.  Normally hostile animals will
+not be so while under your control.
+ 
+See also: ANIMAL SUMMON TWO, ANIMAL SUMMON ONE
+#
+"FIRE SERVANT"
+ 
+Usage       : cast 'fire servant'
+Accumulative: Can be cast only once every 24 hours
+Duration    : 24 hours
+Level       : Level 35 druid.
+Save        : None
+ 
+When this spell is cast, the caster opens a momentary rift between planes
+and forces a fire elemental to come and do the caster's bidding.  Unlike
+Conjure Elemental (a cleric spell), this spell needs no material component.
+This spell may only be cast once every 24 hours, and the elemental will
+only do the caster's bidding for (24*(caster's charisma)/11) hours.
+ 
+See also: CONJURE ELEMENTAL, EARTH SERVANT, WATER SERVANT, WIND SERVANT
+#
+"EARTH SERVANT"
+ 
+Usage       : cast 'earth servant'
+Accumulative: Can be cast only once every 24 hours
+Duration    : 24 hours
+Level       : Level 36 druid.
+Save        : None
+ 
+When this spell is cast, the caster opens a momentary rift between planes
+and forces an earth elemental to come and do the caster's bidding.  Unlike
+Conjure Elemental (a cleric spell), this spell needs no material component.
+This spell may only be cast once every 24 hours, and the elemental will
+only do the caster's bidding for (24*(caster's charisma)/11) hours.
+ 
+See also: CONJURE ELEMENTAL, FIRE SERVANT, WATER SERVANT, WIND SERVANT
+#
+"WATER SERVANT"
+ 
+Usage       : cast 'water servant'
+Accumulative: Can be cast only once every 24 hours
+Duration    : 24 hours
+Level       : Level 37 druid.
+Save        : None
+ 
+When this spell is cast, the caster opens a momentary rift between planes
+and forces a water elemental to come and do the caster's bidding.  Unlike
+Conjure Elemental (a cleric spell), this spell needs no material component.
+This spell may only be cast once every 24 hours, and the elemental will
+only do the caster's bidding for 24 hours.
+ 
+See also: CONJURE ELEMENTAL, EARTH SERVANT, FIRE SERVANT, WIND SERVANT
+#
+"WIND SERVANT"
+ 
+Usage       : cast 'wind servant'
+Accumulative: Can be cast only once every 24 hours
+Duration    : 24 hours
+Level       : Level 38 druid.
+Save        : None
+ 
+When this spell is cast, the caster opens a momentary rift between planes
+and forces an air elemental to come and do the caster's bidding.  Unlike
+Conjure Elemental (a cleric spell), this spell needs no material component.
+This spell may only be cast once every 24 hours, and the elemental will
+only do the caster's bidding for (24*(caster's charisma)/11) hours.
+ 
+See also: CONJURE ELEMENTAL, EARTH SERVANT, FIRE SERVANT, WATER SERVANT
+#
+"REINCARNATE"
+ 
+Usage       : cast 'reincarnate' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 39 druid.
+Save        : None
+ 
+Upon casting this spell the caster summons the slain Player Character's
+spirit from the nether world and inserts it into a new body.  This body
+may be of any race, and may not be a race you really want to be stuck with.
+This spell must be cast outdoors in a forest on a player character's 
+corpse.  It lowers the constitution of the victim by one, and will no
+longer work when the victim is down to a 3 con.  The victim must also NOT
+enter the game.  Doing so will makes the corpse too weak to be reincarnated.
+The victim may be at the entry prompt.  If the victim is at the entry
+prompt, they will automatically be returned to the game.  Casting this 
+spell is a great strain upon the caster.  It will drain the character's
+movement, hit points, and mana to at least 1.
+ 
+See also: RESURRECTION
+#
+"CHARM VEGETABLE"
+ 
+Usage       : cast 'charm vegetable' <victim>
+Accumulative: No
+Duration    : Varying
+Level       : Level 17 druid.
+Save        : Save vs paralysis for negation.
+ 
+The victim of this spell must be a plant, and the victim's level may not
+exceed the caster's own by more than 10. The spell lasts a minimum of a
+day, but beyond that it is modified to reflect the victim's intelligence.
+ 
+See also: CHARM PERSON, FOLLOW, ORDER
+#
+"FIRESTORM"
+ 
+Usage       : cast 'firestorm'
+Accumulative: -
+Duration    : Instantaneous.
+Level       : Level 22 druid.
+Save        : vs. spells for half damage.
+ 
+By this spell the caster calls into being an enormous cloud of flame
+which whirls around the room, searing those not in the caster's group.
+The intense heat does (2d8 +1 + caster's level) hitpoints of damage.
+People with infravision who are not affected by truesight and are in a
+dark room will be momentarily blinded.
+ 
+See also: -
+#
+"VEGETABLE GROWTH"
+ 
+Usage       : cast 'vegetable growth' <victim>
+Accumulative: No
+Duration    : 2 * (level of caster) hours
+Level       : Level 20 druid.
+Save        : None
+ 
+Upon casting this spell, the caster can double the size of a vegetable-like
+monster.  This also improves it's saves, hit points, and damage.  This
+spell can not create a monster more powerful than the caster, so, it will
+not work on a monster that is more than half the level you are.  This
+spell must also be cast outdoors, plants don't grow so well inside.  Players
+also don't grow so well via this spell.
+ 
+See also: ANIMAL GROWTH, INSECT GROWTH
+#
+"SPELL TREE"
+ 
+Usage       : cast 'tree'
+Accumulative: No
+Duration    : Varying
+Level       : Level 15 druid.
+Save        : None
+ 
+This spell turns the caster into a tree.  It is very similar to polymorph.
+This is a list of at what levels you turn into a different size tree:
+ 
+                       15 - 20 :  young sapling
+                       21 - 30 :  teenage tree
+                       31 - 40 :  young adult tree
+                       41 - 48 :  large adult tree
+                       49 - 50 :  huge ancient tree
+ 
+See also : POLYMORPH
+#
+"ANIMATE ROCK"
+ 
+Usage       : cast 'animate rock' <object>
+Accumulative: -
+Duration    : 24 hours
+Level       : Level 31 druid.
+Save        : None
+ 
+Casting this spell enables the caster to animate a rock, thereby creating
+a follower.  The object must be a rock (i.e.: ITEM_ROCK).  The type of 
+creature resulting from this animation varies with the weight of the rock.
+The heavier the rock, the stronger the resulting rockman.
+ 
+See also: -
+#
+"TRAVELLING"
+ 
+Usage       : cast 'travelling' 
+Accumulative: -
+Duration    : (Level of Caster) hours
+Level       : Level 10 druid, 15 ranger.
+Save        : None
+ 
+When this spell is cast the caster, and only the caster, is able to travel
+over any terrain type as if he were flying.  Note however, this does NOT
+enable the caster to fly.  The effects of this spell are only work outdoors.
+ 
+See also: -
+#
+"ANIMAL FRIENDSHIP"
+ 
+Usage       : cast 'animal friendship' <victim>
+Accumulative: No
+Duration    : 24 hours
+Level       : Level 3 Ranger, 5 druid.
+Save        : Save vs spells for negation
+ 
+This spell may be cast once every 24 hours.  It can only be cast on neutral
+animals of less than your level.  The animals will remain your friends 
+for 24 hours.
+ 
+See also: CHARM PERSON, CHARM MONSTER
+#
+"INVIS TO ANIMALS"
+ 
+Usage       : cast 'invis to animals'
+Accumulative: No
+Duration    : 24 hours
+Level       : Level 8 Ranger, 11 druid.
+Save        : None
+ 
+The caster may only cast this spell on him/herself.  Upon doing so, the
+caster vanishes from the eyes of animals.
+ 
+See also: INVISIBILITY
+#
+"SNARE"
+ 
+Usage       : cast 'snare' <victim>
+Accumulative: -
+Duration    : Until victim gets movement back
+Level       : Level 5 ranger, 8 druid.
+Save        : Save vs spell for negation
+ 
+This spell must be cast outdoors in a forest.  If the victim fails their
+saving throw, their movement is reduced to zero.  They stay at zero until
+it regens naturally, or Refresh or Second Wind is casted upon them.
+ 
+See also: ENTANGLE
+#
+"WARP WEAPON"
+ 
+Usage       : cast 'warp weapon' <victim> or cast 'warp weapon' <object>
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 19 druid.
+Save        : Weapon saves to avoid damage.
+ 
+This spell bends and warps a weapon, effectively causing it to do less
+damage.  For example:  If a 3d6 weapon fails it's save, it will be
+reduced to 3d5 or possibly 3d4.  Really nasty thing to do to someone.
+ 
+See also: -
+#
+"HEAT STUFF"
+ 
+Usage       : cast 'heat stuff' <victim>
+Accumulative: No
+Duration    : (Level of caster) hours.
+Level       : Level 23 druid.
+Save        : read below
+ 
+The caster of this spell needs to successfully hit the victim for the
+spell to work.  A heated victim suffers from a -2 dexterity penalty, and 
+suffers from a reduced hit point gain each hour.
+ 
+See also: -
+#
+"DUST DEVIL"
+ 
+Usage       : cast 'dust devil'
+Accumulative: Can only be cast once every 24 hours.
+Duration    : 24 hours
+Level       : Level 1 druid, level 3 cleric.
+Save        : None
+ 
+Upon casting this spell the caster calls into being a dust devil.  The 
+dust devil will faithfully obey the caster for 24 hours.  This spell may
+only be cast once every 24 hours.  It is recommended that you note the 
+time you cast the spell, so you know when you can cast it again.
+This spell can not be cast indoors.
+ 
+See also: TIME
+#
+"CHANGE FORM"
+ 
+Usage       : cast 'change form' <creature>
+Accumulative: May only be cast once every 12 hours.
+Duration    : Until you return.
+Level       : Level 12 druid.
+Save        : None
+ 
+This spell changes you into one of the following creatures.  What creature
+you can change into is determined by your level.  In order to return to
+your normal form, enter: "return", and you will do just that.
+  
+  Creature      Level (Comments)
+  ------------------------------
+  "bear"        10    (Grizzly)
+  "spider"      10    (Bird)
+  "lamia"       10
+  "lizard"      10    (Snow)
+  "bear"        12    (Polar)
+  "gator"       12
+  "basilisk"    13
+  "snake"       15
+  "spider"      15    (Huge Poisonous)
+  "lizard"      16    (Giant)
+  "allosaurus"  18
+  "tiger"       28    (White Bengal)
+  "mulichort"   30
+  "tiger"       35    (Sabre-Toothed)
+  "lion"        35    (Nemean)
+  "salamander"  35
+                         
+See also: POLYMORPH
+#
+"TREE TRAVEL"
+Usage       : cast 'tree travel' <victim>
+Accumulative: -
+Duration    : 24 hours
+Level       : Level 8 druid.
+Save        : None
+ 
+This spell enables you to move through certain trees unhindered.  It is
+a must for any druid who would like to get past 10th level.
+ 
+See also: SPELL TREE (for the tree spell)
+#
+"TRANSPORT VIA PLANT"
+Usage       : cast 'transport via plant' <tree name>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 10 druid.
+Save        : None
+ 
+This spell lets the caster instantly transport himself between two trees.
+First the caster must know the location of a tree, and the name of the
+tree (s)he wishes to go to.  The caster has to be at one tree before he
+can transport themself to another.  You must journey to the trees and 
+speak with them to find out their names.
+ 
+See also: SPEAK WITH PLANTS
+#
+"SPEAK WITH PLANTS"
+Usage       : cast 'speak with plants' tree
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 7 druid.
+Save        : None
+ 
+This spells enables you to talk with a plant and acquire it's name.  It
+is very useful in conjunction with the spell, Transport Via Plant.
+ 
+See also: TRANSPORT VIA PLANT
+#
+"CHANGESTAFF"
+Usage       : cast 'changestaff'
+Accumulative: -
+Duration    : Varying
+Level       : Level 30 druid.
+Save        : None
+ 
+This spell enables the druid to call upon the forces of nature and cause
+a magical staff to be transformed into a huge ancient tree.  In order for
+this spell to work you must be holding the staff and outdoors.  The staff
+must have charges left in it, and the number of charges left affects 
+linearly the duration that the tree will exist.  The staff will be destroyed
+upon completion of the spell.
+ 
+See also: -
+#
+"POWER WORD KILL"
+Usage       : cast 'power word kill' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 23 mage. 
+Save        : None
+ 
+This spell will instantly kill the victim unless they are too powerful.
+This spell has a more limited range of effectiveness than does the spell
+Power Word Blind.
+ 
+See also: POWER WORD BLIND
+#
+"POWER WORD BLIND"
+Usage       : cast 'power word blind' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 16 mage.
+Save        : None
+ 
+This spell will instantly blind the victim unless they are too powerful.
+The spell has a wider range of effectiveness than the spell Power Word
+Kill does.  You should be able to blind someone of about your level when
+you first get this spell.  i.e.: a 16th level victim.
+ 
+See also: POWER WORD KILL, BLINDNESS
+#
+"CHAIN LIGHTNING"
+Usage       : cast 'chain lightning' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 25 mage, level 25 druid.
+Save        : Versus spell for half damage.
+ 
+This spell calls upon the force of lightning to deliver damage to all
+the non-grouped people in the room.  The lightning is directed at the
+victim, upon whom it does 1d6/level of damage.  It then arcs to the
+next non-grouped person in the room and does 1d6/ (level-1) damage to
+them.  This continues until there are no more targets, or no more levels.
+ 
+See also: LIGHTNING BOLT
+#
+"SCARE"
+Usage       : cast 'scare' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 4 mage.
+Save        : None
+ 
+This spell causes the victim to become so scared of the caster that they
+flee the room.
+ 
+See also: -
+#
+"HASTE"
+Usage       : cast 'haste' <victim>
+Accumulative: -
+Duration    : 10 hours
+Level       : Level 23 mage.
+Save        : None
+ 
+This spell causes the victim to gain speed resulting in more attacks.
+It also ages the victim due to the immense physical strain on the body.
+Mobiles generally don't like the strain.
+ 
+See also: SLOWNESS
+#
+"SLOWNESS"
+Usage       : cast 'slow' <victim>
+Accumulative: -
+Duration    : 10 hours
+Level       : Level 19 mage.
+Save        : None
+ 
+This spell causes the victim to slow down, resulting in a loss of attacks.
+This generally annoys mobiles.
+ 
+See also: HASTE
+#
+"SLOW POISON"
+ 
+Usage       : cast 'slow poison'
+Accumulative: -
+Duration    : 24 hours
+Level       : Level 6 druid, 10 Paladin, 10 Ranger.
+Save        : None
+ 
+This spell may only be cast upon the caster.  Upon doing so, it lessens the
+affect of poison.  
+ 
+See also: POISON, REMOVE POISON
+#
+"FIND FAMILIAR"
+Usage       : cast 'find familiar' <name>
+Accumulative: -
+Duration    : Indefinite, can only be cast once every 24 hours
+Level       : Level 2 mage.
+Save        : None
+ 
+This spell causes a creature to become a companion of the spell caster.
+This creature will be loyal to the creature for it's lifetime, provided
+the caster does not attack it.  Having this familiar lowers the caster's
+armor class by a small amount for 24 hours.  The kind of creature you
+get is dependent on your level.  The name field is the name you want the
+familiar called.    
+ 
+                        Level(s)    Creature
+                        --------------------
+                          2-3       Puppy
+                          4-5       Beagle
+                          6-7       Rottweiler
+                           8+       Wolf
+#
+"AID"
+Usage       : cast 'aid' <victim>
+Accumulative: -
+Duration    : 10 hours
+Level       : Level 4 cleric.
+Save        : None
+ 
+This spell grants an additional 1d8 hitpoints to the victim, and improves
+their ability to hit by +1.  The hitpoints gained can exceed the victim's
+normal maximum, but if they do, they will only last until the hour is up.
+ 
+See also: -
+#
+"FIRST AID"
+ 
+	This skill allows a fighter/barbarian/paladin to cure a few points
+per level of the character doing the healing. He can do this but once per
+day (supplies etc...).
+ 
+#
+"GOLEM"
+Usage       : cast 'golem'
+Accumulative: -
+Duration    : Permanent, until killed
+Level       : Level 15 cleric.
+Save        : None
+ 
+This spell enables the caster to create a golem out of armor.  In order 
+to do this you need 1 piece of armor for the following spots laid out
+in the room:  Head, Feet, Body, Legs, Arms, Hands.  The armor class of
+the golem will be that of all the pieces added together.  The amount
+of hitpoints that the golem has is based on the level of the caster,
+and the quality of the armor used to construct the golem.  The level of
+the golem is also dependent on the type of armor used.  High level
+golems may have more than one attack per round.
+ 
+See also: -
+#
+"FEEBLEMIND"
+Usage       : cast 'feeblemind' <victim>
+Accumulative: -
+Duration    : 24 hours
+Level       : Level 34 mage.
+Save        : vs Spells for negation
+ 
+This spell causes the victim to become a moron if they fail their save.
+The chance of spell casting successfully is greatly reduced, as is the
+intelligence and ability to use skills, due to the victim's profound
+lack of intelligence.  
+ 
+See also: -
+#
+"SHILLELAGH"
+Usage       : cast 'shillelagh' club
+Accumulative: -
+Duration    : Permanent
+Level       : Level 3 druid.
+Save        : None
+ 
+This spell changes a club into a 2d4 +1+1 club.
+ 
+See also: -
+#
+"GOODBERRY"
+Usage       : cast 'goodberry'
+Accumulative: -
+Duration    : Permanent, until eaten
+Level       : Level 4 druid.
+Save        : None
+ 
+This spells must be cast outdoors.  Upon doing so, the caster calls into
+being a bunch of berries.  These berries have a slightly less nutritional
+value than a loaf of bread, but they do cure 1d8 hit points of damage
+when eaten.
+ 
+See also: CREATE FOOD, CREATE WATER, CURE LIGHT
+#
+"FLAME BLADE FLAMEBLADE"
+Usage       : cast 'flame blade'
+Accumulative: -
+Duration    : Permanent
+Level       : Level 7 druid.
+Save        : None
+ 
+This spell calls into being a 1d4 +4(to dmg) blade of flame.
+ 
+This spell is _very_ important if you want to advance past 10th
+level.
+ 
+See also: -
+#
+"QUIVERING PALM QUIV"
+ 
+  Quivering palm is a fabled monk attack. It can only be done 1 time per
+week, and only on an opponent of the same level or lower, with less than
+2*the monks max hit points.  The target must also be humanoid.
+If the roll is successful, the target dies instantly.
+#
+"SPRING LEAP SPRINGLEAP"
+ 
+  Allows you to attack from a sitting position, i.e. after you have been
+bashed.  You attack, and stand up, all in the same motion. (monk skill)
+ 
+#
+"READ MAGIC"
+Allows the non-cleric or mage to read magic scrolls.  If you don't have
+this "lore", seek someone to teach it to you.
+#
+"FIND TRAPS"
+Enables you to detect the presence of traps in a room.  If you don't know
+how to "hunt" for them, seek someone to teach you this skill.
+ 
+See also: SPELL FIND TRAPS
+#
+"SAFE FALL"
+ 
+  Safe fall is a monk skill that allows them to fall from any height, and
+fail to die.  They will be stunned, and badly wounded, but they will not
+die  (if they make the roll)
+#
+"SPY SPYING"
+  Spying helps a thief/barb character gain information about the world 
+around him/her.  After one has typed 'spy', one can look in various 
+directions, and given that there is an exit in that direction, and nothing 
+blocking the way (like a closed door), then the contents of the other room 
+will be displayed.
+ 
+#
+"DOORBASH"
+ 
+  Doorbashing is a skill that allows one to open locked doors.  One must
+refer to the door by name, not the direction of travel.  For example
+doorbash gate
+doorbash door north
+etc.
+ 
+  Success means that the door is unlocked and opened and the attempter is placed
+in the room on the other side of the door, while failure causes the attempter 
+to be stunned for a short time, and take a fair amount of damage in the process.
+#
+"DISARM"
+ 
+   There are two kinds of disarm.  Disarming weapons and disarming traps.
+ 
+If one types "disarm monstername", then, if the player has the disarm
+weapon skill, and successfully uses it, the monster's weapon will fly from
+its hand/tentacle, etc.   
+ 
+If one types "disarm trapname", if the player has the disarm traps skill,
+one can attempt to disable the trap.. failure indicates a high probability
+that the trap will be sprung on the player attempting the disarm.
+ 
+#
+"SIGN"
+   You can learn to use sign language now.  Useful when underwater,
+or in a silenced room, (or silenced yourself).  whatever the user types
+is broadcast, possibly somewhat garbled depending on his/her skill with
+signing, and all those in the room who understand sign language will 
+receive the possibly garbled message.
+ 
+#
+"MOUNT RIDE RIDING"
+ 
+  it is now possible to mount horses and dragons.. Certain aspects are
+not finalized, so it is not advisable to mount aggressive dragons.  Currently
+there are no horses of the correct race to be ridden, so, for the moment, it
+is only possible to ride dragons.  However, dragons are not docile creatures,
+and it will take a large amount of riding skill, and a high level character
+to do it with any amount of ability.  You can order your mount to do things,
+as if he/she was a follower, but he/she isn't, so you can't group with the
+mount.  Each time you attack something, or your mount attacks something, or
+each time you take damage or your mount takes damage, you have a chance of
+being thrown from the back of your mount.  
+ 
+it is easier for evil chars to ride evil dragons, and good chars to ride
+good dragons.  
+ 
+  To get an idea of how powerful one has to be to ride dragons, 
+a 60th level character can typically only successfully ride on
+Yevaud if said character has a -1000 alignment, or is affected
+by the dragon-riding spell.  Or if yevaud is heavily damaged.
+ 
+See also:  "SPELL MOUNT"
+#
+"ALIAS"
+ 
+   alias -- no arguments - shows a list of your existing aliases.   
+   alias <num> command -- assigns the command to the number num, which
+	has to be between 0 and 9. 
+   <num> will execute this command.
+ 
+   example:
+   
+   > alias 1 kill
+ 
+   > 1 lamia
+   You hit the lamia.
+ 
+   Get the idea?   Only one command per alias, I have been having nightmares
+	trying to figure out all the ways one could crash the game with
+        multi-command aliases.
+ 
+ 
+#
+"SHOOT"
+ 
+See FIRE,NOTCH,LOAD
+#
+"SWITCH"
+  Allows you to switch opponents.  if you are attacking X and want to attack
+	Y, type 'hit Y'.  It will check against your Switch skill, and if
+	you make it, you stop attacking X, and attack Y.. if you fail, you
+	stop attacking anyone.
+#
+"VALUE"
+	tells you the value/vital stats of something.  for example,
+	value sword will tell you interesting stuff about the sword.
+	the numbers are inaccurate. As you get better at the skill,
+	the numbers become more and more accurate.
+#
+"LORE"
+ 
+	tells you the vital statistics of a mob, compared to yours.
+	but only if you have the appropriate lore skill.
+ 
+	to use it, type 'consider X', if X is a race that you know lore
+	about, you can get some info on the race.  As your ability with the
+	skill improves, your estimates will improve.
+#
+"DODGE"
+ 
+	dodge allows fighters and monks to avoid damage in combat.  not 
+	a lot -- 1-3 points, but every little bit helps.  Each time you
+	are hit, the game checks your dodge skill, which does not improve
+	with use, only with practice.  if you make it, the damage is 
+	reduced by 1-3 points.. note- this applies to physical attacks
+	only.
+ 
+#
+"RETREAT"
+	allows a fighter, thief or monk to get out of combat without 
+	having to panic and flee. if you make the roll, you WILL leave
+	the room, and you lose no exp for doing it.  
+ 
+	this skill gets better through use.
+ 
+	this skill does not have a name of its own, but is built in
+	to the 'flee' command.
+ 
+#
+"FEIGN DEATH"
+	allows a monk to pretend that they are dead.  The people/things
+	that are attacking you will stop fighting you, and may leave you
+	alone completely, although it is best to leave the room as soon
+	as possible.
+#
+"ROOM TELEPORT"
+ 
+some new things for teleport rooms:
+ 
+ 
+edit tele <time> <room> <flags> [<countdown>]
+ 
+flags = 
+1     LOOK    (do a look when you get teleported
+2     COUNT   (this is a countdown room)
+4     RANDOM  (after the first teleport, this room will teleport in random
+		time)
+8     SPIN    (Not implemented yet)
+ 
+ 
+Some things to note:
+ 
+ if you are going to set the COUNT flag, then leave the <time> = 0
+ 
+ COUNT, RANDOM and SPIN are more or less mutually exclusive.
+ 
+ 
+examples
+ 
+   edit tele 30 1000 1       ;  teleport fires every 30 ticks, goes to room
+			        1000, does a look
+ 
+   edit tele  0 1000 3 30    ; 30 ticks after a player enters this room,
+				they will be teleported to room 1000, and
+				they will do a look.
+ 
+   edit tele  0 1000 2 30    ; 30 ticks after a player enters this room,
+				they will be teleported to room 1000, and they
+				will NOT do a look
+ 
+Any questions, post them on the board
+ 
+The random time will be between 10 and 100 ticks
+ 
+(so roughly between 7.5 seconds and 75 seconds)
+ 
+Note, this is a god command, mortals can't do it.
+ 
+#
+"INTRO INTRODUCTION"
+ 
+   things you should know:
+ 
+   hit points are ad&d like, not diku like
+   there are 150+ spells, almost 30 skills, more on the way.
+   many monsters have special routines.
+   most monsters that might have poison do.
+   poison is very dangerous.
+   some poisonous monsters have instantly fatal poison.  take care!
+   equipment can be damaged, by spells and combat.
+   dragons breath, doing lots of damage to people and equipment.
+   non pc followers only get 1/2 the exp they would get if they weren't
+   charmed.  the other 1/2 is lost.
+   Some monsters are too big to bash.. in general, dragons, most 'huge'
+   things, purple worm, etc, are all non-bashable.
+   sneak allows you to avoid aggressive monsters.
+   monsters develop hatreds very quickly, and will try to hunt you down  
+   and kill you for hurting them.
+   kangaroos hate all kinds of enfan.
+   most mobs that should see in the dark do.
+   some monsters are immune to the things you would expect them to be
+   immune to.   
+   some monsters are also resistant to certain attacks and/or susceptible
+   to others (resist = 1/2 damage, susc = 2* dam)
+   monsters HELP each other out.  They don't sit by and watch.
+ 
+   
+   player characters are very powerful:  many spells, attacks, etc.
+   monsters are weaker individually, most of the time.  However, the   
+   monsters here are not as stupid as they are on other muds, and they
+   tend to be tougher, because of that, and because they help each
+   other.
+ 
+   rule of thumb:  Grouping is a good idea.  
+ 
+   it is easier to play mages and thieves if you are patient.  You don't
+   have to be as patient, if you are more willing to group.
+ 
+   My goals for the classes:
+     Fighters: powerful at lower levels, much less useful at higher levels.
+     Clerics:  reasonably powerful and useful all along.
+     Mages:    weak at lower levels, more powerful at higher levels.
+     Thieves:  Good for scouting, very nice when grouped.
+     Monks:    Weak at lower levels, more powerful at higher levels.
+     Druids:   Medium at all levels, like clerics.
+ 
+   spellcasting is harder to do in combat.  generally, the more powerful
+   the spell, the harder to cast in combat.  magic missile, acid blast,
+   shocking grasp, cause light, serious, critical, are all fairly easy
+   to cast in combat.
+ 
+   While your equipment can be damaged by spells and such, there are some
+   things you can do minimize the damage.  #1, if you are fighting something
+   that does fire damage, being immune or resistant to fire yourself will
+   help your equipment out as well.   Good saves will also in general reduce
+   the amount of damage.  
+ 
+#
+"AUTHORIZE AUTH"
+ 
+ 
+  auth Newbie yes        (lets them into the game)
+  auth Newbie no         (denies them from the game)
+ 
+  auth Newbie anything else  (a message to the Newbie)
+#
+HOUSEAUCTION
+ 
+   There are no houses currently on the market.
+ 
+ 
+#
+"HOUSES HOUSE"
+ 
+   Houses allow the character who owns it to rent for free.  The character
+enters the house, and types rent, and all the stuff is stored.  No one else can
+rent in that room, just the owner.  Multi-room houses are legal.  Note:
+  No 'gates' will be allowed, the house must be geographically correct.
+(i.e. all entrances and exits must be close to each other).
+ 
+  As a reward for godhood, Players who make godhood will be able to 
+purchase houses at a fixed rate (if they so desire) instead of the auction 
+price.
+ 
+#
+"MAYOR"
+ 
+   A character who kills the mayor in single combat earns the right to 
+   be the mayor for 1 realworld week.  (from the day of the fight)
+ 
+   The fight has to be witnessed by a 54th level god (or higher).
+ 
+   Player cannot flee from combat.  Flight indicates loss, and the player
+   cannot try again for 1 real day.
+ 
+   Mages and clerics can use NPC followers.  No PC assistance (or god)
+   will be allowed.
+ 
+   Once the mayor has been killed, no other fights will be honored for
+   the period of one week.. ignorance of the fact that the mayor position
+   is still taken is of no consequence.
+ 
+   The mayor of the week will have her (or his) name placed on the 
+   message of the day.  If that person reaches immortality during
+   that week, they will be removed from the mayor list, and the position
+   will once again be open.
+ 
+   I am also considering allowing the mayor of the week to call for
+   cityguards, but i have not decided.
+ 
+#
+"RESURRECTION"
+Usage       : cast 'resurrection' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 36 cleric. 
+Save        : None
+ 
+With this spell the cleric calls upon the aid of their deity to bring the 
+life force back into a dead person.  This is quite an undertaking as it will 
+require a sacrifice of 25,000 coins for mobs and 75,000 coins for PC's, and
+the beneficiary loses 1 con point permanently..after the con reaches 3, no
+more resurrections can occur. The calling of such help from a deity is so 
+draining on the cleric that the cleric will move to 1 hit point, 1 mana, and 
+1 movement point, also they will be stunned for a while.  Make sure you are 
+in a safe place before casting or else you might end up with the same fate as 
+your victim.  If this spell is cast upon a moster the moster becomes a loyal 
+follower of the cast for 36 game hours.
+ 
+IMPORTANT:  The dead character has to stay OUT of the game until
+	he/she is resurrected.  If he/she reenters the game, he/she
+	cannot be resurrected.  All the way out. I.E. all the way out of
+	telnet.  If you are at the choice menu, tough luck - you were
+        warned!
+ 
+#
+"AREAS"
+Current Areas:
+ 
+  DeadHamme     -- Haag & Mario  (1 - 5)
+  Prydain       -- Haag & Mario  (10 - 40)
+  Abbarach      -- Haplo    (not sure)
+  Rhyodin       -- Heimdall (not sure)
+  White Plume   -- Dem      (10-15)
+  Arena         -- Felix    (10 - 30)
+  Mages tower   -- Skylar   (10-30/30-50) (lower, upper levels)
+  Hill giants   -- Marist   (15-30)
+  Graecia      -- Gambreezzi (20-50)
+  Skexies      -- Rugrat    (5-15/10+)  (two parts)
+  Lycanthropia     -- Duke  (Mid)
+  Bay Isle         -- Duke  (High)
+  New Thalos   --  Conner   (all)
+  Artica           -- Duke  (5 - 20)
+  Temple Labyrinth -- Duke  (5 - 10)
+  Mistamere                 (5 - 10)
+  Temple Annex              (1 - 10)
+  Sewers                    (5 - 20)
+  Moria                     (3 - 20) - monsters gang up.
+  Shire                     (3 - 15+)
+  Thalos                    (10 - 20)
+  Dwarven Kingdom           (10 - 30)
+  Drow                      (20 - 40) 
+  Orshingal     -- Poohbear (10 - 30)
+  Ivory tower   -- Exxon    (1 - 9)
+  The Pyramid   -- Conner   (15 - 30)
+  Arachnos      -- Duke     (5 - 50)
+  Castle Python -- Melkor   (5 - 30)
+  Elven Forest  -- Sunsor   (1 - 9)
+  Ravenloft        -- Celestian (45+)
+  Astral Plane     -- Celestian (15-30)
+  Jungles of Chult -- Celestian (10-25)
+  Jungle Pyramid   -- Celestian (28-50)
+  Spider Haunt     -- Celestian (1- 25)
+  Doom		   -- Sarge	(1-10)
+  Torture Keep	   -- Alien	(20-50)
+  
+ NOTE!!!!!!!!
+     Those numbers are ROUGH!  And just because an area is advertised
+for X level does not necessarily mean that X level can wipe out the area!!!
+Use COMMON SENSE.  ASK people about the areas, find experienced people to
+group with.  Don't get cocky, and you'll live longer.   Be social
+, and you
+will live longer.  Ask questions, and you will live longer.
+ 
+P.S. if anyone feels these numbers are not accurate, post a message.
+ 
+#
+"MONSUM"
+ 
+Usage       : cast 'monsum one...two...'
+Accumulative: You can summon as many as your charisma will allow
+Duration    : 24 hours
+Level       : Ranges from level 4 - 22.
+Save        : None
+ 
+ 
+   The various incarnations of this spell create monsters of the appropriate
+   level to serve you as followers for a time.  The time is as long as the
+   time that charm person would work on the same creature.
+ 
+#
+"POLYMORPH POLY"
+Usage       : cast 'polymorph' <mobname>
+Accumulative: You must return before changing form again.
+Duration    : Until you return or die
+Level       : Level 9 Mage.
+Save        : None
+ 
+With this spell the caster is able to change his shape into the form of a 
+monster that he has seen before.  Changes in form give the caster all the 
+abilities of the new form, including flight or breath weapons.  However, some 
+forms are not able to use equipment.
+ 
+To return to your character, type the command:  RETURN
+If you switch into a humanoid monster, you can cast spells if you are
+a magic-user, cleric, or druid, and you can steal if you are a thief.
+ 
+Now, here is the list:
+ 
+  Creature      Level (Comments)
+  ------------------------------
+  "goblin"      4*
+  "parrot"      4    (blue)
+  "bat"		4
+  "orc"         5*
+  "trog"        5*
+  "gnoll"       6*
+  "parrot"      6    (black)
+  "lizard"      6
+  "ogre"        8*
+  "parrot"      8    (red)
+  "wolf"        8
+  "spider"      9 
+  "beast"       9    (displacer)
+  "minotaur"    9*
+  "snake"       10   (rattle)
+  "bull"        10
+  "warg"        10
+  "rat"         11   (sewer)
+  "sapling"     12
+  "ogre-maji"   12*!
+  "black"       12   (dragon)
+  "troll"       14*  (regenerates)
+  "crocodile"   14
+  "mindflayer"  14*! (junior)
+  "giant"       16*  (hill)
+  "bear"        16   (grizzly)
+  "blue"        16   (dragon)
+  "enfan"       18*  (blue)
+  "lamia"       18*
+  "drider"      18
+  "wererat"     19
+  "wyvern"      20
+  "mindflayer"  20*! (senior)
+  "spider"      20   (bird)
+  "roc"         22 
+  "mud"         23   (mudmonster)
+  "giant"       24*  (frost)
+  "white"       26   (dragon)
+  "master"      28*! (mindflayer)
+  "red"         30   (dragon)
+  "roo"         35*  (hunter)
+  "brontosaurus"35
+  "mulichort"   40
+  "beholder"    45! 
+ 
+The ones with * are humanoid.
+The ones with ! cast spells automatically
+The ones with ? you get to experiment and find out.
+ 
+See also: CHANGE FORM
+#
+"ACID BLAST"
+Usage       : cast 'acid blast' <victim>
+Accumulative: Blast as many times as you want
+Duration    : Instantaneous
+Level       : Level 6 Mage.
+Save        : vs. spells for half damage
+ 
+ 
+   Acid blast creates a powerful blast of acid that does 1d6 per level
+damage.  The only advantage to this spell over lightning bolt is that
+fewer things are immune to acid.  This spell is very destructive to mob 
+equipment.
+ 
+ 
+#
+"CACAODEMON"
+Usage       : cast 'cacaodemon' one
+Accumulative: Yes
+Duration    : 24 hours.
+Level       : Level 29 cleric, 30 mage.
+Save        : none
+                  
+  This spell is wreathed in mystery. The only sure knowledge about it
+is that it is cast in the following manner:
+ 
+	cast 'cacaodemon' one 
+		.
+		.
+	cast 'cacaodemon' six
+ 
+Rumor has it, however, that the drow know quite a bit about the use of
+this spell.
+#
+"CONE OF COLD"
+Usage       : cast 'cone of cold'
+Accumulative: -
+Duration    : Instantaneous.
+Level       : Level 19 mage.
+Save        : vs spells for half damage
+ 
+This spell summons a cone shapes ray of cold to shoot from the casters hand 
+at all people not grouped in the room.  The force of the cold is so much that 
+it will do level d5 damage.
+See also: -
+#
+"TRUE SIGHT"
+Usage       : cast 'true sight' <victim>
+Accumulative: No
+Duration    : 2 * casters level.
+Level       : Level 19 cleric, 24 druid.
+Save        : -
+              
+ 
+True sight allows you to see hidden creatures, and invisible creatures,
+it is a (temporary) cure for blindness, and allows you to see in the
+dark.
+    
+ 
+#
+"CONJURE ELEMENTAL"
+Usage       : cast 'conjure elemental' earth
+Accumulative: Conjure as many as your charisma will allow.
+Duration    : 24 Hours.
+Level       : Level 11 druid, 13 cleric, 16 mage.
+Save        : -
+ 
+Upon casting this spell the caster calls forth an elemental from another 
+plane to serve him/her for a period of time.  In order to cast this spell you 
+must have a special material component which will be destroyed on casting of 
+the spell.  The components are as follows:
+ 
+red stone for fire elementals
+pale blue stone for water elementals
+gray stone for earth elementals
+clear stone for air elementals
+#
+"CALM"
+Usage       : cast 'calm' <victim>
+Accumulative: -
+Duration    : Instantaneous.
+Level       : Level 2 cleric, 4 mage, 18 paladin.
+Save        : vs. spells to negate 
+ 
+   Calm makes an aggressive monster non-aggressive
+ 
+#
+"STONE SKIN"
+Usage       : cast 'stone skin'
+Accumulative: -
+Duration    : Instantaneous.
+Level       : Level 26 mage.
+Save        : -
+ 
+This makes the skin of the caster change into a stone-like material.  This 
+will greatly improve the armor class and make the caster resistant to 
+piercing attacks.  This is a personal spell, it cannot be cast on others.
+ 
+#
+"SPELLS ALLSPELL"
+ 
+   This command gives you a listing of all the spells on SillyMUD.
+The format of the display is:
+ 
+<number> <spell_name> <mana_cost> <Cleric_level> <Mage_level> <Druid_level>
+#
+"SECTOR TYPES"
+0 = indoors
+1 = city
+2 = fields
+3 = forest
+4 = hills
+5 = mountains
+6 = water (swimmable)
+7 = river (non-swimmable)
+8 = air
+9 = water
+10  desert
+#
+"CHARM MONSTER"
+Usage       : cast 'charm monster'
+Accumulative: no
+Duration    : 24 hours
+Level       : Level 10 mage, 12 druid.
+Save        : vs. paralyzation
+ 
+Very similar to charm person, but allows you to charm monsters too.
+ 
+#
+"ANIMATE DEAD"
+Usage       : cast 'animate dead' corpse
+Accumulative: -
+Duration    : 24 hours
+Level       : Level 8 cleric, 16 mage.
+Save        : -
+ 
+  This spell creates a zombie servant who will obey your commands.  It has 
+  your level/2 d8 hit points (with a minimum of 5d8), hits as a 2 HD
+  monster, and is resistant to piercing weapons.  Cityguards and
+  vampire bats hate zombies, and attack them immediately.
+ 
+#
+REFRESH
+Usage       : cast 'refresh' <victim>
+Accumulative: Yes
+Duration    : Permanent
+Level       : Level 2 cleric, 4 druid, 6 mage. 
+Save        : - 
+ 
+  increases the targets movement by 1d4+1 per level, with a minimum
+  of 20 points.
+#
+"SECOND WIND"
+Usage       : cast 'second wind' <victim>
+Accumulative: Yes
+Duration    : Permanent
+Level       : Level 9 cleric, 14 druid, 20 mage, 30 ranger, 35 paladin.
+Save        : - 
+  
+  increase the targets movement by 1d8+1 per level.
+ 
+#
+TURN
+Usage       : cast 'refresh' <victim>
+Accumulative: Yes
+Duration    : Permanent
+Level       : Level 1 cleric, 12 druid, 10 paladin.
+Save        : vs spell to negate 
+ 
+   forces undead of lower level who fail their save against spells to
+   flee from you.  The lower they are compared to your level, the more
+   likely they are to flee.
+                  
+ 
+#
+SHIELD
+Usage       : cast 'shield' <victim>
+Accumulative: No
+Duration    : Level hours
+Level       : Level 1 mage.
+Save        : - 
+ 
+   Creates a shield of magic around the target, some protection(-10 AC),
+   and deflects all magic missile attacks.
+ 
+#
+SUCCOR
+Usage       : cast 'succor'
+Accumulative: Make as many as you want
+Duration    : Permanent
+Level       : Level 23 cleric, 24 mage.
+Save        : -
+ 
+   Creates a word of recall scroll.
+ 
+#
+FIRESHIELD
+Usage       : cast 'fireshield'
+Accumulative: No
+Duration    : 4 hours
+Level       : Level 40 mage, 45 cleric, 48 druid.
+Save        : -
+  
+This spells summons an armor of fire around the caster.  Any person who 
+attacks the caster will get a fireshield shot back at them if they hit the 
+caster.  The fireball will do the same damage to the attacker that they did to 
+the caster.  Some mobs will realize that attacking a person with fireshield 
+isnt such a good idea and they will randomly attack another person in the 
+same room, even if they arent attacking the mob or in the casters group!
+   
+#
+"RACE LIST"
+ 
+Various monsters belong to various races.  For example:  
+  Llama and rabbits are of the same race because they are 
+    herbivores (cows, horses, etc)
+  orcs, gnolls, ogres, giants are all 'giant class' race.
+  lycanthropes.
+  predators (animals that hunt for food)
+  undead
+  snakes
+  reptiles 
+  insects
+  spiders
+  demons
+  devils
+  humans, elves, etc...
+ 
+See also ALLRACE
+#
+"PICK LOCKS"
+ 
+Thieves only.
+For picking locks. Not all locks can be picked. Example:
+ 
+> pick door
+> pick safe
+ 
+See Also : OPEN, CLOSE, LOCK, UNLOCK
+#
+SNEAK
+ 
+Thieves Only.
+ 
+Used for sneaking (moving in and out of rooms without anyone taking
+notice).  When you type sneak, there is no way to know if you actually
+sneak. If you successfully sneak, then you will continue to sneak for
+a little while. When you are sneaking, many monsters that would
+otherwise attack you will not notice you, allowing you to go places
+that no others can get to.
+ 
+Example:
+ 
+  > sneak
+ 
+See Also : HIDE
+#
+HIDE
+ 
+Thieves Only.
+When you type hide there is a chance that you hide in the room. If
+hidden you can only be "sensed" by the "sense life" spell. Even if
+sensed your identity will remain hidden. Hide is broken by pressing
+return, regardless of whether you typed a command or not.
+ 
+Example:
+ 
+  > hide
+  Ok.
+  >  (you wait for ex. 5 mins and remain hidden for 5 mins)
+ 
+  >  (You pressed enter and no longer hide)
+#
+LOOK
+For studying your surroundings. Examples:
+look                                      
+look AT the angel
+look IN the bag
+look to the south   (or just: look south)
+ 
+Note that if you LOOK AT CORPSE you will not see its inventory.
+To see what is inside a container (i.e. Corpse) use LOOK IN <OBJECT>.
+ 
+See also : EXAMINE or READ
+#
+AC "-----------"
+ 
+Is you armor class, it is defined roughly as follows:
+ 
+  10 Naked person
+   0 Very Heavily armored (Plate mail, and "two shields") 
+ -10 Armored battle tank
+ 
+#
+OPEN CLOSE LOCK UNLOCK
+Usage (example):
+ > open portal
+or
+ > open portal to the south
+   (if there is more than one to choose from)
+#
+NORTH SOUTH EAST WEST UP DOWN
+To walk in a given direction.
+#
+EAT DRINK SIP TASTE
+If you are hungry or thirsty. Examples:
+    eat hamburger
+    drink beer
+    eat bread		/* how boring, visit Andy's Pub! */
+    eat sausage
+#
+WHO
+ Lists the people currently in the game. Some people may choose to remain
+ unseen.
+ 
+ WHO -g will give you a list of all currently active (and visible) gods.
+ Please consult this list before shouting "Is there a god on?"
+ 
+ WHO a
+ Will list all characters with the letter A as the first letter in their
+ name, you can use any letter of alphabet to find any list of names.
+ 
+See Also:GWHO, WHOIS
+#
+GWHO
+ 
+GWHO will give a complete list of groups with group names.
+ 
+See Also:WHO, WHOIS
+#
+GIVE
+If you feel benevolent, you may give some stuff to someone in need. Example:
+give bread to the beggar.
+#
+SAVE
+Save your persona. This includes experience points, strength, gold, etc. 
+It also saves your equipment, up to the first 200 items.
+#
+SET
+ 
+	This command allows you to change an array of things. The standard
+command is 'set <type> <field>'. Here are a list of types :
+ 
+	email <email@address>
+	ansi  <enable,disable/off>
+	war   <enable> see RACE WAR, or you might DIE!
+	autoexits <enable/disable>
+	group  name <Group Name Here>
+	group order <enable/disable>
+ 
+* 'email'
+The 'field' is email@address, something like jobob@hsc.unt.edu.
+This information can be seen on a finger on your name.
+	
+* 'ansi'
+The 'field' is either 'enable' or 'disable/off' when used with 'ansi'.
+ 
+* 'war'
+The 'field' is either 'enable' or 'disable/off' when used with 'war'.
+ 
+* 'autoexits'
+The type 'autoexits' will automatically display exit information for you
+when you walk into a different 'room'.
+ 
+* 'group' 
+The type 'group' uses the  parameter 'name' to set your group name, after
+'name' you need to pass a name you would like to use for your group. 
+   Example :
+       set group name The Wild Bandios!
+ 
+Using 'gwho' you can see all the groups and their group names.
+ 
+The type 'order' will allow you to accept orders from the group leader, and
+the group leader only. You must be following someone before this will work.
+ 
+ 
+See Also: RACE WAR, GROUP, GWHO, ORDER, WHOIS
+ 
+#
+INVENTORY
+If you are uncertain about what you are carrying, or simply want to check
+that no thieves have pilfered from your backpack.
+ 
+See also: EQUIPMENT
+#
+EQUIPMENT
+When you want to know what armor, weapon, charms etc. you are wearing.
+ 
+See also: INVENTORY
+#
+KISS
+Well can't you guess ?
+#
+WEAR
+If you want to wear some clothes, armor or the likes.
+For example : wear boots
+ 
+See also: REMOVE, EQUIPMENT
+#
+WIELD
+When you get tired of bashing monsters with your fists, you might consider
+wielding a weapon. Example : wield sword
+ 
+See also: REMOVE, EQUIPMENT
+#
+SCORE
+Whenever you want to check whether you are still alive and healthy
+or simply want to see how much money you have left.
+#
+SAY TELL WHISPER SHOUT ASK
+If you consider communicating with other beings, you might be understood
+better if you start your sentences with either say,tell,whisper or shout.
+ 
+	When using SAY you speak in a language that you choose, via SPEAK.
+If the PC's do not understand you will not be able to communicate. All other
+commands (tell,gos,shout,whisper) do not use a special language.
+ 
+Example : say I'm a jerk
+          tell unclesam You're dead meat - sucker!
+ 
+You can use ' as a shorthand for say, as in:
+ 
+' hello there.
+ 
+ 
+See also : SPEAK
+#
+BOUNCE
+If you feel like bouncing round the room this is just the command for you.
+#
+FRENCH
+Don't you know how they kiss in France ?? - try it !
+#
+QUI SHUTDOW
+Just to prevent accidental quittings and/or shutdowns.
+This command does not DO anything, it simply is.
+#
+SMILE
+Whenever you feel like smiling...
+#
+KILL HIT
+A good way to start a fight.
+#
+KICK
+Fighters and Monks
+The success of a kick depends upon how well you are learned. The
+higher level you reach the harder you kick. There is one small catch -
+whenever you kick (or miss) you will be unable to type any command for
+three rounds of 'Violence' - so be sure that you do not need to flee!
+This is one of the Monks most awesome weapons.  Use it wisely.
+ 
+See Also : Rescue, Bash
+#
+BASH
+Fighters only.
+  The success of a bash depends upon how well you are learned. To bash
+someone is to attempt to 'knock' that person over. If you succeed you
+will inflict minor damage, and cause the victim to fall on its rear.
+The victim will be unable to issue any commands for 2 rounds of
+violence. If you miss you loose your balance and fall.
+  A bash makes you unable to type commands for 2 rounds of violence.
+Note that hitting a person who is resting/sitting will inflict
+1.5*damage.  Fighters See Also : Rescue, Kick
+#
+RESCUE
+Fighters Only.
+  A rescue is an attempt to make a monster hit you instead of the
+person being rescued. You can only 'turn' one monster for each
+attempt. This is highly useful when playing in groups.
+#
+STEAL
+ 
+Thief Only.
+ 
+Use steal to steal gold or items from people. The chance of not
+getting caught depends on how well you have practiced steal, and if
+the person is asleep.
+ 
+Due to misuse of the steal command, it now requires at least 1,250 XP
+points to steal from other players. You can still steal from monsters
+at all levels.
+ 
+ 
+Example:
+ 
+> steal gold drunk
+#
+STEALTH
+Gods use this to sneak into a room without their bamfin and bamfout
+messages appearing.  Mortals usually wish they could do this, but so
+far none have been able to.
+ 
+#
+BACKSTAB
+ 
+Thief only.
+ 
+Is a way to sneak up on a person, and attempt to place you dagger in
+his back, at exactly the point where it does most damage. A successful
+backstab gives a damage multiplier, depending on level:
+ 
+The chance of successfully backstabbing a person depends on how well
+you have practiced backstab at your guild.
+#
+CAST
+For "magical" people. If you want to throw a spell at someone or something.
+Example : cast 'burning hands' <player>
+   Note that the name of the spell must be enclosed by "'"s.
+ 
+See also : help on each individual spell, for example:
+  > help cure light
+  > help ventri
+  > help energy drain
+#
+DROP
+If you lose interest in a carried item, you can drop it on the ground.
+Example : drop bottle
+  If you feel like getting rid of all your earthly possessions, you
+may use "drop all".  Also you can drop 9*bottle, which would drop 9
+bottles, but leave the rest in your hands.
+ 
+See also: GET
+#
+ORDER
+In bars etc you can order things.
+If you are not in a bar, and you happen to have followers, you can
+order your followers to do things.
+ 
+		ie: order zombie smile
+		and 1.zombie will smile.
+ 
+		ie: order 2.zombie smile
+		and 2.zombie will smile
+ 
+		ie: order followers smile
+		and all your followers will smile.
+#
+BUY SELL
+Commands for the shops - very useful too !
+#
+WEATHER
+If you are uncertain whether the sun is shining or the rain is pouring down.
+#
+READ
+When you want to read something.
+#
+REMOVE
+If you tire of wearing some armor or wielding a weapon.
+Example : remove sword
+#
+SHOPS
+  Shops are places where the adventurer may purchase equipment for his
+quests, and where he may sell his treasure if he should manage to
+survive the perils with his life and sanity intact. Many shops trade
+only in a specific type of merchandise. Thus, a baker may well refuse
+to buy your armor, even if it is of high quality!
+  To some people, the prospect of obtaining the entire inventory of a
+shop by murdering the keeper may appear tempting - but beware: The
+shopkeepers are rugged, capable men and women; roughened by years of
+trading and, indeed, surviving in a world where the only safe prospect
+is death in the end.  (They usually have a few thousand hitpoints and
+can shoot through schools).
+ 
+See also: BUY, SELL, LIST, VALUE
+#
+SOCIAL ACTIONS
+Commands mainly for social interaction:
+
+ 
+accuse, ack, adore, agree, applaud, bark, bcheck, beg, bhug, bite, blame, 
+bleed, blink, blow, blush, boast, bonk, bounce, bow, burp, cackle, calm, 
+caress, cears, ceyes, cheer, chide, chuckle, clap, comb, comfort, 
+compliment, confess, console, cough, cower, cringe, cross, cry, cuddle, 
+curtsey, dance, dream, drool, eh, fart, finger, flex, flip, fondle, frown, 
+fume, gasp, gaze, giggle, glare, gloat, greet, grin, grit, groan, grope, 
+grovel, growl, gulp, hiccup, hkiss, hop, howl, hug, hum, ignore, interrupt, 
+jump, kiss, kiss, kneel, knock, laugh , lick, liege, listen, love, massage, 
+moan, mosh, muse, nibble, nod, nudge, nuzzle, pace, pant, pat, peer, pie, 
+pinch, pleade, plot, point, poke, ponder, pout, praise,  puke, punch, purr, 
+raise, recoil, relax, roar, roll, rub, ruffle, salute, scoff, scold, scowl, 
+scratch, scream, shake, shiver, shrug, shudder, sigh, sing, slap, smile, 
+smirk, snap,  snarl, sneer, sneeze, snicker, sniff, snore, snowball, 
+snuggle , sob, spank, spit, squeeze, squirm, stagger, stare, steam, 
+strange, stretch, strip, stroke, strut, sulk, swave, swear, tackle, tap, 
+taunt, thank, tickle, toast, tongue, toss, touch, tremble , tug, twiddle, 
+twirl, twitch, wave, wedge, whap, whimper, whine, whistle, wiggle, wink, 
+worship, yawn, yodel
+ 
+ 
+#
+WIZLIST
+ 
+Gives a list of all the immortals in the game, along with their level.
+#
+COMMANDS
+A mechanical listing of the known verbs.
+ 
+See also: SPELL COMMAND
+#
+"MONK SKILLS"
+	Left blank for explanation later.
+#
+"DRUID SKILLS"
+	Left blank for explanation later.
+#
+WARRIOR FIGHTER
+  Warriors are known to have more strength than the average player.
+This makes them better at hand-to-hand-combat, as they possess skills
+of violence and fighting unequaled by the members of any other class.
+However, they lack the ability to use magic of any sort.
+  You can improve your skills by using the practice command, in the
+room in the swordspeople's guild with the guildmaster (usually the
+last room)
+ 
+See also: PRACTICE
+#
+THIEF
+  Thieves are known to have very special qualities, that no other
+class offers.  Many of these qualities can come in handy in many
+situations, such as picking locks.  They are not very combat oriented,
+however, so do not expect to be able to kill many things by yourself.
+The useful aspect of thieves involves their ability to scout ahead,
+avoiding monsters, detecting and removing traps and selling and buying
+items at the black market.
+   You can improve you skills by using the practice command.
+ 
+See also: PRACTICE
+#
+CLERIC
+  This class gives you the wisdom of peace, blessing and healing,
+though it is possible to learn more violent spells.  You can improve
+your spells by using the practice command.
+ 
+See also: PRACTICE
+#
+"MAGIC USER" WIZARD MAGE
+  This is the class of powerful and violent magic, but the magic user
+does not control the nature, and can therefore not bless and such. You
+can improve your spells by using the practice command.
+ 
+See also: PRACTICE
+#
+PRACTICE PRACTISE
+  Practice is the way you improve your spells and skills. You must go
+to your guildmaster to let him/her help you improve (GAIN).  If you type
+practice, you will see which skills you can improve upon, and how good
+you already are at these.  You can then use practice <skill>, to
+practice the appropriate skill.  You can only practice a certain
+amount for each level you gain, and you do not have to use this, it
+can be accumulated.
+ 
+See also: GAIN
+#
+EXITS
+  Gives you a list of the obvious exits from your location. Of course,
+the less obvious ones will not show up here - you have to THINK in
+order to locate those.
+ 
+#
+LEAVE
+  If you feel claustrophobic, typing 'leave' will make you use the
+nearest obvious exit to the outside.
+ 
+#
+ENTER
+  If you type 'enter' while you are outdoors, you will enter any
+nearby shelter.  You can also follow 'enter' with an argument; for
+example, 'enter window'.
+ 
+#
+TIME
+  Gives you the current 'gametime'. Your initial reaction to the
+output of this command may be one of surprise, but you will get used
+to it. you will have to, at any rate, since certain things in the game
+depend on this particular notion of time; the opening hours of the
+shops, for example.
+ 
+#
+BUG TYPO IDEA
+For making useful suggestions to the maintainers of the game. Examples:
+ 
+bug the entire game crashes when I type 'put bag in bag'
+idea make a restaurant in Shadowdale
+typo 'sence' should be spelled 'sense'
+#
+QUIT
+  When you get tired of playing, you can leave the game by typing
+'quit'. Note that whatever stuff you might be carrying with you is
+simply left on the ground. If you wish to have your equipment put away
+until you are able to come back, you will have to find an inn.
+ 
+See also: INN
+#
+INN INNS
+  Inns are places where the weary traveler may rest while the
+innkeeper looks after his equipment and treasure. Specifically, you
+may use inns to store your gathered equipment while you are not
+playing the game (we all have to sleep sometimes, there is no shame in
+that).
+ 
+See also: OFFER, RENT
+#
+OFFER RENT
+  For use in the receptions of inns. The command 'offer' will make the
+innkeeper tell you the cost of storing your carried items for one day.
+'rent' will store the items and make you leave the game. The next time
+you enter, you will start out in the reception where you left. The inn
+will store your items as long as you have the gold to pay the rent.
+ 
+See also: INN
+#
+GET TAKE
+  If you find something interesting on the ground, you may use 'get'
+to pick it up. Example: "get greatsword". If you are in a hurry, or if
+you just feel very greedy, you may type "get all". You can also use
+'get' to extract objects from containers. Example: "get dagger from
+bag".  Other examples:
+  get all.bread from bag
+  get 9*bread from bag
+  get all from corpse
+ 
+Fixed! There is no longer any ambiguity between containers in your
+inventory and on the ground.  The ones in your inventory are 1..n and
+the ones on the ground are (n+1)..(n+m).
+ 
+See also: DROP PUT
+#
+PUT
+For putting stuff in containers. Example: "Put the dagger in the bag".
+  Put all.bread in bag
+  Put 9*bread in bag.
+ 
+See also: GET
+#
+EXAMINE
+May give you some valuable information about an item, or a monster.
+ 
+See also: LOOK
+#
+WRITE
+ 
+  In order to write a note, you need a piece of blank paper (or
+similar), and a pen of some sort. You can then type something like
+"write on the paper with the pen", whereupon you will be asked to type
+in your note at the keyboard.
+ 
+#
+NEWS
+  This command will show you the current edition of "the DikuMUD
+Herald", a publication dedicated to news and useful information about
+this world. It is a VERY good idea to check it out once in a while.
+NOT checking it out will probably get you dead.
+ 
+#
+SLEEPING WAKE REST SIT STAND
+  For changing your position. If you feel weary, It is probably a good
+idea to sit and rest for awhile; or maybe even take a nap.
+ 
+#
+POUR
+If you want to pour some liquid from one container to another.
+#
+GRAB
+For getting a good grip on something; a torch, for example.
+ 
+See also: WEAR, WIELD, REMOVE
+#
+FOLLOW
+  If you happen to be going in the same direction as someone else, why
+not simply follow that person? For example: "Follow Joe". If you are
+following someone and you wish to stop doing that, then all you have
+to do is follow yourself: "follow <your name>".
+ 
+#
+FLEE
+  If you are in a fight and things are beginning to get a little
+uncomfortable (maybe you are about to die), just type 'flee', and
+presto! you are out of harm's way - that is, IF you are still standing
+and, IF there is a suitable exit nearby, and IF that exit does not
+simply take you out of the frying pan and into the fire... but then,
+who wants to live forever?
+ 
+#
+IMPLEMENTOR
+  The most powerful beings in existence.  Their function is mostly
+administrative.  Don't whine too much in their presence.
+ 
+#
+GUILD
+  The Guildhouse is the place where mortals may go to escape the
+troubles and perils of a cruel world. Each guild is heavily guarded
+(HA!), so that only members may enter the building. Guilds are also
+the places where people come to learn and practice the skills of their
+trade.
+ 
+The Clerics guild is located west of the temple square.  
+The Mages guild is located just east of the west gate, south of the wizards
+shop.
+The Thieves guild is located in a dark alley
+The Warriors guild is located just west of the east gate, south from the
+weaponsmith's shop
+The Monk's guild is farther away, west and north from took hill in the shire
+The Druids guild is in the forest of Haon-daor, near a small cabin
+in the woods. (levels 9 and under).. The 10th+ level druid guild is
+inside the colossal tree.  You MUST have the spell 'tree travelling' to get
+inside your guild, so be warned.  You almost definitely need the spell
+'Flame Blade' to win the competition required for each level.
+The Psionic's guild is located near Levee.
+The Barbarian's guild is located north of the east gate.
+The Paladins guild is located west of the temple square.
+ 
+ 
+Note.. these are multi-room complexes..  once you enter the entrance, type
+exits, to see where the bar is, and you can get from the bar to the 
+practice/guildmaster area.
+ 
+Once at the guildmaster, you can practice spells and skills.
+ 
+See also: PRACTICE
+#
+INFO
+Gives you some useful hints and information about the game.
+#
+WHERE
+Tells you the location of a monster, a player or an object. Examples:
+ 
+where torch
+where dragon
+where 2.ring
+where 4.one-ring       (gives you the container traceback so you can find
+                        out WHO has that One Ring)
+ 
+Mortals can only "where" monsters or players, and only from their own
+zone.
+ 
+Immortals may type 'where' without arguments to see where everybody is.
+#
+LEVELS
+Lists the levels of your class. 
+#
+BRIEF
+  Toggle "brief mode". When in brief mode, you do not see the
+descriptions of the room you are in; only the name of the room, and
+the people and objects in there. Unless you are very familiar with the
+area in which you travel, however, it is not advisable to use this
+command. Frequently, you will find small, but vital hints in the
+descriptions of the rooms: An extra peek at your surroundings could
+mean the difference between life and death!
+ 
+See also: COMPACT
+#
+!
+Repeat the last command typed at the keyboard.
+#
+CONSIDER
+Usage : consider <monster>
+  This command will compare your Level with the <monsters> level. You
+will then receive a rough estimate, which is by no means exact.
+(Actually, it's usually an outright lie, please help us fix this, make
+bug reports :) Consider does not take hitpoints/special attacks/damage
+into account.
+ 
+Example:
+  > consider fido
+#
+EXPERIENCE XP
+ 
+Whenever you kill a monster or a player, you earn experience points.
+When enough experience points are earned, you raise a level.  Things
+you should know about experience points:
+ 
+We strongly discourage killing of other players, but the choice is yours.
+ 
+See Also: GROUP
+#
+QUAFF POTION POTIONS
+ 
+Use : Quaff <Potion>
+ 
+Quaff is used to "drink" a (magical) potion.
+#
+RECITE SCROLL SCROLLS
+ 
+Use : Recite <Scroll> [Target]
+ 
+Is used to "read" a magical scroll. Target can be an object, character or
+nothing (which may be yourself).
+#
+USE WAND STAFF STAFFS WANDS
+ 
+Use : Use <Staff>
+      Use <Wand> <Target>
+ 
+Using staves will automatically target everybody (or everything) in a
+room, in some cases, or everyone not in your group in others.
+Therefore staves are naturally very powerful, and yet may be very
+dangerous to use around other players.
+ 
+Using wands require that you point it at a target, which can be either
+a character or an object.
+ 
+Both staves and wands must be HELD in the hand prior to use! (Use the
+grab or hold commands). You must still supply the name of the staff or
+wand to avoid confusion.
+ 
+#
+ARMOR
+Usage       : cast 'armor' <victim>
+Accumulative: No
+Duration    : 24 hours
+Level       : Level 2 Cleric, 5 mage.
+Save        : -
+                      
+This spell creates a strong force of armor around the caster that will 
+improve their AC by 2.
+ 
+See Also: AC
+#
+TELEPORT
+ 
+Usage       : cast 'teleport' <victim>
+Accumulative: -
+Duration    : Instantaneous.
+Level       : Level 17 mage.
+Save        : vs spells 
+ 
+Teleport (with error) will instantly transfer you to another location
+in the world. This location is random, and thus there will always be a
+risk of landing in a fatal location.  If you against a mob they will be 
+teleported to another location if they fail there saving throw.
+ 
+ 
+See Also: ROOM TELEPORT
+#
+BLESS
+ 
+Usage       : cast 'bless' <victim>
+Accumulative: No
+Duration    : 6 hours, permanent for objects.
+Level       : Level 1 cleric.
+Save        : -
+ 
+Bless on a victim will improve the victims saving throw versus spells
+by 1, and furthermore improve the hitroll by 1.
+ 
+Bless on an item currently has no defined action. It is only possible
+to bless non-evil items, and the object blessed may weight no more
+than five pounds per level of caster. Eventually, there may be
+monsters that take extra damage from blessed weapons, so it may be
+useful.
+ 
+See Also: -
+#
+BLINDNESS
+Usage       : cast 'blindness' <victim>
+Accumulative: No
+Duration    : 2 + level hours.
+Level       : Level 12 mage, 14 cleric.
+Save        : vs spells to negate
+ 
+Blindness will blind a victim failing its saving throw.  A blinded
+person will have -4 penalty to both hitroll and AC.
+ 
+See Also: AC
+#
+"CONTROL WEATHER"
+Usage       : cast 'control weather' ('better' | 'worse')
+Accumulative: Yes
+Duration    : -
+Level       : Level 15 druid, 26 cleric.
+Save        : -
+ 
+This spell will change the "course" of the current weather.
+Example:
+ 
+ > cast 'control wea' worse
+ 
+See Also: -
+#
+"CREATE FOOD"
+Usage       : cast 'create food'
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 5 cleric.
+Save        : -
+ 
+This spell instantly creates an edible magic mushroom. The mushroom
+will filling for the next (5+level) hours, up to a maximum of 24
+hours.
+ 
+See Also: -
+#
+"CREATE WATER"
+Usage       : cast 'create water' <drink container>
+Accumulative: No
+Duration    : Instantaneous
+Level       : Level 2 cleric.
+Save        : -
+ 
+Expect icky results if cast upon a drink container which contains
+another liquid than water. Empty or water containers will be filled
+depending on the level of the caster.
+ 
+Double amount of water will be created if it is raining (or snowing).
+ 
+See Also: -
+#
+"CURE BLIND"
+Usage       : cast 'cure blind' <victim>
+Accumulative: -
+Duration    : Permanent
+Level       : Level 6 cleric.
+Save        : -
+ 
+This spell will cure a person blinded by the "blindness" spell, it
+can not remove blindness caused by for example cursed items.
+ 
+See Also: -
+#
+"CURE CRITIC"
+Usage       : cast 'cure critic' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 10 cleric, 13 druid.
+Save        : -
+                                       
+This spell cures 3d8+3 hitpoints of damage.
+ 
+See Also: -
+#
+"CURE LIGHT"
+Usage       : cast 'cure light' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 1 cleric, 2 druid, 9 paladin.
+Save        : -
+                                                
+This spell cures 1d8 hitpoints of damage.
+ 
+See Also: -
+#
+"CAUSE CRITIC"
+Usage       : cast 'cause critic' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 10 cleric, 13 druid.
+Save        : vs spell
+ 
+This spell causes 3d8+3 hitpoints of damage.
+ 
+See Also: -
+#
+"CAUSE LIGHT"
+Usage       : cast 'cause light' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 1 cleric, 2 druid, 9 paladin.
+Save        : vs spell
+ 
+This spell causes 1d8 hitpoints of damage.
+                         
+See Also: -
+#
+CURSE
+Usage       : cast 'curse' (victim | object)
+Accumulative: No
+Duration    : 7 Days, permanent on objects.
+Level       : Level 12 cleric, 13 mage.
+Save        : save vs spell
+ 
+Curse cast on a person that fails the saving throw, will reduce the
+hitroll by one, and reduce the saving throw versus paralysation by
+one. 
+ 
+See Also: -
+#
+"DETECT EVIL"
+Usage       : cast 'detect evil' [self]
+Accumulative: No
+Duration    : 5 hours per level
+Level       : Level 1 cleric, 6 druid.
+Save        : -
+ 
+Detect evil will enable you to see the red aura surrounding evil
+persons and items.
+ 
+See Also: -
+#
+"DETECT INVISIBILITY"
+Usage       : cast 'detect invisibility' [self]
+Accumulative: No
+Duration    : 5 hours per level
+Level       : Level 2 mage, 5 cleric, 7 druid.
+Save        : -
+ 
+This spell enables you to see invisible items and players.
+ 
+See Also: -
+#
+"DETECT MAGIC"
+Usage       : cast 'detect magic' [self]
+Accumulative: No
+Duration    : 5 hours per level
+Level       : Level 1 mage, 3 cleric, 5 druid.
+Save        : -
+ 
+This spell will let you see the magical aura surrounding magical
+objects.
+ 
+See Also: -
+#
+"DETECT POISON"
+Usage       : cast 'detect poison' (victim | food | drink)
+Accumulative: No
+Duration    : Instantaneous
+Level       : Level 1 druid, 3 ranger.
+Save        : -
+ 
+Cast on food or drinks (drink containers) you will be able to
+sense if it is poisoned.
+ 
+Cast on a person you will be able to see if that person is
+poisoned.
+ 
+See Also: -
+#
+"ENCHANT WEAPON"
+Usage       : cast 'enchant weapon' <weapon>
+Accumulative: No
+Duration    : Permanent
+Level       : Level 14 mage.
+Save        : -
+ 
+This spell will enchant non-magical (non-modifying) weapons only.  By
+non-modifying weapons we refer to weapons that might alter any ability
+such as for example damage. The only way to know if a weapon is
+suitable for enchantment is to fully identify it.
+ 
+The enchantment will modify the weapon as:
+ 
+Level    Hit Roll    Damage
+ 
+ 0..17     +1         +1
+18..19     +2         +1
+20..40     +2         +2
+41..50     +3         +3
+51..59     +4         +4
+    60     +5         +5
+ 
+See Also: -
+#
+HEAL
+Usage       : cast 'heal' <victim>
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 25 cleric.
+Save        : -
+ 
+Heal will heal all the hitpoints from a person, except 1d4 points.
+Maximum 100 points can be healed. A victim who is blinded will also be
+cured by the heal spell.
+ 
+See Also: "Cure Blindness"
+#
+INVISIBILITY
+Usage       : cast 'invisibility' <victim | object>
+Accumulative: No
+Duration    : 24 hours, permanent on objects.
+Level       : Level 4 mage.
+Save        : -
+ 
+This spell causes the caster to turn invisible.  Only those who are able to 
+detect invisibility will be able to see him/her.  Attacking while invisible 
+will immediately break the spell.  Another way to become visibile is to type 
+VIS.
+ 
+See Also: "detect invisibility"
+#
+"LOCATE OBJECT"
+Usage       : cast 'locate object' <object>
+Accumulative: No
+Duration    : Instantaneous
+Level       : Level 11 cleric.
+Save        : -
+ 
+If possible you will know exactly where an object is, or the name of
+the person using it. If more than one object by the same name exists,
+you will get a listing of several objects.  The maximum number of
+objects you can simultaneously locate is your level divided by 2.
+ 
+See Also: -
+#
+POISON
+Usage       : cast 'poison' <victim | food | drink>
+Accumulative: Yes on persons.
+Duration    : 2*level hours, or permanent on food and drinks.
+Level       : Level 8 druid, 13 cleric.
+Save        : save vs paralyzation
+ 
+Casting poison on food or drink (containers) will poison it.  Eating
+poisoned food/drinks will poison the person eating or drinking.
+ 
+A person who is poisoned will suffer 15 points of damage every
+hour, and gain less points than usual.
+ 
+Sometimes a monster's poison is FATAL, so beware.
+ 
+See Also: "detect poison" or "cure poison"
+#
+"PROTECTION FROM EVIL"
+Usage       : cast 'protection from evil' [self]
+Accumulative: No
+Duration    : 24 hours
+Level       : Level 7 cleric, 20 paladin, 25 ranger.
+Save        : -
+ 
+	The spell protects you from evil creatures and even prevents some
+attacks that are touch.
+ 
+See Also: PROTECTION FROM EVIL GROUP
+#
+"PROTECTION FROM EVIL GROUP"
+Usage       : cast 'protection from evil group'
+Accumulative: No
+Duration    : 24hrs
+Level       : Level 20 cleric, 35 paladin, 45 ranger.
+Save        : -
+ 
+        This spell effects all people following caster and are in the room
+at cast time.  It forms a magical barrier around you that gives you extra 
+protection from evil forces, and can even prevent some attacks that are touch.
+ 
+ 
+See also : PROTECTION FROM EVIL
+#
+"REMOVE CURSE"
+Usage       : cast 'remove curse' <person | object>
+Accumulative: No
+Duration    : Instantaneous
+Level       : Level 8 cleric.
+Save        : -
+ 
+Will remove a curse on carried objects of the caster or cursed objects equipped 
+by any persons in the room.
+ 
+See Also: -
+#
+"REMOVE POISON"
+Usage       : cast 'remove poison' <victim | food | drink> 
+Accumulative: No
+Duration    : Instantaneous
+Level       : Level 8 druid, 17 cleric, 20 ranger, 40 paladin.
+Save        : save vs spell
+ 
+Will remove poison from person, food, or a drink.
+ 
+ 
+See Also: Poison
+#
+"REMOVE PARALYSIS"
+Usage       : cast 'remove paralysis' <victim>
+Accumulative: No
+Duration    : Instantaneous
+Level       : Level 6 cleric, 9 druid.
+Save        : -
+               
+Will remove paralysis.
+ 
+See Also: Paralysis
+#
+SANCTUARY
+Usage       : cast 'sanctuary' <victim>
+Accumulative: No
+Duration    : 3 hours
+Level       : Level 26 cleric.
+Save        : -
+ 
+This spell summons a glowing force of protection around the subject of the 
+spell.  This force will make all attacks on the person protected only do half 
+damage.
+ 
+See Also: Fireshield
+#
+FLAMESTRIKE
+Usage       : cast 'flamestrike' target
+Accumulative: Yes
+Duration    : Instantaneous
+Level       : Level 15 cleric.
+Save        : save vs spell
+ 
+This spell summons a column of fire down upon the target.  The force of the 
+fire is so great that it will do 6 - 48 points (6d8) flame damage, 1/2 if save.
+People with infravision who are not affected by truesight and are in a
+dark room will be momentarily blinded.
+ 
+#
+STRENGTH
+Usage       : cast 'strength' <victim>
+Accumulative: No
+Duration    : 2*Level hours
+Level       : Level 6 mage.
+Save        : -
+ 
+This spell increases the victim's strength by a random amount.
+Warriors have 1d8 points of strength added, Clerics and Thieves
+1d6, and anyone else 1d4.  Mobiles are treated differently from players
+and usually only 1d6 points of strength added.
+ 
+ 
+See Also: -
+#
+VENTRILOQUATE
+Usage       : cast 'ventriloquate' <victim | object> <text>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 1 mage.
+Save        : save vs spell
+ 
+For all people in the same room as the caster that fail a saving
+throw, the spell will make the object or victim appear to say the text
+written. People saving will only notice that someone tired to make it
+sound that way, not who.
+ 
+Example:
+ 
+> cast 'vent' unclesam I've got 921,923 coins, don't even consider killing me.
+ 
+See Also: -
+#
+"WORD OF RECALL"
+Usage       : cast 'word of recall' 
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 15 cleric.
+Save        : -
+ 
+The caster will be transferred back to his sanctuary, which is the last place 
+they rented out.
+ 
+ 
+See Also: -
+#
+SUMMON
+Usage       : cast 'summon' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 19 cleric, 27 mage.
+Save        : save vs spell when applicable
+ 
+Will summon a person of the name spoken.  You can summon any level
+player, but if you attempt to summon a monster,it will get a saving
+throw, and you may wind up with the wrong monster.  You cannot summon
+from NO SUMMON rooms, nor can you summon from NO MAGIC rooms.  You
+cannot summon to TUNNEL rooms, nor to PEACEFUL rooms, nor from PEACEFUL
+rooms.  You cannot summon someone who is fighting, as it is impossible
+to get a precise fix of their location.  
+                    
+ 
+See Also: -
+#
+"CHARM PERSON"
+Usage       : cast 'charm person' <victim>
+Accumulative: No
+Duration    : Varying, depending on caster's charisma.
+Level       : Level 4 mage.
+Save        : save vs paralyzation
+ 
+It is not possible to charm anyone that is already charmed, if you are
+charmed yourself, or if the person is more than three levels higher than 
+yourself.  The person will get a saving throw versus "paralyzation".
+ 
+A charmed person will follow you, and not be able to attack you, you
+can order charmed person using the order command.
+ 
+See Also: FOLLOW ORDER
+#
+"SENSE LIFE"
+Usage       : cast 'sense life' [self]
+Accumulative: No
+Duration    : 5 hours per level
+Level       : Level 4 cleric.
+Save        : -
+ 
+This spell will enable you to sense hidden life forms in a room.
+Invisible persons are also considered hidden.
+ 
+See Also: HIDE
+#
+"MAGIC MISSILE"
+Usage       : cast 'magic missile' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 1 magic user.
+Save        : None
+ 
+The spell sends shooting missiles from your fingers.  Each missile does 1d4+1 
+damage.  You get one missile for every 2 levels you have.  The spell "shield" 
+will completely negate its effect.
+ 
+See Also: 
+#
+"CHILL TOUCH"
+Usage       : cast 'chill touch' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 3 magic user.
+Save        : Versus spell for half damage.
+ 
+This spell chills your victim to the bone, doing level d3 damage and reducing 
+their strength by one.
+ 
+See Also: MAGIC MISSILE
+#
+"BURNING HANDS"
+Usage       : cast 'burning hands' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 5 magic user.
+Save        : Versus spell for half damage.
+ 
+This spell sends a jet of searing flames shooting from the casters 
+fingertips.  The spell blasts all people not in the casters group for 1d4+1 / 
+level.
+ 
+ 
+See Also: CHILL TOUCH
+#
+"SHOCKING GRASP"
+Usage       : cast 'shocking grasp' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 1 magic user.
+Save        : Neg
+ 
+Upon casting this spell the wizard developes a powerful electrical charge 
+that gives a jolt to the creature touched.  The power of this jolt is 2-9 + 1 
+per level of the caster.
+ 
+See Also: BURNING HANDS
+#
+"LIGHTNING BOLT"
+Usage       : cast 'lightning bolt' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 11 magic user.
+Save        : Versus spell for half damage.
+ 
+Upon casting this spell, the wizard releases a powerful stroke of electrical 
+energy that inflicts 1d6 per level of the spellcaster.
+ 
+See Also: SHOCKING GRASP
+#
+"COLOUR SPRAY"
+Usage       : cast 'color spray' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 14 magic user.
+Save        : Versus spell for half damage.
+ 
+This spell fires a beam of rainbow colors at the poor subject of the spell.  
+This spell does 4 points of damage per level.
+ 
+ 
+See Also: LIGHTNING BOLT
+#
+"ENERGY DRAIN"
+Usage       : cast 'energy drain' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 23 magic user.
+Save        : Versus spell for half damage.
+ 
+Drains one level from a PC, or a mob.  When you lose levels, you also
+loose max hit points, and practices.  Beware of monsters with level 
+draining ability.  Be aware that this spell makes you evil very quickly.
+ 
+See Also: -
+#
+FIREBALL
+Usage       : cast 'fireball' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 25 Mage.
+Save        : Versus spell for half damage.
+ 
+With this spell the caster directs large volumes of searing flame at a
+room.  This damages all non-grouped things in the rooms by(1d6/level of
+caster) hitpoints.  As with other damaging spells, this can wreck equip.
+People with infravision who are not affected by truesight and are in a
+dark room will be momentarily blinded.
+ 
+See Also: COLOR SPRAY
+#
+"PRISMATIC SPRAY"
+Usage       : case 'prismatac spray' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 17 Mage.
+Save        : Versus spells for no damage.
+ 
+	This spell causes several colors of the rainbow to shoot forth from
+the fingers of the caster and strike the victim. There are 7 colors and each
+color has different effects. This spell is an area effect spell and will effect
+all mobs/pcs in a room not grouped with the caster.
+The effects of the beams are as follows:
+ 
+red - 40 hp dam
+orange - 80 hp dam
+yellow - 100 hp dam
+green - poison
+blue - paralyze
+indigo - feeblemind
+violet - teleport  
+ 
+ 
+#
+"INCENDIARY CLOUD"
+Usage       : cast 'incendiary cloud' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 45 Mage.
+Save        : Versus spell for half damage.
+ 
+	This spell summons mass amounts of flammable gases from the casters
+fingertips that instantly ignite what they touch, causing flammables to catch
+fire and persons to burn like wood. This spell does level*d10 damage per
+victim, save for half damage. WARNING, AREA EFFECT SPELL.
+ 
+#
+EARTHQUAKE
+Usage       : cast 'earthquake'
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 18 cleric.
+Save        : -
+ 
+Upon uttering this spell the cleric calls upon their diety to shake the very 
+ground they stand on in order to destroy their foes.  The force of the 
+shaking ground does 1d4 + 1 + level of caster damage to all people not in the 
+casters group.
+ 
+See Also: -
+#
+"DISPEL EVIL"
+Usage       : cast 'dispel evil' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 20 Cleric
+Save        : Special
+ 
+This spell will banish evil summoned creatures.
+ 
+See Also: -
+#
+"DISPEL GOOD"
+Usage       : cast 'dispel good' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 20 Cleric.
+Save        : Special
+ 
+This spell will banish good summoned creatures.
+ 
+See Also: -
+#
+"CALL LIGHTNING"
+Usage       : cast 'call lightning' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 50 cleric, 18 Druid.
+Save        : Versus spell for half damage.
+ 
+This spell will use the "force of nature" to make a lightning strike
+the victim. It is therefore only possible to call lightning outside,
+and it has to be raining (or worse).
+ 
+The lightning will inflict (level+2)d8 points of damage upon the victim.
+ 
+See Also: WEATHER and CONTROL WEATHER
+#
+HARM
+Usage       : cast 'harm' <victim>
+Accumulative: -
+Duration    : Instantaneous
+Level       : Level 25 cleric.
+Save        : None
+ 
+This spell is only successful if the caster makes a successful hit roll
+on the victim.  If it does work, This spell removes all but 1d4
+hitpoints from the victim. The maximum number of damage points are 100. 
+It is not possible to kill using this spell (but almost).
+ 
+See Also: -
+#
+HELP
+ 
+Following help is available:
+ 
+HELP help       - This text.
+HELP            - List the available commands.
+ 
+Help searches for a partial match of the entered word, including any
+spaces that may follow the word.
+ 
+Example:
+ > 'help magic mis'
+    will find the help text for the magic missile spell.
+ 
+ > 'help mag '
+   will not match anything.
+ 
+ > 'help mag'
+   will match 'magic user' or 'magic missile' depending on first
+   occurrence in the help file.
+#
+"PLAYER KILLING"
+ 
+Killing of PC's is absolutely forbidden!  There is no reason for you to kill 
+another PC.  This includes casting harmfull spells on other players, 
+summoning them to dangerous areas, ordering charmed mobs to attack them.  If 
+you decide you cannot live by these rules then your character surely wont 
+live long at all for the gods are very harsh on player killers.
+However, you CAN kill people participating in the race wars, but both people 
+must have set special flags in order to participate in such things so you 
+cant just go randomly attacking people.
+ 
+#
+ADVANCE
+ 
+To advance a player to a level higher than his present. Default is to
+advance him one level. A level 0 player (Man/Woman) is always only
+advanced by one level.
+ 
+#
+WIZHELP
+List the privileged commands available to you. Can only be used by immortals.
+#
+NOSHOUT
+  Prevents you from (or allows you to) hearing shouts, if used with no
+arguments.  Can be used with the name of a player, to prevent him/her
+from hearing shouts, as well as from shouting. Can only be used by
+certain more powerful beings.
+ 
+#
+RESTORE
+  If used on a mortal, this command will reset that players mana and
+hit points.  If used on an Immortal various values will be reset to
+their proper values.
+ 
+#
+LINK
+ 
+A lot of players have problems with their links to the game. This
+could be very dangerous to your health in the middle of a combat. But
+we have worked out a solution. There are two cases:
+ 
+  I.If your link is broken, you will automatically attempt to flee
+    each time someone attempts to hit you. If you manage to flee, then
+    you will be saved by divine forces, and put in a safe place until
+    you reconnect to the game.
+ 
+ II.If your link jams (freezes) you got a problem. The only solution
+    we can give, is that you break your link as quickly as possible. By
+    breaking the link you can hope that the above procedure is initiated.
+ 
+#
+COMPACT
+  If you have a small display you might want to use this command. It
+turns off (or on) the extra newline after output to your screen.
+ 
+See also: BRIEF
+#
+DEAFEN
+  Type deafen and all shouts are no longer heard.  Type deafen once again
+and shouts can once again be heard.
+ 
+See also: NOGOSSIP,NOAUCTION
+#
+NOTELL
+ 
+	This will allow you to ignore all attempts to tell you. However
+immortals can still get to ya.
+ 
+ 
+#
+NOGOSSIP
+  Type nogossip to turn off the gossip channel. Type gossip again 
+to turn it back on.
+ 
+See also: NOAUCTION,DEAFEN
+#
+NOAUCTION
+  Type noauction to turn off the auction channel, type noauction
+again to turn it back on.
+ 
+See Also:NOGOSSIP, DEAFEN
+#
+AUCTION
+ This is similar to shout, BUT only people that have this channel
+turned on will hear it. If you wanna sell something this is the
+place to do it at.
+ 
+See also : SHOUT,GOSSIP,NOGOSSIP,NOAUCTION and DEAFEN
+#
+GOSSIP
+ This is similar to shout, but only people that have this channel 
+turned on will hear it. If you wanna just gab, this is the place
+to do it at.
+ 
+See also: SHOUT,AUCTION,NOGOSSIP,NOAUCTION and DEAFEN
+#
+PROMPT
+
+You can use following macros in your prompt text
+ 
+All character case-sensitive.
+ 
+	%H - Max HP         		%h - Current HP
+	%M - Max MANA         		%m - Current MANA
+	%V - Max MOVES        		%v - Current MOVES
+	%X - Your TOTAL XP    		%x - XP to level
+	%G - Your bank balance		%g - gold with you
+	%C - Condition of monster you fighting with ('*') if none
+	%c - Condition of the PC fighting the monster ('*') if none
+	%S - spells on you              
+	       F - fireshield	     S - sanctuary
+	       I - invisibility      T - true sight
+               A - anti magic shell  D - protection from drain
+        %s - same as '%S' but with '-' if no spell active
+	%T - current Time 
+	-- Immortal only stuff
+	%R - room number
+        %iS - Stealth mode (On/Off)	%iI - invisibility level
+	%iN - Snooping victim
+ 
+Some Predifined Prompts:
+  1: Shadowdale>
+  2: H:100 V:140>
+  3: H:100 M:200 V:140>
+  4: H:78/100 V:130/140>
+  5: H:78/100 M:50/200 V:130/140>
+  6: H:100 V:140 C:awful>
+  7: H:100 M:200 V:140 C:awful>
+  8: H:100 V:140 C:awful FSI>
+  9: H:100 M:200 V:140 C:awful FSI>
+-- immortal ones
+ 40: H:100 R:4056>
+ 41: H:100 R:4056 i51+>
+ 
+	Usage for predefined prompts is :
+		prompt # 
+	Where # is the number of the predefined prompt you wish to use.
+
+	Usage for the user defined prompts is:
+		prompt %H/%h %M/%m %V/%v 
+
+Feel free to experiment with the codes, and make your own prompt style that
+works best for you.
+	
+#
+WIMP "WIMP MODE" WIMPY
+   If you are in wimp mode, you will flee after you have lost 80% of
+your hit points automatically.  type WIMP again to turn it off.
+ 
+#
+INFRA INFRAVISION
+   Infravision is a spell that allows you to see heat sources in
+otherwise dark conditions.  It does not allow you to read scrolls, or
+find items.  In addition, usage of spells which create large amounts
+of heat may cause temporary blindness in Infravision-affected players
+and monsters.
+ 
+#
+BREATH
+  The breath command allows you to use a breath weapon on another
+monster.  The only way to get a breath weapon is to either be a
+monster with such an ability (dragons usually have one) or quaff a
+potion of fire/ice/acid/gas/lightning breath.
+ 
+  If you are already fighting, breath without any arguments will
+breath on the monster you are fighting.  If you are NOT fighting you
+must supply the name of a target to breath on.
+ 
+  Breath weapons are terrifying and most opponents will flee before
+you get a chance to breath on them.  However, you may blast bystanders
+with the same breath.
+ 
+  This means breath weapons are not terribly accurate.  You will
+always hit the monster you target and will usually hit his group,
+followers and his leader.  You will also probably blast anyone
+currently hitting on you.  You also have a small chance (less than
+half) of hitting each bystander (someone not covered above).  They
+will not appreciate this and will probably decide to beat the snot out
+of you.
+ 
+  When quaffed breath potions modify you so that you can breath ONE
+time.  If you do not breath in 2-3 rounds the potion will explode
+inside you causing half of its normal damage.  These potions also
+reduce your CON for the duration of the spell.  You therefore cannot
+quaff more breath weapon levels than you have constitution.  You also
+cannot quaff more breath weapon levels than you have levels.
+ 
+  The damage of a breath weapon is a function of its level, your
+level, and your hitpoints.  If your level is equal to the breath
+weapon's level it will do your hitpoints worth of damage to the
+target.  If your level is double the level of the breath weapon it
+will only do half your hitpoints of damage.  Monsters natural breath
+weapons exceed the CON restriction and even a 50th level monster can
+do full damage.  Since most huge monsters have huge hitpoints, this can
+be a LOT of damage.  do not ever fight a titanium dragon.
+ 
+See also: KILL
+#
+ASSIST
+ 
+  If you type "assist <player>" you will begin fighting the same
+person the <player> is.
+ 
+  ASSIST is similar to RESCUE except the <player> continues fighting.
+It is better than KILL in many cases because you do not have to choose
+between 1.golem and 2.golem (or 1.lamia that just entered the room).
+Even though monsters of the same type assist each other in combat,
+ASSIST is better because you will eliminate one aggressor much faster.
+ 
+See also: RESCUE, KILL
+#
+WHOZONE
+ 
+  This command lists all the players in the current zone and also
+tells you their location.  If you are a god (not bloody likely) it
+will also tell you their room number.
+ 
+H:107 R:3001> whozone
+Players
+-------
+Nate the Human Illusionist              - Bywater Road [1122]
+Gorg the Human Veteran                  - Bywater Road [1122]
+Hammor wants to be an ambassador to Epic- The Temple Of Shadowdale [3001]
+ 
+#
+ECHO
+ 
+  This command sends the text of its argument to everyone in the same
+room as the wizard.  The wizard gets no feedback and does not see the
+message.
+#
+FORCE
+ 
+This allows you to force mobs or PC's to do an action.  The person must be 
+lower level that you.  USE GREAT CAUTION with this ability.  DO NOT force 
+them to do anything they dont want to do unless you have a VERY good reason 
+to do so.  Abuse of this power will cost you the ability to use it.  If you 
+wish to form the whole mud to do something use force all, ie force all save 
+will force all people lower level than you to save.
+ 
+#
+TRANSFER
+ 
+  This wizard command moves a character into the same room with the
+wizard.  You can also transfer monsters with this command, but be
+careful when using this command near aggressive monsters.  Getting a
+player killed is NOT good form.
+ 
+  trans Loki               (you better have a good reason)
+  trans 4.lamia            (this monster is aggressive, watch it)
+  at 2 trans PlayerKiller  (send this person to Hell.  On Silly mud
+                            there is no way to walk out of Hell)
+  trans all                (moves EVERYONE to the location your in.  YOU BETTER
+                            HAVE A GOOD REASON!!!!)
+ 
+#
+VALUE
+ 
+  In a shop, this command will tell you what the shopkeeper is willing
+to pay for the item.
+#
+LIST
+ 
+  In a shop this command will list what the shopkeeper has for sale,
+with prices.
+#
+GOTO
+ 
+  This wizard command allows you to move about without walking.  You
+can either supply a room Vnumber, a player name, a monster name
+(lamia, 34.lamia), or an object name (corpse, 5.corpse).  You will
+disappear and reappear in the target room.
+ 
+  If a room is flagged PRIVATE and there is more than one person in
+it, additional people will not be able to GOTO there.  Get an
+inhabitant to TRANSFER you in.
+ 
+See also: TRANSFER
+#
+RESTAURANTS FOOD
+  The baker has a small selection of bread.  His shop is west of
+Market Square.
+  There is a pub in the south section of the city off of Emerald
+Avenue where you can buy beer (if you're over 21) and food.
+ 
+#
+GAIN
+  Whenever you have accumulated the experience points needed to get your
+next level, you must go to your guildmaster and GAIN.  This will advance
+you to your next level, give you your hit points, practices, and modify your
+abilities (such as THAC0 or backstab multiplier).  Until you GAIN, you may
+not gain any more experience points than those needed to place you one away
+from the next highest level.
+ 
+#
+REPORT
+  This command will output your current health/mana/move for everyone to
+see. Example:
+ 
+You report 'HP:99 MANA:113 MV:201'
+ 
+See Also : SCORE
+ 
+#
+GTELL
+  This command is similar to TELL with one major difference. It will
+tell EVERYONE that is in your group. You can use this command while
+sleeping and they can also hear it while sleeping. This will help you
+when you need to make plans etc... while you sleep for MANA/HPS or 
+MOVE.
+ 
+ 
+See Also :Tell, Group
+#
+BERSERK
+	This is a skill used by Barbarians. When a barbarian attempts to go
+berserk he forces his mind to use all his strength and adrenaline in battle.
+Once he goes berserk he cannot think of anything else (i.e. flee). The good
+thing about this is when they do go berserk they get special bonuses to
+damage, however since the barbarian is not in his right mind he might not
+hit as well.
+ 
+See also BARBARIAN
+#
+TAN SKIN
+	This skill will allow a warrior type class to tan the corpse of
+his/her victims into armor. Armor types that can be made are:
+ 
+shield,helmet,jacket,sleeves,leggings,boots,bag and gloves.
+ 
+Remember that some monsters have thicker hide (thus better armor) so explore
+to find the best armor! Dragons are always a good choice, the stronger the
+monster (the higher the level) more than likely the better the armor will be
+as well.
+ 
+The following would tan a dragon corpse into a shield.
+Example : tan dragon shield
+ 
+#
+BELLOW
+  Bellow is a loud war cry used in battle. To use this skill simply type
+bellow and let'er rip. If you properly shout your battle cries you might
+inspire fear in your enemies, or even stun them briefly. This spell is a
+area effect skill and if someone in the same room is not in your group they
+WILL be effected.
+ 
+#
+CAMO CAMOUFLAGE
+  This will allow a Barbarian to hide in the woods (must be outside) and be
+almost invisible to anyone. This is similar to the thief hide skill.
+ 
+See also HIDE
+#
+SORCERER
+	Sorcerer's are a class of magic users that use their mind to store
+power and not mana. This class of mage uses memorize and recall for it's
+spells.
+ 
+See Also MEMORIZE, RECALL
+# 
+MEMORIZE
+  Memorize will commit a spell to memory if the conditions are right. You
+must be at least sitting and cannot fight at all. To use this command type
+memorize 'spellname'.
+ 
+See Also : RECALL
+#
+RECALL
+  Recall is the same as cast, except only the Sorcerer class can use it.
+ 
+See Also :CAST
+#
+FIND FOOD
+	This skill will allow a person to find food outside.
+ 
+#
+FIND WATER
+	This skill will allow a person to find water outside.
+ 
+#
+ALLRACE ALLRACES
+|Race --------|Race Number|
+|-------------|-----------|
+RACE_HALFBREED 0
+RACE_HUMAN     1
+RACE_ELVEN     2
+RACE_DWARF     3
+RACE_HALFLING  4
+RACE_GNOME     5
+RACE_REPTILE  6
+RACE_SPECIAL  7
+RACE_LYCANTH  8
+RACE_DRAGON   9
+RACE_UNDEAD   10
+RACE_ORC      11
+RACE_INSECT   12
+RACE_ARACHNID 13
+RACE_DINOSAUR 14
+RACE_FISH     15
+RACE_BIRD     16
+RACE_GIANT    17
+RACE_PREDATOR 18
+RACE_PARASITE 19
+RACE_SLIME    20
+RACE_DEMON    21
+RACE_SNAKE    22
+RACE_HERBIV   23
+RACE_TREE     24
+RACE_VEGGIE   25
+RACE_ELEMENT  26
+RACE_PLANAR   27
+RACE_DEVIL    28
+RACE_GHOST    29
+RACE_GOBLIN   30
+RACE_TROLL    31
+RACE_VEGMAN   32
+RACE_MFLAYER  33
+RACE_PRIMATE  34
+RACE_ENFAN    35
+RACE_DROW     36
+RACE_GOLEM    37
+RACE_SKEXIE   38
+RACE_TROGMAN  39
+RACE_PATRYN   40
+RACE_LABRAT   41
+RACE_SARTAN   42
+RACE_TYTAN    43
+RACE_SMURF    44
+RACE_ROO      45
+RACE_HORSE    46
+RACE_DRAAGDIM 47
+RACE_ASTRAL   48
+RACE_GOD      49
+RACE_GIANT_HILL   50
+RACE_GIANT_FROST  51
+RACE_GIANT_FIRE   52
+RACE_GIANT_CLOUD  53
+RACE_GIANT_STORM  54
+RACE_GIANT_STONE  55
+RACE_DRAGON_RED    56
+RACE_DRAGON_BLACK  57
+RACE_DRAGON_GREEN  58
+RACE_DRAGON_WHITE  59
+RACE_DRAGON_BLUE   60
+RACE_DRAGON_SILVER 61
+RACE_DRAGON_GOLD   62
+RACE_DRAGON_BRONZE 63
+RACE_DRAGON_COPPER 64
+RACE_DRAGON_BRASS  65
+RACE_UNDEAD_VAMPIRE 66
+RACE_UNDEAD_LICH    67
+RACE_UNDEAD_WIGHT   68
+RACE_UNDEAD_GHAST   69
+RACE_UNDEAD_SPECTRE 70
+RACE_UNDEAD_ZOMBIE  71
+RACE_UNDEAD_SKELETON 72
+RACE_UNDEAD_GHOUL    73
+RACE_HALF_ELVEN   74
+RACE_HALF_OGRE    75
+RACE_HALF_ORC     76
+RACE_HALF_GIANT   77
+RACE_REPTILE_LIZARDMAN 78
+ 
+See Also RACE
+#
+HALFGIANT HALF-GIANT
+  Race of half giant and half human, they look more human than anything
+and can often be confused as a large human. Half-Giants are known for their
+high strength and constitution.
+ 
+#
+ELF ELVEN
+	Sharp features such as pointed ears set this race apart from most.
+They are known to be flightly and not dependable. Elves are also known to be
+some of the best magicians around, as well as being on of the most
+dexterous races.
+ 
+#
+HALFELF HALF-ELF
+	A Half breed of human and elf, this race calls no place home and
+tries to make anywhere s/he stays their home. A Half elf can take on the
+qualities of either of it human or elvish parents.
+ 
+#
+DROW
+	The most evil race of elves, these live under the ground and rarely
+tunnel out to the surface. The sun and any light hurts their eyes extremely
+so. Generally drow have black colored skin and white hair.
+ 
+#
+GNOME
+	Some would say that these guys look like a dwarf with a very large
+nose, I would not say that to a dwarf though. Gnomes are known to be very
+intelligent, but are not wise at all.
+ 
+#
+HALFLING HOBBIT
+	Mini-humans is what they look like, but nothing like humans are
+they. Halflings like to enjoy good food and lay about. They are good at most
+thief skills when born, although they are generally not a evil race.
+ 
+#
+DWARF
+	Wide as a barrel and about as tall. This short stalky race builds
+the best stone houses/tunnels or anything made of stone around. Dwarves are
+known to have very good constitution, but as also known to be very hard to
+get along with. If a dwarf does not have a beard a foot long he must be a
+baby.
+ 
+#
+HALFORC HALF-ORC
+	Half human and half orc, this guy looks like a very very ugly human.
+Not very sure where to live these guys can be very dangerous or very
+helpful.
+ 
+#
+HUMAN
+	Look in the mirror.
+ 
+#
+HALFOGRE HALF-OGRE
+	Half Ogres are huge harry human looking race. They are not very
+smart nor very quick moving about, however they are strong and healthy.
+ 
+#
+DARKNESS
+ 
+Usage       : cast 'darkness' target
+Accumulative: No
+Duration    : (level of caster) hours
+Level       : 3 Cleric, 3 Druid, 5 Mage.
+Save        : None
+ 
+ This spell is really useless unless your race happens to be drow. This
+spell enables the drow race to move about in rooms/areas that are lighted
+without having any minus to do so. It also hides sanc's and fireshields from
+the casual observer.
+ 
+#
+"MINOR INVULNERABILITY"
+ 
+Usage       : cast 'minor invulnerability' 
+Accumulative: No
+Duration    : Level/10
+Level       : 20 Mage.
+Save        : None
+ 
+	This spell quiet simply makes you immune to spells that are
+aggressive in nature and are below level 6 (1-5). 
+ 
+Example, someone casts chill touch, your globe will protect you from it.
+ 
+See Also MAJOR INVULNERABILITY
+ 
+#
+"MAJOR INVULNERABILITY"
+ 
+Usage       : cast 'major invulnerability' 
+Accumulative: No
+Duration    : Level/10
+Level       : 27
+Save        : None
+ 
+	Similar to MINOR INVULNERABILITY this spells also makes you immune
+to specific magic users spells. This protective globe will protect you from
+spells ranging from level 5 to 10 (5-10).
+ 
+See Also MINOR INVULNERABILITY
+ 
+#
+"ANTI MAGIC SHELL"
+ 
+Usage       : cast 'anti-magic shell' 
+Accumulative: No
+Duration    : 1 Hour.
+Level       : Level 48 Mage.
+Save        : None
+ 
+        This spell enables the caster to shell him/herself from ANY magic
+force. However, it also prevents the caster from using any magic spells of
+his/her own as well.
+ 
+ 
+#
+"PROTECTION FROM DRAIN"
+ 
+Usage       : cast 'protection from drain' 
+Accumulative: No
+Duration    : 3 Hours.
+Level       : 48 Cleric.
+Save        : None
+ 
+This spell offers resistance to drain attacks.  Note this is only resistance, 
+not immunity!
+ 
+#
+PRAY
+ 
+	This is a simple way for mortals to contact their deity in hopes or
+receiving a response or help. Although it could be a way to just simply
+worship :). The chance of your prayer getting answered is based on your
+level of experience, you will receive a bonus to this chance if you are of
+the cloth (cleric). To pray simply type 'pray DIETYNAME, would thine be kind
+enough to tell me the way to Ravenloft from the swamp monster?'. Remember
+that you need to keep the prayers short and to the point. Long prayers will
+get ignore most likely, and people asking for EQ/EXP or the like will be
+ignore no matter what.
+ 
+#
+"RANGER SKILLS"
+	
+	Rangers are warriors of the woods. They are expert trackers and
+learn the ways to best protect and live in a woodland environment. Rangers
+alignment must never become evil (below -350).
+ 
+	Rangers have semi-cleric/druid abilities. As the ranger progresses
+s/he can learn specific spells that have to do with forest/animal training.
+To use the spells you use the cast command. 
+ 
+	Most skills that a ranger uses must be used OUTSIDE. OUTSIDE is
+considered in a forest, desert, artic or anywhere no inside. To see a
+rangers skills known 'practice r'.
+ 
+See also :RATION,DUAL WIELD,CAMOFLAGE,SNEAK
+#
+RATION CARVE
+	This skill allows a ranger to CARVE a corpse into edible portions.
+To use simply type 'carve <name>'. If you make your skill check a healthy
+ration will be made.
+#
+DUAL WIELD
+	This skill is something that allows a ranger to wield two weapons at
+once. Generally this means a smaller/lighter weapon in the holding hand. If
+you are not very good at this skill you will be frequent to fumble your
+weapons in combat. This skill is only used by the ranger class. Your
+secondary weapon is not used via the wield command, you must HOLD it, some
+weapons cannot be held.
+#
+"PALADIN SKILLS"
+ 
+	Holy warriors, protectors of the church and the general lawful
+goodies that most evil creatures HATE. Paladins must remain in good
+standings (align must be 350+). 
+ 
+	Paladins have an innate ability of detecting evil and protection from
+evil. They also have some special skills that they and only they can use. To
+see a paladins skills known use 'practice p'.
+ 
+ 
+See Also :LAY ON HANDS,WARCRY,BLESSING,HEROIC RESCUE
+#
+HEROIC
+ 
+	This skill allows a paladin to rescue someone in combat in the room.
+It is very similar to rescue, but a NAME field is not required. This means a
+paladin can rescue anyone in his group simply by typing 'heroic' when a battle
+begins.
+#
+"LAY ON HANDS"
+ 
+	This ability of a paladin lets s/he heal level*2 hps of damage once
+per day.
+ 
+#                   
+WARCRY
+ 
+	This is a more powerful type of bellow that paladins use. IT is a
+combination of a cry to their deity and a fearsome bellow. It will increase
+in power as the paladin increases in power.
+#
+BLESSING
+ 
+	This is a paladins ability to call the blessing of his/her deity
+upon a lucky person.
+#
+"PSIONIST SKILLS"	
+ 
+	Psionist are characters that use the power of the mind. They can
+summon people from great distances, they have even been known to blast
+the mind of powerful beings to jelly!
+ 
+	Psionist use the command MIND to activate most of their skills, be
+sure to see the help section on MIND.
+ 
+	To see a psionist skills known use 'practice i'.
+ 
+See Also : MINDSUMMON, DOORWAY, PORTAL, AURA SIGHT, GREAT SIGHT, MEDITATE
+	   PSIONIC INVISIBILITY, ADRENALIZE, FLAME SHROUD,PSIONIC BLAST
+	   CANNIBALIZE, PSI SHIELD, ESP, HYPNOSIS,MIND BURN,PSIONIC TELEPORT,
+	   PROBABILITY TRAVEL,PSIONIC STRENGTH,DANGER SENSE,CLAIRVOYANCE,
+	   PSIONIC DISINTERGRATION,TELEKINESIS,LEVITATION,CELL ADJUSTMENT,
+	   CHAMELEON,MIND OVER BODY,DOMINATION,MIND WIPE,PSYCHIC CRUSH,
+	   TOWER OF IRON WILL,MINDBLANK,PSYCHIC IMPERSONATION,ULTRA BLAST,
+	   INTENSIFY
+ 
+#
+"PSIONIC TELEPORT"
+Usage	: mind 'teleport' <name>
+Duration: Instant
+Saves	: No effect
+Damage	: None
+ 
+	This psionic discipline allows a psionist to randomly teleport himself
+or a victim to any place in the world. The psionist uses his/her mind for
+this skill, but other than above the skill is the same as the mage version.
+ 
+See Also: TELEPORT
+#
+"PROBABILITY TRAVEL"
+Usage	: mind 'probability travel'
+Duration: Instant
+Saves	: None
+Damage	: None
+ 
+	This discipline allows a psionist to go into the astral plane. Using
+his mind to open a extra planer door he can step into the astral plane
+without a silver cord attached.
+ 
+See Also :ASTRAL
+#
+"PSIONIC STRENGTH"
+Usage	: mind 'psionic strength'
+Duration: Level*2 hours
+Saves	: None
+Damage	: None
+ 
+	This discipline uses the psionists mind power over his/her body to
+give it massive strength. Other than above the skill is the same as the
+cleric/mage version.
+ 
+See Also :STRENGTH
+#
+"PSIONIC DANGER SENSE"
+Usage	: mind 'psionic danger sense'
+Duration: level/10 Hours
+Saves	: None
+Damage	: None
+	
+	This discipline enhances the psionists awareness to dangers around
+him/her. This skill in MUD terms allows a psionist to 'see' DeathTraps. Once
+this skill is enabled, simply 'look DIR' and you will get a idea if that
+direction is safe. NOTE: This skill does not allow you to see TIMED DT's. IF
+the room in the direction looked at IS the DT then you will know, otherwise
+you will not.
+ 
+ 
+#
+CLAIRVOYANCE
+Usage	: mind 'clairvoyance'
+Duration: 3 Hours
+Saves	: None
+Damage	: None
+ 
+	This psionist discipline allows a psionists to see things that are
+at a great distance. In MUD terms this allows a Psionist to 'look DIR' and
+see into the next room. This skill is very similar to the Thief SPY skill.
+ 
+See Also :SPY
+#
+"PSIONIC DISINTERGRATION"
+Usage	: mind 'psionic disintergration'
+Duration: 
+Saves	: None
+Damage	: None
+ 
+	At this time this skill is the same as the MAGE disintegrate spell
+except the psionist uses his mental powers to call forth the disintergration
+ray.
+ 
+See also DISINTEGRATE
+#
+TELEKINESIS
+Usage	: mind 'telekinesis' <name> <dir>
+Duration: Instant
+Saves	: Save negates
+Damage	: None
+ 
+	This psionist skill teaches the psionist to use the power of the mind
+to shove people about. When using to move monsters about, the psionist must
+supply a direction to shove the creature, it also must be an open exit. If
+the psionist is fighting he can use the telekinesis skill to slam the
+offender to the ground. To use while fighting mind 'telekinesis' NAME, to
+use to move a creature mind 'telekinesis' NAME DIR (dir must be
+north/south/west/east/up or down).
+ 
+note: This skill is considered aggressive, it can also be useless against
+some creatures as they are to large or powerful.
+ 
+ 
+#
+LEVITATION
+Usage	: mind 'levitation'
+Duration: level*2/10 Hours
+Saves	: None
+Damage	: None
+ 
+	This discipline teaches a psionist to use the power of his/her mind
+to lift his own body into the air. In MUD terms you have the same abilities
+as a person flying.
+ 
+See Also :FLY
+#
+"CELL ADJUSTMENT"
+Usage	: mind 'cell adjustment'
+Duration: Special
+Saves	: None
+Damage	: None
+ 
+	When a psionist uses this skill he controls the cells of his
+body, thus allowing himself to heal wounds. This skills takes a lot of
+concentration and is very exhausting. The most that a psionist can heal
+on himself is 100 hit points. This skill is self only.
+ 
+#
+CHAMELEON
+Usage	: mind 'chameleon'
+Duration: Same as HIDE
+Saves	: None
+Damage	: None
+ 
+	This psionist discipline allows a psionist to take on the colors of
+the surrounding area he/she is in. Allowing the psionist to hide his body
+while he makes others see him as 'camouflaged'. This skill is the same as
+the thief skill HIDE.
+ 
+See Also :HIDE
+#
+"MIND OVER BODY"
+Usage	: mind 'mind over body'
+Duration: 
+Saves	: None
+Damage	: None
+ 
+	This psionist discipline allows the psionist to use the power of
+his/her mind to force his body to not require food or water for 12 hours.
+ 
+#
+DOMINATION
+Usage	: mind 'domination'
+Duration: 
+Saves	: None
+Damage	: None
+ 
+	Undefined at this time
+ 
+#
+"MIND WIPE"
+Usage	: mind 'mind wipe'
+Duration: 
+Saves	: None
+Damage	: None
+	
+	At this time this skill is exactly the same as the mage spell
+feeblemind, but the psionist uses his mind and not magic powers.
+ 
+See Also FEEBLEMIND
+#
+"PSYCHIC CRUSH"
+Usage	: mind 'psychic crush' <victim>
+Duration: Instant
+Saves	: Half damage
+Damage	: level d6, +1 point for every 2 levels of psionist
+ 
+ 
+	This skills is a massive attack on a single persons mind, trying to
+bend the will of it and force it in on itself. The psionist skill is very
+powerful and taught to only the most experienced psionist.
+ 
+See also: TOWER OF IRON WILL
+#
+"TOWER OF IRON WILL"
+Usage	: mind 'tower of iron will'
+Duration: level/10 hours
+Saves	: None
+Damage	: None
+ 
+	This psionic discipline teaches the psionist to ways to avoid damage
+to his mind from psionic attacks. This skill, when enabled protects the
+psionists completely from PSIONIST BLAST, and somewhat protects from
+PSYCHIC CRUSH and ULTRA BLAST. There are however a few other attacks that 
+will effect the psionist.
+ 
+#
+MINDBLANK
+Usage	: mind 'mindblank'
+Duration: level*2/10
+Saves	: None
+Damage	: None
+ 
+	This discipline teaches the psionists protective ways to hide his
+mind from some psionic attacks, One such attack is MIND WIPE and FEEBLEMIND,
+both of which the psionist will be immune to should he have his skill
+enabled.
+ 
+See also :MIND WIPE and FEEBLEMIND
+#
+"PSYCHIC IMPERSONATION"
+Usage	: mind 'psychic impersonation'
+Duration: Level*2/10 Hours
+Saves	: None
+Damage	: None
+ 
+	This psionists discipline teaches the psionist to use his mind to
+confuse the mind of others into believing he is actually someone else. In
+MUD terms this means the Psionists is disguised, as per the DISGUISE skill
+of thieves.
+ 
+See Also :DISGUISE 
+#
+"ULTRA BLAST"
+Usage	: mind 'ultra blast'
+Duration: Instant
+Saves	: Half Damage
+Damage	: level d4, +1 point per level of psionist
+ 
+	This skill teaches the psionist to send out a massive wave of
+destructive psionic energy slamming into the minds of any creature present.
+This power is totally destructive and can kill creatures by turning their
+mind to jelly. 
+ 
+NOTE: This skill is an AREA EFFECT skill.
+ 
+See Also: TOWER OF IRON WILL
+#
+INTENSIFY
+Usage	: mind 'intensify'
+Duration: 
+Saves	: None
+Damage	: None
+ 
+	Undefined at this time
+ 
+#
+HYPNOSIS
+ 
+	This skill allows a psionist to 'hypnotize' a victim into following
+him. This is similar to the spell charm and follows it in most respects to
+rules. Remember that this skill is considered aggressive.
+ 
+#
+ESP
+ 
+	This skill allows a psionist to read the thoughts of people
+speaking, in layman's terms they can understand any language spoken because
+they are seeing the thoughts and thoughts are universal. To attempt this
+skill type 'ESP'.
+ 
+#
+"PSI SHIELD"
+ 
+	This skill allows a psionist to summon a protective shield of
+psionic energy. The shield will increase in strength as the psionist gains
+experience. To use this skill type 'shield'.
+ 
+#
+"FLAME SHROUD"
+ 
+	The flame shroud summoned by a psionist is that like a magic user
+that calls fire shield. The duration however is much longer. Use the command
+'flame shroud' to enable this skill.
+ 
+#
+"MINDSUMMON"
+ 
+	This skills is similar to the spell summon that is used by clerics.
+Sometimes when the distance is great and the psionist is very powerful the
+trip can be disturbing for individuals. Use the command 'summon' <name>.
+ 
+#
+DOORWAY
+	This skill allows a psionist to open a doorway to another dimension
+and travel to one place far away quickly. To use this command simply type
+doorway <mob/pcname>. The psionist will then be transferred to the location
+of the mob/pcname.
+#
+PORTAL
+	This skill is just like DOORWAY 'cept the psionist takes everyone
+that is following him/her. Use 'portal <name>' for this command.
+#
+"AURA SIGHT"
+ 
+	The psionist calls forth mental powers to seen unseen aura's.
+	Use 'aura sight' to enable this skill.
+	
+#
+"GREAT SIGHT"
+	The psionist calls forth mental powers to see even more unseen 
+aura's and objects. Use 'great sight' to enable this skill.
+ 
+#
+ADRENALIZE
+ 
+	The psionist calls forth the reserves of energy retained the a
+persons mind. To use type 'adrenalize <name>'.
+#
+"PSIONIC BLAST"
+ 
+	Psionist can focus his/her mental powers on a monster and scramble
+the brain like jelly. The more powerful the psionist the more powerful the
+blast. To use type 'blast <name>'.
+#
+"PSIONIC INVISIBILITY"
+ 
+	The psionist uses his mental powers to bend light about his body. To
+use type 'psi invis'.
+#
+MEDITATE
+ 
+	A psionist that is meditating can regain mental power back much
+faster (mana). To use simply type 'meditate'.
+#
+CANIBALIZE
+	This skill allows a Psionist to convert physical stamina to
+mental power (HPS to MANA). To use type 'canabalize <number>'.
+Don't kill yourself!
+ 
+#
+"MIND BURN"
+Usage	: mind 'mind burn'
+Duration: Instant
+Saves	: Save for NO damage 
+Damage	: 1d4+1+level/2
+ 
+	This skill allows a psionist to summon up a burst of mental power that
+will shoot out in a gout of flame. Small balls of fire will shoot forth from
+the psionist hitting most anything in it's path.
+ 
+#
+MIND
+ 
+	This command allows a psionist to do multiply skills using
+one command. This command is VERY similar to CAST and RECALL used by the
+magic user type classes.
+ 
+See Also :PSIONIST SKILLS
+#
+SPECIALIZATION
+	This will allow a mage/sorcerer/cleric/druid to specialize in
+a spell so that no matter what he, never fails casting this spell. However it
+is costly and hard to do. First you must already be superb at the spell, second
+it will cost you 4 pracs, and finally it costs around 250k in gold.
+ 
+You can only specialize in a set number of spells, so take care when
+doing so.
+#
+"SPEAK LANGUAGES"
+ 
+	Speak allows you to change the language you speak with using the 
+command say. Simply type speak <language>. Languages available are:
+ 
+Elvish,
+Dwarvish,
+Orcish,
+Giantish,
+Ogre,
+Gnomish,
+Halfling
+ 
+You can learn languages you do not know from the loremaster.
+#
+"COMPREHEND LANGUAGES"
+ 
+	This spell enables the caster to understand any language spoken by a
+pc/npc. 
+ 
+#
+"PROTECTION FROM FIRE"
+ 
+	This cleric spell protects the caster from fire attacks, they take
+1/2 damage form any fire based attack spell.
+ 
+See Also: Protection from ELECTRICITY,COLD,ENERGY
+#
+"PROTECTION FROM COLD"
+ 
+	This spell protects the caster from cold based attacks, they take 1/2
+damage from all cold based attack spells.
+ 
+See Also: Protection from ELECTRICITY,FIRE,ENERGY
+#
+"PROTECTION FROM ELECTRICITY"
+ 
+	This spell protects the caster from electric based attacks, they take
+1/2 damage from all electric based attack spells.
+ 
+See Also: Protection from FIRE,ENERGY,COLD
+#
+"PROTECTION FROM ENERGY"
+	
+	This spell protects the caster from energy based attacks, they take
+1/2 damage from all energy based attack spells.
+ 
+See Also: Protection from FIRE,COLD,ELECTRIC
+#
+MAIL
+ 
+	To use the mail command you must be at the scribes office and he needs
+be in. To mail a message to someone simply type 'mail <name>' where <name> is
+persons name. i.e. 'mail celestian'. It will then prompt for the text of the
+message and you must terminate it with a '@' character. Once done the person then
+has to come to the scribe shop and 'check' or 'receive' it.
+ 
+See also RECEIVE, CHECK 
+#
+RECEIVE
+ 
+	If you have WAITING mail simply type 'receive' and the scribe will give
+you the note. Simply look at the note to see what it says and whom it was from.
+To see if you have waiting mail use 'check'.
+ 
+See Also MAIL,CHECK
+#
+CHECK MAIL
+ 
+	This command allows you to see if you have WAITING mail. Simply type
+'check' a the scribes office and he will you if you have mail. Use 'receive' to
+get the mail.
+ 
+See Also RECEIVE,MAIL
+ 
+#
+"ENCHANT ARMOR"
+ 
+ 
+	This spell is similar to the spell enchant weapon, but it allows you to
+increase the benefits of armor much more so than it normally would be. 
+Here are the bonuses and at what levels you get them:
+ 
+Lev------AC	Lev----SAVE
+ 1-19	 -1	 1-30	0
+ 20-39	 -2	 31-50	1
+ 40-50	 -3	 51-59	2
+ 51-59	 -4	 60	3
+ 60	 -5	----------
+-----------
+ 
+Note, this spell also alters the ALIGNMENT of the object to match that of the
+caster.
+ 
+#
+"ANTI MAGIC SHELL"
+Usage		:cast 'anti magic shell'
+Accumulative	:No
+Duration	:1 hour
+ 
+        This spell enables the caster to shell him/herself from ANY magic
+force. However, it also prevents the caster from using any magic spells of
+his/her own as well.
+#
+SENDING
+Usage		:sending <name> <message>
+Accumulative	:No
+Duration	:Instantaneous
+ 
+	This spell enables the caster to speak over great distances to
+someone that he/she knows. Upon successful casting the messages is sent to
+<name>.
+ 
+See Also :TELEPATHY
+#
+TELEPATHY
+ 
+	This basic psionist skill allows the psionist to telepathically
+link to anyone in the world and send them a message. To use 'telepathy <name>
+<message>'. Where <name> is the person's name and <message> is the message
+text.
+ 
+See Also SENDING,MESSENGER
+#
+MESSENGER
+Usage		:messenger <name> <message>
+Accumulative	:No
+Duration	:Instant
+ 
+	This spell is exactly similar to the mage spell 'sending' in that it
+allows the cleric to send a message to any person in the world.
+ 
+See Also SENDING,TELEPATHY
+#
+"PROTECTION DRAGON BREATH"
+Usage		:cast 'protection dragon breath' <person>
+Accumulative	:No
+Duration	:Level/10
+ 
+	This spell or scroll enables the caster to be protected from ANY
+breath weapon that might be used against him. This spell reduces ALL damage
+from said attack types by 1/4.
+ 
+ 
+See Also:PROTECTION FIRE,FROST,ACID,GAS,ELECTRIC BREATH
+#
+"PROTECTION FIRE BREATH"
+ 
+	This spell is the same as PROTECTION DRAGON BREATH except that it
+only protects the caster from a FIRE type of breath weapon.
+ 
+ 
+#
+"PROTECTION FROST BREATH"
+ 
+	This spell is the same as PROTECTION DRAGON BREATH except that it
+only protects the caster from FROST types of breath weapons.
+ 
+ 
+#
+"PROTECTION ACID BREATH"
+ 
+	This spell is the same as PROTECTION DRAGON BREATH except that it
+only protects the caster from ACID types of breath weapons.
+ 
+#
+"PROTECTION ELECTRIC BREATH"
+ 
+	This spell is the same as PROTECTION DRAGON BREATH except that it
+only protects the caster from ELECTRIC types of breath weapons.
+ 
+ 
+#
+"PROTECTION GAS BREATH"
+ 
+	This spell is the same as PROTECTION DRAGON BREATH except that it
+only protects the caster from the GAS types of breath weapons.
+ 
+#
+"DISINTERGRATION"
+Usage       : cast 'disintergration' <target>
+Accumulative: -
+Duration    : Instantaneous
+Level       : 48
+Save        : vs. spells for half.
+Damage	    : level*d10
+ 
+	This spell summons a green beam of destructive power that can
+disintegrate molecules on contact. This beam will also destroy equipment!
+Targets get a save, and if so they take 1/2 of the damage, otherwise they
+take a full blast of damage and the equipment they are using must SAVE or be
+destroyed.
+ 
+See Also: PSIONIC DISINTERGRATION
+#
+"WIZARDEYE WIZARD EYE"
+Usage       : cast 'wizardeye'
+Accumulative: -
+Duration    : 3 Hrs
+Level       : 35
+Save        : None
+ 
+	This spell enables a wizard to summon forth a 'wizardeye' and look
+into the nearby surroundings. In MUD terms this means the wizard can LOOK
+into the next room by 'looking' in a direction. (look n,look s ect...).
+#
+"RACE WAR"
+ 
+	This flag allows a user to participate in the racial war battles
+that spread across the lands. This also allows the user to be hit by OTHER
+race warring peoples. 
+ 
+The Race Wars are this:
+ 
+1) You are on the Good Side or Bad Side
+   Good Side = Dwarf,Elf,Human,Hobbit,Half-Giant,Half-Orc,Half-Elf,Half-Ogre
+	       and Drow.
+   Bad Side  = Dark-Dwarf, Troll, Orc, Goblin and XXXXXXX
+ 
+2) Alignment HAS NOT EFFECT ON WHAT SIDE YOU ARE, ONLY RACE!
+3) Once you set this flag you cannot remove it!
+4) You cannot set this until you are at level 10 or ABOVE!
+ 
+No matter what you are (Race Warrior or not) you will get attacked by the
+guards of the opposite side's towns (If you are a bad side character and go
+into Shadowdale the cityguards will attack you with great fury).
+ 
+If you are NOT SURE about this ask other players, and if your still confused
+ask the immortals. 
+ 
+** DO NOT USE THIS UNLESS YOU ARE ABSOLUTELY SURE YOU WANT TO DO THIS! 
+** IT IS FOR EXPERIENCED PLAYERS ONLY.
+ 
+#
+RUN
+ 
+	To RUN simply type 'run <dir>' where <dir> is the direction you wish
+to run (north,south,east,west,up,down). You will then be 'hurried' through
+the rooms/locations until you get to a room that does not have a exit in the
+direction you are running. In other words if you 'run west' you will run
+westwards until you get to a room without an exit west. Run requires more
+movement points and you must have a minimum movement.
+ 
+WARNING: You CAN hit DT's this way!
+ 
+#
+LOAD NOTCH
+ 
+	The command parameters are 'notch <item>'. You will then attempt to
+notch/load the item into the weapon you currently wield. You can also use
+'load <item>' , it will have the SAME results. This is how you can notch a
+arrow to be FIRE at someone or something.
+ 
+See Also: FIRE
+#
+AFK
+ 
+	This command will notify users that you are AWAY FROM YOUR KEYBOARD.
+If someone tells/gtells/sending/messenger you they will also see that you
+are AFK. if someone steps into the room, or looks in the room, they will see
+a (AFK) at the end of your name. As soon as you hit return anytime after
+starting AFK, you will return to normal mode (not AFK).
+ 
+	Example:
+	AFK
+ 
+To return to normal mode just hit return when you are back.
+ 
+See Also TELL, GTELL	
+#
+WHOIS
+
+	This command will list such information about a player like, email
+address and last time online. More information may be gleened from this at a
+later time.
+
+See also SET
+#~

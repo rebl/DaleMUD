@@ -1,0 +1,15 @@
+#6290
+Long Hallway~
+The passage here is much like the one you just left, and is much like the ones
+to the north and south.
+~
+38 0 0
+D0
+~
+door~
+0 0 6291 -1
+D2
+~
+door~
+0 0 6289 -1
+S

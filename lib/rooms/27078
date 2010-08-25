@@ -1,0 +1,28 @@
+#27078
+On the Dark Lake~
+   A thin yellow film is on the black waters below you.  You see the
+shimmer of movement below you and then... nothing.  The mist grows thick
+here, almost taking on a life of its own.
+~
+97 1 7 7 7
+D0
+The mist obscures all sight.
+~
+lake~
+0 0 27078 -1
+D1
+The mist obscures all sight.
+~
+lake~
+0 0 27080 -1
+D2
+The mist obscures all sight.
+~
+lake~
+0 0 27083 -1
+D3
+The mist obscures all sight.
+~
+lake~
+0 0 27079 -1
+S

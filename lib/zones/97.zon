@@ -1,0 +1,439 @@
+*Zone 97, rooms 27000-27199, last modified by Tyr
+O 0 27080 1 27001   ; a large sign
+M 0 27000 5 27002   ; a gritha
+M 0 27002 5 27003   ; a large gritha
+M 0 27000 5 27004   ; a gritha
+M 0 27001 7 27004   ; a small gritha
+M 0 27002 5 27005   ; a large gritha
+E 1 27011 4 16   ; a hand axe
+G 1 27000 2 0   ; a jagged knife
+M 0 27002 5 27005   ; a large gritha
+M 0 27001 7 27005   ; a small gritha
+M 0 27000 5 27006   ; a gritha
+M 0 27001 7 27008   ; a small gritha
+O 0 27011 4 27009   ; a hand axe
+M 0 27007 2 27010   ; an ogre
+E 1 27029 1 17   ; a rusty, iron key
+G 1 27075 3 0   ; a huge bronze axe
+M 0 27007 2 27010   ; an ogre
+G 1 27003 2 0   ; a huge, stone axe
+D 0 27010 1 2   ; Guard Room
+M 0 27021 4 27011   ; a hairy rat
+M 0 27021 4 27011   ; a hairy rat
+M 0 27021 4 27011   ; a hairy rat
+M 0 27021 4 27011   ; a hairy rat
+M 0 27022 1 27011   ; a sickly man
+O 0 27031 1 27011   ; a pile of bones
+P 1 27078 1 27031   ; an old gold ring
+D 0 27011 3 2   ; Meat Locker
+M 0 27001 7 27013   ; a small gritha
+E 1 27000 2 16   ; a jagged knife
+M 0 27002 5 27014   ; a large gritha
+M 0 27001 7 27014   ; a small gritha
+M 0 27002 5 27015   ; a large gritha
+M 0 27000 5 27017   ; a gritha
+M 0 27001 7 27018   ; a small gritha
+E 1 27012 3 16   ; a short spear
+M 0 27023 8 27019   ; a rot grub
+M 0 27023 8 27019   ; a rot grub
+M 0 27023 8 27019   ; a rot grub
+M 0 27023 8 27019   ; a rot grub
+M 0 27023 8 27019   ; a rot grub
+M 0 27023 8 27019   ; a rot grub
+M 0 27023 8 27019   ; a rot grub
+M 0 27023 8 27019   ; a rot grub
+M 0 27024 8 27020   ; a gritha
+E 1 27006 2 16   ; a length of chain
+M 0 27024 8 27020   ; a gritha
+E 1 27004 8 16   ; a bladed cestus
+M 0 27020 1 27021   ; the gritha chief
+E 1 27038 1 0   ; the holy symbol of Malar
+E 1 27033 1 16   ; a greataxe
+M 0 27001 7 27022   ; a small gritha
+M 0 27025 3 27022   ; a gritha
+E 1 27032 2 16   ; a bone sword
+M 0 27025 3 27022   ; a gritha
+E 1 27015 30 16   ; a rusty long sword
+M 0 27025 3 27022   ; a gritha
+E 1 27032 2 16   ; a bone sword
+M 0 27014 1 27023   ; a small imp
+E 1 27046 1 17   ; a hag's brew potion
+G 1 27009 1 0   ; a tiny silver key
+G 1 5300 1 0   ; A stone key
+M 0 27026 3 27023   ; a gritha
+E 1 27011 4 16   ; a hand axe
+M 0 27026 3 27023   ; a gritha
+E 1 27012 3 16   ; a short spear
+M 0 27026 3 27023   ; a gritha
+E 1 27011 4 16   ; a hand axe
+M 0 27009 1 27026   ; a hill giant
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27017 8 6   ; an old, battered helm
+E 1 27015 30 16   ; a rusty long sword
+G 1 27019 3 0   ; a shining breastplate
+G 1 27015 30 0   ; a rusty long sword
+G 1 27017 8 0   ; an old, battered helm
+M 0 27018 4 27026   ; a shadow hound
+D 0 27028 4 1   ; Inside the Old Cottage
+M 0 27027 1 27029   ; the ghost of old Mrs. McGreer
+G 1 27002 1 0   ; a hag's brew potion
+D 0 27029 5 1   ; Widows Walk
+O 0 27039 1 27036   ; a well
+D 0 27037 1 1   ; A Porch
+M 0 27060 1 27038   ; a gnome
+O 0 27040 1 27038   ; an old stump
+M 0 27017 1 27039   ; Able
+E 1 27027 1 13   ; a leather apron
+M 0 27028 1 27039   ; Rex
+O 0 27021 1 27039   ; a glinting longsword
+O 0 27025 1 27039   ; a gourd
+O 0 27024 1 27039   ; a warm loaf of bread
+O 0 27023 1 27039   ; an anvil
+D 0 27039 3 1   ; Inside Able's Cottage
+M 0 27018 4 27041   ; a shadow hound
+M 0 27032 1 27044   ; the twisted tree
+M 0 27031 1 27045   ; the ghoul
+D 0 27046 0 0   ; Misty Path
+O 0 27051 2 27047   ; the great fir tree
+D 0 27047 2 0   ; Base of a Huge Tree
+D 0 27047 4 0   ; Base of a Huge Tree
+O 0 27041 1 27048   ; a nest
+D 0 27048 5 0   ; In the Branches of a Huge Tree
+M 0 27018 4 27050   ; a shadow hound
+M 0 27061 3 27051   ; a korred
+M 0 27006 3 27052   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27017 8 6   ; an old, battered helm
+E 1 27015 30 16   ; a rusty long sword
+G 1 27015 30 0   ; a rusty long sword
+G 1 27017 8 0   ; an old, battered helm
+G 1 27016 29 0   ; a rusty chain mail vest
+G 1 27016 29 0   ; a rusty chain mail vest
+M 0 27015 3 27052   ; an imperial knight
+M 0 27015 3 27052   ; an imperial knight
+E 1 27019 3 5   ; a shining breastplate
+E 1 27014 2 16   ; an iron mace
+M 0 27015 3 27052   ; an imperial knight
+E 1 27019 3 5   ; a shining breastplate
+M 0 27061 3 27053   ; a korred
+E 1 27059 9 16   ; a wooden cudgel
+E 1 27070 9 17   ; a set of pan pipes
+M 0 27019 3 27054   ; a large shadow hound
+M 0 27016 1 27054   ; Farin
+O 0 27070 9 27055   ; a set of pan pipes
+O 0 27059 9 27055   ; a wooden cudgel
+M 0 27062 6 27057   ; a korred
+E 1 27059 9 16   ; a wooden cudgel
+E 1 27070 9 17   ; a set of pan pipes
+M 0 27062 6 27057   ; a korred
+E 1 27059 9 16   ; a wooden cudgel
+E 1 27070 9 17   ; a set of pan pipes
+G 1 27047 2 0   ; a hag's brew potion
+M 0 27062 6 27057   ; a korred
+E 1 27059 9 16   ; a wooden cudgel
+E 1 27070 9 17   ; a set of pan pipes
+M 0 27062 6 27057   ; a korred
+E 1 27059 9 16   ; a wooden cudgel
+E 1 27070 9 17   ; a set of pan pipes
+M 0 27062 6 27057   ; a korred
+E 1 27059 9 16   ; a wooden cudgel
+E 1 27070 9 17   ; a set of pan pipes
+G 1 27047 2 0   ; a hag's brew potion
+M 0 27062 6 27057   ; a korred
+E 1 27059 9 16   ; a wooden cudgel
+E 1 27070 9 17   ; a set of pan pipes
+M 0 27061 3 27057   ; a korred
+E 1 27070 9 17   ; a set of pan pipes
+O 0 27044 1 27058   ; a large torch
+D 0 27058 0 2   ; Spider Gate
+M 0 27034 2 27059   ; a small spider
+D 0 27059 2 0   ; South End of the Oak Grove
+M 0 27005 3 27060   ; a large black widow
+O 0 27076 3 27061   ; a mushroom with a red cap
+D 0 27062 0 1   ; Thorn Bush
+M 0 27005 3 27063   ; a large black widow
+M 0 27034 2 27064   ; a small spider
+M 0 27005 3 27068   ; a large black widow
+M 0 27004 1 27068   ; the great oak
+M 0 27035 2 27070   ; a swarm of small black widows
+M 0 27065 8 27071   ; an egg sack
+M 0 27065 8 27071   ; an egg sack
+M 0 27065 8 27071   ; an egg sack
+M 0 27065 8 27071   ; an egg sack
+M 0 27065 8 27071   ; an egg sack
+M 0 27036 1 27071   ; the huge black widow
+G 1 27082 1 0   ; a bit of mistletoe on a leather thong
+G 1 27048 1 0   ; a hag's brew potion
+M 0 27065 8 27071   ; an egg sack
+M 0 27065 8 27071   ; an egg sack
+M 0 27065 8 27071   ; an egg sack
+M 0 27035 2 27071   ; a swarm of small black widows
+M 0 27000 5 27072   ; a gritha
+O 0 27006 2 27072   ; a length of chain
+D 0 27072 1 0   ; Muddy Path
+D 0 27073 3 0   ; Dark Pool
+O 0 27081 1 27074   ; an old sign
+O 0 27028 1 27074   ; an old raft
+M 0 27042 3 27078   ; the large water snake
+M 0 27042 3 27078   ; the large water snake
+M 0 27042 3 27078   ; the large water snake
+M 0 27041 1 27079   ; the wisp
+M 0 27038 1 27079   ; the boatman
+M 0 27030 1 27080   ; a scrag
+M 0 27037 1 27082   ; an apparition
+E 1 27071 1 17   ; an old banjo
+D 0 27087 0 0   ; Tower Gates
+M 0 27039 2 27088   ; the hound
+M 0 27039 2 27088   ; the hound
+D 0 27088 2 0   ; Base of the Tower
+M 0 27040 1 27092   ; the phantom
+E 1 27061 1 17   ; an alder walking stick
+G 1 27045 1 0   ; a spider key
+M 0 27019 3 27093   ; a large shadow hound
+M 0 27019 3 27099   ; a large shadow hound
+M 0 27047 3 27099   ; an ogre
+M 0 27047 3 27099   ; an ogre
+M 0 27048 1 27099   ; a hill giant
+M 0 27047 3 27099   ; an ogre
+O 0 27074 2 27099   ; a two-handed sword
+O 0 27075 3 27099   ; a huge bronze axe
+M 0 27006 3 27100   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27017 8 6   ; an old, battered helm
+E 1 27015 30 16   ; a rusty long sword
+M 0 27049 1 27100   ; the cook
+E 1 27049 1 16   ; a really big meat cleaver
+G 1 27050 1 0   ; a big, greasy key
+O 0 27001 1 27100   ; a hag's brew potion
+O 0 27074 2 27100   ; a two-handed sword
+O 0 27003 2 27100   ; a huge, stone axe
+O 0 27017 8 27100   ; an old, battered helm
+O 0 27016 29 27100   ; a rusty chain mail vest
+O 0 27043 1 27100   ; a large mushroom
+O 0 27015 30 27100   ; a rusty long sword
+O 0 27075 3 27100   ; a huge bronze axe
+D 0 27100 1 2   ; Kitchen
+M 0 27044 2 27101   ; a black wolf
+M 0 27043 2 27101   ; a cow
+M 0 27046 1 27101   ; a mountain lion
+M 0 27045 6 27101   ; a large, grey wolf
+M 0 27044 2 27101   ; a black wolf
+M 0 27043 2 27101   ; a cow
+D 0 27101 3 2   ; Pantry
+D 0 27102 0 0   ; North End of the Great Hall
+M 0 27050 1 27104   ; an ogre
+M 0 27052 1 27106   ; the hill giant sub-chief
+O 0 27067 1 27108   ; a big smithy hammer
+M 0 27051 1 27109   ; the ogre
+M 0 27006 3 27111   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27017 8 6   ; an old, battered helm
+E 1 27015 30 16   ; a rusty long sword
+G 1 27014 2 0   ; an iron mace
+G 1 27059 9 0   ; a wooden cudgel
+G 1 27015 30 0   ; a rusty long sword
+G 1 27017 8 0   ; an old, battered helm
+G 1 27016 29 0   ; a rusty chain mail vest
+M 0 27024 8 27111   ; a gritha
+E 1 27004 8 16   ; a bladed cestus
+M 0 27024 8 27111   ; a gritha
+E 1 27004 8 16   ; a bladed cestus
+M 0 27024 8 27111   ; a gritha
+E 1 27004 8 16   ; a bladed cestus
+M 0 27024 8 27111   ; a gritha
+E 1 27004 8 16   ; a bladed cestus
+M 0 27024 8 27111   ; a gritha
+E 1 27004 8 16   ; a bladed cestus
+M 0 27024 8 27111   ; a gritha
+E 1 27004 8 16   ; a bladed cestus
+M 0 27053 1 27111   ; Valdakas
+M 0 27055 2 27112   ; hill giant soldier
+E 1 27077 2 16   ; a huge spear
+O 0 27016 29 27112   ; a rusty chain mail vest
+O 0 27015 30 27112   ; a rusty long sword
+D 0 27112 0 0   ; Guard Room
+D 0 27112 1 0   ; Guard Room
+M 0 27018 4 27116   ; a shadow hound
+M 0 27055 2 27116   ; hill giant soldier
+E 1 27077 2 16   ; a huge spear
+M 0 27054 1 27116   ; Cur
+D 0 27119 1 0   ; Short Hall
+D 0 27119 3 0   ; Short Hall
+M 0 27063 1 27120   ; a small faerie
+D 0 27120 1 2   ; Sleeping Chambers of the Giant Chief
+D 0 27121 3 2   ; Dark Cavern
+O 0 27058 1 27122   ; the silver shroud of Tyr
+O 0 27018 2 27122   ; a tattered, old robe
+M 0 27008 1 27123   ; the black knight
+D 0 27128 2 0   ; Long, Dark Passage
+M 0 27010 1 27129   ; the greenhag
+E 1 27018 2 12   ; a tattered, old robe
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+M 0 27058 20 27129   ; a skeleton warrior
+E 1 27016 29 5   ; a rusty chain mail vest
+E 1 27015 30 16   ; a rusty long sword
+O 0 27069 1 27132   ; a stone eye
+M 0 27013 1 27135   ; Hecate
+M 0 27011 1 27135   ; the black annis
+M 0 27059 1 27135   ; an imp
+G 1 27076 3 0   ; a mushroom with a red cap
+G 1 27076 3 0   ; a mushroom with a red cap
+O 0 27010 1 27135   ; a huge cauldron
+O 0 27165 2 27140   ; a page from an ancient folio
+O 0 27164 2 27140   ; a page from an ancient folio
+O 0 27163 2 27140   ; a page from an ancient folio
+O 0 27162 2 27140   ; a page from an ancient folio
+O 0 27161 2 27140   ; a page from an ancient folio
+O 0 27160 2 27140   ; a page from an ancient folio
+O 0 27159 2 27140   ; a page from an ancient folio
+O 0 27158 2 27140   ; a page from an ancient folio
+M 0 27143 15 27141   ; a dark dryad
+E 1 27141 7 16   ; a thorn-covered vine
+M 0 27143 15 27141   ; a dark dryad
+E 1 27141 7 16   ; a thorn-covered vine
+M 0 27143 15 27141   ; a dark dryad
+E 1 27141 7 16   ; a thorn-covered vine
+M 0 27143 15 27142   ; a dark dryad
+E 1 27141 7 16   ; a thorn-covered vine
+M 0 27143 15 27142   ; a dark dryad
+E 1 27141 7 16   ; a thorn-covered vine
+M 0 27143 15 27144   ; a dark dryad
+E 1 27141 7 16   ; a thorn-covered vine
+M 0 27143 15 27144   ; a dark dryad
+E 1 27141 7 16   ; a thorn-covered vine
+M 0 27141 4 27147   ; A warrior of Chaos
+E 1 27143 5 16   ; A heavy, iron falchion
+G 1 27155 16 0   ; a ball of cheese
+M 0 27141 4 27147   ; A warrior of Chaos
+E 1 27144 3 11   ; an iron shield
+E 1 27143 5 16   ; A heavy, iron falchion
+G 1 27157 15 0   ; a clove of garlic
+M 0 27141 4 27147   ; A warrior of Chaos
+E 1 27144 3 11   ; an iron shield
+E 1 27143 5 16   ; A heavy, iron falchion
+G 1 27153 6 0   ; an old scrap of paper
+G 1 27154 15 0   ; a hunk of beef
+M 0 27141 4 27147   ; A warrior of Chaos
+E 1 27144 3 11   ; an iron shield
+E 1 27143 5 16   ; A heavy, iron falchion
+G 1 27155 16 0   ; a ball of cheese
+D 0 27147 3 2   ; The Shadow of the Iron Fortress
+D 0 27148 1 2   ; Inside the Gates of the Iron Keep
+M 0 27143 15 27149   ; a shadowstalker
+E 1 27166 8 16   ; a sliver of shadow
+M 0 27143 15 27149   ; a shadowstalker
+E 1 27166 8 16   ; a sliver of shadow
+G 1 27155 16 0   ; a ball of cheese
+D 0 27149 1 0   ; Hall of Lost Souls
+M 0 27142 1 27150   ; A huge bronze statue
+G 1 27154 15 0   ; a hunk of beef
+G 1 27147 1 0   ; a clay tablet
+D 0 27150 3 0   ; Chamber of Fire
+D 0 27151 1 0   ; Chamber of Shadows
+M 0 27143 15 27152   ; a shadowstalker
+E 1 27166 8 16   ; a sliver of shadow
+G 1 27155 16 0   ; a ball of cheese
+M 0 27143 15 27152   ; a shadowstalker
+E 1 27166 8 16   ; a sliver of shadow
+G 1 27155 16 0   ; a ball of cheese
+G 1 27156 14 0   ; a red onion
+G 1 27154 15 0   ; a hunk of beef
+M 0 27143 15 27152   ; a shadowstalker
+E 1 27166 8 16   ; a sliver of shadow
+G 1 27155 16 0   ; a ball of cheese
+G 1 27154 15 0   ; a hunk of beef
+G 1 27155 16 0   ; a ball of cheese
+D 0 27152 2 0   ; Chamber of Shadows
+M 0 27143 15 27153   ; a shadowstalker
+E 1 27166 8 16   ; a sliver of shadow
+G 1 27155 16 0   ; a ball of cheese
+G 1 27154 15 0   ; a hunk of beef
+G 1 27157 15 0   ; a clove of garlic
+D 0 27153 0 0   ; Chamber of Shadows
+D 0 27154 3 0   ; Chamber of Shadows
+M 0 27143 15 27155   ; a shadowstalker
+E 1 27166 8 16   ; a sliver of shadow
+G 1 27155 16 0   ; a ball of cheese
+O 0 27148 1 27155   ; The Iron Coffin
+P 1 27151 1 27148   ; an old, rotted corpse
+P 1 27153 6 27151   ; an old scrap of paper
+P 1 27152 2 27151   ; a silver shield
+P 1 27142 5 27151   ; the Holy Avenger
+P 1 27153 6 27151   ; an old scrap of paper
+M 0 27143 15 27156   ; a shadowstalker
+E 1 27166 8 16   ; a sliver of shadow
+G 1 27155 16 0   ; a ball of cheese
+G 1 27156 14 0   ; a red onion
+G 1 27154 15 0   ; a hunk of beef
+D 0 27156 0 0   ; Nexus of Silence
+D 0 27156 2 0   ; Nexus of Silence
+D 0 27160 4 0   ; Circle of Power
+M 0 27145 4 27161   ; a minion of chaos
+E 1 27145 1 8   ; a pair of old sandals
+G 1 27154 15 0   ; a hunk of beef
+M 0 27145 4 27161   ; a minion of chaos
+M 0 27145 4 27161   ; a minion of chaos
+G 1 27153 6 0   ; an old scrap of paper
+M 0 27145 4 27161   ; a minion of chaos
+G 1 27153 6 0   ; an old scrap of paper
+M 0 27144 1 27161   ; Ixzuul the Evil Godling
+E 1 27146 3 17   ; A Pulsating Heart
+G 1 27153 6 0   ; an old scrap of paper
+G 1 27150 1 0   ; a black key
+S

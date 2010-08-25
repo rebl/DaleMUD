@@ -1,0 +1,17 @@
+#6292
+Northwest Stairwell~
+You are at the large stairwell that leads to the chambers of the highest nobles
+in the land. You feel as though you are almost intruding upon their private
+lives if you continue upwards. The long passage leading to the stairwel lies to
+the south.
+~
+38 0 0
+D2
+~
+door~
+0 0 6291 -1
+D4
+~
+door~
+0 0 6304 -1
+S

@@ -1,0 +1,19 @@
+#6322
+Chamber Doorway~
+You are on a landing. To the east is the doorway to the Chancellor's chambers,
+and to the west is a secluded alcove.
+~
+38 0 0
+D1
+~
+door~
+1 0 6323 -1
+D3
+~
+door~
+0 0 6327 -1
+D5
+~
+door~
+0 0 6321 -1
+S

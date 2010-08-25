@@ -1,0 +1,20 @@
+#27094
+Tight Squeeze~
+	You squeeze your way between two large redwoods.  The trail is almost
+nonexistent here.  Just a bit further north you can see a clearing and to the
+south the trail gets even more overgrown.  The plant life here seems unusually
+lush and green.  Large ferns grow around you and you can hear birds singing
+in the trees.
+~
+97 8 3
+D0
+The clear looks like it is used as someone's rubbish heap.
+~
+trail~
+0 0 27093 -1
+D2
+The path looks even more overgrown.
+~
+trail~
+0 0 27095 -1
+S

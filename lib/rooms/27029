@@ -1,0 +1,15 @@
+#27029
+Widows Walk~
+	This is a square platform made of rusty, iron bars at the top of the
+cottage.  A rail made of vertical spikes lines all sided.  From here you can 
+see the gloomy form of the dark forest all about the cottage. The mist however
+is far too thick to let you see far.  A small hatch leads down into the
+cottage.
+~
+97 0 0
+D5
+The cottage lies below.
+~
+hatch~
+3 0 27028 -1
+S

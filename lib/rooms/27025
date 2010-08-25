@@ -1,0 +1,24 @@
+#27025
+Misty Path~
+   The mist has grown very thick here.  You can hardly see your own feet.
+Sweat trickles down the back of your neck as you can feel pairs of hungry
+eyes watching you from just beyond your vision.  The cobblestone path runs east
+and west.  You spy a new trail cutting north.
+~
+97 0 3
+D0
+You cannot see anything through this mist!
+~
+trail~
+0 0 27040 -1
+D1
+You cannot see anything through this mist!
+~
+path~
+0 0 27026 -1
+D3
+You cannot see anything through this mist!
+~
+path~
+0 0 27024 -1
+S

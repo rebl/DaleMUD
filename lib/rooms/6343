@@ -1,0 +1,15 @@
+#6343
+Spiral Staircase~
+You can finally see the top of the staircase above you. The drop from this
+height is enough to make you edge towards the wall as you continue onward.
+~
+38 0 0
+D4
+~
+door~
+0 0 6344 -1
+D5
+~
+door~
+0 0 6342 -1
+S

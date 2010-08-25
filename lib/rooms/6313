@@ -1,0 +1,15 @@
+#6313
+Secret Passage~
+You have stumbled upon the butler's secret passage. You're not sure where it
+leads, but it continues to the south.
+~
+38 0 0
+D0
+~
+door~
+9 0 6305 -1
+D2
+~
+door~
+0 0 6314 -1
+S

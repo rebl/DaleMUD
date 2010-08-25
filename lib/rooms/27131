@@ -1,0 +1,17 @@
+#27131
+Long Hall~
+	You are almost there.  This long hike has brought you up a few hundred
+feet in elevation.  The cave opening is just a bit further.
+~
+97 9 0
+D0
+You can see a cave opening.
+~
+passage~
+0 0 27132 -1
+D2
+The hall runs far far to the south.
+~
+hall~
+0 0 27130 -1
+S

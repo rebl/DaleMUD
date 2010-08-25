@@ -1,0 +1,24 @@
+#27004
+North End of Glade~
+	Here is an open field of dead grass.  A single pole, over 15 feet high,
+has been placed here.  Mounted on its top is a human skull.  Thick brambles
+clog the edges of the glade and the dark trees tower over them.  The trail
+continues north-south but a foot path wanders off to the west.
+~
+97 0 2
+D0
+The trail appears to fork to the north.
+~
+trail~
+0 0 27003 -1
+D2
+The glade becomes over-grown to the south.
+~
+trail~
+0 0 27005 -1
+D3
+A dark trail winds west.
+~
+path foot-path~
+0 0 27012 -1
+S

@@ -1,0 +1,29 @@
+#27028
+Inside the Old Cottage~
+	The cottage has been devastated.  The tables are broken.  The bed has
+rotted into an unrecognizable heap.  The cabinets are open and their contents
+spilled all over the floor.  The floorboards creak under your every step.
+Mice scurry for cover.  A small ladder on the east wall leads to the roof
+and a broken door leads outside.
+~
+97 13 0
+D3
+The front yard lays beyond.~
+door~
+0 0 27027 -1
+D4
+The mist swirls above you as you peer up to see the widows walk.  You aren't
+sure but you think you heard footsteps.
+~
+hatch~
+3 0 27029 -1
+E
+ladder~
+It is an old, iron ladder leading up to a hatch.
+~
+E
+hatch~
+Warn with age, it might have posed a problem to open at some point but is now
+barely holding its own weight.
+~
+S

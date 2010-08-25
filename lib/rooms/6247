@@ -1,0 +1,23 @@
+#6247
+Pebble Lane~
+The lane ends to the east in the village market. To the north is another
+shantee, with another shack to the south.
+~
+38 0 0
+D0
+~
+door~
+1 0 6246 -1
+D1
+~
+~
+0 0 6249 -1
+D2
+~
+~
+1 0 6248 -1
+D3
+~
+door~
+0 0 6245 -1
+S

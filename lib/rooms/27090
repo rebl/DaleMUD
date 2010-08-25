@@ -1,0 +1,20 @@
+#27090
+Broken Stairs~
+   This level of the tower seems to have completely fallen away.  In fact,
+it stands on no more than a few pieces of stone jutting out of the wall.  To
+make it further up you will have to jump to the remaining steps and hope they
+hold.  You had better move fast.  Figuring that the rest of the floor has
+fallen away there is little doubt that the rest could go at any second.
+~
+97 1 0
+D4
+The next level seems much more intact.
+~
+stairs~
+0 0 27091 -1
+D5
+Below you is a huge amount of rubble.
+~
+stairs~
+0 0 27089 -1
+S

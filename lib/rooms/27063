@@ -1,0 +1,26 @@
+#27063
+Small Field~
+	A small field of withered grass grows in this corner of the walled 
+garden.  The black, twisted remains of an oak are still rooted here.  Many
+small spiders have spun webs in the branches.  A thick thorn bush grows just
+to the north of you.  It seem to fill the northern part of the garden.  A
+thick cluster of oaks grow just to the south and a circle of monoliths stand
+just to the west.
+~
+97 0 2
+D2
+The oaks are large and filled with spider webs.~
+trees oaks cluster~
+0 0 27061 -1
+D3
+The stones are old and weathered.  Although the stand tall and proud is seems
+as if they are filled with an unexplainable sadness.
+~
+stone stones circle~
+0 0 27064 -1
+E
+tree~
+The tree's blackened form, although quite dead seems to be almost screaming
+out in agony.
+~
+S
