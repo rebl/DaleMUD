@@ -488,7 +488,7 @@ void ChangeObjType(struct char_data *ch, char *arg, int type)
  
  sprintf(buf, VT_HOMECLR);
  send_to_char(buf, ch);
- sprintf(buf, "Object Type: %s", item_types[ch->specials.objedit->obj_flags.type_flag]);
+ sprintf(buf, "Object Type: %s", item_types[(int) ch->specials.objedit->obj_flags.type_flag]);
  send_to_char(buf, ch);
  
  row = 0;
@@ -675,7 +675,7 @@ void ChangeObjAffects(struct char_data *ch, char *arg, int type)
  
 void ChangeObjAffect(struct char_data *ch, char *arg, int type)
 {
-  int update,affect,row=0,i,a=0,column,check;
+  int update,affect=1,row=0,i,a=0,column=0,check;
   char buf[1024];
 
   switch(ch->specials.oedit) {
@@ -844,7 +844,7 @@ void ChangeObjAffect(struct char_data *ch, char *arg, int type)
 void ChangeAffectMod(struct char_data *ch, char *arg, int type)
 {
   signed long update;
-  int affect;
+  int affect = 1;
   bool skill=FALSE;
 
   switch(ch->specials.oedit) {
@@ -950,7 +950,8 @@ void ChangeObjValues(struct char_data *ch, char *arg, int type)
 
 void ChangeObjValue(struct char_data *ch, char *arg, int type)
 {
-  int value,row=0,i,a=0,column,check;
+  // int value,row=0,i,a=0,column,check;
+  int value = 0;
   long update;
   char buf[1024];
   bool skill=FALSE;

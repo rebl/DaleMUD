@@ -10,7 +10,7 @@ extern struct obj_data  *object_list;
 extern struct char_data *character_list;
 
 
-SwitchStuff( struct char_data *giver, struct char_data *taker)
+int SwitchStuff( struct char_data *giver, struct char_data *taker)
 {
   struct obj_data *obj, *next;
   float ratio;
@@ -83,13 +83,14 @@ SwitchStuff( struct char_data *giver, struct char_data *taker)
   GET_MANA(taker) = GET_MANA(giver);
   GET_ALIGNMENT(taker) = GET_ALIGNMENT(giver);
 
+  return 0;
 }
 
 
-FailCharm(struct char_data *victim, struct char_data *ch)
+int FailCharm(struct char_data *victim, struct char_data *ch)
 {
  if (OnlyClass(ch,CLASS_MAGIC_USER|CLASS_SORCERER) && (number(1,100)>50) )
-    return;  /* give single classed mages a break. */
+    return 0;  /* give single classed mages a break. */
     
   if (!IS_PC(victim)) { 
 
@@ -105,12 +106,13 @@ FailCharm(struct char_data *victim, struct char_data *ch)
   } else {
     send_to_char("You feel charmed, but the feeling fades.\n\r",victim);
   }
+  return 0;
 }
 
-FailSnare(struct char_data *victim, struct char_data *ch)
+int FailSnare(struct char_data *victim, struct char_data *ch)
 {
  if (OnlyClass(ch,CLASS_MAGIC_USER|CLASS_SORCERER) && (number(1,100)>50) )
-    return;  /* give single classed mages a break. */
+    return 0;  /* give single classed mages a break. */
 
   if (!IS_PC(victim)) {
     if (!victim->specials.fighting) {
@@ -120,12 +122,13 @@ FailSnare(struct char_data *victim, struct char_data *ch)
   } else {
     send_to_char("You feel ensnared, but the feeling fades.\n\r",victim);
   }
+  return 0;
 }
 
-FailSleep(struct char_data *victim, struct char_data *ch)
+int FailSleep(struct char_data *victim, struct char_data *ch)
 {
  if (OnlyClass(ch,CLASS_MAGIC_USER|CLASS_SORCERER) && (number(1,100)>50) )
-    return;  /* give single classed mages a break. */
+    return 0;  /* give single classed mages a break. */
   
   send_to_char("You feel sleepy for a moment,but then you recover\n\r",
 	       victim);
@@ -134,13 +137,14 @@ FailSleep(struct char_data *victim, struct char_data *ch)
     if ((!victim->specials.fighting) && (GET_POS(victim)>POSITION_SLEEPING))
 	set_fighting(victim, ch);
   }
+  return 0;
 }
 
 
-FailPara(struct char_data *victim, struct char_data *ch)
+int FailPara(struct char_data *victim, struct char_data *ch)
 {
  if (OnlyClass(ch,CLASS_MAGIC_USER|CLASS_SORCERER) && (number(1,100)>50) )
-    return;  /* give single classed mages a break. */
+    return 0;  /* give single classed mages a break. */
 
   send_to_char("You feel frozen for a moment,but then you recover\n\r",victim);
   if (!IS_PC(victim)) {
@@ -148,12 +152,13 @@ FailPara(struct char_data *victim, struct char_data *ch)
     if ((!victim->specials.fighting) && (GET_POS(victim) > POSITION_SLEEPING))
 	set_fighting(victim, ch);
   }
+  return 0;
 }
 
-FailCalm(struct char_data *victim, struct char_data *ch)
+int FailCalm(struct char_data *victim, struct char_data *ch)
 {
  if (OnlyClass(ch,CLASS_MAGIC_USER|CLASS_SORCERER) && (number(1,100)>50) )
-    return;  /* give single classed mages a break. */
+    return 0;  /* give single classed mages a break. */
 
   send_to_char("You feel happy and easygoing, but the effect soon fades.\n\r",victim);
   if (!IS_PC(victim))
@@ -161,13 +166,14 @@ FailCalm(struct char_data *victim, struct char_data *ch)
       if (!number(0,2))
 	set_fighting(victim, ch);
     }
+    return 0;
 }
 
 
-FailPoison(struct char_data *victim, struct char_data *ch)
+int FailPoison(struct char_data *victim, struct char_data *ch)
 {
  if (OnlyClass(ch,CLASS_MAGIC_USER|CLASS_SORCERER) && (number(1,100)>50) )
-    return;  /* give single classed mages a break. */
+    return 0;  /* give single classed mages a break. */
 
   if (!IS_PC(victim)) 
   {
@@ -186,4 +192,5 @@ FailPoison(struct char_data *victim, struct char_data *ch)
   {
     send_to_char("You feel sick, but the feeling fades.\n\r",victim);
   }
+  return 0;
 }
