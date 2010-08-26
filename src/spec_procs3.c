@@ -27,7 +27,7 @@ extern char *spells[];
 
 /* extern procedures */
 void do_group(struct char_data *ch, char *arg, int cmd);
-int choose_exit_global(int a, int b, int c);
+int choose_exit_global(int a, long b, int c);
 int go_direction(struct char_data *ch, int dir);
 void hit(struct char_data *ch, struct char_data *victim, int type);
 void gain_exp(struct char_data *ch, int gain);

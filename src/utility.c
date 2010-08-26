@@ -4,6 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <time.h>
+#include <unistd.h>
 #include <sys/file.h>
 
 
@@ -262,7 +263,8 @@ int SaveZoneFile(FILE *fp, int start_room, int end_room)
   struct char_data *p;
   struct obj_data *o;
   struct room_data *room;
-  char cmd, c, buf[80];
+  // char cmd, c, buf[80];
+  char cmd, buf[80];
   int i, j, arg1, arg2, arg3;
  
  
@@ -354,7 +356,8 @@ return 1;
 int LoadZoneFile(FILE *fl, int zon)
 {
   int cmd_no = 0, expand, tmp, cc = 22;
-  char *check, buf[81];
+  // char *check, buf[81];
+  char buf[81];
  
   if(zone_table[zon].cmd) {
     free(zone_table[zon].cmd);
@@ -419,7 +422,8 @@ void CleanZone(int zone)
   struct room_data *rp;
   struct char_data *vict, *next_v;
   struct obj_data *obj, *next_o;
-  int room,start,end,i;
+  // int room,start,end,i;
+  int start,end,i;
  
   start=zone?(zone_table[zone-1].top+1):0;
   end=zone_table[zone].top;
@@ -577,7 +581,7 @@ int chk, i;
     return(1);
 
   for (i = 0; *(arg1 + i) || *(arg2 + i); i++)
-    if (chk = LOWER(*(arg1 + i)) - LOWER(*(arg2 + i)))
+    if ((chk = LOWER(*(arg1 + i)) - LOWER(*(arg2 + i))))
       if (chk < 0)
 	return (-1);
       else 
@@ -598,7 +602,7 @@ int strn_cmp(char *arg1, char *arg2, int n)
   int chk, i;
   
   for (i = 0; (*(arg1 + i) || *(arg2 + i)) && (n>0); i++, n--)
-    if (chk = LOWER(*(arg1 + i)) - LOWER(*(arg2 + i)))
+    if ((chk = LOWER(*(arg1 + i)) - LOWER(*(arg2 + i))))
       if (chk < 0)
 	return (-1);
       else 
@@ -936,10 +940,12 @@ int getabunch(char *name, char  *newname)
 
    tmpname[0] = 0;
    sscanf(name,"%d*%s",&num,tmpname);
-   if (tmpname[0] == '\0')
-      return(FALSE);
+   if (tmpname[0] == '\0') {
+      for (; *newname = *name; name++,newname++);
+      return(1);
+   }
    if (num < 1)
-      return(FALSE);
+      return(0);
    if (num>9)
       num = 9;
 
@@ -1346,10 +1352,9 @@ void do_WorldSave(struct char_data *ch, char *argument, char cmd)
        strcpy(temp, "Empty");
      }
  
-     fprintf(fp,"#%d\n%s~\n%s~\n",rp->number,rp->name,
-                                    temp);
+     fprintf(fp,"#%ld\n%s~\n%s~\n",rp->number,rp->name, temp);
      if (!rp->tele_targ) {
-        fprintf(fp,"%d %d %d",rp->zone, rp->room_flags, rp->sector_type);
+        fprintf(fp,"%ld %ld %ld",rp->zone, rp->room_flags, rp->sector_type);
       } else {
         if (!IS_SET(TELE_COUNT, rp->tele_mask)) {
            fprintf(fp, "%d %d -1 %d %d %d %d", rp->zone, rp->room_flags,
@@ -1459,7 +1464,7 @@ void RoomSave(struct char_data *ch, long start, long end)
         ((rstart > WORLD_SIZE) || (rend > WORLD_SIZE))){
     send_to_char("I don't know those room #s.  make sure they are all\n\r",ch);
     send_to_char("contiguous.\n\r",ch);
-    fclose(fp);
+    // fclose(fp);
     return;
    }
  
@@ -2544,7 +2549,7 @@ void TeleportPulseStuff(int pulse)
   
   register struct char_data *ch;
   struct char_data *next, *tmp, *bk, *n2;
-  int tick, tm;
+  int tick=0, tm;
   struct room_data *rp, *dest;
   struct obj_data *obj_object, *temp_obj;
   
@@ -2824,10 +2829,10 @@ int MobCountInRoom( struct char_data *list)
 
 }
 
-void *Mymalloc( long size)
+void *Mymalloc(long size)
 {
   if (size < 1) {
-    fprintf(stderr, "attempt to malloc negative memory - %d\n", size);
+    fprintf(stderr, "attempt to malloc negative memory - %ld\n", size);
     assert(0);
   }
   return(malloc(size));
@@ -4381,7 +4386,7 @@ int str_cmp2(char *arg1, char *arg2)
    return(1);
 
   for (i = 0; i<strlen(arg1); i++)
-   if (chk = LOWER(*(arg1 + i)) - LOWER(*(arg2 + i)))
+   if ((chk = LOWER(*(arg1 + i)) - LOWER(*(arg2 + i))))
 	if (chk < 0)
   return (-1);
 	else

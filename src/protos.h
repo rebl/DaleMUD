@@ -1171,8 +1171,8 @@ int dir_track( struct char_data *ch, struct char_data *vict);
 void donothing();
 int find_path(int in_room, int (*predicate)(), void *c_data, 
 	      int depth, int in_zone);
-int choose_exit_global(int in_room, int tgt_room, int depth);
-int choose_exit_in_zone(int in_room, int tgt_room, int depth);
+int choose_exit_global(int in_room, long tgt_room, int depth);
+int choose_exit_in_zone(int in_room, long tgt_room, int depth);
 int go_direction(struct char_data *ch, int dir);
 void slam_into_wall( struct char_data *ch, struct room_direction_data *exitp);
 void do_doorbash( struct char_data *ch, char *arg, int cmd);
@@ -2012,3 +2012,11 @@ void dlog(char *s);
 /* rbl */
 void klog(char *s);
 void AddCommand(char *name, void (*func), int number, int min_pos, int min_lev);
+int open_door(struct char_data *ch, int dir);
+int raw_open_door(struct char_data *ch, int dir);
+char in_group(struct char_data *ch1, struct char_data *ch2);
+int find_door(struct char_data *ch, char *type, char *dir);
+void raw_unlock_door( struct char_data *ch, struct room_direction_data *exitp, int door);
+int DisplayMove( struct char_data *ch, int dir, int was_in, int total);
+int CAN_SEE_OBJ( struct char_data *ch, struct obj_data *obj);
+void check_affected(char *msg,char *msg2);

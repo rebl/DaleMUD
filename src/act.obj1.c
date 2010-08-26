@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -254,7 +254,7 @@ dlog("in do_get");
       get_obj_vis_accessible(ch, arg2);
     if (sub_object) {
       if (GET_ITEM_TYPE(sub_object)==ITEM_CONTAINER){
-	if(blah = get_obj_in_list_vis(ch, arg2, ch->carrying)){
+	if ((blah = get_obj_in_list_vis(ch, arg2, ch->carrying))) {
 	  has=TRUE;
 	}
 	for(obj_object = sub_object->contains;
@@ -325,7 +325,8 @@ dlog("in do_get");
       get_obj_vis_accessible(ch, arg2);
     if (sub_object) {
       if (GET_ITEM_TYPE(sub_object) == ITEM_CONTAINER) {
-        if(blah=get_obj_in_list_vis(ch,arg2, ch->carrying)) has=TRUE;
+        if ((blah=get_obj_in_list_vis(ch,arg2, ch->carrying)))
+            has=TRUE;
 	if (getall(arg1,newarg)==TRUE) {
 	  num = -1;
 	  strcpy(arg1,newarg);
